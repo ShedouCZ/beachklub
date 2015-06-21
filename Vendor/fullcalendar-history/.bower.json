@@ -1,0 +1,38 @@
+{
+  "name": "fullcalendar-history",
+  "authors": [
+    "Jan Ptacek <jan.ptacek@gmail.com>"
+  ],
+  "description": "viewRender handler that keeps displayed date range encoded in url query string",
+  "main": "fullcalendar.history.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "fullcalendar",
+    "history",
+    "url"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5-history-api": "~4.1.15"
+  },
+  "homepage": "https://github.com/ptica/fullcalendar-history",
+  "_release": "7583f0830d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7583f0830daaa0d8a45ef8611c2c678670c9ce16"
+  },
+  "_source": "git://github.com/ptica/fullcalendar-history.git",
+  "_target": "*",
+  "_originalSource": "ptica/fullcalendar-history"
+}
