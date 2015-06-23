@@ -16,6 +16,13 @@ class NewsController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
+	public function index() {
+        $items = $this->paginate();
+        if ($this->request->is('requested')) {
+            return $items;
+        }
+        $this->set('items', $items);
+    }
 /**
  * admin_index method
  *

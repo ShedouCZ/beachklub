@@ -268,17 +268,17 @@
                     <div class="grid-24">
 
                         <?php echo $this->Element('header'); ?>
-                        <?php echo $this->Session->flash(); ?>
+                            <?php echo $this->Session->flash(); ?>
 
-                        <div class="section-3">
+                                <div class="section-3">
 
-                            <?php echo $this->Element('navigation'); ?>
+                                    <?php echo $this->Element('navigation'); ?>
 
-                        </div>
+                                </div>
 
-                        <div class="section-2 clearfix">
-                            <?php echo $this->Element('slider'); ?>
-                        </div>
+                                <div class="section-2 clearfix">
+                                    <?php echo $this->Element('slider'); ?>
+                                </div>
 
                     </div>
                 </div>
@@ -295,8 +295,19 @@
                                         <div id="block-views-front-carousel-block" class="block block-views vertical-carousel block-odd">
                                             <div class="content">
                                                 <div class="view view-front-carousel view-id-front_carousel view-display-id-block view-dom-id-ea58816596ba1c5cb393dfeab559f430">
+                                                    <div class="view-header">
+                                                        <div class="header-1">novinky</div>
+                                                    </div>
                                                     <?php echo $this->Element('sidebar'); ?>
+                                                        <div class="view-footer">
+                                                            <div class="footer-1">
+                                                                <div class="button"><a href="/odber">objednat novinky</a></div>
+                                                            </div>
+                                                        </div>
                                                 </div>
+                                            </div>
+                                            <!-- /.content -->
+                                        </div>
                                         <!-- /.block -->
                                     </div>
                                 </div>

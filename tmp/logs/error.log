@@ -1438,3 +1438,453 @@ Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734
 Stack Trace:
 #0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-06-23 10:46:05 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:46:05 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:47:17 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:47:18 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:48:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:48:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:48:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:48:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:49:01 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:49:01 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:50:08 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:50:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:52:14 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:52:14 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:52:14 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 10:52:14 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:00:12 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:00:12 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:00:12 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:02:01 Error: Fatal Error (4): syntax error, unexpected '<' in [W:\beachklub\View\Elements\sidebar.ctp, line 6]
+2015-06-23 11:02:01 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'W:\\beachklub\\Vi...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'W:\\beachklub\\Vi...', 6, Array)
+#2 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'W:\\beachklub\\Vi...', 6, Array)
+#3 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-23 11:02:44 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:02:44 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:04:53 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:04:53 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:05:01 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:05:01 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:05:59 Error: [MissingControllerException] Controller class ItemsController could not be found.
+Exception Attributes: array (
+  'class' => 'ItemsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Core\Object.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 W:\beachklub\View\Elements\sidebar.ctp(4): Object->requestAction('items/index/sor...')
+#2 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(961): include('W:\\beachklub\\Vi...')
+#3 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(923): View->_evaluate('W:\\\\beachklub\\V...', Array)
+#4 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(1217): View->_render('W:\\\\beachklub\\V...', Array)
+#5 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(418): View->_renderElement('W:\\\\beachklub\\V...', Array, Array)
+#6 W:\beachklub\View\Layouts\beachklub.ctp(301): View->element('sidebar')
+#7 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(961): include('W:\\beachklub\\Vi...')
+#8 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(923): View->_evaluate('W:\\\\beachklub\\V...', Array)
+#9 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(546): View->_render('W:\\\\beachklub\\V...')
+#10 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\View\View.php(481): View->renderLayout('', 'beachklub')
+#11 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(960): View->render('home', NULL)
+#12 W:\beachklub\Controller\PagesController.php(59): Controller->render('home')
+#13 [internal function]: PagesController->display('home')
+#14 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#15 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#17 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2015-06-23 11:06:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:06:09 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:07:40 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:07:41 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:09:17 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:09:17 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:09:18 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:12:45 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:12:45 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:12:46 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:12:46 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:13:22 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:13:22 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:13:23 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:13:33 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:13:34 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:13:34 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:15:50 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:15:50 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:20:47 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:20:47 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
