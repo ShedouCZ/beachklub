@@ -26,6 +26,13 @@ class PostsController extends AppController {
 		$this->set('posts', $this->Paginator->paginate());
 	}
 
+	public function index() {
+        $posts = $this->paginate();
+        if ($this->request->is('requested')) {
+            return $posts;
+        }
+        $this->set('posts', $posts);
+    }
 /**
  * admin_view method
  *

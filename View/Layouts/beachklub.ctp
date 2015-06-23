@@ -310,62 +310,9 @@
                                         <div id="block-system-main" class="block block-system block-even">
                                             <div class="content">
                                                 <article id="node-153" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
-
-                                                    <header>
-                                                        <h2><a href="/proseries-prague/hledam-spoluhrace">Hledám spoluhráče</a></h2>
-                                                    </header>
-
-                                                    <div class="content">
-                                                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                                                            <div class="field-items">
-                                                                <div class="field-item even">
-                                                                    <p>text&nbsp;</p>
-
-                                                                    <p>
-                                                                        <a class="colorbox init-colorbox-processed cboxElement" href="/sites/default/files/images/20130409173547.jpg" target="_blank">
-                                                                            <img alt="" src="/sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS" style="height: 150px; width: 201px;">
-                                                                        </a>&nbsp;
-                                                                        <img alt="" src="/sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg" style="width: 260px; height: 145px;" width="260" height="145">
-                                                                    </p>
-
-                                                                    <p>&nbsp;</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.content -->
-
-                                                    <footer>
-                                                        <ul class="links inline">
-                                                            <li class="node-readmore first"><a href="/proseries-prague/hledam-spoluhrace" rel="tag" title="Hledám spoluhráče">Číst dál<span class="element-invisible"> Hledám spoluhráče</span></a></li>
-                                                            <li class="comment-add"><a href="/comment/reply/153#comment-form" title="Přidat komentář k této stránce.">Přidat komentář</a></li>
-                                                            <li class="translation_en last"><a href="/node/242?language=en" title="Looking for a mate" class="translation-link" xml:lang="en">English</a></li>
-                                                        </ul>
-                                                    </footer>
-
+                                                    <?php echo $this->Element('latest_posts'); ?>
                                                 </article>
                                                 <!-- /.node -->
-                                            </div>
-                                            <!-- /.content -->
-                                        </div>
-                                        <!-- /.block -->
-
-                                        <div id="block-views-work-hard-block" class="block block-views block-odd">
-                                            <div class="content">
-                                                <div class="view view-work-hard view-id-work_hard view-display-id-block view-dom-id-3cd774786f0efdada784248c60fe5286">
-                                                    <div class="view-content">
-                                                        <div class="first last odd">
-                                                            <div class="views-field views-field-title title-indent">
-                                                                <span class="field-content"><a href="/praesent-vestibulum-molestie-lacus-aenean-nonummy-hendrerit-mauris-phasellus-porta-fusce-suscipit">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</a></span>
-                                                            </div>
-                                                            <div class="views-field views-field-body">
-                                                                <span class="field-content">Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies
-                                                                    dolor in convallis. Morbi sed fringilla elit. Duis sagittis lectus in orci volutpat elementum. Cras in purus sem. Curabitur augue velit, mollis in suscipit eleifend, faucibus ac elit.
-                                                                    Morbi mattis tristique mi, quis lobortis nulla sollicitudin</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                             <!-- /.content -->
                                         </div>
