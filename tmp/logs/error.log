@@ -1888,3 +1888,94 @@ Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734
 Stack Trace:
 #0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-06-23 11:27:57 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:27:57 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:30:55 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:30:55 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:34:17 Error: Fatal Error (4): syntax error, unexpected 'explode' (T_STRING), expecting '(' in [W:\beachklub\View\Elements\sidebar.ctp, line 16]
+2015-06-23 11:34:17 Error: [FatalErrorException] syntax error, unexpected 'explode' (T_STRING), expecting '('
+Request URL: /
+Stack Trace:
+#0 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'W:\\beachklub\\Vi...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'W:\\beachklub\\Vi...', 16, Array)
+#2 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'W:\\beachklub\\Vi...', 16, Array)
+#3 W:\beachklub\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-23 11:39:04 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:39:05 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:39:06 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:40:56 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/styles/large/public/images/20130409173547.jpg?itok=g_nJvOCS
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-23 11:40:59 Error: [MissingControllerException] Controller class SitesController could not be found.
+Exception Attributes: array (
+  'class' => 'SitesController',
+  'plugin' => NULL,
+)
+Request URL: /sites/default/files/resize/remote/58d2865a8e434540856344b2e8f1f734-260x145.jpg
+Stack Trace:
+#0 W:\beachklub\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
