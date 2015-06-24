@@ -1,0 +1,339 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: 2015-06-24 11:49+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"POT-Creation-Date: \n"
+"X-Generator: Poedit 1.8.1\n"
+"Language: cs_CZ\n"
+
+#: /Elements/admin_navigation.ctp:11
+msgid "Menu"
+msgstr ""
+
+#: /Headlines/admin_add.ctp:7 /Headlines/admin_edit.ctp:8
+#: /Headlines/admin_view.ctp:20
+msgid "List Headlines"
+msgstr ""
+
+#: /Headlines/admin_add.ctp:9
+msgid "Admin Add Headline"
+msgstr ""
+
+#: /Headlines/admin_add.ctp:24 /Headlines/admin_edit.ctp:28
+#: /Headlines/admin_view.ctp:40 /News/admin_add.ctp:24
+#: /News/admin_edit.ctp:28 /News/admin_view.ctp:38 /Posts/admin_add.ctp:24
+#: /Posts/admin_edit.ctp:28 /Posts/admin_view.ctp:40 /Tiles/admin_add.ctp:27
+#: /Tiles/admin_edit.ctp:31 /Tiles/admin_view.ctp:44
+msgid "Title"
+msgstr "Název"
+
+#: /Headlines/admin_add.ctp:27 /Headlines/admin_edit.ctp:31
+#: /Posts/admin_add.ctp:27 /Posts/admin_edit.ctp:31
+msgid "User Id"
+msgstr ""
+
+#: /Headlines/admin_add.ctp:30 /Headlines/admin_edit.ctp:34
+#: /Headlines/admin_view.ctp:59 /News/admin_add.ctp:30
+#: /News/admin_edit.ctp:34 /News/admin_view.ctp:50 /Posts/admin_add.ctp:30
+#: /Posts/admin_edit.ctp:34 /Posts/admin_view.ctp:59 /Tiles/admin_add.ctp:24
+#: /Tiles/admin_edit.ctp:28 /Tiles/admin_view.ctp:38
+msgid "Desc"
+msgstr "Popisek"
+
+#: /Headlines/admin_add.ctp:34 /Headlines/admin_edit.ctp:38
+#: /News/admin_add.ctp:34 /News/admin_edit.ctp:38 /Posts/admin_add.ctp:37
+#: /Posts/admin_edit.ctp:41 /Sliders/admin_add.ctp:34
+#: /Sliders/admin_edit.ctp:38 /Tiles/admin_add.ctp:37
+#: /Tiles/admin_edit.ctp:41 /Users/add.ctp:9 /Users/admin_add.ctp:34
+#: /Users/admin_edit.ctp:38 /Users/login.ctp:26
+msgid "Submit"
+msgstr ""
+
+#: /Headlines/admin_edit.ctp:7 /News/admin_edit.ctp:7 /Posts/admin_edit.ctp:7
+#: /Sliders/admin_edit.ctp:7 /Tiles/admin_edit.ctp:7 /Users/admin_edit.ctp:7
+msgid "Delete"
+msgstr ""
+
+#: /Headlines/admin_edit.ctp:7 /Headlines/admin_index.ctp:40
+#: /Headlines/admin_view.ctp:19 /News/admin_edit.ctp:7
+#: /News/admin_index.ctp:36 /News/admin_view.ctp:19 /Posts/admin_edit.ctp:7
+#: /Posts/admin_index.ctp:42 /Posts/admin_view.ctp:19
+#: /Sliders/admin_edit.ctp:7 /Sliders/admin_index.ctp:35
+#: /Sliders/admin_view.ctp:19 /Tiles/admin_edit.ctp:7
+#: /Tiles/admin_index.ctp:39 /Tiles/admin_view.ctp:19 /Users/admin_edit.ctp:7
+#: /Users/admin_index.ctp:40 /Users/admin_view.ctp:19
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /Headlines/admin_edit.ctp:10
+msgid "Admin Edit Headline"
+msgstr ""
+
+#: /Headlines/admin_edit.ctp:25 /Headlines/admin_view.ctp:34
+#: /News/admin_edit.ctp:25 /News/admin_view.ctp:32 /Posts/admin_edit.ctp:25
+#: /Posts/admin_view.ctp:34 /Sliders/admin_edit.ctp:25
+#: /Sliders/admin_view.ctp:32 /Tiles/admin_edit.ctp:25
+#: /Tiles/admin_view.ctp:32 /Users/admin_edit.ctp:25 /Users/admin_view.ctp:32
+msgid "Id"
+msgstr ""
+
+#: /Headlines/admin_index.ctp:6 /Headlines/admin_view.ctp:21
+msgid "New Headline"
+msgstr ""
+
+#: /Headlines/admin_index.ctp:8
+msgid "Headlines"
+msgstr ""
+
+#: /Headlines/admin_index.ctp:48 /News/admin_index.ctp:44
+#: /Posts/admin_index.ctp:50 /Sliders/admin_index.ctp:43
+#: /Tiles/admin_index.ctp:47 /Users/admin_index.ctp:48
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:5
+msgid "Headline"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:18
+msgid "Edit Headline"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:19
+msgid "Delete Headline"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:22 /Posts/admin_view.ctp:22
+#: /Users/admin_add.ctp:7 /Users/admin_edit.ctp:8 /Users/admin_view.ctp:20
+msgid "List Users"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:23 /Posts/admin_view.ctp:23
+#: /Users/admin_index.ctp:6 /Users/admin_view.ctp:21
+msgid "New User"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:46 /Posts/admin_view.ctp:46
+#: /Users/admin_view.ctp:5
+msgid "User"
+msgstr ""
+
+#: /Headlines/admin_view.ctp:53 /Posts/admin_view.ctp:53
+#: /Tiles/admin_view.ctp:50 /Users/admin_view.ctp:56
+msgid "Created"
+msgstr ""
+
+#: /News/admin_add.ctp:7 /News/admin_edit.ctp:8 /News/admin_view.ctp:20
+msgid "List News"
+msgstr ""
+
+#: /News/admin_add.ctp:9
+msgid "Admin Add News"
+msgstr ""
+
+#: /News/admin_add.ctp:27 /News/admin_edit.ctp:31 /News/admin_view.ctp:44
+msgid "Date"
+msgstr ""
+
+#: /News/admin_edit.ctp:10
+msgid "Admin Edit News"
+msgstr ""
+
+#: /News/admin_index.ctp:6 /News/admin_view.ctp:21
+msgid "New News"
+msgstr ""
+
+#: /News/admin_index.ctp:8 /News/admin_view.ctp:5
+msgid "News"
+msgstr ""
+
+#: /News/admin_view.ctp:18
+msgid "Edit News"
+msgstr ""
+
+#: /News/admin_view.ctp:19
+msgid "Delete News"
+msgstr ""
+
+#: /Posts/admin_add.ctp:7 /Posts/admin_edit.ctp:8 /Posts/admin_view.ctp:20
+msgid "List Posts"
+msgstr ""
+
+#: /Posts/admin_add.ctp:9
+msgid "Admin Add Post"
+msgstr ""
+
+#: /Posts/admin_add.ctp:33 /Posts/admin_edit.ctp:37 /Posts/admin_view.ctp:65
+msgid "Perex"
+msgstr ""
+
+#: /Posts/admin_edit.ctp:10
+msgid "Admin Edit Post"
+msgstr ""
+
+#: /Posts/admin_index.ctp:6 /Posts/admin_view.ctp:21
+msgid "New Post"
+msgstr ""
+
+#: /Posts/admin_index.ctp:8
+msgid "Posts"
+msgstr ""
+
+#: /Posts/admin_view.ctp:5
+msgid "Post"
+msgstr ""
+
+#: /Posts/admin_view.ctp:18
+msgid "Edit Post"
+msgstr ""
+
+#: /Posts/admin_view.ctp:19
+msgid "Delete Post"
+msgstr ""
+
+#: /Sliders/admin_add.ctp:7 /Sliders/admin_edit.ctp:8
+#: /Sliders/admin_view.ctp:20
+msgid "List Sliders"
+msgstr ""
+
+#: /Sliders/admin_add.ctp:9
+msgid "Admin Add Slider"
+msgstr ""
+
+#: /Sliders/admin_add.ctp:24 /Sliders/admin_edit.ctp:28
+#: /Sliders/admin_view.ctp:38
+msgid "Name"
+msgstr ""
+
+#: /Sliders/admin_add.ctp:27 /Sliders/admin_edit.ctp:31
+#: /Sliders/admin_view.ctp:44 /Tiles/admin_add.ctp:30
+#: /Tiles/admin_edit.ctp:34 /Tiles/admin_view.ctp:56
+msgid "Ord"
+msgstr ""
+
+#: /Sliders/admin_add.ctp:30 /Sliders/admin_edit.ctp:34
+#: /Sliders/admin_view.ctp:50 /Tiles/admin_add.ctp:33
+#: /Tiles/admin_edit.ctp:37 /Tiles/admin_view.ctp:62
+msgid "Url"
+msgstr ""
+
+#: /Sliders/admin_edit.ctp:10
+msgid "Admin Edit Slider"
+msgstr ""
+
+#: /Sliders/admin_index.ctp:6 /Sliders/admin_view.ctp:21
+msgid "New Slider"
+msgstr ""
+
+#: /Sliders/admin_index.ctp:7 /Tiles/admin_index.ctp:7
+msgid "Reorder"
+msgstr ""
+
+#: /Sliders/admin_index.ctp:9
+msgid "Sliders"
+msgstr ""
+
+#: /Sliders/admin_view.ctp:5
+msgid "Slider"
+msgstr ""
+
+#: /Sliders/admin_view.ctp:18
+msgid "Edit Slider"
+msgstr ""
+
+#: /Sliders/admin_view.ctp:19
+msgid "Delete Slider"
+msgstr ""
+
+#: /Tiles/admin_add.ctp:7 /Tiles/admin_edit.ctp:8 /Tiles/admin_view.ctp:20
+msgid "List Tiles"
+msgstr ""
+
+#: /Tiles/admin_add.ctp:9
+msgid "Admin Add Tile"
+msgstr ""
+
+#: /Tiles/admin_edit.ctp:10
+msgid "Admin Edit Tile"
+msgstr ""
+
+#: /Tiles/admin_index.ctp:6 /Tiles/admin_view.ctp:21
+msgid "New Tile"
+msgstr ""
+
+#: /Tiles/admin_index.ctp:9
+msgid "Tiles"
+msgstr ""
+
+#: /Tiles/admin_view.ctp:5
+msgid "Tile"
+msgstr ""
+
+#: /Tiles/admin_view.ctp:18
+msgid "Edit Tile"
+msgstr ""
+
+#: /Tiles/admin_view.ctp:19
+msgid "Delete Tile"
+msgstr ""
+
+#: /Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: /Users/admin_add.ctp:9
+msgid "Admin Add User"
+msgstr ""
+
+#: /Users/admin_add.ctp:24 /Users/admin_edit.ctp:28 /Users/admin_view.ctp:38
+#: /Users/login.ctp:24
+msgid "Username"
+msgstr ""
+
+#: /Users/admin_add.ctp:27 /Users/admin_edit.ctp:31 /Users/admin_view.ctp:44
+#: /Users/login.ctp:25
+msgid "Password"
+msgstr ""
+
+#: /Users/admin_add.ctp:30 /Users/admin_edit.ctp:34 /Users/admin_view.ctp:50
+msgid "Mail"
+msgstr ""
+
+#: /Users/admin_edit.ctp:10
+msgid "Admin Edit User"
+msgstr ""
+
+#: /Users/admin_index.ctp:8
+msgid "Users"
+msgstr ""
+
+#: /Users/admin_view.ctp:18
+msgid "Edit User"
+msgstr ""
+
+#: /Users/admin_view.ctp:19
+msgid "Delete User"
+msgstr ""
+
+#: /Users/admin_view.ctp:62
+msgid "Modified"
+msgstr ""
+
+#: /Users/login.ctp:14
+msgid "Sign in"
+msgstr ""
+
+#: /Users/login.ctp:21
+msgid "Fill in your credentials please"
+msgstr ""
