@@ -17,11 +17,11 @@ class TilesController extends AppController {
 	public $components = array('Paginator', 'Session');
 
 	public function index() {
-        $tiles = $this->paginate();
+        $items = $this->paginate();
         if ($this->request->is('requested')) {
-            return $tiles;
+            return $items;
         }
-        $this->set('tiles', $tiles);
+        $this->set('items', $items);
     }
 
 /**
