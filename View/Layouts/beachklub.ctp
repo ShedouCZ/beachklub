@@ -312,41 +312,25 @@
                                     </div>
                                 </div>
                             </aside>
-
-                            <div id="content" class="column" role="main">
-                                <div class="section">
-                                    <div class="tabs">
-                                    </div>
-                                    <div class="region region-content">
-                                        <div id="block-system-main" class="block block-system block-even">
-                                            <div class="content">
-                                                <article id="node-153" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
-                                                    <?php echo $this->Element('latest_posts'); ?>
-                                                </article>
-                                                <!-- /.node -->
-                                            </div>
-                                            <!-- /.content -->
-                                        </div>
-                                        <!-- /.block -->
-                                    </div>
-                                </div>
-                            </div>
+                            <?php echo $this->fetch('content'); ?>
                         </div>
                         <!-- /#main -->
 
-                        <div class="region region-content-bottom">
-                            <div id="block-views-services-block" class="block block-views block-even">
-                                <div class="content">
-                                    <div class="view view-services view-id-services view-display-id-block view-dom-id-07d750d1b768924463e867a1b7876e55">
-                                        <div class="view-content">
-                                            <?php echo $this->Element('tiles'); ?>
+                        <?php if ($this->request->here == '/') { ?>
+                            <div class="region region-content-bottom">
+                                <div id="block-views-services-block" class="block block-views block-even">
+                                    <div class="content">
+                                        <div class="view view-services view-id-services view-display-id-block view-dom-id-07d750d1b768924463e867a1b7876e55">
+                                            <div class="view-content">
+                                                <?php echo $this->Element('tiles'); ?>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- /.content -->
                                 </div>
-                                <!-- /.content -->
+                                <!-- /.block -->
                             </div>
-                            <!-- /.block -->
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -361,7 +345,6 @@
     <!-- /#page-wrapper -->
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/flexslider/assets/js/flexslider.load.js?nq22ob"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/addthis/addthis.js?nq22ob"></script>
-
 
     <div id="cboxOverlay" style="display: none;"></div>
     <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
