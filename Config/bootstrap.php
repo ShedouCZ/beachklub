@@ -87,6 +87,30 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
+
+
+Configure::write('Bs3.Form.styles', array(
+	'horizontal' => array(
+		'formDefaults' => array(
+			//'submitDiv' => 'col-sm-10 col-sm-offset-2' // this adds another submit
+		),
+		'inputDefaults' => array(
+			'label' => array(
+				'class' => 'col-sm-2 control-label'
+			),
+			'wrap' => 'col-sm-9',
+			'div' => null,
+		)
+	),
+	'inline' => array(
+		'inputDefaults' => array(
+			'label' => array(
+				'class' => 'sr-only'
+			),
+		)
+	)
+));
+
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
