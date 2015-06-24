@@ -1,12 +1,12 @@
-<div class="sliders form">
+<div class="users form">
 
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
 									<ul class="nav nav-pills pull-right">
-							<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Sliders'), array('action'=>'index'), array('escape'=>false)); ?></li>
+							<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Users'), array('action'=>'index'), array('escape'=>false)); ?></li>
 					</ul>
-								<h1><?php echo __('Admin Add Slider'); ?></h1>
+								<h1><?php echo __('Admin Add User'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -18,16 +18,16 @@
 			<?php echo $this->element('admin_navigation'); ?>
 					</div><!-- end col md 3 -->
 		<div class="col-md-9">
-			<?php echo $this->Form->create('Slider', array('role'=>'form', 'class'=>'form-horizontal')); ?>
+			<?php echo $this->Form->create('User', array('role'=>'form', 'class'=>'form-horizontal')); ?>
 
 				<div class="form-group">
-					<?php echo $this->Form->input('name', array('class'=>'form-control', 'placeholder'=>__('Name')));?>
+					<?php echo $this->Form->input('username', array('class'=>'form-control', 'placeholder'=>__('Username')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('ord', array('class'=>'form-control', 'placeholder'=>__('Ord')));?>
+					<?php echo $this->Form->input('password', array('class'=>'form-control', 'placeholder'=>__('Password')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('url', array('class'=>'form-control', 'placeholder'=>__('Url')));?>
+					<?php echo $this->Form->input('mail', array('class'=>'form-control', 'placeholder'=>__('Mail')));?>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">

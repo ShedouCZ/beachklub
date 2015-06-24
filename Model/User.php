@@ -1,13 +1,13 @@
 <?php
 App::uses('AppModel', 'Model');
-App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class User extends AppModel {
-	public function beforeSave($options = array()) {
-		if (isset($this->data[$this->alias]['password'])) {
-			$passwordHasher = new BlowfishPasswordHasher();
-			$this->data[$this->alias]['password'] = $passwordHasher->hash($this->data[$this->alias]['password']);
-		}
-		return true;
-	}
+	public $displayField = 'username';
+
+	public $dateFields  = array('created', 'modified');
+
+	public $virtualFields = array(
+		'created' => "DATE_FORMAT(`User`.`created`, '%e.%c.%Y')",
+		'modified' => "DATE_FORMAT(`User`.`modified`, '%e.%c.%Y')",
+	);
 }

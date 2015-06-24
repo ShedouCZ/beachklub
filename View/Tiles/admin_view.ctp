@@ -1,44 +1,73 @@
 <div class="tiles view">
-<h2><?php echo __('Tile'); ?></h2>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($tile['Tile']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Desc'); ?></dt>
-		<dd>
-			<?php echo h($tile['Tile']['desc']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Title'); ?></dt>
-		<dd>
-			<?php echo h($tile['Tile']['title']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($tile['Tile']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Ord'); ?></dt>
-		<dd>
-			<?php echo h($tile['Tile']['ord']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Url'); ?></dt>
-		<dd>
-			<?php echo h($tile['Tile']['url']); ?>
-			&nbsp;
-		</dd>
-	</dl>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1><?php echo __('Tile'); ?></h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<?php echo $this->element('admin_navigation'); ?>
+			<div class="actions">
+				<div class="panel panel-default">
+					<div class="panel-heading">Actions</div>
+						<div class="panel-body">
+							<ul class="nav nav-pills nav-stacked">
+								<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>&nbsp&nbsp;' . __('Edit Tile'), array('action' => 'edit', $tile['Tile']['id']), array('escape' => false)); ?> </li>
+								<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete Tile'), array('action' => 'delete', $tile['Tile']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $tile['Tile']['id'])); ?> </li>
+								<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;' . __('List Tiles'), array('action' => 'index'), array('escape' => false)); ?> </li>
+								<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;' . __('New Tile'), array('action' => 'add'), array('escape' => false)); ?> </li>
+							</ul>
+						</div><!-- end body -->
+				</div><!-- end panel -->
+			</div><!-- end actions -->
+		</div><!-- end col md 3 -->
+
+		<div class="col-md-9">
+			<table cellpadding="0" cellspacing="0" class="table table-striped">
+				<tbody>
+					<tr>
+						<th><?php echo __('Id'); ?></th>
+						<td>
+							<?php echo h($tile['Tile']['id']); ?>
+						</td>
+					</tr>
+					<tr>
+						<th><?php echo __('Desc'); ?></th>
+						<td>
+							<?php echo h($tile['Tile']['desc']); ?>
+						</td>
+					</tr>
+					<tr>
+						<th><?php echo __('Title'); ?></th>
+						<td>
+							<?php echo h($tile['Tile']['title']); ?>
+						</td>
+					</tr>
+					<tr>
+						<th><?php echo __('Created'); ?></th>
+						<td>
+							<?php echo h($tile['Tile']['created']); ?>
+						</td>
+					</tr>
+					<tr>
+						<th><?php echo __('Ord'); ?></th>
+						<td>
+							<?php echo h($tile['Tile']['ord']); ?>
+						</td>
+					</tr>
+					<tr>
+						<th><?php echo __('Url'); ?></th>
+						<td>
+							<?php echo h($tile['Tile']['url']); ?>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- end col md 9 -->
+
+	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Tile'), array('action' => 'edit', $tile['Tile']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Tile'), array('action' => 'delete', $tile['Tile']['id']), array(), __('Are you sure you want to delete # %s?', $tile['Tile']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tiles'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tile'), array('action' => 'add')); ?> </li>
-	</ul>
-</div>
+

@@ -1,16 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
-/**
- * News Model
- *
- */
-class News extends AppModel {
 
-/**
- * Display field
- *
- * @var string
- */
+class News extends AppModel {
 	public $displayField = 'title';
 
 }

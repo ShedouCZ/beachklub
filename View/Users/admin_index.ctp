@@ -1,11 +1,11 @@
-<div class="news index">
+<div class="users index">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
 					<ul class="nav nav-pills pull-right">
-						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New News'), array('action' => 'add'), array('escape' => false)); ?></li>
+						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New User'), array('action' => 'add'), array('escape' => false)); ?></li>
 					</ul>
-								<h1><?php echo __('News'); ?></h1>
+								<h1><?php echo __('Users'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -19,21 +19,25 @@
 			<table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th><?php echo $this->Paginator->sort('title'); ?></th>
-						<th><?php echo $this->Paginator->sort('date'); ?></th>
-						<th><?php echo $this->Paginator->sort('desc'); ?></th>
+						<th><?php echo $this->Paginator->sort('username'); ?></th>
+						<th><?php echo $this->Paginator->sort('password'); ?></th>
+						<th><?php echo $this->Paginator->sort('mail'); ?></th>
+						<th><?php echo $this->Paginator->sort('created'); ?></th>
+						<th><?php echo $this->Paginator->sort('modified'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
 				<tbody>
-				<?php foreach ($news as $news) { ?>
+				<?php foreach ($users as $user) { ?>
 					<tr>
-						<td><?php echo h($news['News']['title']); ?></td>
-						<td><?php echo h($news['News']['date']); ?></td>
-						<td><?php echo h($news['News']['desc']); ?></td>
+						<td><?php echo h($user['User']['username']); ?></td>
+						<td><?php echo h($user['User']['password']); ?></td>
+						<td><?php echo h($user['User']['mail']); ?></td>
+						<td><?php echo $this->Time->format($user['User']['created'], '%-d.%-m.&nbsp;%Y'); ?></td>
+						<td><?php echo $this->Time->format($user['User']['modified'], '%-d.%-m.&nbsp;%Y'); ?></td>
 						<td class="actions">
-							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $news['News']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $news['News']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $news['News']['id'])); ?>
+							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $user['User']['id']), array('escape' => false)); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $user['User']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $user['User']['id'])); ?>
 						</td>
 					</tr>
 				<?php } ?>
