@@ -339,7 +339,7 @@
                                 <div class="content">
                                     <div class="view view-services view-id-services view-display-id-block view-dom-id-07d750d1b768924463e867a1b7876e55">
                                         <div class="view-content">
-                                            <?php echo $this->Element('grid'); ?>
+                                            <?php echo $this->Element('tiles'); ?>
                                         </div>
                                     </div>
                                 </div>

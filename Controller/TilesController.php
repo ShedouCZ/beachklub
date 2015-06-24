@@ -16,6 +16,14 @@ class TilesController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
+	public function index() {
+        $tiles = $this->paginate();
+        if ($this->request->is('requested')) {
+            return $tiles;
+        }
+        $this->set('tiles', $tiles);
+    }
+
 /**
  * admin_index method
  *
