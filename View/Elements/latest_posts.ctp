@@ -7,10 +7,10 @@
       <header>
           <h2>
               <?php
-              $title = $post['Post']['title'];
-              $id = $post['Post']['id'];
-              $url = '/posts/view'.$id;
-              echo $this->Html->link($title, $url);
+                  $title = $post['Post']['title'];
+                  $id = $post['Post']['id'];
+                  $url = '/posts/view'.$id;
+                  echo $this->Html->link($title, $url);
               ?>
           </h2>
         </header>
