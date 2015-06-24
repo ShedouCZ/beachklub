@@ -1,16 +1,9 @@
 <?php
 App::uses('AppModel', 'Model');
-/**
- * Slider Model
- *
- */
-class Slider extends AppModel {
 
-/**
- * Display field
- *
- * @var string
- */
+class Slider extends AppModel {
 	public $displayField = 'name';
+
+	public $order = array('Slider.ord'=>'asc');
 
 }

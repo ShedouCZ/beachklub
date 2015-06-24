@@ -1,45 +1,24 @@
 <?php
 App::uses('AppController', 'Controller');
-/**
- * News Controller
- *
- * @property News $News
- * @property PaginatorComponent $Paginator
- * @property SessionComponent $Session
- */
 class NewsController extends AppController {
+	public $layout = 'BootstrapCake.bootstrap';
 
-/**
- * Components
- *
- * @var array
- */
 	public $components = array('Paginator', 'Session');
 
 	public function index() {
-        $items = $this->paginate();
-        if ($this->request->is('requested')) {
-            return $items;
-        }
-        $this->set('items', $items);
-    }
-/**
- * admin_index method
- *
- * @return void
- */
+	    $items = $this->paginate();
+	    if ($this->request->is('requested')) {
+	        return $items;
+	    }
+	    $this->set('items', $items);
+	}
+
 	public function admin_index() {
 		$this->News->recursive = 0;
 		$this->set('news', $this->Paginator->paginate());
 	}
 
-/**
- * admin_view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+
 	public function admin_view($id = null) {
 		if (!$this->News->exists($id)) {
 			throw new NotFoundException(__('Invalid news'));
@@ -48,40 +27,28 @@ class NewsController extends AppController {
 		$this->set('news', $this->News->find('first', $options));
 	}
 
-/**
- * admin_add method
- *
- * @return void
- */
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->News->create();
 			if ($this->News->save($this->request->data)) {
-				$this->Session->setFlash(__('The news has been saved.'));
+				$this->Session->setFlash(__('The news has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The news could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
 	}
 
-/**
- * admin_edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
 	public function admin_edit($id = null) {
 		if (!$this->News->exists($id)) {
 			throw new NotFoundException(__('Invalid news'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->News->save($this->request->data)) {
-				$this->Session->setFlash(__('The news has been saved.'));
+				$this->Session->setFlash(__('The news has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The news could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		} else {
 			$options = array('conditions' => array('News.' . $this->News->primaryKey => $id));
@@ -89,23 +56,16 @@ class NewsController extends AppController {
 		}
 	}
 
-/**
- * admin_delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
 	public function admin_delete($id = null) {
 		$this->News->id = $id;
 		if (!$this->News->exists()) {
 			throw new NotFoundException(__('Invalid news'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		$this->request->onlyAllow('post', 'delete');
 		if ($this->News->delete()) {
-			$this->Session->setFlash(__('The news has been deleted.'));
+			$this->Session->setFlash(__('The news has been deleted.'), 'default', array('class' => 'alert alert-success'));
 		} else {
-			$this->Session->setFlash(__('The news could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The news could not be deleted. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

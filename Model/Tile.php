@@ -1,33 +1,14 @@
 <?php
 App::uses('AppModel', 'Model');
-/**
- * Tile Model
- *
- */
-class Tile extends AppModel {
 
-/**
- * Display field
- *
- * @var string
- */
+class Tile extends AppModel {
 	public $displayField = 'title';
 
-/**
- * Validation rules
- *
- * @var array
- */
-	public $validate = array(
-		'desc' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
+	public $order = array('Tile.ord'=>'asc');
+
+	public $dateFields  = array('created');
+
+	public $virtualFields = array(
+		'created' => "DATE_FORMAT(`Tile`.`created`, '%e.%c.%Y')",
 	);
 }

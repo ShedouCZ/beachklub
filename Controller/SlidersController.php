@@ -1,46 +1,31 @@
 <?php
 App::uses('AppController', 'Controller');
-/**
- * Sliders Controller
- *
- * @property Slider $Slider
- * @property PaginatorComponent $Paginator
- * @property SessionComponent $Session
- */
 class SlidersController extends AppController {
+	public $layout = 'BootstrapCake.bootstrap';
 
-/**
- * Components
- *
- * @var array
- */
 	public $components = array('Paginator', 'Session');
 
 	public function index() {
-        $items = $this->paginate();
-        if ($this->request->is('requested')) {
-            return $items;
-        }
-        $this->set('items', $items);
-    }
+	    $items = $this->paginate();
+	    if ($this->request->is('requested')) {
+	        return $items;
+	    }
+	    $this->set('items', $items);
+	}
 
-/**
- * admin_index method
- *
- * @return void
- */
 	public function admin_index() {
 		$this->Slider->recursive = 0;
 		$this->set('sliders', $this->Paginator->paginate());
 	}
 
-/**
- * admin_view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	public function admin_reorder() {
+		if ($this->request->is('post')) {
+			$this->Slider->saveMany($this->request->data);
+			exit();
+		}
+		$this->set('sliders', $this->Slider->find('all'));
+	}
+
 	public function admin_view($id = null) {
 		if (!$this->Slider->exists($id)) {
 			throw new NotFoundException(__('Invalid slider'));
@@ -49,40 +34,28 @@ class SlidersController extends AppController {
 		$this->set('slider', $this->Slider->find('first', $options));
 	}
 
-/**
- * admin_add method
- *
- * @return void
- */
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Slider->create();
 			if ($this->Slider->save($this->request->data)) {
-				$this->Session->setFlash(__('The slider has been saved.'));
+				$this->Session->setFlash(__('The slider has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The slider could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The slider could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
 	}
 
-/**
- * admin_edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
 	public function admin_edit($id = null) {
 		if (!$this->Slider->exists($id)) {
 			throw new NotFoundException(__('Invalid slider'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Slider->save($this->request->data)) {
-				$this->Session->setFlash(__('The slider has been saved.'));
+				$this->Session->setFlash(__('The slider has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The slider could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The slider could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		} else {
 			$options = array('conditions' => array('Slider.' . $this->Slider->primaryKey => $id));
@@ -90,23 +63,16 @@ class SlidersController extends AppController {
 		}
 	}
 
-/**
- * admin_delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
 	public function admin_delete($id = null) {
 		$this->Slider->id = $id;
 		if (!$this->Slider->exists()) {
 			throw new NotFoundException(__('Invalid slider'));
 		}
-		$this->request->allowMethod('post', 'delete');
+		$this->request->onlyAllow('post', 'delete');
 		if ($this->Slider->delete()) {
-			$this->Session->setFlash(__('The slider has been deleted.'));
+			$this->Session->setFlash(__('The slider has been deleted.'), 'default', array('class' => 'alert alert-success'));
 		} else {
-			$this->Session->setFlash(__('The slider could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The slider could not be deleted. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
