@@ -1,6 +1,6 @@
 <?php
   $sliders = $this->requestAction(
-    'sliders/index/sort:created/direction:asc/'
+    'sliders/index/sort:ord/direction:asc/'
   );
 ?>
 <div class="region region-header">
