@@ -16,27 +16,23 @@
                                     </header>
 
                                     <div class="content">
-                                        <div class="field field-name-field-map field-type-getlocations-fields field-label-hidden">
-                                            <div class="field-items">
-                                                <div class="field-item even">
-                                                    <div class="location vcard">
-                                                        <div class="adr">
-                                                        </div>
-                                                    </div>
-                                                    <div class="getlocations_map_wrapper_inner">
-                                                        <div id="getlocations_map_wrapper_key_1"  style="width: 100%; height: 300px" >
-                                                            <div class="getlocations_map_canvas" id="getlocations_map_canvas_key_1" style="width: 100%; height: 100%" >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <script type="text/javascript">
-                                                    <!--//--><![CDATA[//><!--
-                                                    Drupal.getlocations_data["key_1"] = {"datanum":1,"latlons":[["50.091000","14.438300","2","1000 5th Ave, New York, NY 10028, USA","a_to_z red A","nid","",""]],"minmaxes":""};
-                                                    //--><!]]>
-                                                    </script>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <script src="https://maps.googleapis.com/maps/api/js"></script>
+                                        <script>
+                                          function initialize() {
+                                            var mapCanvas = document.getElementById('map-canvas');
+                                            var mapOptions = {
+                                              center: new google.maps.LatLng(44.5403, -78.5463),
+                                              zoom: 8,
+                                              mapTypeId: google.maps.MapTypeId.ROADMAP
+                                            }
+                                            var map = new google.maps.Map(mapCanvas, mapOptions)
+                                          }
+                                          google.maps.event.addDomListener(window, 'load', initialize);
+                                        </script>
+                                        <div id="map-canvas" style="height:300px"></div>
+                                        <script>
+                                            initialize();
+                                        </script>
                                     </div><!-- /.content -->
 
                                     <footer>

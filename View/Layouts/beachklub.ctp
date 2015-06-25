@@ -1,8 +1,9 @@
-<html lang="cs" dir="ltr" class="no-js js">
-<!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8 ]><html lang="cs_CZ" dir="ltr"  class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="cs_CZ" dir="ltr"  class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="cs_CZ" dir="ltr"  class="no-js"><!--<![endif]-->
 
 <head>
-
     <meta charset="utf-8">
     <link rel="shortcut icon" href="http://beachbar.vpslist.cz/sites/all/themes/theme806/favicon.ico" type="image/vnd.microsoft.icon">
     <meta name="Generator" content="Drupal 7 (http://drupal.org)">
@@ -19,7 +20,6 @@
     <!--[if lte IE 8]>
 	<style type="text/css">
     	.poll .bar, .poll .bar .foreground { behavior:url(/sites/all/themes/theme806/js/PIE.php); zoom:1}
-
 	</style>
 <![endif]-->
 
@@ -77,7 +77,6 @@
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/themes/theme806/js/theme806.core.js?nq22ob"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/themes/theme806/js/jquery.loader.js?nq22ob"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/themes/theme806/js/jquery.debouncedresize.js?nq22ob"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAahvkN1EoX_n4-X0S9C2Z2Q564I1vB-5c&amp;sensor=false&amp;language=cs&amp;libraries=places"></script>
     <script type="text/javascript">
 
         <!--//--><![CDATA[//><!--
@@ -254,11 +253,9 @@
         });
         //--><!]]>
     </script>
-
-    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
 </head>
 
-<body id="body" class="html front not-logged-in no-sidebars page-node i18n-cs with-navigation with-subnav">
+<body id="body" class="html front no-sidebars page-node i18n-cs with-navigation with-subnav">
 
     <div id="page-wrapper">
         <div id="page">
@@ -283,31 +280,13 @@
                 <div class="container-24">
                     <div class="grid-24">
                         <div id="main" class="clearfix">
-                            <aside id="sidebar-second-grid-8" class="column column_right prefix-1 grid-8 omega" role="complementary">
-                                <div class="section">
-                                    <div class="region region-sidebar-second-grid-4">
-                                        <div id="block-views-front-carousel-block" class="block block-views vertical-carousel block-odd">
-                                            <div class="content">
-                                                <div class="view view-front-carousel view-id-front_carousel view-display-id-block view-dom-id-ea58816596ba1c5cb393dfeab559f430">
-                                                    <div class="view-header">
-                                                        <div class="header-1">novinky</div>
-                                                    </div>
-                                                    <?php echo $this->Element('sidebar'); ?>
-                                                    <div class="view-footer">
-                                                        <div class="footer-1">
-                                                            <div class="button">
-                                                                <a href="/odber">objednat novinky</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- /.content -->
-                                        </div>
-                                        <!-- /.block -->
-                                    </div>
-                                </div>
-                            </aside>
+                            <?php
+                                // TODO vymyslet system na to, aby si page mohla rict, jaky chce sidebar
+                                // $this->fetch('sidebar') ???
+                                if ($this->request->here == '/') {
+                                    echo $this->Element('sidebar');
+                                }
+                            ?>
                             <?php echo $this->fetch('content'); ?>
                         </div>
                         <!-- /#main -->

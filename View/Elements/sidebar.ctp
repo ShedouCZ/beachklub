@@ -1,42 +1,25 @@
-<?php
-  $items = $this->requestAction(
-    'news/index/sort:created/direction:asc/limit:5'
-  );
-?>
-<div class="view-content">
-    <div class=" jcarousel-skin-default">
-        <div class="jcarousel-container jcarousel-container-vertical" style="position: relative; display: block;">
-            <div class="jcarousel-clip jcarousel-clip-vertical" style="position: relative;">
-                <ul class="jcarousel jcarousel-view--front-carousel--block jcarousel-dom-1 jcarousel-skin-default">
-                    <?php foreach ($items as $item): ?>
-                        <li class="jcarousel-item-1 odd" style="display: none;">
-                            <div class="views-field views-field-created img-left news-date">
-                                  <span class="field-content">
-                                      <?php
-                                        $parts = explode ('-', $item['News']['date']);
-                                        echo $parts['2'];
-                                      ?>
-                                  </span>
+<aside id="sidebar-second-grid-8" class="column column_right prefix-1 grid-8 omega" role="complementary">
+    <div class="section">
+        <div class="region region-sidebar-second-grid-4">
+            <div id="block-views-front-carousel-block" class="block block-views vertical-carousel block-odd">
+                <div class="content">
+                    <div class="view view-front-carousel view-id-front_carousel view-display-id-block view-dom-id-ea58816596ba1c5cb393dfeab559f430">
+                        <div class="view-header">
+                            <div class="header-1">novinky</div>
+                        </div>
+                        <?php echo $this->Element('last_news'); ?>
+                        <div class="view-footer">
+                            <div class="footer-1">
+                                <div class="button">
+                                    <a href="/odber">objednat novinky</a>
+                                </div>
                             </div>
-                            <div class="views-field views-field-nothing extra">
-                                <span class="field-content">
-                                    <div class="title-2">
-                                        <?php
-                                            $title = $item['News']['title'];
-                                            $id    = $item['News']['id'];
-                                            $url   = '/items/view'.$id;
-                                            echo $this->Html->link($title, $url);
-                                        ?>
-                                    </div>
-                                    <div><?php echo $item['News']['desc']; ?></div>
-                                 </span>
-                            </div>
-                        </li>
-                    <?php endforeach; ?>
-                  </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.content -->
             </div>
-            <a href="javascript:void(0)" class="jcarousel-prev jcarousel-prev-vertical"></a>
-            <a href="javascript:void(0)" class="jcarousel-next jcarousel-next-vertical"></a>
+            <!-- /.block -->
         </div>
     </div>
-</div>
+</aside>
