@@ -77,7 +77,9 @@
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/themes/theme806/js/theme806.core.js?nq22ob"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/themes/theme806/js/jquery.loader.js?nq22ob"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/themes/theme806/js/jquery.debouncedresize.js?nq22ob"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAahvkN1EoX_n4-X0S9C2Z2Q564I1vB-5c&amp;sensor=false&amp;language=cs&amp;libraries=places"></script>
     <script type="text/javascript">
+
         <!--//--><![CDATA[//><!--
         jQuery.extend(Drupal.settings, {
             "basePath": "\/",
