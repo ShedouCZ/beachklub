@@ -8,7 +8,7 @@
 
 <div class="col-md-12">
 	<div class="col-md-8 pull-right" style="margin-top:120px; text-align: right;">
-		<?php echo $this->Html->image('slides/slide_1.jpg', array("style"=>"width:630px")); ?>
+		<?php echo $this->Html->image('vystava2.jpg', array("style"=>"width:630px")); ?>
 	</div>
 	<div class="page-header">
 		<h1><?php echo __('Sign in'); ?></h1>

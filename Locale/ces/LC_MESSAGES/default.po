@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"PO-Revision-Date: 2015-06-24 11:49+0100\n"
+"PO-Revision-Date: 2015-06-25 08:12+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: EMAIL@ADDRESS\n"
 "MIME-Version: 1.0\n"
@@ -22,11 +22,11 @@ msgstr ""
 #: /Headlines/admin_add.ctp:7 /Headlines/admin_edit.ctp:8
 #: /Headlines/admin_view.ctp:20
 msgid "List Headlines"
-msgstr ""
+msgstr "Seznam aktualit"
 
 #: /Headlines/admin_add.ctp:9
 msgid "Admin Add Headline"
-msgstr ""
+msgstr "Přidat aktualitu jako admin"
 
 #: /Headlines/admin_add.ctp:24 /Headlines/admin_edit.ctp:28
 #: /Headlines/admin_view.ctp:40 /News/admin_add.ctp:24
@@ -39,7 +39,7 @@ msgstr "Název"
 #: /Headlines/admin_add.ctp:27 /Headlines/admin_edit.ctp:31
 #: /Posts/admin_add.ctp:27 /Posts/admin_edit.ctp:31
 msgid "User Id"
-msgstr ""
+msgstr "Id uživatele"
 
 #: /Headlines/admin_add.ctp:30 /Headlines/admin_edit.ctp:34
 #: /Headlines/admin_view.ctp:59 /News/admin_add.ctp:30
@@ -56,12 +56,12 @@ msgstr "Popisek"
 #: /Tiles/admin_edit.ctp:41 /Users/add.ctp:9 /Users/admin_add.ctp:34
 #: /Users/admin_edit.ctp:38 /Users/login.ctp:26
 msgid "Submit"
-msgstr ""
+msgstr "Odeslat"
 
 #: /Headlines/admin_edit.ctp:7 /News/admin_edit.ctp:7 /Posts/admin_edit.ctp:7
 #: /Sliders/admin_edit.ctp:7 /Tiles/admin_edit.ctp:7 /Users/admin_edit.ctp:7
 msgid "Delete"
-msgstr ""
+msgstr "Smazat"
 
 #: /Headlines/admin_edit.ctp:7 /Headlines/admin_index.ctp:40
 #: /Headlines/admin_view.ctp:19 /News/admin_edit.ctp:7
@@ -72,11 +72,11 @@ msgstr ""
 #: /Tiles/admin_index.ctp:39 /Tiles/admin_view.ctp:19 /Users/admin_edit.ctp:7
 #: /Users/admin_index.ctp:40 /Users/admin_view.ctp:19
 msgid "Are you sure you want to delete # %s?"
-msgstr ""
+msgstr "Jste si jist že chcete smazat # %?"
 
 #: /Headlines/admin_edit.ctp:10
 msgid "Admin Edit Headline"
-msgstr ""
+msgstr "Upravit aktualitu jako admin"
 
 #: /Headlines/admin_edit.ctp:25 /Headlines/admin_view.ctp:34
 #: /News/admin_edit.ctp:25 /News/admin_view.ctp:32 /Posts/admin_edit.ctp:25
@@ -88,11 +88,11 @@ msgstr ""
 
 #: /Headlines/admin_index.ctp:6 /Headlines/admin_view.ctp:21
 msgid "New Headline"
-msgstr ""
+msgstr "Nová aktualita"
 
 #: /Headlines/admin_index.ctp:8
 msgid "Headlines"
-msgstr ""
+msgstr "Aktuality"
 
 #: /Headlines/admin_index.ctp:48 /News/admin_index.ctp:44
 #: /Posts/admin_index.ctp:50 /Sliders/admin_index.ctp:43
@@ -101,78 +101,80 @@ msgid ""
 "Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
 "starting on record {:start}, ending on {:end}"
 msgstr ""
+"Stránka {:page} z {:pages}, zobrazuji {:current} záznamů z {:count}, "
+"začínám záznamem {:start}, končím záznamem {:end}"
 
 #: /Headlines/admin_view.ctp:5
 msgid "Headline"
-msgstr ""
+msgstr "Aktualita"
 
 #: /Headlines/admin_view.ctp:18
 msgid "Edit Headline"
-msgstr ""
+msgstr "Upravit aktualitu"
 
 #: /Headlines/admin_view.ctp:19
 msgid "Delete Headline"
-msgstr ""
+msgstr "Smazat aktualitu"
 
 #: /Headlines/admin_view.ctp:22 /Posts/admin_view.ctp:22
 #: /Users/admin_add.ctp:7 /Users/admin_edit.ctp:8 /Users/admin_view.ctp:20
 msgid "List Users"
-msgstr ""
+msgstr "Seznam uživatelů"
 
 #: /Headlines/admin_view.ctp:23 /Posts/admin_view.ctp:23
 #: /Users/admin_index.ctp:6 /Users/admin_view.ctp:21
 msgid "New User"
-msgstr ""
+msgstr "Nový uživatel"
 
 #: /Headlines/admin_view.ctp:46 /Posts/admin_view.ctp:46
 #: /Users/admin_view.ctp:5
 msgid "User"
-msgstr ""
+msgstr "Uživatel"
 
 #: /Headlines/admin_view.ctp:53 /Posts/admin_view.ctp:53
 #: /Tiles/admin_view.ctp:50 /Users/admin_view.ctp:56
 msgid "Created"
-msgstr ""
+msgstr "Vytvořeno"
 
 #: /News/admin_add.ctp:7 /News/admin_edit.ctp:8 /News/admin_view.ctp:20
 msgid "List News"
-msgstr ""
+msgstr "Seznam novinek"
 
 #: /News/admin_add.ctp:9
 msgid "Admin Add News"
-msgstr ""
+msgstr "Přidat novinku jako admin"
 
 #: /News/admin_add.ctp:27 /News/admin_edit.ctp:31 /News/admin_view.ctp:44
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: /News/admin_edit.ctp:10
 msgid "Admin Edit News"
-msgstr ""
+msgstr "Upravit novinky jako admin"
 
 #: /News/admin_index.ctp:6 /News/admin_view.ctp:21
 msgid "New News"
-msgstr ""
+msgstr "Nová novinka"
 
 #: /News/admin_index.ctp:8 /News/admin_view.ctp:5
 msgid "News"
-msgstr ""
+msgstr "Novinky"
 
 #: /News/admin_view.ctp:18
 msgid "Edit News"
-msgstr ""
+msgstr "Upravit novinky"
 
 #: /News/admin_view.ctp:19
 msgid "Delete News"
-msgstr ""
+msgstr "Smazat novinky"
 
 #: /Posts/admin_add.ctp:7 /Posts/admin_edit.ctp:8 /Posts/admin_view.ctp:20
 msgid "List Posts"
-msgstr ""
+msgstr "Seznam příspěvků"
 
 #: /Posts/admin_add.ctp:9
 msgid "Admin Add Post"
-msgstr ""
+msgstr "Přidat příspěvek jako admin"
 
 #: /Posts/admin_add.ctp:33 /Posts/admin_edit.ctp:37 /Posts/admin_view.ctp:65
 msgid "Perex"
@@ -180,131 +182,131 @@ msgstr ""
 
 #: /Posts/admin_edit.ctp:10
 msgid "Admin Edit Post"
-msgstr ""
+msgstr "Upravit příspěvek jako admin"
 
 #: /Posts/admin_index.ctp:6 /Posts/admin_view.ctp:21
 msgid "New Post"
-msgstr ""
+msgstr "Noví příspěvek"
 
 #: /Posts/admin_index.ctp:8
 msgid "Posts"
-msgstr ""
+msgstr "Příspěvky"
 
 #: /Posts/admin_view.ctp:5
 msgid "Post"
-msgstr ""
+msgstr "Příspěvek"
 
 #: /Posts/admin_view.ctp:18
 msgid "Edit Post"
-msgstr ""
+msgstr "Upravit příspěvek"
 
 #: /Posts/admin_view.ctp:19
 msgid "Delete Post"
-msgstr ""
+msgstr "Smazat příspěvek"
 
 #: /Sliders/admin_add.ctp:7 /Sliders/admin_edit.ctp:8
 #: /Sliders/admin_view.ctp:20
 msgid "List Sliders"
-msgstr ""
+msgstr "Seznam obrázků"
 
 #: /Sliders/admin_add.ctp:9
 msgid "Admin Add Slider"
-msgstr ""
+msgstr "Přidat obrázek jako admin"
 
 #: /Sliders/admin_add.ctp:24 /Sliders/admin_edit.ctp:28
 #: /Sliders/admin_view.ctp:38
 msgid "Name"
-msgstr ""
+msgstr "Jméno"
 
 #: /Sliders/admin_add.ctp:27 /Sliders/admin_edit.ctp:31
 #: /Sliders/admin_view.ctp:44 /Tiles/admin_add.ctp:30
 #: /Tiles/admin_edit.ctp:34 /Tiles/admin_view.ctp:56
 msgid "Ord"
-msgstr ""
+msgstr "Pořadí"
 
 #: /Sliders/admin_add.ctp:30 /Sliders/admin_edit.ctp:34
 #: /Sliders/admin_view.ctp:50 /Tiles/admin_add.ctp:33
 #: /Tiles/admin_edit.ctp:37 /Tiles/admin_view.ctp:62
 msgid "Url"
-msgstr ""
+msgstr "Cesta"
 
 #: /Sliders/admin_edit.ctp:10
 msgid "Admin Edit Slider"
-msgstr ""
+msgstr "Upravit obrázek jako admin"
 
 #: /Sliders/admin_index.ctp:6 /Sliders/admin_view.ctp:21
 msgid "New Slider"
-msgstr ""
+msgstr "Nový obrázek"
 
 #: /Sliders/admin_index.ctp:7 /Tiles/admin_index.ctp:7
 msgid "Reorder"
-msgstr ""
+msgstr "Změnit pořadí"
 
 #: /Sliders/admin_index.ctp:9
 msgid "Sliders"
-msgstr ""
+msgstr "Obrázky"
 
 #: /Sliders/admin_view.ctp:5
 msgid "Slider"
-msgstr ""
+msgstr "Obrázek"
 
 #: /Sliders/admin_view.ctp:18
 msgid "Edit Slider"
-msgstr ""
+msgstr "Upravit obrázek"
 
 #: /Sliders/admin_view.ctp:19
 msgid "Delete Slider"
-msgstr ""
+msgstr "Smazat obrázek"
 
 #: /Tiles/admin_add.ctp:7 /Tiles/admin_edit.ctp:8 /Tiles/admin_view.ctp:20
 msgid "List Tiles"
-msgstr ""
+msgstr "Seznam dlaždic"
 
 #: /Tiles/admin_add.ctp:9
 msgid "Admin Add Tile"
-msgstr ""
+msgstr "Přidat dlaždici jako admin"
 
 #: /Tiles/admin_edit.ctp:10
 msgid "Admin Edit Tile"
-msgstr ""
+msgstr "Upravit dlaždici jako admin"
 
 #: /Tiles/admin_index.ctp:6 /Tiles/admin_view.ctp:21
 msgid "New Tile"
-msgstr ""
+msgstr "Nová dlaždice"
 
 #: /Tiles/admin_index.ctp:9
 msgid "Tiles"
-msgstr ""
+msgstr "Dlaždice"
 
 #: /Tiles/admin_view.ctp:5
 msgid "Tile"
-msgstr ""
+msgstr "Dlaždice"
 
 #: /Tiles/admin_view.ctp:18
 msgid "Edit Tile"
-msgstr ""
+msgstr "Upravit dlaždici"
 
 #: /Tiles/admin_view.ctp:19
 msgid "Delete Tile"
-msgstr ""
+msgstr "Smazat dlaždici"
 
 #: /Users/add.ctp:4
 msgid "Add User"
-msgstr ""
+msgstr "Přidat uživatele"
 
 #: /Users/admin_add.ctp:9
 msgid "Admin Add User"
-msgstr ""
+msgstr "Přidat uživatele jako admin"
 
 #: /Users/admin_add.ctp:24 /Users/admin_edit.ctp:28 /Users/admin_view.ctp:38
 #: /Users/login.ctp:24
 msgid "Username"
-msgstr ""
+msgstr "Uživatelské jméno"
 
 #: /Users/admin_add.ctp:27 /Users/admin_edit.ctp:31 /Users/admin_view.ctp:44
 #: /Users/login.ctp:25
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: /Users/admin_add.ctp:30 /Users/admin_edit.ctp:34 /Users/admin_view.ctp:50
 msgid "Mail"
@@ -312,28 +314,28 @@ msgstr ""
 
 #: /Users/admin_edit.ctp:10
 msgid "Admin Edit User"
-msgstr ""
+msgstr "Upravit uživatele jako admin"
 
 #: /Users/admin_index.ctp:8
 msgid "Users"
-msgstr ""
+msgstr "Uživatelé"
 
 #: /Users/admin_view.ctp:18
 msgid "Edit User"
-msgstr ""
+msgstr "Upravit uživatele"
 
 #: /Users/admin_view.ctp:19
 msgid "Delete User"
-msgstr ""
+msgstr "Smazat uživatele"
 
 #: /Users/admin_view.ctp:62
 msgid "Modified"
-msgstr ""
+msgstr "Upravený"
 
 #: /Users/login.ctp:14
 msgid "Sign in"
-msgstr ""
+msgstr "Přihlásit se"
 
 #: /Users/login.ctp:21
 msgid "Fill in your credentials please"
-msgstr ""
+msgstr "Prosím vyplňte vaše přihlašovací údaje"

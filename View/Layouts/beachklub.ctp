@@ -259,27 +259,19 @@
 <body id="body" class="html front not-logged-in no-sidebars page-node i18n-cs with-navigation with-subnav">
 
     <div id="page-wrapper">
-
         <div id="page">
 
             <header id="header" role="banner" class="clearfix">
-
                 <div class="container-24">
                     <div class="grid-24">
-
                         <?php echo $this->Element('header'); ?>
-                            <?php echo $this->Session->flash(); ?>
-
-                                <div class="section-3">
-
-                                    <?php echo $this->Element('navigation'); ?>
-
-                                </div>
-
-                                <div class="section-2 clearfix">
-                                    <?php echo $this->Element('slider'); ?>
-                                </div>
-
+                        <?php echo $this->Session->flash(); ?>
+                        <div class="section-3">
+                            <?php echo $this->Element('navigation'); ?>
+                        </div>
+                        <div class="section-2 clearfix">
+                            <?php echo $this->Element('slider'); ?>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -299,11 +291,13 @@
                                                         <div class="header-1">novinky</div>
                                                     </div>
                                                     <?php echo $this->Element('sidebar'); ?>
-                                                        <div class="view-footer">
-                                                            <div class="footer-1">
-                                                                <div class="button"><a href="/odber">objednat novinky</a></div>
+                                                    <div class="view-footer">
+                                                        <div class="footer-1">
+                                                            <div class="button">
+                                                                <a href="/odber">objednat novinky</a>
                                                             </div>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- /.content -->

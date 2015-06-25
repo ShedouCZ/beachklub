@@ -22,6 +22,7 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	Router::connect('/home', array('controller' => 'pages', 'action' => 'display', 'beachklub'));
+	Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
 
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
