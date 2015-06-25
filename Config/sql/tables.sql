@@ -90,5 +90,13 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `subject` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 -- 2015-06-24 07:45:29
