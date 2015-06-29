@@ -174,32 +174,6 @@
         "homepage": "http://github.com/ceeram/clear_cache"
     },
     {
-        "name": "ptica/BootstrapCake",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ptica/BootstrapCake.git",
-            "reference": "2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8",
-            "reference": "2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8",
-            "shasum": ""
-        },
-        "require": {
-            "cakephp/cakephp": "2.*",
-            "composer/installers": "~1.0"
-        },
-        "time": "2015-06-03 17:15:40",
-        "type": "cakephp-plugin",
-        "installation-source": "source",
-        "support": {
-            "source": "https://github.com/ptica/BootstrapCake/tree/master"
-        }
-    },
-    {
         "name": "codaxis/cakephp-bootstrap3-helpers",
         "version": "1.1",
         "version_normalized": "1.1.0.0",
@@ -243,45 +217,6 @@
         ]
     },
     {
-        "name": "webtechnick/configuration",
-        "version": "dev-bootstrap_theme",
-        "version_normalized": "dev-bootstrap_theme",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ptica/CakePHP-Configuration-Plugin.git",
-            "reference": "8dbcf470545a7c7acc36bc930d6110729f226213"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ptica/CakePHP-Configuration-Plugin/zipball/8dbcf470545a7c7acc36bc930d6110729f226213",
-            "reference": "8dbcf470545a7c7acc36bc930d6110729f226213",
-            "shasum": ""
-        },
-        "require": {
-            "composer/installers": "*",
-            "php": ">=5.3.0"
-        },
-        "time": "2015-01-30 10:29:53",
-        "type": "cakephp-plugin",
-        "installation-source": "source",
-        "authors": [
-            {
-                "name": "Nick Baker",
-                "email": "nick@webtechnick.com"
-            }
-        ],
-        "description": "The Configuration plugin is an extremely useful way to store site-wide configuration.",
-        "homepage": "http://www.webtechnick.com/blogs/view/223/CakePHP_Configuration_Plugin",
-        "keywords": [
-            "cakephp",
-            "configuration"
-        ],
-        "support": {
-            "issues": "https://github.com/webtechnick/CakePHP-Configuration-Plugin/issues",
-            "source": "https://github.com/webtechnick/CakePHP-Configuration-Plugin"
-        }
-    },
-    {
         "name": "hugodias/cakegallery",
         "version": "dev-locale",
         "version_normalized": "dev-locale",
@@ -322,6 +257,71 @@
         "support": {
             "issues": "https://github.com/hugodias/cakegallery/issues",
             "source": "https://github.com/hugodias/cakegallery"
+        }
+    },
+    {
+        "name": "ptica/BootstrapCake",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ptica/BootstrapCake.git",
+            "reference": "2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8",
+            "reference": "2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8",
+            "shasum": ""
+        },
+        "require": {
+            "cakephp/cakephp": "2.*",
+            "composer/installers": "~1.0"
+        },
+        "time": "2015-06-03 17:15:40",
+        "type": "cakephp-plugin",
+        "installation-source": "source",
+        "support": {
+            "source": "https://github.com/ptica/BootstrapCake/tree/master"
+        }
+    },
+    {
+        "name": "webtechnick/configuration",
+        "version": "dev-bootstrap_theme",
+        "version_normalized": "dev-bootstrap_theme",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ptica/CakePHP-Configuration-Plugin.git",
+            "reference": "8dbcf470545a7c7acc36bc930d6110729f226213"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ptica/CakePHP-Configuration-Plugin/zipball/8dbcf470545a7c7acc36bc930d6110729f226213",
+            "reference": "8dbcf470545a7c7acc36bc930d6110729f226213",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2015-01-30 10:29:53",
+        "type": "cakephp-plugin",
+        "installation-source": "source",
+        "authors": [
+            {
+                "name": "Nick Baker",
+                "email": "nick@webtechnick.com"
+            }
+        ],
+        "description": "The Configuration plugin is an extremely useful way to store site-wide configuration.",
+        "homepage": "http://www.webtechnick.com/blogs/view/223/CakePHP_Configuration_Plugin",
+        "keywords": [
+            "cakephp",
+            "configuration"
+        ],
+        "support": {
+            "issues": "https://github.com/webtechnick/CakePHP-Configuration-Plugin/issues",
+            "source": "https://github.com/webtechnick/CakePHP-Configuration-Plugin"
         }
     }
 ]

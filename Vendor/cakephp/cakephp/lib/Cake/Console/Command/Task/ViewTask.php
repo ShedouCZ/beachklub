@@ -231,6 +231,7 @@ class ViewTask extends BakeTask {
 				foreach ($regularActions as $action) {
 					$adminActions[] = $admin . $action;
 				}
+				$adminActions = $this->_methodsToBake();
 				$this->bakeActions($adminActions, $vars);
 			}
 			$this->hr();

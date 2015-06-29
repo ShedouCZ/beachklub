@@ -4,6 +4,7 @@
 		'Bleskovky'  => '/admin/headlines',
 		'Aktuality'  => '/admin/news',
 		'Články'  => '/admin/posts',
+		'Hlavní obrázky'  => '/admin/sliders',
 	);
 ?>
 <div class="actions">
