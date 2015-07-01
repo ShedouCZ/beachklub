@@ -5,6 +5,7 @@
 		'Aktuality'  => '/admin/news',
 		'Články'  => '/admin/posts',
 		'Hlavní obrázky'  => '/admin/sliders',
+		'Zprávy'  => '/admin/messages',
 	);
 ?>
 <div class="actions">

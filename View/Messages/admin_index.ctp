@@ -19,7 +19,7 @@
 			<table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th><?php echo $this->Paginator->sort('title'); ?></th>
+						<th><?php echo $this->Paginator->sort('title', 'Jméno' ); ?></th>
 						<th><?php echo $this->Paginator->sort('email'); ?></th>
 						<th><?php echo $this->Paginator->sort('subject'); ?></th>
 						<th><?php echo $this->Paginator->sort('desc'); ?></th>
@@ -29,7 +29,7 @@
 				<tbody>
 				<?php foreach ($messages as $message) { ?>
 					<tr>
-						<td><?php echo h($message['Message']['title']); ?></td>
+						<td><?php echo h($message['Message']['name']); ?></td>
 						<td><?php echo h($message['Message']['email']); ?></td>
 						<td><?php echo h($message['Message']['subject']); ?></td>
 						<td><?php echo h($message['Message']['desc']); ?></td>
