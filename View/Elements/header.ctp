@@ -13,9 +13,11 @@
 
                 <div class="content">
                     <div class="follow-links clearfix site">
-                        <div class="follow-link-wrapper follow-link-wrapper-facebook"><a href="https://www.facebook.com/beachklubladvi" class="follow-link follow-link-facebook follow-link-site" title="Follow beachklubladvi.cz on Facebook">Facebook</a>
+                        <div class="follow-link-wrapper follow-link-wrapper-facebook">
+                            <a href="https://www.facebook.com/beachklubladvi" class="icon-social" title="Follow beachklubladvi.cz on Facebook"><img src="/img/icons/facebook.png"></a>
                         </div>
-                        <div class="follow-link-wrapper follow-link-wrapper-youtube"><a href="https://www.youtube.com/channel/UCuCmgfhjQLjTiW5RmZdJwbQ" class="follow-link follow-link-youtube follow-link-site" title="Follow beachklubladvi.cz on YouTube">YouTube</a>
+                        <div class="follow-link-wrapper follow-link-wrapper-youtube">
+                            <a href="https://www.youtube.com/channel/UCuCmgfhjQLjTiW5RmZdJwbQ" class="icon-social" title="Follow beachklubladvi.cz on YouTube"> <img src="/img/icons/youtube.png"></a>
                         </div>
                     </div>
                 </div>
