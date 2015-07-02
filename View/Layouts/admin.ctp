@@ -66,6 +66,16 @@
 	<?php } ?>
 </head>
 
+<header id="header" role="banner" class="clearfix">
+	<div class="container-24">
+		<div class="grid-24">
+			<div class="section-3">
+				<?php echo $this->Element('navigation'); ?>
+			</div>
+		</div>
+	</div>
+</header>
+
 <?php
 	echo $this->Html->tag('body', null, array(
 		'data-controller'	=> $this->request->params['controller'],
