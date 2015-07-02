@@ -1,0 +1,70 @@
+#superfish-1 {
+  background: none;
+  float: left;
+  position: relative;
+  width: auto;
+}
+ul.menu {
+  border: none;
+  list-style: none;
+  text-align: left;
+}
+.sf-menu {
+  line-height: 1.0;
+  z-index: 497;
+}
+.sf-menu, .sf-menu * {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#superfish-1 li {
+  background: none;
+  border: 0;
+  overflow: inherit;
+  padding: 0;
+  text-align: center;
+}
+ul.menu li {
+  margin-left: 0;
+}
+ul.menu li {
+  margin: 0 0 0 0.5em;
+}
+.sf-menu li {
+  float: left;
+  position: relative;
+  z-index: 498;
+}
+.sf-menu, .sf-menu * {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#superfish-1 > li > a:hover, #superfish-1 > li.active-trail > a, #superfish-1 > li.sfHover > a {
+  color: #ED4E00;
+}
+#superfish-1>li:first-child>a {
+  background: none;
+}
+#superfish-1>li>a {
+  width: 184px;
+  background: url(../images/menu-separator.png) 0 50% no-repeat;
+}
+#superfish-1 a {
+  padding: 14px 0;
+  padding-top: 14px;
+}
+#superfish-1 a {
+  border: 0;
+  color: #585858;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 28px 0;
+  padding-top: 29px;
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  text-transform: uppercase;
+}
