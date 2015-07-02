@@ -1,0 +1,30 @@
+.vertical-carousel .jcarousel-skin-default .jcarousel-container-vertical {
+	height: 130px;
+	width: auto;
+	padding: 0;
+}
+.vertical-carousel .jcarousel-skin-default .jcarousel-clip-vertical {
+	height: 130px;
+}
+
+#superfish-1 a {
+	padding: 14px 0;
+	padding-top: 14px;
+}
+
+#header {
+	padding-top: 25px;
+}
+
+#main-wrapper {
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+#content h1.title, h2, h3 {
+	line-height: 68px;
+	font-size: 48px;
+}
+
+section.block .content li a.active-trail.active {
+	color: #BC2800;
+}

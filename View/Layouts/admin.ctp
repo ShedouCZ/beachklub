@@ -39,6 +39,11 @@
 		<script src="<?php echo "/js/site-admin.js?$version"; ?>" type="text/javascript"></script>
 	<?php } ?>
 
+	<style type="text/css" media="all">
+		@import url(//fonts.googleapis.com/css?family=BenchNine:700&subset=latin,latin-ext);
+		@import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css?nq22ob");
+	</style>
+
 	<!--[if lt IE 8]>
 	<div style=' clear: both; text-align:center; position: relative;'>
 		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
