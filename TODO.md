@@ -3,6 +3,7 @@ vojta - .5h
 1.7. vojta - 3h
 
 
+[ ] admin - pridat horni menu - element?
 [ ] home - cze/eng
 [ ] home - vice novinek a perexy clanku
 [ ] home - searchbox
