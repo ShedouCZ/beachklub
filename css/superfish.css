@@ -226,3 +226,13 @@ li.sfHover > a > .sf-sub-indicator {
   -webkit-border-top-left-radius: 0;
   -webkit-border-bottom-right-radius: 0;
 }
+.section-3:after {
+  background: url(../images/menu-shadow.png) 50% 100% no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 950px;
+  height: 30px;
+  display: block;
+  content: '';
+}

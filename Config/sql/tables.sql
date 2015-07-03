@@ -5,19 +5,6 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-DROP TABLE IF EXISTS `headlines`;
-CREATE TABLE `headlines` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `user_id` int(10) unsigned DEFAULT NULL,
-  `created` datetime NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`user_id`),
-  CONSTRAINT `headlines_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -99,4 +86,30 @@ CREATE TABLE `messages` (
   `desc` text COLLATE utf8_czech_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+DROP TABLE IF EXISTS `coaches`;
+CREATE TABLE `coaches` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '99999999',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+DROP TABLE IF EXISTS `tournaments`;
+CREATE TABLE `tournaments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `datetime` datetime NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `perex` text COLLATE utf8_czech_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `tournaments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
 -- 2015-06-24 07:45:29

@@ -23,6 +23,9 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	Router::connect('/home', array('controller' => 'pages', 'action' => 'display', 'beachklub'));
 	Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
+	Router::connect('/novinky', array('controller' => 'pages', 'action' => 'display', 'news'));
+	Router::connect('/o_nás', array('controller' => 'pages', 'action' => 'display', 'about'));
+	Router::connect('/turnaje', array('controller' => 'pages', 'action' => 'display', 'tournaments'));
 
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
