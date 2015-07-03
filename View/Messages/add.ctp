@@ -58,7 +58,7 @@
                                     <div>
                                         <div class="form-item form-type-textfield form-item-name">
                                             <label for="edit-name">Vaše jméno <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>
-                                            <input type="text" id="edit-name" name="data[Message][name]" value="" size="60" maxlength="255" class="form-text required" />
+                                            <input type="text" id="edit-name" name="data[Message][title]" value="" size="60" maxlength="255" class="form-text required" />
                                         </div>
                                         <div class="form-item form-type-textfield form-item-mail">
                                             <label for="edit-mail">Vaše e-mailová adresa <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>
