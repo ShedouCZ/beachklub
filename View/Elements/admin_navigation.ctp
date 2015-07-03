@@ -1,11 +1,11 @@
 <?php
 	$links = array(
 		'Dlaždice'  => '/admin/tiles',
-		'Bleskovky'  => '/admin/headlines',
-		'Aktuality'  => '/admin/news',
+		'Novinky'  => '/admin/news',
 		'Články'  => '/admin/posts',
 		'Hlavní obrázky'  => '/admin/sliders',
 		'Zprávy'  => '/admin/messages',
+		'Trenéři'  => '/admin/coaches',
 	);
 ?>
 <div class="actions">
