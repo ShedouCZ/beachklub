@@ -23,7 +23,6 @@
 		App.session_locale = '<?php echo Configure::read('Config.locale'); ?>';
 	</script>
 
-	<link rel="stylesheet" href="<?php echo "/css/site.css?$version" ?>" type="text/css" media="screen">
 	<?php //echo $this->Html->css("print.css?$version", 'stylesheet', array('media' => 'print')); ?>
 	<script src="<?php echo "/js/site-pre.js?$version"; ?>" type="text/javascript"></script>
 

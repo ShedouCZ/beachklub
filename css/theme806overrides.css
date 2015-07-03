@@ -1,3 +1,7 @@
+.section-1 .col1 {
+	height: 253px;
+}
+
 .vertical-carousel .jcarousel-skin-default .jcarousel-container-vertical {
 	height: 130px;
 	width: auto;
@@ -26,7 +30,7 @@
 }
 
 #content h4 {
-	color: #fff
+	color: #fff;
 }
 
 section.block .content li a.active-trail.active {

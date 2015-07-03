@@ -157,12 +157,6 @@ module.exports = function(grunt) {
 			css: {
 				src: [
 					// datetimepicker and its dependecies on bootstrap
-					'css/overrides/eonasdan-datetimepicker-bs.css',
-					'dist/bs-custom.css',
-					'Vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
-					'Vendor/bootstrap/dist/css/bootstrap.css',
-					'css/bootstrap-validation.css',
-					'Vendor/font-awesome/css/font-awesome.css',
 					'css/*.css'
 				],
 				dest: 'webroot/css/site.css',
@@ -173,9 +167,17 @@ module.exports = function(grunt) {
 			},
 			css_admin: {
 				src: [
+					'css/overrides/eonasdan-datetimepicker-bs.css',
+					'dist/bs-custom.css',
+					'Vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
+					'Vendor/bootstrap/dist/css/bootstrap.css',
+					'css/bootstrap-validation.css',
+					'Vendor/font-awesome/css/font-awesome.css',
 					'Vendor/fullcalendar/dist/fullcalendar.css',
 					'Vendor/summernote/dist/summernote.css',
-					'css/admin/*.css'
+					'css/admin/*.css',
+					'css/superfish.css',
+					'css/theme806overrides.css'
 				],
 				dest: 'webroot/css/site-admin.css',
 				nonull: true,

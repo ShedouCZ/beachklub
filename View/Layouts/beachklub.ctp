@@ -1,3 +1,8 @@
+<?php
+	$version = Configure::read('css.version.string');
+	$language = Configure::read('Config.language');
+	$locale = Configure::read('Config.locale');
+?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html lang="cs_CZ" dir="ltr"  class="no-js ie8"><![endif]-->
 <!--[if IE 9 ]><html lang="cs_CZ" dir="ltr"  class="no-js ie9"><![endif]-->
@@ -24,6 +29,7 @@
 <![endif]-->
 
     <style type="text/css" media="all">
+        @import url(//fonts.googleapis.com/css?family=BenchNine:700&subset=latin,latin-ext);
         @import url("http://beachbar.vpslist.cz/modules/system/system.base.css?nq22ob");
         @import url("http://beachbar.vpslist.cz/modules/system/system.menus.css?nq22ob");
         @import url("http://beachbar.vpslist.cz/modules/system/system.messages.css?nq22ob");
@@ -51,11 +57,14 @@
         @import url("http://beachbar.vpslist.cz/modules/locale/locale.css?nq22ob");
         /*@import url("http://beachbar.vpslist.cz/sites/default/files/css/follow.css?nq22ob");*/
     </style>
+
+    <link rel="stylesheet" href="<?php echo "/css/site.css?$version" ?>" type="text/css" media="screen">
+
     <style type="text/css" media="screen">
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/boilerplate.css?nq22ob");
         /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/style.css?nq22ob");*/
-        @import url("/css/theme806.css");
-        @import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css?nq22ob");
+        /*@import url("/css/theme806.css");*/
+        /*@import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css?nq22ob");*/
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/maintenance-page.css?nq22ob");
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/skeleton.css?nq22ob");
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/overrides.css?nq22ob");
