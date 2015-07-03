@@ -31,7 +31,7 @@ class MessagesController extends AppController {
 			if ($this->Message->save($this->request->data)) {
 				$this->Session->setFlash(__('The message has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect('/');
-			} else {1
+			} else {
 				$this->Session->setFlash(__('The message could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
