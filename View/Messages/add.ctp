@@ -54,11 +54,11 @@
                             <h2 class="pane-title">NAPIŠTE NÁM</h2>
 
                             <div class="pane-content">
-                                <form class="user-info-from-cookie contact-form" action="/kontakty" method="post" id="contact-site-form" accept-charset="UTF-8">
+                                <?php echo $this->Form->create('Message', array('role'=>'form', 'class'=>'form-horizontal')); ?>
                                     <div>
                                         <div class="form-item form-type-textfield form-item-name">
                                             <label for="edit-name">Komu <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>
-                                            <?php echo $this->Form->input('message_recipient_id', array('class'=>'form-control', 'placeholder'=>__('Message Recipient Id')));?>
+                                            <?php echo $this->Form->input('message_recipient_id', array('label'=>false));?>
                                         </div>
                                         <div class="form-item form-type-textfield form-item-name">
                                             <label for="edit-name">Vaše jméno <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>

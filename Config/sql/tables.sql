@@ -77,19 +77,6 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-DROP TABLE IF EXISTS `messages`;
-CREATE TABLE `messages` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `subject` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  `message_recipient_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `message_recipient_id` (`message_recipient_id`),
-  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`message_recipient_id`) REFERENCES `message_recipients` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
 
 DROP TABLE IF EXISTS `message_recipients`;
 CREATE TABLE `message_recipients` (
@@ -103,6 +90,20 @@ INSERT INTO `message_recipients` (`id`, `email`) VALUES
 (2,	'marketing@beachklubladvi.cz'),
 (3,	'bar@beachklubladvi.cz'),
 (4,	'seftrener@beachklubladvi.cz');
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `subject` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `message_recipient_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `message_recipient_id` (`message_recipient_id`),
+  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`message_recipient_id`) REFERENCES `message_recipients` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
 
 DROP TABLE IF EXISTS `coaches`;
 CREATE TABLE `coaches` (

@@ -5,6 +5,20 @@ class MessagesController extends AppController {
 
 	public $components = array('Paginator', 'Session');
 
+	public function add() {
+		if ($this->request->is('post')) {
+			$this->Message->create();
+			if ($this->Message->save($this->request->data)) {
+				$this->Session->setFlash(__('The message has been saved.'), 'default', array('class' => 'alert alert-success'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The message could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
+			}
+		}
+		$messageRecipients = $this->Message->MessageRecipient->find('list');
+		$this->set(compact('messageRecipients'));
+	}
+
 
 	public function admin_index() {
 		$this->Message->recursive = 0;
@@ -20,7 +34,7 @@ class MessagesController extends AppController {
 		$this->set('message', $this->Message->find('first', $options));
 	}
 
-	public function add() {
+	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Message->create();
 			if ($this->Message->save($this->request->data)) {
@@ -30,6 +44,8 @@ class MessagesController extends AppController {
 				$this->Session->setFlash(__('The message could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
+		$messageRecipients = $this->Message->MessageRecipient->find('list');
+		$this->set(compact('messageRecipients'));
 	}
 
 	public function admin_edit($id = null) {
@@ -47,6 +63,8 @@ class MessagesController extends AppController {
 			$options = array('conditions' => array('Message.' . $this->Message->primaryKey => $id));
 			$this->request->data = $this->Message->find('first', $options);
 		}
+		$messageRecipients = $this->Message->MessageRecipient->find('list');
+		$this->set(compact('messageRecipients'));
 	}
 
 	public function admin_delete($id = null) {
