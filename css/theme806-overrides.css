@@ -25,6 +25,10 @@
 	font-size: 48px;
 }
 
+#content h4 {
+	color: #fff
+}
+
 section.block .content li a.active-trail.active {
 	color: #BC2800;
 }

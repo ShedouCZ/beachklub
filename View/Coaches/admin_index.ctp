@@ -21,6 +21,7 @@
 				<thead>
 					<tr>
 						<th><?php echo $this->Paginator->sort('name'); ?></th>
+						<th><?php echo $this->Paginator->sort('title'); ?></th>
 						<th><?php echo $this->Paginator->sort('desc'); ?></th>
 						<th><?php echo $this->Paginator->sort('url'); ?></th>
 						<th class="actions"></th>
@@ -30,6 +31,7 @@
 				<?php foreach ($coaches as $coach) { ?>
 					<tr>
 						<td><?php echo h($coach['Coach']['name']); ?></td>
+						<td><?php echo h($coach['Coach']['title']); ?></td>
 						<td><?php echo h($coach['Coach']['desc']); ?></td>
 						<td><?php echo h($coach['Coach']['url']); ?></td>
 						<td class="actions">

@@ -5,6 +5,13 @@ class CoachesController extends AppController {
 
 	public $components = array('Paginator', 'Session');
 
+	public function index() {
+		$items = $this->paginate();
+		if ($this->request->is('requested')) {
+			return $items;
+		}
+		$this->set('items', $items);
+	}
 
 	public function admin_index() {
 		$this->Coach->recursive = 0;

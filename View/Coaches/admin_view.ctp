@@ -41,6 +41,12 @@
 						</td>
 					</tr>
 					<tr>
+						<th><?php echo __('Title'); ?></th>
+						<td>
+							<?php echo h($coach['Coach']['title']); ?>
+						</td>
+					</tr>
+					<tr>
 						<th><?php echo __('Desc'); ?></th>
 						<td>
 							<?php echo h($coach['Coach']['desc']); ?>

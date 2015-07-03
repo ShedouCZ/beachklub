@@ -121,104 +121,10 @@
                     <div class="content">
                         <div class="view view-about-coaches view-id-about_coaches view-display-id-block view-dom-id-38c9f58f7cb3e7e70470f548b1d52fac">
                             <div class="view-content">
-                                <div class="views-row first odd">
-                                    <div class="views-field views-field-field-coaches-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/190x180/public/field/image/Image00025.jpg?itok=e4iFTCpQ" width="190" height="180" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/john-franklin-0">John Franklin</a>
-                                            </div>
-                                            <div class="views-field-body">Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan hendrerit nunc facilisis.
-                                                Curabitur et libero sit amet ante hendrerit molestie. Cras a erat in
-                                                leo lobortis tincidunt. Praesent aliquet, eros sit amet dapibus convallis,
-                                                ligula magna pellentesque urna, quis laoreet erat velit ullamcorper odio.
-                                                Curabitur eget molestie sem. Maecenas pretium ante non purus tincidunt
-                                                egestas. Fusce tincidunt, velit sit amet euismod interdum, quam ipsum
-                                                interdum nulla, et tincidunt lectus diam id purus. Pellentesque sodales
-                                                magna id tellus ultrices pellentesque. Aliquam
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="views-row even">
-                                    <div class="views-field views-field-field-coaches-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/190x180/public/field/image/Image00013.jpg?itok=2Bj4fAKm" width="190" height="180" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/patrick-pool">Patrick Pool</a>
-                                            </div>
-                                            <div class="views-field-body">Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan hendrerit nunc facilisis.
-                                                Curabitur et libero sit amet ante hendrerit molestie. Cras a erat in
-                                                leo lobortis tincidunt. Praesent aliquet, eros sit amet dapibus convallis,
-                                                ligula magna pellentesque urna, quis laoreet erat velit ullamcorper odio.
-                                                Curabitur eget molestie sem. Maecenas pretium ante non purus tincidunt
-                                                egestas. Fusce tincidunt, velit sit amet euismod interdum, quam ipsum
-                                                interdum nulla, et tincidunt lectus diam id purus. Pellentesque sodales
-                                                magna id tellus ultrices pellentesque. Aliquam
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="views-row odd">
-                                    <div class="views-field views-field-field-coaches-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/190x180/public/field/image/Image00012.jpg?itok=6Z2xaAKb" width="190" height="180" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/bradley-grosh">Bradley Grosh</a>
-                                            </div>
-                                            <div class="views-field-body">Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan hendrerit nunc facilisis.
-                                                Curabitur et libero sit amet ante hendrerit molestie. Cras a erat in leo
-                                                lobortis tincidunt. Praesent aliquet, eros sit amet dapibus convallis,
-                                                ligula magna pellentesque urna, quis laoreet erat velit ullamcorper odio.
-                                                Curabitur eget molestie sem. Maecenas pretium ante non purus tincidunt
-                                                egestas. Fusce tincidunt, velit sit amet euismod interdum, quam ipsum
-                                                interdum nulla, et tincidunt lectus diam id purus. Pellentesque sodales
-                                                magna id tellus ultrices pellentesque. Aliquam
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="views-row last even">
-                                    <div class="views-field views-field-field-coaches-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/190x180/public/field/image/Image00007.jpg?itok=y56TwnEd" width="190" height="180" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/mark-johnson">Mark Johnson</a>
-                                            </div>
-                                            <div class="views-field-body">Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan hendrerit nunc facilisis.
-                                                Curabitur et libero sit amet ante hendrerit molestie. Cras a erat in leo
-                                                lobortis tincidunt. Praesent aliquet, eros sit amet dapibus convallis,
-                                                ligula magna pellentesque urna, quis laoreet erat velit ullamcorper odio.
-                                                Curabitur eget molestie sem. Maecenas pretium ante non purus tincidunt
-                                                egestas. Fusce tincidunt, velit sit amet euismod interdum, quam ipsum
-                                                interdum nulla, et tincidunt lectus diam id purus. Pellentesque sodales
-                                                magna id tellus ultrices pellentesque. Aliquam
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
+                        <?php echo $this->Element('coaches'); ?>
                         </div>
+                    </div>
+
                     </div><!-- /.content -->
                 </section><!-- /.block -->
             </div>
