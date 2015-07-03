@@ -57,6 +57,10 @@
                                 <form class="user-info-from-cookie contact-form" action="/kontakty" method="post" id="contact-site-form" accept-charset="UTF-8">
                                     <div>
                                         <div class="form-item form-type-textfield form-item-name">
+                                            <label for="edit-name">Komu <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>
+                                            <?php echo $this->Form->input('message_recipient_id', array('class'=>'form-control', 'placeholder'=>__('Message Recipient Id')));?>
+                                        </div>
+                                        <div class="form-item form-type-textfield form-item-name">
                                             <label for="edit-name">Vaše jméno <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>
                                             <input type="text" id="edit-name" name="data[Message][title]" value="" size="60" maxlength="255" class="form-text required" />
                                         </div>

@@ -58,6 +58,12 @@
 							<?php echo h($message['Message']['desc']); ?>
 						</td>
 					</tr>
+					<tr>
+						<th><?php echo __('Message Recipient Id'); ?></th>
+						<td>
+							<?php echo h($message['Message']['message_recipient_id']); ?>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div><!-- end col md 9 -->

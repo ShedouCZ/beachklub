@@ -84,13 +84,25 @@ CREATE TABLE `messages` (
   `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   `subject` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `message_recipient_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `message_recipient_id` (`message_recipient_id`),
+  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`message_recipient_id`) REFERENCES `message_recipients` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+DROP TABLE IF EXISTS `message_recipients`;
+CREATE TABLE `message_recipients` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-SET NAMES utf8;
-SET time_zone = '+00:00';
-SET foreign_key_checks = 0;
-SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+INSERT INTO `message_recipients` (`id`, `email`) VALUES
+(1,	'info@beachklubladvi.cz'),
+(2,	'marketing@beachklubladvi.cz'),
+(3,	'bar@beachklubladvi.cz'),
+(4,	'seftrener@beachklubladvi.cz');
 
 DROP TABLE IF EXISTS `coaches`;
 CREATE TABLE `coaches` (

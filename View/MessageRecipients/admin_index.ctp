@@ -1,11 +1,11 @@
-<div class="messages index">
+<div class="messageRecipients index">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
 					<ul class="nav nav-pills pull-right">
-						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Message'), array('action' => 'add'), array('escape' => false)); ?></li>
+						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Message Recipient'), array('action' => 'add'), array('escape' => false)); ?></li>
 					</ul>
-								<h1><?php echo __('Messages'); ?></h1>
+								<h1><?php echo __('Message Recipients'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -19,25 +19,17 @@
 			<table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th><?php echo $this->Paginator->sort('title'); ?></th>
 						<th><?php echo $this->Paginator->sort('email'); ?></th>
-						<th><?php echo $this->Paginator->sort('subject'); ?></th>
-						<th><?php echo $this->Paginator->sort('desc'); ?></th>
-						<th><?php echo $this->Paginator->sort('message_recipient_id'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
 				<tbody>
-				<?php foreach ($messages as $message) { ?>
+				<?php foreach ($messageRecipients as $messageRecipient) { ?>
 					<tr>
-						<td><?php echo h($message['Message']['title']); ?></td>
-						<td><?php echo h($message['Message']['email']); ?></td>
-						<td><?php echo h($message['Message']['subject']); ?></td>
-						<td><?php echo h($message['Message']['desc']); ?></td>
-						<td><?php echo h($message['Message']['message_recipient_id']); ?></td>
+						<td><?php echo h($messageRecipient['MessageRecipient']['email']); ?></td>
 						<td class="actions">
-							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $message['Message']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $message['Message']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $message['Message']['id'])); ?>
+							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $messageRecipient['MessageRecipient']['id']), array('escape' => false)); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $messageRecipient['MessageRecipient']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $messageRecipient['MessageRecipient']['id'])); ?>
 						</td>
 					</tr>
 				<?php } ?>

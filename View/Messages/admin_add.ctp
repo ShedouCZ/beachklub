@@ -4,10 +4,9 @@
 		<div class="col-md-12">
 			<div class="page-header">
 									<ul class="nav nav-pills pull-right">
-							<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete'), array('action'=>'delete', $this->Form->value('Message.id')), array('escape'=>false), __('Are you sure you want to delete # %s?', $this->Form->value('Message.id'))); ?></li>
 							<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Messages'), array('action'=>'index'), array('escape'=>false)); ?></li>
 					</ul>
-								<h1><?php echo __('Admin Edit Message'); ?></h1>
+								<h1><?php echo __('Admin Add Message'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -21,9 +20,6 @@
 		<div class="col-md-9">
 			<?php echo $this->Form->create('Message', array('role'=>'form', 'class'=>'form-horizontal')); ?>
 
-				<div class="form-group">
-					<?php echo $this->Form->input('id', array('class'=>'form-control', 'placeholder'=>__('Id')));?>
-				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>

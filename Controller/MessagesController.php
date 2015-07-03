@@ -1,11 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
 class MessagesController extends AppController {
-
-	public function beforeFilter() {
-		parent::beforeFilter();
-		$this->Auth->allow('add');
-	}
 	public $layout = 'BootstrapCake.bootstrap';
 
 	public $components = array('Paginator', 'Session');
@@ -30,7 +25,7 @@ class MessagesController extends AppController {
 			$this->Message->create();
 			if ($this->Message->save($this->request->data)) {
 				$this->Session->setFlash(__('The message has been saved.'), 'default', array('class' => 'alert alert-success'));
-				return $this->redirect('/');
+				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The message could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
