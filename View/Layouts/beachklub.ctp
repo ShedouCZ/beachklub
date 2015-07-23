@@ -67,7 +67,7 @@
         /*@import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css?nq22ob");*/
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/maintenance-page.css?nq22ob");
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/skeleton.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/overrides.css?nq22ob");
+        /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/overrides.css?nq22ob");*/
     </style>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/misc/jquery.once.js?v=1.2"></script>

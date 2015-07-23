@@ -1,9 +1,5 @@
-vojta - .5h
-29.6. vojta - 2.5h
-1.7. vojta - 3h
-
-
-[ ] admin - pridat horni menu - element?
+[x] admin - pridat horni menu - element?
+[ ] youtube ikona - odebrat you nechat jen tube a zvetsit, aby lepe citelne
 [ ] home - cze/eng
 [ ] home - vice novinek a perexy clanku
 [ ] home - searchbox
