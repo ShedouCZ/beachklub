@@ -145,6 +145,7 @@ module.exports = function(grunt) {
 					'Vendor/fullcalendar-history/fullcalendar.history.js',
 					'Vendor/jquery.cookie/jquery.cookie.js',
 					'Vendor/fullcalendar/dist/fullcalendar.js',
+					'Vendor/dropzone/dist/dropzone.js',
 					'Vendor/Jed/jed.js',
 					'dist/js/messages.js',
 				],

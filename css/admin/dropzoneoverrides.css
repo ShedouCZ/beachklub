@@ -1,0 +1,23 @@
+.dropzone .dz-preview {
+	position: relative;
+	top: -16px;
+	left: -16px;
+}
+.dropzone .dz-preview .dz-image img {
+	max-width: 630px;
+}
+
+.dropzone .dz-preview:hover .dz-image img {
+	transform: none;
+	filter: none;
+}
+
+.dropzone .dz-preview .dz-error-message,
+.dropzone .dz-preview .dz-success-mark,
+.dropzone .dz-preview .dz-error-mark {
+	margin-top: -35px;
+}
+.dropzone {
+	border-width: 0px;
+	padding: 0px;
+}

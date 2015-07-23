@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cakephp/cakephp",
-            "version": "2.6.7",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "523597df432e645b582f0b9c44e8a2464ea71048"
+                "reference": "727b73e2189fe1221e5ae338743812ad8e9f0631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/523597df432e645b582f0b9c44e8a2464ea71048",
-                "reference": "523597df432e645b582f0b9c44e8a2464ea71048",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/727b73e2189fe1221e5ae338743812ad8e9f0631",
+                "reference": "727b73e2189fe1221e5ae338743812ad8e9f0631",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-05-28 23:30:33"
+            "time": "2015-07-23 02:08:48"
         },
         {
             "name": "ceeram/clear_cache",
@@ -262,12 +262,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptica/BootstrapCake.git",
-                "reference": "2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8"
+                "reference": "c922d76245b95f3cca53c02fcab5e9573020112c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8",
-                "reference": "2eab82c57b87cc8feb53459dcb18dcd1b2cd13d8",
+                "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/c922d76245b95f3cca53c02fcab5e9573020112c",
+                "reference": "c922d76245b95f3cca53c02fcab5e9573020112c",
                 "shasum": ""
             },
             "require": {
@@ -278,7 +278,7 @@
             "support": {
                 "source": "https://github.com/ptica/BootstrapCake/tree/master"
             },
-            "time": "2015-06-03 17:15:40"
+            "time": "2015-07-01 08:55:28"
         },
         {
             "name": "webtechnick/configuration",
