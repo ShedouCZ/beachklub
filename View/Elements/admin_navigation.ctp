@@ -1,9 +1,9 @@
 <?php
 	$links = array(
+		'Slidy'  => '/admin/sliders',
 		'Dlaždice'  => '/admin/tiles',
 		'Novinky'  => '/admin/news',
 		'Články'  => '/admin/posts',
-		'Hlavní obrázky'  => '/admin/sliders',
 		'Zprávy'  => '/admin/messages',
 		'Trenéři'  => '/admin/coaches',
 		'Kontakty'  => '/admin/message_recipients',

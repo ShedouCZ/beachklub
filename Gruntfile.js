@@ -88,7 +88,7 @@ module.exports = function(grunt) {
 					}
 				},
 				files: {
-					'js/templates.js': ['View/**/*.hbs']
+					'dist/js/handlebars.js': ['View/**/*.hbs']
 				}
 			}
 		},
@@ -147,6 +147,8 @@ module.exports = function(grunt) {
 					'Vendor/fullcalendar/dist/fullcalendar.js',
 					'Vendor/dropzone/dist/dropzone.js',
 					'Vendor/Jed/jed.js',
+					'node_modules/grunt-contrib-handlebars/node_modules/handlebars/dist/handlebars.runtime.js',
+					'dist/js/handlebars.js',
 					'dist/js/messages.js',
 				],
 				dest: 'webroot/js/site-admin.js',
@@ -263,7 +265,7 @@ module.exports = function(grunt) {
 	// Task definition
 	grunt.registerTask('default', ['scripts', 'stylesheets', 'copy']);
 	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', /*'postcss', 'cssmin'*/]);
-	grunt.registerTask('scripts', [/*'react',*/ 'concat:js', 'concat:js_post', 'concat:js_admin']);
+	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js', 'concat:js_post', 'concat:js_admin']);
 
 	grunt.registerTask('locales', ['po2json', 'json']);
 	//grunt.registerTask('stylesheets', ['less', 'concat:css', 'cssmin']);

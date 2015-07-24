@@ -1,3 +1,6 @@
+.dropzone {
+	min-height: 30px;
+}
 .dropzone .dz-preview {
 	position: relative;
 	top: -16px;
@@ -20,4 +23,8 @@
 .dropzone {
 	border-width: 0px;
 	padding: 0px;
+}
+
+.dropzone .dz-message {
+	display: none;
 }
