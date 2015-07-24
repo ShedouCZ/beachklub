@@ -161,18 +161,20 @@ CREATE TABLE `tiles` (
   `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   `created` datetime NOT NULL,
   `ord` int(11) NOT NULL DEFAULT '9999999',
-  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `gallery_picture_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-INSERT INTO `tiles` (`id`, `desc`, `title`, `created`, `ord`, `url`) VALUES
-(1,	'Test',	'Kempy',	'2015-06-24 09:33:24',	1,	'/img/slides/slide_1.jpg'),
-(2,	'Test 2',	'Rezervace Kurtů',	'2015-06-24 09:37:55',	2,	'/img/tile_1.jpg'),
-(3,	'Test 3',	'Beachbar',	'2015-06-24 09:38:27',	3,	'/img/tile_2.jpg'),
-(4,	'Test 4',	'Firemní akce',	'2015-06-24 09:39:02',	4,	'/img/tile_3.jpg'),
-(5,	'Test 5',	'Kroužky',	'2015-06-24 09:39:41',	5,	'/img/tile_4.png'),
-(6,	'Test 6',	'Tréninky',	'2015-06-24 09:40:17',	6,	'/img/tile_5.jpg'),
-(7,	'Test 7',	'Turnaje',	'2015-06-24 09:40:37',	7,	'/img/tile_6.jpg');
+INSERT INTO `tiles` (`id`, `desc`, `title`, `created`, `ord`, `gallery_picture_id`) VALUES
+(1,	'Test',	'Kempy',	'2015-06-24 09:33:24',	1,	NULL),
+(2,	'Test 2',	'Rezervace Kurtů',	'2015-06-24 09:37:55',	2,	NULL),
+(3,	'Test 3',	'Beachbar',	'2015-06-24 09:38:27',	3,	NULL),
+(4,	'Test 4',	'Firemní akce',	'2015-06-24 09:39:02',	4,	NULL),
+(5,	'Test 5',	'Kroužky',	'2015-06-24 09:39:41',	5,	NULL),
+(6,	'Test 6',	'Tréninky',	'2015-06-24 09:40:17',	6,	NULL),
+(7,	'Test 7',	'Turnaje',	'2015-06-24 09:40:37',	7,	NULL),
+(8,	'',	'',	'2015-07-24 13:13:09',	9999999,	21);
+
 
 DROP TABLE IF EXISTS `tournaments`;
 CREATE TABLE `tournaments` (
