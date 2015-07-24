@@ -30,15 +30,12 @@
 				<div class="form-group">
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('ord', array('class'=>'form-control', 'placeholder'=>__('Ord')));?>
-				</div>
 
 				<div class="form-group dropzone">
 					<?php
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
-							'data-picture'=>Tile::encode(@$this->request->data['Picture']),
+							'data-picture'=>Tile::encode_picture(@$this->request->data['Picture']),
 							'data-album-id'=>Tile::$album_id
 						));
 					?>

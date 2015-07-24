@@ -32,27 +32,11 @@
 					<?php
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
-							'data-picture'=>Slider::encode(@$this->request->data['Picture']),
+							'data-picture'=>Slider::encode_picture(@$this->request->data['Picture']),
 							'data-album-id'=>Slider::$album_id
 						));
 					?>
 				</div>
-				
-				<!--div class="form-group dropzone">
-					<label for="SliderUrl" class="col-sm-2 control-label">Slide</label>
-					<div class="col-sm-9">
-						<?php
-							echo $this->Form->input('url', array('type'=>'hidden'));
-							echo $this->Form->input('picture_id', array('type'=>'hidden'));
-						?>
-						<p class="form-control-static dropzone-previews">
-							<a href="#" class="btn btn-success btn-sm dz-clickable">
-								<i class="fa fa-cloud-upload"></i>
-								Upload picture
-							</a>
-						</p>
-					</div>
-				</div-->
 				
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">

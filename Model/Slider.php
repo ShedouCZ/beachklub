@@ -18,17 +18,4 @@ class Slider extends AppModel {
 	// and fill the id here
 	// so uploaded images end up in the dedicated album
 	public static $album_id = 1;
-	
-	public static function encode($data) {
-		if (empty($data)) return null;
-		$allowed_fields = array('name', 'size', 'caption', 'styles');
-		$allowed_fields = array(
-			'name' => 1,
-			'size' => 1,
-			'caption' => 1,
-			'styles' => 1,
-		);
-		$data = array_intersect_key($data, $allowed_fields);
-		return json_encode($data);
-	}
 }
