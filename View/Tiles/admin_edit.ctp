@@ -33,9 +33,17 @@
 				<div class="form-group">
 					<?php echo $this->Form->input('ord', array('class'=>'form-control', 'placeholder'=>__('Ord')));?>
 				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('url', array('class'=>'form-control', 'placeholder'=>__('Url')));?>
+
+				<div class="form-group dropzone">
+					<?php
+						echo $this->Form->input('gallery_picture_id', array(
+							'class'=>'form-control',
+							'data-picture'=>Tile::encode(@$this->request->data['Picture']),
+							'data-album-id'=>Tile::$album_id
+						));
+					?>
 				</div>
+
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">
 						<?php echo $this->Form->submit(__('Submit'), array('class'=>'btn btn-primary')); ?>

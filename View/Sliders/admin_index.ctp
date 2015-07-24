@@ -29,7 +29,7 @@
 				<?php foreach ($sliders as $slider) { ?>
 					<tr>
 						<td><?php echo h($slider['Slider']['name']); ?></td>
-						<td><?php echo h($slider['Slider']['url']); ?></td>
+						<td><?php echo $slider['Picture']['styles']['large']; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $slider['Slider']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $slider['Slider']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $slider['Slider']['id'])); ?>

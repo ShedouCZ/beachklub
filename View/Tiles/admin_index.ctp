@@ -33,7 +33,7 @@
 						<td><?php echo h($tile['Tile']['desc']); ?></td>
 						<td><?php echo h($tile['Tile']['title']); ?></td>
 						<td><?php echo $this->Time->format($tile['Tile']['created'], '%-d.%-m.&nbsp;%Y'); ?></td>
-						<td><?php echo h($tile['Tile']['url']); ?></td>
+						<td><?php echo $tile['Picture']['styles']['large']; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $tile['Tile']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $tile['Tile']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $tile['Tile']['id'])); ?>
