@@ -35,21 +35,9 @@
 						</td>
 					</tr>
 					<tr>
-						<th><?php echo __('Desc'); ?></th>
-						<td>
-							<?php echo h($tile['Tile']['desc']); ?>
-						</td>
-					</tr>
-					<tr>
 						<th><?php echo __('Title'); ?></th>
 						<td>
 							<?php echo h($tile['Tile']['title']); ?>
-						</td>
-					</tr>
-					<tr>
-						<th><?php echo __('Created'); ?></th>
-						<td>
-							<?php echo h($tile['Tile']['created']); ?>
 						</td>
 					</tr>
 					<tr>
@@ -70,4 +58,3 @@
 
 	</div>
 </div>
-

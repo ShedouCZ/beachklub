@@ -20,9 +20,7 @@
 			<table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th><?php echo $this->Paginator->sort('desc'); ?></th>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
-						<th><?php echo $this->Paginator->sort('created'); ?></th>
 						<th><?php echo $this->Paginator->sort('url'); ?></th>
 						<th class="actions"></th>
 					</tr>
@@ -30,10 +28,8 @@
 				<tbody>
 				<?php foreach ($tiles as $tile) { ?>
 					<tr>
-						<td><?php echo h($tile['Tile']['desc']); ?></td>
 						<td><?php echo h($tile['Tile']['title']); ?></td>
-						<td><?php echo $this->Time->format($tile['Tile']['created'], '%-d.%-m.&nbsp;%Y'); ?></td>
-						<td><?php echo $tile['Picture']['styles']['large']; ?></td>
+						<td><?php echo $tile['Picture']['styles']['tile']; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $tile['Tile']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $tile['Tile']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $tile['Tile']['id'])); ?>

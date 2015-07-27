@@ -21,9 +21,6 @@
 			<?php echo $this->Form->create('Tile', array('role'=>'form', 'class'=>'form-horizontal')); ?>
 
 				<div class="form-group">
-					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Desc')));?>
-				</div>
-				<div class="form-group">
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 

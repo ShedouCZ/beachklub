@@ -14,7 +14,7 @@
                                 <li>
                                     <div class="views-field views-field-field-slide-image">
                                         <div class="field-content">
-                                            <img src=<?php echo $slider['Picture']['styles']['large']; ?> width="926" height="358" alt="" />
+                                            <img src=<?php echo $slider['Picture']['styles']['slide']; ?> width="926" alt="" />
                                         </div>
                                     </div>
                                 </li>

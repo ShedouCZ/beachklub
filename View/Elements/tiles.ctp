@@ -13,7 +13,7 @@
         <div class="views-field views-field-field-service-image img-indent-bottom-2 img-shadow">
             <div class="field-content">
                 <a href="/supercup">
-                    <img src="<?php echo $item['Tile']['url']; ?>" width="289" height="133" alt="">
+                    <img src="<?php echo $item['Picture']['styles']['tile']; ?>" width="289" height="133" alt="">
                 </a>
             </div>
         </div>
