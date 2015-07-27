@@ -131,3 +131,5 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+require_once APP . 'Config' . DS . 'gallery.php';
