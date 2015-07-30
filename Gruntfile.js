@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 					keyword: '__'
 				},
 				files: {
-					'Locale': ['Plugin/Gallery/webroot/js/scripts.js', 'js/post.js']
+					'Locale': ['Plugin/Gallery/webroot/js/scripts.js', 'js/dom-ready.js']
 				}
 			}
 		},
@@ -129,7 +129,7 @@ module.exports = function(grunt) {
 					'Vendor/hammerjs/hammer.js',
 					'Vendor/jquery-hammerjs/jquery.hammer.js',
 					'Vendor/Sortable/Sortable.js',
-					'js/post.js'
+					'js/dom-ready.js'
 				],
 				dest: 'webroot/js/site-post.js',
 				nonull: true,

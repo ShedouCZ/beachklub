@@ -30,7 +30,8 @@
         "codaxis/cakephp-bootstrap3-helpers": "1.1",
         "ceeram/clear_cache": "~1.1",
         "webtechnick/configuration": "dev-bootstrap_theme",
-        "hugodias/cakegallery": "dev-locale"
+        "hugodias/cakegallery": "dev-nopath",
+        "cakephp/debug_kit": "~2.2"
     },
     "config": {
         "vendor-dir": "Vendor/"

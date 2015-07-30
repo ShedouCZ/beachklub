@@ -1,5 +1,7 @@
 tmp
 webroot/css/site.css
 webroot/css/site-admin.css
-webroot/css/site.js
-webroot/css/site-admin.js
+webroot/js/site.js
+webroot/js/site-admin.js
+webroot/js/site-post.js
+webroot/files
