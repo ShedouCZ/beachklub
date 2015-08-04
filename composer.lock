@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2992b5dff47bab137c04dd2207b7dda1",
+    "hash": "6b91cc69712c14719dab6179211790d0",
     "packages": [
         {
             "name": "cakephp/cakephp",
@@ -266,16 +266,16 @@
         },
         {
             "name": "hugodias/cakegallery",
-            "version": "dev-locale",
+            "version": "dev-nopath",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptica/cakegallery.git",
-                "reference": "ad63de416d469f799c52507877ce0405f1fb4cab"
+                "reference": "79e0567b8caaa3c69321466a25a5a8591648ecba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptica/cakegallery/zipball/ad63de416d469f799c52507877ce0405f1fb4cab",
-                "reference": "ad63de416d469f799c52507877ce0405f1fb4cab",
+                "url": "https://api.github.com/repos/ptica/cakegallery/zipball/79e0567b8caaa3c69321466a25a5a8591648ecba",
+                "reference": "79e0567b8caaa3c69321466a25a5a8591648ecba",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
                 "issues": "https://github.com/hugodias/cakegallery/issues",
                 "source": "https://github.com/hugodias/cakegallery"
             },
-            "time": "2015-07-23 16:20:44"
+            "time": "2015-07-30 10:14:01"
         },
         {
             "name": "ptica/BootstrapCake",
@@ -315,7 +315,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/c922d76245b95f3cca53c02fcab5e9573020112c",
+                "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/44f28db38af34d3a11c7a5025c9d0658a33e26f5",
                 "reference": "c922d76245b95f3cca53c02fcab5e9573020112c",
                 "shasum": ""
             },
