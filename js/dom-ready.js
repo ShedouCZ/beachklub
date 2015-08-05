@@ -48,9 +48,6 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').summernote({
 				//console.log('image to upload:', files[i]);
 				App.upload_file(files[i], callback);
 			}
-
-			// upload image to server and create imgNode...
-			//$summernote.summernote('insertNode', imgNode);
 		}
 });
 

@@ -270,12 +270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptica/cakegallery.git",
-                "reference": "79e0567b8caaa3c69321466a25a5a8591648ecba"
+                "reference": "22ed38eb2b1e36d51265b0b847c7a63af5a97330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptica/cakegallery/zipball/79e0567b8caaa3c69321466a25a5a8591648ecba",
-                "reference": "79e0567b8caaa3c69321466a25a5a8591648ecba",
+                "url": "https://api.github.com/repos/ptica/cakegallery/zipball/22ed38eb2b1e36d51265b0b847c7a63af5a97330",
+                "reference": "22ed38eb2b1e36d51265b0b847c7a63af5a97330",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
                 "issues": "https://github.com/hugodias/cakegallery/issues",
                 "source": "https://github.com/hugodias/cakegallery"
             },
-            "time": "2015-07-30 10:14:01"
+            "time": "2015-08-05 06:32:53"
         },
         {
             "name": "ptica/BootstrapCake",
