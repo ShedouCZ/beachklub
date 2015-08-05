@@ -103,6 +103,18 @@ Configure::write('Bs3.Form.styles', array(
 			'div' => null,
 		)
 	),
+	'horizontal-wide' => array(
+		'formDefaults' => array(
+			//'submitDiv' => 'col-sm-10 col-sm-offset-2' // this adds another submit
+		),
+		'inputDefaults' => array(
+			'label' => array(
+				'class' => 'col-sm-1 control-label'
+			),
+			'wrap' => 'col-sm-11 input-group',
+			'div' => null,
+		)
+	),
 	'inline' => array(
 		'inputDefaults' => array(
 			'label' => array(
