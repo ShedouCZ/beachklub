@@ -4,137 +4,313 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"PO-Revision-Date: 2015-06-25 08:12+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-08-05 10:56+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: EMAIL@ADDRESS\n"
+"Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"POT-Creation-Date: \n"
 "X-Generator: Poedit 1.8.1\n"
-"Language: cs_CZ\n"
 
-#: /Elements/admin_navigation.ctp:11
-msgid "Menu"
-msgstr ""
+#: /Coaches/admin_add.ctp:7 /Coaches/admin_edit.ctp:8
+#: /Coaches/admin_view.ctp:20
+msgid "List Coaches"
+msgstr "Seznam trenérů"
 
-#: /Headlines/admin_add.ctp:7 /Headlines/admin_edit.ctp:8
-#: /Headlines/admin_view.ctp:20
-msgid "List Headlines"
-msgstr "Seznam aktualit"
+#: /Coaches/admin_add.ctp:9
+msgid "Admin Add Coach"
+msgstr "Přidat trenéra"
 
-#: /Headlines/admin_add.ctp:9
-msgid "Admin Add Headline"
-msgstr "Přidat aktualitu jako admin"
+#: /Coaches/admin_add.ctp:24 /Coaches/admin_edit.ctp:28
+#: /Coaches/admin_view.ctp:38 /Sliders/admin_add.ctp:24
+#: /Sliders/admin_edit.ctp:28 /Sliders/admin_view.ctp:38
+#: /Tournaments/admin_add.ctp:24 /Tournaments/admin_edit.ctp:28
+#: /Tournaments/admin_view.ctp:40
+msgid "Name"
+msgstr "Jméno"
 
-#: /Headlines/admin_add.ctp:24 /Headlines/admin_edit.ctp:28
-#: /Headlines/admin_view.ctp:40 /News/admin_add.ctp:24
-#: /News/admin_edit.ctp:28 /News/admin_view.ctp:38 /Posts/admin_add.ctp:24
-#: /Posts/admin_edit.ctp:28 /Posts/admin_view.ctp:40 /Tiles/admin_add.ctp:27
-#: /Tiles/admin_edit.ctp:31 /Tiles/admin_view.ctp:44
+#: /Coaches/admin_add.ctp:27 /Coaches/admin_edit.ctp:31
+#: /Coaches/admin_view.ctp:44 /Documents/admin_add.ctp:21
+#: /Documents/admin_edit.ctp:25 /Documents/admin_view.ctp:38
+#: /MessageRecipients/admin_view.ctp:60 /Messages/admin_add.ctp:24
+#: /Messages/admin_edit.ctp:28 /Messages/admin_view.ctp:38
+#: /News/admin_add.ctp:24 /News/admin_edit.ctp:28 /News/admin_view.ctp:38
+#: /Posts/admin_add.ctp:24 /Posts/admin_edit.ctp:28 /Posts/admin_view.ctp:40
+#: /Tiles/admin_add.ctp:24 /Tiles/admin_edit.ctp:28 /Tiles/admin_view.ctp:38
 msgid "Title"
 msgstr "Název"
 
-#: /Headlines/admin_add.ctp:27 /Headlines/admin_edit.ctp:31
-#: /Posts/admin_add.ctp:27 /Posts/admin_edit.ctp:31
-msgid "User Id"
-msgstr "Id uživatele"
-
-#: /Headlines/admin_add.ctp:30 /Headlines/admin_edit.ctp:34
-#: /Headlines/admin_view.ctp:59 /News/admin_add.ctp:30
-#: /News/admin_edit.ctp:34 /News/admin_view.ctp:50 /Posts/admin_add.ctp:30
-#: /Posts/admin_edit.ctp:34 /Posts/admin_view.ctp:59 /Tiles/admin_add.ctp:24
-#: /Tiles/admin_edit.ctp:28 /Tiles/admin_view.ctp:38
+#: /Coaches/admin_add.ctp:30 /Coaches/admin_edit.ctp:34
+#: /Coaches/admin_view.ctp:50 /MessageRecipients/admin_view.ctp:63
+#: /Messages/admin_add.ctp:33 /Messages/admin_edit.ctp:37
+#: /Messages/admin_view.ctp:56 /News/admin_add.ctp:30 /News/admin_edit.ctp:34
+#: /News/admin_view.ctp:50 /Posts/admin_add.ctp:30 /Posts/admin_edit.ctp:34
+#: /Posts/admin_view.ctp:59 /Tournaments/admin_add.ctp:39
+#: /Tournaments/admin_edit.ctp:43 /Tournaments/admin_view.ctp:52
 msgid "Desc"
 msgstr "Popisek"
 
-#: /Headlines/admin_add.ctp:34 /Headlines/admin_edit.ctp:38
+#: /Coaches/admin_add.ctp:33 /Coaches/admin_edit.ctp:37
+#: /Coaches/admin_view.ctp:56 /Sliders/admin_view.ctp:50
+#: /Tiles/admin_view.ctp:50 /Tournaments/admin_add.ctp:45
+#: /Tournaments/admin_edit.ctp:49 /Tournaments/admin_view.ctp:64
+msgid "Url"
+msgstr "Cesta"
+
+#: /Coaches/admin_add.ctp:36 /Coaches/admin_edit.ctp:40
+#: /Coaches/admin_view.ctp:62 /Sliders/admin_view.ctp:44
+#: /Tiles/admin_view.ctp:44
+msgid "Ord"
+msgstr "Pořadí"
+
+#: /Coaches/admin_add.ctp:40 /Coaches/admin_edit.ctp:44
+#: /Documents/admin_add.ctp:31 /Documents/admin_edit.ctp:35
+#: /MessageRecipients/admin_add.ctp:28 /MessageRecipients/admin_edit.ctp:32
+#: /Messages/admin_add.ctp:40 /Messages/admin_edit.ctp:44
 #: /News/admin_add.ctp:34 /News/admin_edit.ctp:38 /Posts/admin_add.ctp:37
-#: /Posts/admin_edit.ctp:41 /Sliders/admin_add.ctp:34
-#: /Sliders/admin_edit.ctp:38 /Tiles/admin_add.ctp:37
-#: /Tiles/admin_edit.ctp:41 /Users/add.ctp:9 /Users/admin_add.ctp:34
-#: /Users/admin_edit.ctp:38 /Users/login.ctp:26
+#: /Posts/admin_edit.ctp:41 /Sliders/admin_add.ctp:55
+#: /Sliders/admin_edit.ctp:43 /Tiles/admin_add.ctp:39 /Tiles/admin_edit.ctp:43
+#: /Tournaments/admin_add.ctp:52 /Tournaments/admin_edit.ctp:56
+#: /Users/add.ctp:9 /Users/admin_add.ctp:34 /Users/admin_edit.ctp:38
+#: /Users/login.ctp:26
 msgid "Submit"
 msgstr "Odeslat"
 
-#: /Headlines/admin_edit.ctp:7 /News/admin_edit.ctp:7 /Posts/admin_edit.ctp:7
-#: /Sliders/admin_edit.ctp:7 /Tiles/admin_edit.ctp:7 /Users/admin_edit.ctp:7
+#: /Coaches/admin_edit.ctp:7 /Documents/admin_edit.ctp:7
+#: /MessageRecipients/admin_edit.ctp:7 /Messages/admin_edit.ctp:7
+#: /News/admin_edit.ctp:7 /Posts/admin_edit.ctp:7 /Sliders/admin_edit.ctp:7
+#: /Tiles/admin_edit.ctp:7 /Tournaments/admin_edit.ctp:7
+#: /Users/admin_edit.ctp:7
 msgid "Delete"
 msgstr "Smazat"
 
-#: /Headlines/admin_edit.ctp:7 /Headlines/admin_index.ctp:40
-#: /Headlines/admin_view.ctp:19 /News/admin_edit.ctp:7
-#: /News/admin_index.ctp:36 /News/admin_view.ctp:19 /Posts/admin_edit.ctp:7
-#: /Posts/admin_index.ctp:42 /Posts/admin_view.ctp:19
+#: /Coaches/admin_edit.ctp:7 /Coaches/admin_index.ctp:39
+#: /Coaches/admin_view.ctp:19 /Documents/admin_edit.ctp:7
+#: /Documents/admin_index.ctp:35 /Documents/admin_view.ctp:19
+#: /MessageRecipients/admin_edit.ctp:7 /MessageRecipients/admin_index.ctp:32
+#: /MessageRecipients/admin_view.ctp:19;80 /Messages/admin_edit.ctp:7
+#: /Messages/admin_index.ctp:40 /Messages/admin_view.ctp:19
+#: /News/admin_edit.ctp:7 /News/admin_index.ctp:36 /News/admin_view.ctp:19
+#: /Posts/admin_edit.ctp:7 /Posts/admin_index.ctp:42 /Posts/admin_view.ctp:19
 #: /Sliders/admin_edit.ctp:7 /Sliders/admin_index.ctp:35
 #: /Sliders/admin_view.ctp:19 /Tiles/admin_edit.ctp:7
-#: /Tiles/admin_index.ctp:39 /Tiles/admin_view.ctp:19 /Users/admin_edit.ctp:7
+#: /Tiles/admin_index.ctp:35 /Tiles/admin_view.ctp:19
+#: /Tournaments/admin_edit.ctp:7 /Tournaments/admin_index.ctp:44
+#: /Tournaments/admin_view.ctp:19 /Users/admin_edit.ctp:7
 #: /Users/admin_index.ctp:40 /Users/admin_view.ctp:19
 msgid "Are you sure you want to delete # %s?"
 msgstr "Jste si jist že chcete smazat # %?"
 
-#: /Headlines/admin_edit.ctp:10
-msgid "Admin Edit Headline"
-msgstr "Upravit aktualitu jako admin"
+#: /Coaches/admin_edit.ctp:10
+msgid "Admin Edit Coach"
+msgstr "Upravit trenéry"
 
-#: /Headlines/admin_edit.ctp:25 /Headlines/admin_view.ctp:34
-#: /News/admin_edit.ctp:25 /News/admin_view.ctp:32 /Posts/admin_edit.ctp:25
-#: /Posts/admin_view.ctp:34 /Sliders/admin_edit.ctp:25
-#: /Sliders/admin_view.ctp:32 /Tiles/admin_edit.ctp:25
-#: /Tiles/admin_view.ctp:32 /Users/admin_edit.ctp:25 /Users/admin_view.ctp:32
+#: /Coaches/admin_edit.ctp:25 /Coaches/admin_view.ctp:32
+#: /Documents/admin_edit.ctp:22 /Documents/admin_view.ctp:32
+#: /MessageRecipients/admin_edit.ctp:25
+#: /MessageRecipients/admin_view.ctp:34;59 /Messages/admin_edit.ctp:25
+#: /Messages/admin_view.ctp:32 /News/admin_edit.ctp:25 /News/admin_view.ctp:32
+#: /Posts/admin_edit.ctp:25 /Posts/admin_view.ctp:34
+#: /Sliders/admin_edit.ctp:25 /Sliders/admin_view.ctp:32
+#: /Tiles/admin_edit.ctp:25 /Tiles/admin_view.ctp:32
+#: /Tournaments/admin_edit.ctp:25 /Tournaments/admin_view.ctp:34
+#: /Users/admin_edit.ctp:25 /Users/admin_view.ctp:32
 msgid "Id"
-msgstr ""
+msgstr "Id"
 
-#: /Headlines/admin_index.ctp:6 /Headlines/admin_view.ctp:21
-msgid "New Headline"
-msgstr "Nová aktualita"
+#: /Coaches/admin_index.ctp:6 /Coaches/admin_reorder.ctp:6
+#: /Coaches/admin_view.ctp:21
+msgid "New Coach"
+msgstr "Nový trenér"
 
-#: /Headlines/admin_index.ctp:8
-msgid "Headlines"
-msgstr "Aktuality"
+#: /Coaches/admin_index.ctp:7 /Coaches/admin_reorder.ctp:7
+#: /Documents/admin_index.ctp:7 /Documents/admin_reorder.ctp:7
+#: /Sliders/admin_index.ctp:7 /Sliders/admin_reorder.ctp:7
+#: /Tiles/admin_index.ctp:7 /Tiles/admin_reorder.ctp:7
+msgid "Reorder"
+msgstr "Změnit pořadí"
 
-#: /Headlines/admin_index.ctp:48 /News/admin_index.ctp:44
-#: /Posts/admin_index.ctp:50 /Sliders/admin_index.ctp:43
-#: /Tiles/admin_index.ctp:47 /Users/admin_index.ctp:48
+#: /Coaches/admin_index.ctp:9 /Coaches/admin_reorder.ctp:9
+msgid "Coaches"
+msgstr "Trenéři"
+
+#: /Coaches/admin_index.ctp:47 /Documents/admin_index.ctp:43
+#: /MessageRecipients/admin_index.ctp:40 /Messages/admin_index.ctp:48
+#: /News/admin_index.ctp:44 /Posts/admin_index.ctp:50
+#: /Sliders/admin_index.ctp:43 /Tiles/admin_index.ctp:43
+#: /Tournaments/admin_index.ctp:52 /Users/admin_index.ctp:48
 msgid ""
 "Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
 "starting on record {:start}, ending on {:end}"
 msgstr ""
-"Stránka {:page} z {:pages}, zobrazuji {:current} záznamů z {:count}, "
-"začínám záznamem {:start}, končím záznamem {:end}"
+"Stránka {:page} z {:pages}, zobrazuji {:current} záznamů z {:count}, začínám "
+"záznamem {:start}, končím záznamem {:end}"
 
-#: /Headlines/admin_view.ctp:5
-msgid "Headline"
-msgstr "Aktualita"
+#: /Coaches/admin_view.ctp:5
+msgid "Coach"
+msgstr "Trenér"
 
-#: /Headlines/admin_view.ctp:18
-msgid "Edit Headline"
-msgstr "Upravit aktualitu"
+#: /Coaches/admin_view.ctp:18
+msgid "Edit Coach"
+msgstr "Upravit"
 
-#: /Headlines/admin_view.ctp:19
-msgid "Delete Headline"
-msgstr "Smazat aktualitu"
+#: /Coaches/admin_view.ctp:19
+msgid "Delete Coach"
+msgstr "Smazat"
 
-#: /Headlines/admin_view.ctp:22 /Posts/admin_view.ctp:22
-#: /Users/admin_add.ctp:7 /Users/admin_edit.ctp:8 /Users/admin_view.ctp:20
-msgid "List Users"
-msgstr "Seznam uživatelů"
+#: /Documents/admin_add.ctp:7 /Documents/admin_edit.ctp:8
+#: /Documents/admin_view.ctp:20
+msgid "List Documents"
+msgstr "Seznam"
 
-#: /Headlines/admin_view.ctp:23 /Posts/admin_view.ctp:23
-#: /Users/admin_index.ctp:6 /Users/admin_view.ctp:21
-msgid "New User"
-msgstr "Nový uživatel"
+#: /Documents/admin_add.ctp:9
+msgid "Admin Add Document"
+msgstr "Přidat document"
 
-#: /Headlines/admin_view.ctp:46 /Posts/admin_view.ctp:46
-#: /Users/admin_view.ctp:5
-msgid "User"
-msgstr "Uživatel"
+#: /Documents/admin_add.ctp:24 /Documents/admin_edit.ctp:28
+#: /Documents/admin_view.ctp:44
+msgid "Content"
+msgstr "Obsah"
 
-#: /Headlines/admin_view.ctp:53 /Posts/admin_view.ctp:53
-#: /Tiles/admin_view.ctp:50 /Users/admin_view.ctp:56
-msgid "Created"
-msgstr "Vytvořeno"
+#: /Documents/admin_add.ctp:27 /Documents/admin_edit.ctp:31
+#: /Documents/admin_view.ctp:50
+msgid "Published"
+msgstr "Zveřejněno"
+
+#: /Documents/admin_edit.ctp:10
+msgid "Admin Edit Document"
+msgstr "Upravit dokument"
+
+#: /Documents/admin_index.ctp:6 /Documents/admin_reorder.ctp:6
+#: /Documents/admin_view.ctp:21
+msgid "New Document"
+msgstr "Nový dokument"
+
+#: /Documents/admin_index.ctp:9 /Documents/admin_reorder.ctp:9
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: /Documents/admin_view.ctp:5
+msgid "Document"
+msgstr "Dokument"
+
+#: /Documents/admin_view.ctp:18
+msgid "Edit Document"
+msgstr "Upracit"
+
+#: /Documents/admin_view.ctp:19
+msgid "Delete Document"
+msgstr "Smazat"
+
+#: /Elements/admin_navigation.ctp:14
+msgid "Menu"
+msgstr "Menu"
+
+#: /MessageRecipients/admin_add.ctp:7 /MessageRecipients/admin_edit.ctp:8
+#: /MessageRecipients/admin_view.ctp:20
+msgid "List Message Recipients"
+msgstr "Seznam příjemců"
+
+#: /MessageRecipients/admin_add.ctp:9
+msgid "Admin Add Message Recipient"
+msgstr "Přidat příjemce"
+
+#: /MessageRecipients/admin_add.ctp:24 /MessageRecipients/admin_edit.ctp:28
+#: /MessageRecipients/admin_view.ctp:40;61 /Messages/admin_add.ctp:27
+#: /Messages/admin_edit.ctp:31 /Messages/admin_view.ctp:44
+msgid "Email"
+msgstr "Email"
+
+#: /MessageRecipients/admin_edit.ctp:10
+msgid "Admin Edit Message Recipient"
+msgstr "Změna příjemce zprávy"
+
+#: /MessageRecipients/admin_index.ctp:6 /MessageRecipients/admin_view.ctp:21
+msgid "New Message Recipient"
+msgstr "Nový příjemce"
+
+#: /MessageRecipients/admin_index.ctp:8
+msgid "Message Recipients"
+msgstr "Příjemci"
+
+#: /MessageRecipients/admin_view.ctp:5
+msgid "Message Recipient"
+msgstr "Příjemce"
+
+#: /MessageRecipients/admin_view.ctp:18
+msgid "Edit Message Recipient"
+msgstr "Upravit"
+
+#: /MessageRecipients/admin_view.ctp:19
+msgid "Delete Message Recipient"
+msgstr "Smazat"
+
+#: /MessageRecipients/admin_view.ctp:22 /Messages/admin_add.ctp:7
+#: /Messages/admin_edit.ctp:8 /Messages/admin_view.ctp:20
+msgid "List Messages"
+msgstr "Seznam zpráv"
+
+#: /MessageRecipients/admin_view.ctp:23 /Messages/admin_index.ctp:6
+#: /Messages/admin_view.ctp:21
+msgid "New Message"
+msgstr "Nová zpráva"
+
+#: /MessageRecipients/admin_view.ctp:54
+msgid "Related Messages"
+msgstr "Související zprávy"
+
+#: /MessageRecipients/admin_view.ctp:62 /Messages/admin_add.ctp:30
+#: /Messages/admin_edit.ctp:34 /Messages/admin_view.ctp:50
+msgid "Subject"
+msgstr "Předmět"
+
+#: /MessageRecipients/admin_view.ctp:64 /Messages/admin_add.ctp:36
+#: /Messages/admin_edit.ctp:40 /Messages/admin_view.ctp:62
+msgid "Message Recipient Id"
+msgstr "Id příjemce"
+
+#: /MessageRecipients/admin_view.ctp:78
+msgid "<span class=\"glyphicon glyphicon-search\"></span>"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:79
+msgid "<span class=\"glyphicon glyphicon-edit\"></span>"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:80
+msgid "<span class=\"glyphicon glyphicon-remove\"></span>"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:89
+msgid "<span class=\"glyphicon glyphicon-plus\"></span>&nbsp;&nbsp;New Message"
+msgstr ""
+
+#: /Messages/admin_add.ctp:9
+msgid "Admin Add Message"
+msgstr "Přidat"
+
+#: /Messages/admin_edit.ctp:10
+msgid "Admin Edit Message"
+msgstr "Upravit"
+
+#: /Messages/admin_index.ctp:8
+msgid "Messages"
+msgstr "Zprávy"
+
+#: /Messages/admin_view.ctp:5
+msgid "Message"
+msgstr "Zpráva"
+
+#: /Messages/admin_view.ctp:18
+msgid "Edit Message"
+msgstr "Upravit"
+
+#: /Messages/admin_view.ctp:19
+msgid "Delete Message"
+msgstr "Smataz"
 
 #: /News/admin_add.ctp:7 /News/admin_edit.ctp:8 /News/admin_view.ctp:20
 msgid "List News"
@@ -142,7 +318,7 @@ msgstr "Seznam novinek"
 
 #: /News/admin_add.ctp:9
 msgid "Admin Add News"
-msgstr "Přidat novinku jako admin"
+msgstr "Přidat novinku"
 
 #: /News/admin_add.ctp:27 /News/admin_edit.ctp:31 /News/admin_view.ctp:44
 msgid "Date"
@@ -150,7 +326,7 @@ msgstr "Datum"
 
 #: /News/admin_edit.ctp:10
 msgid "Admin Edit News"
-msgstr "Upravit novinky jako admin"
+msgstr "Upravit novinky"
 
 #: /News/admin_index.ctp:6 /News/admin_view.ctp:21
 msgid "New News"
@@ -174,15 +350,22 @@ msgstr "Seznam příspěvků"
 
 #: /Posts/admin_add.ctp:9
 msgid "Admin Add Post"
-msgstr "Přidat příspěvek jako admin"
+msgstr "Přidat příspěvek"
+
+#: /Posts/admin_add.ctp:27 /Posts/admin_edit.ctp:31
+#: /Tournaments/admin_add.ctp:48 /Tournaments/admin_edit.ctp:52
+msgid "User Id"
+msgstr "Id uživatele"
 
 #: /Posts/admin_add.ctp:33 /Posts/admin_edit.ctp:37 /Posts/admin_view.ctp:65
+#: /Tournaments/admin_add.ctp:42 /Tournaments/admin_edit.ctp:46
+#: /Tournaments/admin_view.ctp:58
 msgid "Perex"
-msgstr ""
+msgstr "Perex"
 
 #: /Posts/admin_edit.ctp:10
 msgid "Admin Edit Post"
-msgstr "Upravit příspěvek jako admin"
+msgstr "Upravit příspěvek"
 
 #: /Posts/admin_index.ctp:6 /Posts/admin_view.ctp:21
 msgid "New Post"
@@ -204,6 +387,25 @@ msgstr "Upravit příspěvek"
 msgid "Delete Post"
 msgstr "Smazat příspěvek"
 
+#: /Posts/admin_view.ctp:22 /Tournaments/admin_view.ctp:22
+#: /Users/admin_add.ctp:7 /Users/admin_edit.ctp:8 /Users/admin_view.ctp:20
+msgid "List Users"
+msgstr "Seznam uživatelů"
+
+#: /Posts/admin_view.ctp:23 /Tournaments/admin_view.ctp:23
+#: /Users/admin_index.ctp:6 /Users/admin_view.ctp:21
+msgid "New User"
+msgstr "Nový uživatel"
+
+#: /Posts/admin_view.ctp:46 /Tournaments/admin_view.ctp:70
+#: /Users/admin_view.ctp:5
+msgid "User"
+msgstr "Uživatel"
+
+#: /Posts/admin_view.ctp:53 /Users/admin_view.ctp:56
+msgid "Created"
+msgstr "Vytvořeno"
+
 #: /Sliders/admin_add.ctp:7 /Sliders/admin_edit.ctp:8
 #: /Sliders/admin_view.ctp:20
 msgid "List Sliders"
@@ -211,38 +413,18 @@ msgstr "Seznam obrázků"
 
 #: /Sliders/admin_add.ctp:9
 msgid "Admin Add Slider"
-msgstr "Přidat obrázek jako admin"
-
-#: /Sliders/admin_add.ctp:24 /Sliders/admin_edit.ctp:28
-#: /Sliders/admin_view.ctp:38
-msgid "Name"
-msgstr "Jméno"
-
-#: /Sliders/admin_add.ctp:27 /Sliders/admin_edit.ctp:31
-#: /Sliders/admin_view.ctp:44 /Tiles/admin_add.ctp:30
-#: /Tiles/admin_edit.ctp:34 /Tiles/admin_view.ctp:56
-msgid "Ord"
-msgstr "Pořadí"
-
-#: /Sliders/admin_add.ctp:30 /Sliders/admin_edit.ctp:34
-#: /Sliders/admin_view.ctp:50 /Tiles/admin_add.ctp:33
-#: /Tiles/admin_edit.ctp:37 /Tiles/admin_view.ctp:62
-msgid "Url"
-msgstr "Cesta"
+msgstr "Přidat obrázek"
 
 #: /Sliders/admin_edit.ctp:10
 msgid "Admin Edit Slider"
-msgstr "Upravit obrázek jako admin"
+msgstr "Upravit obrázek"
 
-#: /Sliders/admin_index.ctp:6 /Sliders/admin_view.ctp:21
+#: /Sliders/admin_index.ctp:6 /Sliders/admin_reorder.ctp:6
+#: /Sliders/admin_view.ctp:21
 msgid "New Slider"
 msgstr "Nový obrázek"
 
-#: /Sliders/admin_index.ctp:7 /Tiles/admin_index.ctp:7
-msgid "Reorder"
-msgstr "Změnit pořadí"
-
-#: /Sliders/admin_index.ctp:9
+#: /Sliders/admin_index.ctp:9 /Sliders/admin_reorder.ctp:9
 msgid "Sliders"
 msgstr "Obrázky"
 
@@ -264,17 +446,18 @@ msgstr "Seznam dlaždic"
 
 #: /Tiles/admin_add.ctp:9
 msgid "Admin Add Tile"
-msgstr "Přidat dlaždici jako admin"
+msgstr "Přidat dlaždici"
 
 #: /Tiles/admin_edit.ctp:10
 msgid "Admin Edit Tile"
-msgstr "Upravit dlaždici jako admin"
+msgstr "Upravit dlaždici"
 
-#: /Tiles/admin_index.ctp:6 /Tiles/admin_view.ctp:21
+#: /Tiles/admin_index.ctp:6 /Tiles/admin_reorder.ctp:6
+#: /Tiles/admin_view.ctp:21
 msgid "New Tile"
 msgstr "Nová dlaždice"
 
-#: /Tiles/admin_index.ctp:9
+#: /Tiles/admin_index.ctp:9 /Tiles/admin_reorder.ctp:9
 msgid "Tiles"
 msgstr "Dlaždice"
 
@@ -290,13 +473,51 @@ msgstr "Upravit dlaždici"
 msgid "Delete Tile"
 msgstr "Smazat dlaždici"
 
+#: /Tournaments/admin_add.ctp:7 /Tournaments/admin_edit.ctp:8
+#: /Tournaments/admin_view.ctp:20
+msgid "List Tournaments"
+msgstr "Seznam zápasů"
+
+#: /Tournaments/admin_add.ctp:9
+msgid "Admin Add Tournament"
+msgstr "Přidat zápas"
+
+#: /Tournaments/admin_add.ctp:32;33 /Tournaments/admin_edit.ctp:36;37
+#: /Tournaments/admin_view.ctp:46
+msgid "Datetime"
+msgstr "Datum"
+
+#: /Tournaments/admin_edit.ctp:10
+msgid "Admin Edit Tournament"
+msgstr "Upravit zápasi"
+
+#: /Tournaments/admin_index.ctp:6 /Tournaments/admin_view.ctp:21
+msgid "New Tournament"
+msgstr "Nový zápas"
+
+#: /Tournaments/admin_index.ctp:8
+msgid "Tournaments"
+msgstr "Zápasi"
+
+#: /Tournaments/admin_view.ctp:5
+msgid "Tournament"
+msgstr "Zápas"
+
+#: /Tournaments/admin_view.ctp:18
+msgid "Edit Tournament"
+msgstr "Upravit"
+
+#: /Tournaments/admin_view.ctp:19
+msgid "Delete Tournament"
+msgstr "Smazat"
+
 #: /Users/add.ctp:4
 msgid "Add User"
 msgstr "Přidat uživatele"
 
 #: /Users/admin_add.ctp:9
 msgid "Admin Add User"
-msgstr "Přidat uživatele jako admin"
+msgstr "Přidat uživatele"
 
 #: /Users/admin_add.ctp:24 /Users/admin_edit.ctp:28 /Users/admin_view.ctp:38
 #: /Users/login.ctp:24
@@ -310,11 +531,11 @@ msgstr "Heslo"
 
 #: /Users/admin_add.ctp:30 /Users/admin_edit.ctp:34 /Users/admin_view.ctp:50
 msgid "Mail"
-msgstr ""
+msgstr "Email"
 
 #: /Users/admin_edit.ctp:10
 msgid "Admin Edit User"
-msgstr "Upravit uživatele jako admin"
+msgstr "Upravit uživatele"
 
 #: /Users/admin_index.ctp:8
 msgid "Users"
@@ -339,3 +560,231 @@ msgstr "Přihlásit se"
 #: /Users/login.ctp:21
 msgid "Fill in your credentials please"
 msgstr "Prosím vyplňte vaše přihlašovací údaje"
+
+#: /Coaches.php:31;51;69
+msgid "Invalid coach"
+msgstr "Neplaté"
+
+#: /Coaches.php:41;55
+msgid "The coach has been saved."
+msgstr "Trenér byl uložen."
+
+#: /Coaches.php:44;58
+msgid "The coach could not be saved. Please, try again."
+msgstr "Trenér nebyl uložen. Zkuste to znovu."
+
+#: /Coaches.php:73
+msgid "The coach has been deleted."
+msgstr "Trenér byl smazán."
+
+#: /Coaches.php:75
+msgid "The coach could not be deleted. Please, try again."
+msgstr "Trenér nebyl smazán. Zkuste to znovu."
+
+#: /Documents.php:24;44;62
+msgid "Invalid document"
+msgstr "Neplatný dokument."
+
+#: /Documents.php:34;48
+msgid "The document has been saved."
+msgstr "Dokument byl uložen."
+
+#: /Documents.php:37;51
+msgid "The document could not be saved. Please, try again."
+msgstr "Document nebyl uložen. Zkuste to znovu."
+
+#: /Documents.php:66
+msgid "The document has been deleted."
+msgstr "Dokument byl smazán."
+
+#: /Documents.php:68
+msgid "The document could not be deleted. Please, try again."
+msgstr "Trenér nebyl smazán. Zkuste to znovu."
+
+#: /MessageRecipients.php:17;37;55
+msgid "Invalid message recipient"
+msgstr "Neplatný příjemce"
+
+#: /MessageRecipients.php:27;41
+msgid "The message recipient has been saved."
+msgstr "Příjemce byl uložen."
+
+#: /MessageRecipients.php:30;44
+msgid "The message recipient could not be saved. Please, try again."
+msgstr "Příjemce nebyl uložen. Zkuste to znovu."
+
+#: /MessageRecipients.php:59
+msgid "The message recipient has been deleted."
+msgstr "Příjemce byl smazán."
+
+#: /MessageRecipients.php:61
+msgid "The message recipient could not be deleted. Please, try again."
+msgstr "Příjemce nebyl smazán. Zkuste to znovu."
+
+#: /Messages.php:12;41;57
+msgid "The message has been saved."
+msgstr "Zpráva byla uložena."
+
+#: /Messages.php:15;44;60
+msgid "The message could not be saved. Please, try again."
+msgstr "Zpráva nebyla uložen. Zkuste to znovu."
+
+#: /Messages.php:31;53;73
+msgid "Invalid message"
+msgstr "Neplatná zpráva"
+
+#: /Messages.php:77
+msgid "The message has been deleted."
+msgstr "Zpráva byla smazána."
+
+#: /Messages.php:79
+msgid "The message could not be deleted. Please, try again."
+msgstr "Příjemce nebyl smazán. Zkuste to znovu."
+
+#: /News.php:24;44;62
+msgid "Invalid news"
+msgstr "Neplatná novinka"
+
+#: /News.php:34;48
+msgid "The news has been saved."
+msgstr "Novinka byla uložena."
+
+#: /News.php:37;51
+msgid "The news could not be saved. Please, try again."
+msgstr "Novinka nebyla uložena. Zkuste to znovu."
+
+#: /News.php:66
+msgid "The news has been deleted."
+msgstr "Novinka byla smazána."
+
+#: /News.php:68
+msgid "The news could not be deleted. Please, try again."
+msgstr "Novinka nebyla smazán. Zkuste to znovu."
+
+#: /Posts.php:24;46;66
+msgid "Invalid post"
+msgstr "Neplatný článek"
+
+#: /Posts.php:34;50
+msgid "The post has been saved."
+msgstr "Článek byl uložen."
+
+#: /Posts.php:37;53
+msgid "The post could not be saved. Please, try again."
+msgstr "Článek nebyl uložen. Zkuste to znovu."
+
+#: /Posts.php:70
+msgid "The post has been deleted."
+msgstr "Článek byl smazán."
+
+#: /Posts.php:72
+msgid "The post could not be deleted. Please, try again."
+msgstr "Článek nebyl smazán. Zkuste to znovu."
+
+#: /Sliders.php:31;51;69
+msgid "Invalid slider"
+msgstr "Neplatný slide"
+
+#: /Sliders.php:41;55
+msgid "The slider has been saved."
+msgstr "Slide byl uložen."
+
+#: /Sliders.php:44;58
+msgid "The slider could not be saved. Please, try again."
+msgstr "Slide nebyl uložen. Zkuste to znovu."
+
+#: /Sliders.php:73
+msgid "The slider has been deleted."
+msgstr "Slid byl smazán."
+
+#: /Sliders.php:75
+msgid "The slider could not be deleted. Please, try again."
+msgstr "Slide nebyl smazán. Zkuste to znovu."
+
+#: /Tiles.php:31;51;69
+msgid "Invalid tile"
+msgstr "Neplatná dlaždice"
+
+#: /Tiles.php:41;55
+msgid "The tile has been saved."
+msgstr "Dlaždice byla uložena."
+
+#: /Tiles.php:44;58
+msgid "The tile could not be saved. Please, try again."
+msgstr "Dlaždice nebyla uložena. Zkuste to znovu."
+
+#: /Tiles.php:73
+msgid "The tile has been deleted."
+msgstr "Dlaždice byla smazána."
+
+#: /Tiles.php:75
+msgid "The tile could not be deleted. Please, try again."
+msgstr "Dlaždice nebyla smazána. Zkuste to znovu."
+
+#: /Tournaments.php:17;39;59
+msgid "Invalid tournament"
+msgstr "Neplatný zápas"
+
+#: /Tournaments.php:27;43
+msgid "The tournament has been saved."
+msgstr "Zápas byl uložen."
+
+#: /Tournaments.php:30;46
+msgid "The tournament could not be saved. Please, try again."
+msgstr "Zápas nebyl uložen. Zkuste to znovu."
+
+#: /Tournaments.php:63
+msgid "The tournament has been deleted."
+msgstr "Zápas byl smazán."
+
+#: /Tournaments.php:65
+msgid "The tournament could not be deleted. Please, try again."
+msgstr "Zápas nebyl smazán. Zkuste to znovu."
+
+#: /Users.php:16
+msgid "Invalid username or password, try again"
+msgstr "Neplatné uživatelské jméno nebo heslo. Zkuste to znova."
+
+#: /Users.php:32;53;74
+msgid "Invalid user"
+msgstr "Neplatný uživatel."
+
+#: /Users.php:41;57
+msgid "The user has been saved"
+msgstr "Uživatel byl uložen."
+
+#: /Users.php:45;61
+msgid "The user could not be saved. Please, try again."
+msgstr "Uživatel nebyl uložen. Zkuste to znovu."
+
+#: /Users.php:77
+msgid "User deleted"
+msgstr "Uživatel smazán"
+
+#: /Users.php:80
+msgid "User was not deleted"
+msgstr "Uživatel nebyl smazán."
+
+#~ msgid "List Headlines"
+#~ msgstr "Seznam aktualit"
+
+#~ msgid "Admin Add Headline"
+#~ msgstr "Přidat aktualitu jako admin"
+
+#~ msgid "Admin Edit Headline"
+#~ msgstr "Upravit aktualitu jako admin"
+
+#~ msgid "New Headline"
+#~ msgstr "Nová aktualita"
+
+#~ msgid "Headlines"
+#~ msgstr "Aktuality"
+
+#~ msgid "Headline"
+#~ msgstr "Aktualita"
+
+#~ msgid "Edit Headline"
+#~ msgstr "Upravit aktualitu"
+
+#~ msgid "Delete Headline"
+#~ msgstr "Smazat aktualitu"

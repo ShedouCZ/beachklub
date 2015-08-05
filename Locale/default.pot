@@ -13,67 +13,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /Elements/admin_navigation.ctp:11
-msgid "Menu"
+#: /Coaches/admin_add.ctp:7
+#: /Coaches/admin_edit.ctp:8
+#: /Coaches/admin_view.ctp:20
+msgid "List Coaches"
 msgstr ""
 
-#: /Headlines/admin_add.ctp:7
-#: /Headlines/admin_edit.ctp:8
-#: /Headlines/admin_view.ctp:20
-msgid "List Headlines"
+#: /Coaches/admin_add.ctp:9
+msgid "Admin Add Coach"
 msgstr ""
 
-#: /Headlines/admin_add.ctp:9
-msgid "Admin Add Headline"
+#: /Coaches/admin_add.ctp:24
+#: /Coaches/admin_edit.ctp:28
+#: /Coaches/admin_view.ctp:38
+#: /Sliders/admin_add.ctp:24
+#: /Sliders/admin_edit.ctp:28
+#: /Sliders/admin_view.ctp:38
+#: /Tournaments/admin_add.ctp:24
+#: /Tournaments/admin_edit.ctp:28
+#: /Tournaments/admin_view.ctp:40
+msgid "Name"
 msgstr ""
 
-#: /Headlines/admin_add.ctp:24
-#: /Headlines/admin_edit.ctp:28
-#: /Headlines/admin_view.ctp:40
+#: /Coaches/admin_add.ctp:27
+#: /Coaches/admin_edit.ctp:31
+#: /Coaches/admin_view.ctp:44
+#: /Documents/admin_add.ctp:21
+#: /Documents/admin_edit.ctp:25
+#: /Documents/admin_view.ctp:38
+#: /MessageRecipients/admin_view.ctp:60
+#: /Messages/admin_add.ctp:24
+#: /Messages/admin_edit.ctp:28
+#: /Messages/admin_view.ctp:38
 #: /News/admin_add.ctp:24
 #: /News/admin_edit.ctp:28
 #: /News/admin_view.ctp:38
 #: /Posts/admin_add.ctp:24
 #: /Posts/admin_edit.ctp:28
 #: /Posts/admin_view.ctp:40
-#: /Tiles/admin_add.ctp:27
-#: /Tiles/admin_edit.ctp:31
-#: /Tiles/admin_view.ctp:44
+#: /Tiles/admin_add.ctp:24
+#: /Tiles/admin_edit.ctp:28
+#: /Tiles/admin_view.ctp:38
 msgid "Title"
 msgstr ""
 
-#: /Headlines/admin_add.ctp:27
-#: /Headlines/admin_edit.ctp:31
-#: /Posts/admin_add.ctp:27
-#: /Posts/admin_edit.ctp:31
-msgid "User Id"
-msgstr ""
-
-#: /Headlines/admin_add.ctp:30
-#: /Headlines/admin_edit.ctp:34
-#: /Headlines/admin_view.ctp:59
+#: /Coaches/admin_add.ctp:30
+#: /Coaches/admin_edit.ctp:34
+#: /Coaches/admin_view.ctp:50
+#: /MessageRecipients/admin_view.ctp:63
+#: /Messages/admin_add.ctp:33
+#: /Messages/admin_edit.ctp:37
+#: /Messages/admin_view.ctp:56
 #: /News/admin_add.ctp:30
 #: /News/admin_edit.ctp:34
 #: /News/admin_view.ctp:50
 #: /Posts/admin_add.ctp:30
 #: /Posts/admin_edit.ctp:34
 #: /Posts/admin_view.ctp:59
-#: /Tiles/admin_add.ctp:24
-#: /Tiles/admin_edit.ctp:28
-#: /Tiles/admin_view.ctp:38
+#: /Tournaments/admin_add.ctp:39
+#: /Tournaments/admin_edit.ctp:43
+#: /Tournaments/admin_view.ctp:52
 msgid "Desc"
 msgstr ""
 
-#: /Headlines/admin_add.ctp:34
-#: /Headlines/admin_edit.ctp:38
+#: /Coaches/admin_add.ctp:33
+#: /Coaches/admin_edit.ctp:37
+#: /Coaches/admin_view.ctp:56
+#: /Sliders/admin_view.ctp:50
+#: /Tiles/admin_view.ctp:50
+#: /Tournaments/admin_add.ctp:45
+#: /Tournaments/admin_edit.ctp:49
+#: /Tournaments/admin_view.ctp:64
+msgid "Url"
+msgstr ""
+
+#: /Coaches/admin_add.ctp:36
+#: /Coaches/admin_edit.ctp:40
+#: /Coaches/admin_view.ctp:62
+#: /Sliders/admin_view.ctp:44
+#: /Tiles/admin_view.ctp:44
+msgid "Ord"
+msgstr ""
+
+#: /Coaches/admin_add.ctp:40
+#: /Coaches/admin_edit.ctp:44
+#: /Documents/admin_add.ctp:31
+#: /Documents/admin_edit.ctp:35
+#: /MessageRecipients/admin_add.ctp:28
+#: /MessageRecipients/admin_edit.ctp:32
+#: /Messages/admin_add.ctp:40
+#: /Messages/admin_edit.ctp:44
 #: /News/admin_add.ctp:34
 #: /News/admin_edit.ctp:38
 #: /Posts/admin_add.ctp:37
 #: /Posts/admin_edit.ctp:41
-#: /Sliders/admin_add.ctp:34
-#: /Sliders/admin_edit.ctp:38
-#: /Tiles/admin_add.ctp:37
-#: /Tiles/admin_edit.ctp:41
+#: /Sliders/admin_add.ctp:55
+#: /Sliders/admin_edit.ctp:43
+#: /Tiles/admin_add.ctp:39
+#: /Tiles/admin_edit.ctp:43
+#: /Tournaments/admin_add.ctp:52
+#: /Tournaments/admin_edit.ctp:56
 #: /Users/add.ctp:9
 #: /Users/admin_add.ctp:34
 #: /Users/admin_edit.ctp:38
@@ -81,18 +120,31 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: /Headlines/admin_edit.ctp:7
+#: /Coaches/admin_edit.ctp:7
+#: /Documents/admin_edit.ctp:7
+#: /MessageRecipients/admin_edit.ctp:7
+#: /Messages/admin_edit.ctp:7
 #: /News/admin_edit.ctp:7
 #: /Posts/admin_edit.ctp:7
 #: /Sliders/admin_edit.ctp:7
 #: /Tiles/admin_edit.ctp:7
+#: /Tournaments/admin_edit.ctp:7
 #: /Users/admin_edit.ctp:7
 msgid "Delete"
 msgstr ""
 
-#: /Headlines/admin_edit.ctp:7
-#: /Headlines/admin_index.ctp:40
-#: /Headlines/admin_view.ctp:19
+#: /Coaches/admin_edit.ctp:7
+#: /Coaches/admin_index.ctp:39
+#: /Coaches/admin_view.ctp:19
+#: /Documents/admin_edit.ctp:7
+#: /Documents/admin_index.ctp:35
+#: /Documents/admin_view.ctp:19
+#: /MessageRecipients/admin_edit.ctp:7
+#: /MessageRecipients/admin_index.ctp:32
+#: /MessageRecipients/admin_view.ctp:19;80
+#: /Messages/admin_edit.ctp:7
+#: /Messages/admin_index.ctp:40
+#: /Messages/admin_view.ctp:19
 #: /News/admin_edit.ctp:7
 #: /News/admin_index.ctp:36
 #: /News/admin_view.ctp:19
@@ -103,20 +155,29 @@ msgstr ""
 #: /Sliders/admin_index.ctp:35
 #: /Sliders/admin_view.ctp:19
 #: /Tiles/admin_edit.ctp:7
-#: /Tiles/admin_index.ctp:39
+#: /Tiles/admin_index.ctp:35
 #: /Tiles/admin_view.ctp:19
+#: /Tournaments/admin_edit.ctp:7
+#: /Tournaments/admin_index.ctp:44
+#: /Tournaments/admin_view.ctp:19
 #: /Users/admin_edit.ctp:7
 #: /Users/admin_index.ctp:40
 #: /Users/admin_view.ctp:19
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
-#: /Headlines/admin_edit.ctp:10
-msgid "Admin Edit Headline"
+#: /Coaches/admin_edit.ctp:10
+msgid "Admin Edit Coach"
 msgstr ""
 
-#: /Headlines/admin_edit.ctp:25
-#: /Headlines/admin_view.ctp:34
+#: /Coaches/admin_edit.ctp:25
+#: /Coaches/admin_view.ctp:32
+#: /Documents/admin_edit.ctp:22
+#: /Documents/admin_view.ctp:32
+#: /MessageRecipients/admin_edit.ctp:25
+#: /MessageRecipients/admin_view.ctp:34;59
+#: /Messages/admin_edit.ctp:25
+#: /Messages/admin_view.ctp:32
 #: /News/admin_edit.ctp:25
 #: /News/admin_view.ctp:32
 #: /Posts/admin_edit.ctp:25
@@ -125,67 +186,226 @@ msgstr ""
 #: /Sliders/admin_view.ctp:32
 #: /Tiles/admin_edit.ctp:25
 #: /Tiles/admin_view.ctp:32
+#: /Tournaments/admin_edit.ctp:25
+#: /Tournaments/admin_view.ctp:34
 #: /Users/admin_edit.ctp:25
 #: /Users/admin_view.ctp:32
 msgid "Id"
 msgstr ""
 
-#: /Headlines/admin_index.ctp:6
-#: /Headlines/admin_view.ctp:21
-msgid "New Headline"
+#: /Coaches/admin_index.ctp:6
+#: /Coaches/admin_reorder.ctp:6
+#: /Coaches/admin_view.ctp:21
+msgid "New Coach"
 msgstr ""
 
-#: /Headlines/admin_index.ctp:8
-msgid "Headlines"
+#: /Coaches/admin_index.ctp:7
+#: /Coaches/admin_reorder.ctp:7
+#: /Documents/admin_index.ctp:7
+#: /Documents/admin_reorder.ctp:7
+#: /Sliders/admin_index.ctp:7
+#: /Sliders/admin_reorder.ctp:7
+#: /Tiles/admin_index.ctp:7
+#: /Tiles/admin_reorder.ctp:7
+msgid "Reorder"
 msgstr ""
 
-#: /Headlines/admin_index.ctp:48
+#: /Coaches/admin_index.ctp:9
+#: /Coaches/admin_reorder.ctp:9
+msgid "Coaches"
+msgstr ""
+
+#: /Coaches/admin_index.ctp:47
+#: /Documents/admin_index.ctp:43
+#: /MessageRecipients/admin_index.ctp:40
+#: /Messages/admin_index.ctp:48
 #: /News/admin_index.ctp:44
 #: /Posts/admin_index.ctp:50
 #: /Sliders/admin_index.ctp:43
-#: /Tiles/admin_index.ctp:47
+#: /Tiles/admin_index.ctp:43
+#: /Tournaments/admin_index.ctp:52
 #: /Users/admin_index.ctp:48
 msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:5
-msgid "Headline"
+#: /Coaches/admin_view.ctp:5
+msgid "Coach"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:18
-msgid "Edit Headline"
+#: /Coaches/admin_view.ctp:18
+msgid "Edit Coach"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:19
-msgid "Delete Headline"
+#: /Coaches/admin_view.ctp:19
+msgid "Delete Coach"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:22
-#: /Posts/admin_view.ctp:22
-#: /Users/admin_add.ctp:7
-#: /Users/admin_edit.ctp:8
-#: /Users/admin_view.ctp:20
-msgid "List Users"
+#: /Documents/admin_add.ctp:7
+#: /Documents/admin_edit.ctp:8
+#: /Documents/admin_view.ctp:20
+msgid "List Documents"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:23
-#: /Posts/admin_view.ctp:23
-#: /Users/admin_index.ctp:6
-#: /Users/admin_view.ctp:21
-msgid "New User"
+#: /Documents/admin_add.ctp:9
+msgid "Admin Add Document"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:46
-#: /Posts/admin_view.ctp:46
-#: /Users/admin_view.ctp:5
-msgid "User"
+#: /Documents/admin_add.ctp:24
+#: /Documents/admin_edit.ctp:28
+#: /Documents/admin_view.ctp:44
+msgid "Content"
 msgstr ""
 
-#: /Headlines/admin_view.ctp:53
-#: /Posts/admin_view.ctp:53
-#: /Tiles/admin_view.ctp:50
-#: /Users/admin_view.ctp:56
-msgid "Created"
+#: /Documents/admin_add.ctp:27
+#: /Documents/admin_edit.ctp:31
+#: /Documents/admin_view.ctp:50
+msgid "Published"
+msgstr ""
+
+#: /Documents/admin_edit.ctp:10
+msgid "Admin Edit Document"
+msgstr ""
+
+#: /Documents/admin_index.ctp:6
+#: /Documents/admin_reorder.ctp:6
+#: /Documents/admin_view.ctp:21
+msgid "New Document"
+msgstr ""
+
+#: /Documents/admin_index.ctp:9
+#: /Documents/admin_reorder.ctp:9
+msgid "Documents"
+msgstr ""
+
+#: /Documents/admin_view.ctp:5
+msgid "Document"
+msgstr ""
+
+#: /Documents/admin_view.ctp:18
+msgid "Edit Document"
+msgstr ""
+
+#: /Documents/admin_view.ctp:19
+msgid "Delete Document"
+msgstr ""
+
+#: /Elements/admin_navigation.ctp:14
+msgid "Menu"
+msgstr ""
+
+#: /MessageRecipients/admin_add.ctp:7
+#: /MessageRecipients/admin_edit.ctp:8
+#: /MessageRecipients/admin_view.ctp:20
+msgid "List Message Recipients"
+msgstr ""
+
+#: /MessageRecipients/admin_add.ctp:9
+msgid "Admin Add Message Recipient"
+msgstr ""
+
+#: /MessageRecipients/admin_add.ctp:24
+#: /MessageRecipients/admin_edit.ctp:28
+#: /MessageRecipients/admin_view.ctp:40;61
+#: /Messages/admin_add.ctp:27
+#: /Messages/admin_edit.ctp:31
+#: /Messages/admin_view.ctp:44
+msgid "Email"
+msgstr ""
+
+#: /MessageRecipients/admin_edit.ctp:10
+msgid "Admin Edit Message Recipient"
+msgstr ""
+
+#: /MessageRecipients/admin_index.ctp:6
+#: /MessageRecipients/admin_view.ctp:21
+msgid "New Message Recipient"
+msgstr ""
+
+#: /MessageRecipients/admin_index.ctp:8
+msgid "Message Recipients"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:5
+msgid "Message Recipient"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:18
+msgid "Edit Message Recipient"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:19
+msgid "Delete Message Recipient"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:22
+#: /Messages/admin_add.ctp:7
+#: /Messages/admin_edit.ctp:8
+#: /Messages/admin_view.ctp:20
+msgid "List Messages"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:23
+#: /Messages/admin_index.ctp:6
+#: /Messages/admin_view.ctp:21
+msgid "New Message"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:54
+msgid "Related Messages"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:62
+#: /Messages/admin_add.ctp:30
+#: /Messages/admin_edit.ctp:34
+#: /Messages/admin_view.ctp:50
+msgid "Subject"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:64
+#: /Messages/admin_add.ctp:36
+#: /Messages/admin_edit.ctp:40
+#: /Messages/admin_view.ctp:62
+msgid "Message Recipient Id"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:78
+msgid "<span class=\"glyphicon glyphicon-search\"></span>"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:79
+msgid "<span class=\"glyphicon glyphicon-edit\"></span>"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:80
+msgid "<span class=\"glyphicon glyphicon-remove\"></span>"
+msgstr ""
+
+#: /MessageRecipients/admin_view.ctp:89
+msgid "<span class=\"glyphicon glyphicon-plus\"></span>&nbsp;&nbsp;New Message"
+msgstr ""
+
+#: /Messages/admin_add.ctp:9
+msgid "Admin Add Message"
+msgstr ""
+
+#: /Messages/admin_edit.ctp:10
+msgid "Admin Edit Message"
+msgstr ""
+
+#: /Messages/admin_index.ctp:8
+msgid "Messages"
+msgstr ""
+
+#: /Messages/admin_view.ctp:5
+msgid "Message"
+msgstr ""
+
+#: /Messages/admin_view.ctp:18
+msgid "Edit Message"
+msgstr ""
+
+#: /Messages/admin_view.ctp:19
+msgid "Delete Message"
 msgstr ""
 
 #: /News/admin_add.ctp:7
@@ -236,9 +456,19 @@ msgstr ""
 msgid "Admin Add Post"
 msgstr ""
 
+#: /Posts/admin_add.ctp:27
+#: /Posts/admin_edit.ctp:31
+#: /Tournaments/admin_add.ctp:48
+#: /Tournaments/admin_edit.ctp:52
+msgid "User Id"
+msgstr ""
+
 #: /Posts/admin_add.ctp:33
 #: /Posts/admin_edit.ctp:37
 #: /Posts/admin_view.ctp:65
+#: /Tournaments/admin_add.ctp:42
+#: /Tournaments/admin_edit.ctp:46
+#: /Tournaments/admin_view.ctp:58
 msgid "Perex"
 msgstr ""
 
@@ -267,6 +497,32 @@ msgstr ""
 msgid "Delete Post"
 msgstr ""
 
+#: /Posts/admin_view.ctp:22
+#: /Tournaments/admin_view.ctp:22
+#: /Users/admin_add.ctp:7
+#: /Users/admin_edit.ctp:8
+#: /Users/admin_view.ctp:20
+msgid "List Users"
+msgstr ""
+
+#: /Posts/admin_view.ctp:23
+#: /Tournaments/admin_view.ctp:23
+#: /Users/admin_index.ctp:6
+#: /Users/admin_view.ctp:21
+msgid "New User"
+msgstr ""
+
+#: /Posts/admin_view.ctp:46
+#: /Tournaments/admin_view.ctp:70
+#: /Users/admin_view.ctp:5
+msgid "User"
+msgstr ""
+
+#: /Posts/admin_view.ctp:53
+#: /Users/admin_view.ctp:56
+msgid "Created"
+msgstr ""
+
 #: /Sliders/admin_add.ctp:7
 #: /Sliders/admin_edit.ctp:8
 #: /Sliders/admin_view.ctp:20
@@ -277,45 +533,18 @@ msgstr ""
 msgid "Admin Add Slider"
 msgstr ""
 
-#: /Sliders/admin_add.ctp:24
-#: /Sliders/admin_edit.ctp:28
-#: /Sliders/admin_view.ctp:38
-msgid "Name"
-msgstr ""
-
-#: /Sliders/admin_add.ctp:27
-#: /Sliders/admin_edit.ctp:31
-#: /Sliders/admin_view.ctp:44
-#: /Tiles/admin_add.ctp:30
-#: /Tiles/admin_edit.ctp:34
-#: /Tiles/admin_view.ctp:56
-msgid "Ord"
-msgstr ""
-
-#: /Sliders/admin_add.ctp:30
-#: /Sliders/admin_edit.ctp:34
-#: /Sliders/admin_view.ctp:50
-#: /Tiles/admin_add.ctp:33
-#: /Tiles/admin_edit.ctp:37
-#: /Tiles/admin_view.ctp:62
-msgid "Url"
-msgstr ""
-
 #: /Sliders/admin_edit.ctp:10
 msgid "Admin Edit Slider"
 msgstr ""
 
 #: /Sliders/admin_index.ctp:6
+#: /Sliders/admin_reorder.ctp:6
 #: /Sliders/admin_view.ctp:21
 msgid "New Slider"
 msgstr ""
 
-#: /Sliders/admin_index.ctp:7
-#: /Tiles/admin_index.ctp:7
-msgid "Reorder"
-msgstr ""
-
 #: /Sliders/admin_index.ctp:9
+#: /Sliders/admin_reorder.ctp:9
 msgid "Sliders"
 msgstr ""
 
@@ -346,11 +575,13 @@ msgid "Admin Edit Tile"
 msgstr ""
 
 #: /Tiles/admin_index.ctp:6
+#: /Tiles/admin_reorder.ctp:6
 #: /Tiles/admin_view.ctp:21
 msgid "New Tile"
 msgstr ""
 
 #: /Tiles/admin_index.ctp:9
+#: /Tiles/admin_reorder.ctp:9
 msgid "Tiles"
 msgstr ""
 
@@ -364,6 +595,47 @@ msgstr ""
 
 #: /Tiles/admin_view.ctp:19
 msgid "Delete Tile"
+msgstr ""
+
+#: /Tournaments/admin_add.ctp:7
+#: /Tournaments/admin_edit.ctp:8
+#: /Tournaments/admin_view.ctp:20
+msgid "List Tournaments"
+msgstr ""
+
+#: /Tournaments/admin_add.ctp:9
+msgid "Admin Add Tournament"
+msgstr ""
+
+#: /Tournaments/admin_add.ctp:32;33
+#: /Tournaments/admin_edit.ctp:36;37
+#: /Tournaments/admin_view.ctp:46
+msgid "Datetime"
+msgstr ""
+
+#: /Tournaments/admin_edit.ctp:10
+msgid "Admin Edit Tournament"
+msgstr ""
+
+#: /Tournaments/admin_index.ctp:6
+#: /Tournaments/admin_view.ctp:21
+msgid "New Tournament"
+msgstr ""
+
+#: /Tournaments/admin_index.ctp:8
+msgid "Tournaments"
+msgstr ""
+
+#: /Tournaments/admin_view.ctp:5
+msgid "Tournament"
+msgstr ""
+
+#: /Tournaments/admin_view.ctp:18
+msgid "Edit Tournament"
+msgstr ""
+
+#: /Tournaments/admin_view.ctp:19
+msgid "Delete Tournament"
 msgstr ""
 
 #: /Users/add.ctp:4
@@ -420,5 +692,209 @@ msgstr ""
 
 #: /Users/login.ctp:21
 msgid "Fill in your credentials please"
+msgstr ""
+
+#: /Coaches.php:31;51;69
+msgid "Invalid coach"
+msgstr ""
+
+#: /Coaches.php:41;55
+msgid "The coach has been saved."
+msgstr ""
+
+#: /Coaches.php:44;58
+msgid "The coach could not be saved. Please, try again."
+msgstr ""
+
+#: /Coaches.php:73
+msgid "The coach has been deleted."
+msgstr ""
+
+#: /Coaches.php:75
+msgid "The coach could not be deleted. Please, try again."
+msgstr ""
+
+#: /Documents.php:24;44;62
+msgid "Invalid document"
+msgstr ""
+
+#: /Documents.php:34;48
+msgid "The document has been saved."
+msgstr ""
+
+#: /Documents.php:37;51
+msgid "The document could not be saved. Please, try again."
+msgstr ""
+
+#: /Documents.php:66
+msgid "The document has been deleted."
+msgstr ""
+
+#: /Documents.php:68
+msgid "The document could not be deleted. Please, try again."
+msgstr ""
+
+#: /MessageRecipients.php:17;37;55
+msgid "Invalid message recipient"
+msgstr ""
+
+#: /MessageRecipients.php:27;41
+msgid "The message recipient has been saved."
+msgstr ""
+
+#: /MessageRecipients.php:30;44
+msgid "The message recipient could not be saved. Please, try again."
+msgstr ""
+
+#: /MessageRecipients.php:59
+msgid "The message recipient has been deleted."
+msgstr ""
+
+#: /MessageRecipients.php:61
+msgid "The message recipient could not be deleted. Please, try again."
+msgstr ""
+
+#: /Messages.php:12;41;57
+msgid "The message has been saved."
+msgstr ""
+
+#: /Messages.php:15;44;60
+msgid "The message could not be saved. Please, try again."
+msgstr ""
+
+#: /Messages.php:31;53;73
+msgid "Invalid message"
+msgstr ""
+
+#: /Messages.php:77
+msgid "The message has been deleted."
+msgstr ""
+
+#: /Messages.php:79
+msgid "The message could not be deleted. Please, try again."
+msgstr ""
+
+#: /News.php:24;44;62
+msgid "Invalid news"
+msgstr ""
+
+#: /News.php:34;48
+msgid "The news has been saved."
+msgstr ""
+
+#: /News.php:37;51
+msgid "The news could not be saved. Please, try again."
+msgstr ""
+
+#: /News.php:66
+msgid "The news has been deleted."
+msgstr ""
+
+#: /News.php:68
+msgid "The news could not be deleted. Please, try again."
+msgstr ""
+
+#: /Posts.php:24;46;66
+msgid "Invalid post"
+msgstr ""
+
+#: /Posts.php:34;50
+msgid "The post has been saved."
+msgstr ""
+
+#: /Posts.php:37;53
+msgid "The post could not be saved. Please, try again."
+msgstr ""
+
+#: /Posts.php:70
+msgid "The post has been deleted."
+msgstr ""
+
+#: /Posts.php:72
+msgid "The post could not be deleted. Please, try again."
+msgstr ""
+
+#: /Sliders.php:31;51;69
+msgid "Invalid slider"
+msgstr ""
+
+#: /Sliders.php:41;55
+msgid "The slider has been saved."
+msgstr ""
+
+#: /Sliders.php:44;58
+msgid "The slider could not be saved. Please, try again."
+msgstr ""
+
+#: /Sliders.php:73
+msgid "The slider has been deleted."
+msgstr ""
+
+#: /Sliders.php:75
+msgid "The slider could not be deleted. Please, try again."
+msgstr ""
+
+#: /Tiles.php:31;51;69
+msgid "Invalid tile"
+msgstr ""
+
+#: /Tiles.php:41;55
+msgid "The tile has been saved."
+msgstr ""
+
+#: /Tiles.php:44;58
+msgid "The tile could not be saved. Please, try again."
+msgstr ""
+
+#: /Tiles.php:73
+msgid "The tile has been deleted."
+msgstr ""
+
+#: /Tiles.php:75
+msgid "The tile could not be deleted. Please, try again."
+msgstr ""
+
+#: /Tournaments.php:17;39;59
+msgid "Invalid tournament"
+msgstr ""
+
+#: /Tournaments.php:27;43
+msgid "The tournament has been saved."
+msgstr ""
+
+#: /Tournaments.php:30;46
+msgid "The tournament could not be saved. Please, try again."
+msgstr ""
+
+#: /Tournaments.php:63
+msgid "The tournament has been deleted."
+msgstr ""
+
+#: /Tournaments.php:65
+msgid "The tournament could not be deleted. Please, try again."
+msgstr ""
+
+#: /Users.php:16
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: /Users.php:32;53;74
+msgid "Invalid user"
+msgstr ""
+
+#: /Users.php:41;57
+msgid "The user has been saved"
+msgstr ""
+
+#: /Users.php:45;61
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: /Users.php:77
+msgid "User deleted"
+msgstr ""
+
+#: /Users.php:80
+msgid "User was not deleted"
 msgstr ""
 
