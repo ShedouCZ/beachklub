@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-08-05 10:56+0100\n"
+"PO-Revision-Date: 2015-08-05 11:48+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: EMAIL@ADDRESS\n"
 "Language: cs_CZ\n"
@@ -168,7 +168,7 @@ msgstr "Seznam"
 
 #: /Documents/admin_add.ctp:9
 msgid "Admin Add Document"
-msgstr "Přidat document"
+msgstr "Přidat dokument"
 
 #: /Documents/admin_add.ctp:24 /Documents/admin_edit.ctp:28
 #: /Documents/admin_view.ctp:44
@@ -199,7 +199,7 @@ msgstr "Dokument"
 
 #: /Documents/admin_view.ctp:18
 msgid "Edit Document"
-msgstr "Upracit"
+msgstr "Upravit"
 
 #: /Documents/admin_view.ctp:19
 msgid "Delete Document"
@@ -426,7 +426,7 @@ msgstr "Nový obrázek"
 
 #: /Sliders/admin_index.ctp:9 /Sliders/admin_reorder.ctp:9
 msgid "Sliders"
-msgstr "Obrázky"
+msgstr "Slidy"
 
 #: /Sliders/admin_view.ctp:5
 msgid "Slider"
