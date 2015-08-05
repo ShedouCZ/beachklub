@@ -173,7 +173,7 @@ module.exports = function(grunt) {
 					'css/overrides/eonasdan-datetimepicker-bs.css',
 					'dist/bs-custom.css',
 					'Vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
-					'Vendor/bootstrap/dist/css/bootstrap.css',
+					'dist/bootstrap.css',
 					'css/bootstrap-validation.css',
 					'Vendor/font-awesome/css/font-awesome.css',
 					'Vendor/fullcalendar/dist/fullcalendar.css',
@@ -196,7 +196,7 @@ module.exports = function(grunt) {
 					compress: true
 				},
 				files: {
-					'dist/bs-custom.css':'css/overrides/bs-custom.less',
+					'dist/bootstrap.css':'css/overrides/bootstrap.less',
 				}
 			}
 		},
