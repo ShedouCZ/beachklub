@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-08-05 11:48+0100\n"
+"PO-Revision-Date: 2015-08-05 12:03+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: EMAIL@ADDRESS\n"
 "Language: cs_CZ\n"
@@ -178,7 +178,7 @@ msgstr "Obsah"
 #: /Documents/admin_add.ctp:27 /Documents/admin_edit.ctp:31
 #: /Documents/admin_view.ctp:50
 msgid "Published"
-msgstr "Zveřejněno"
+msgstr "Veřejný"
 
 #: /Documents/admin_edit.ctp:10
 msgid "Admin Edit Document"
