@@ -145,3 +145,5 @@ CakeLog::config('error', array(
 ));
 
 require_once APP . 'Config' . DS . 'gallery.php';
+
+Configure::write('Config.language', 'ces');

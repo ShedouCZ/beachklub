@@ -32,7 +32,7 @@
 					<tr>
 						<td><?php echo h($coach['Coach']['name']); ?></td>
 						<td><?php echo h($coach['Coach']['title']); ?></td>
-						<td><?php echo h($coach['Coach']['desc']); ?></td>
+						<td><?php echo $coach['Coach']['desc']; ?></td>
 						<td><?php echo h($coach['Coach']['url']); ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $coach['Coach']['id']), array('escape' => false)); ?>

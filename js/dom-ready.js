@@ -1,6 +1,6 @@
 // MODULE summernote
 var App = App || {};
-App.document_album_id = 1;
+App.document_album_id = 3;
 
 App.upload_file = function (file, callback) {
 	var data = new FormData();
@@ -140,7 +140,7 @@ Dropzone.options = {
 		if (this.options.params.current_picture) {
 			var picture = this.options.params.current_picture;
 			this.emit('addedfile', picture);
-			this.emit('thumbnail', picture, picture.styles.large);
+			this.emit('thumbnail', picture, picture.styles.medium);
 			this.emit('complete',  picture);
 		}
 	}
