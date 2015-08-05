@@ -21,7 +21,7 @@
 				<thead>
 					<tr>
 						<th><?php echo $this->Paginator->sort('name'); ?></th>
-						<th><?php echo $this->Paginator->sort('url'); ?></th>
+						<th><?php echo $this->Paginator->sort('image', 'Slide'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
@@ -29,7 +29,7 @@
 				<?php foreach ($sliders as $slider) { ?>
 					<tr>
 						<td><?php echo h($slider['Slider']['name']); ?></td>
-						<td><?php echo $slider['Picture']['styles']['slide']; ?></td>
+						<td><img src=<?php echo $slider['Picture']['styles']['slide']; ?> width="170" height="90" alt="" /></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $slider['Slider']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $slider['Slider']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $slider['Slider']['id'])); ?>

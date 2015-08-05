@@ -21,7 +21,7 @@
 				<?php foreach ($sliders as $item) {?>
 					<div class="list-group-item" data-item-id="<?php echo h($item['Slider']['id']); ?>">
 						<span class="glyphicon glyphicon-move" aria-hidden="true"></span>
-						<img src=<?php echo $item['Picture']['styles']['large']; ?> width="170" height="90" alt="" />
+						<img src=<?php echo $item['Picture']['styles']['slide']; ?> width="170" height="90" alt="" />
 						<?php echo $this->Html->link($item['Slider']['name'], array('action' => 'index', $item['Slider']['id'])); ?>
 					</div>
 				<?php } ?>
