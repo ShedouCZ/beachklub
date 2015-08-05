@@ -14,7 +14,10 @@
 
 
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-3">
+			<?php echo $this->element('admin_navigation'); ?>
+		</div><!-- end col md 3 -->
+		<div class="col-md-9">
 			<?php echo $this->Form->create('Document', array('role'=>'form', 'class'=>'form-horizontal', 'formStyle'=>'horizontal-wide')); ?>
 
 				<div class="form-group">
@@ -30,14 +33,10 @@
 					<div class="col-sm-offset-2 col-sm-8">
 						<?php echo $this->Form->submit(__('Submit'), array('class'=>'btn btn-primary')); ?>
 					</div>
-
 				</div>
 
 			<?php echo $this->Form->end() ?>
 
 		</div><!-- end col md 12 -->
-		<div class="col-md-3">
-			<?php echo $this->element('admin_navigation'); ?>
-		</div><!-- end col md 3 -->
 	</div><!-- end row -->
 </div>
