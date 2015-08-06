@@ -40,7 +40,7 @@ CREATE TABLE `gallery_albums` (
 
 INSERT INTO `gallery_albums` (`id`, `title`, `default_name`, `path`, `model`, `model_id`, `tags`, `status`, `created`, `modified`) VALUES
 (1,	'Slides album',	'',	'',	'slide',	1,	'',	'published',	'2015-07-23 12:29:30',	'2015-07-23 12:29:30'),
-(2,	'Tiles album',	'',	'',	'tile',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
+(2,	'Tiles album',	'',	'',	'tile',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
 (3,	'Documents album',	'',	'',	'document',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
 
 DROP TABLE IF EXISTS `gallery_pictures`;
