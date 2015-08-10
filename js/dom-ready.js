@@ -27,9 +27,11 @@ App.upload_file = function (file, callback) {
 	});
 };
 
-if ($().summernote) $('textarea[data-provide=wysiwyg]').summernote({
+if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
+	var height = $(e).data('wysiwyg-height');
+	$(e).summernote({
 		lang: 'cs-CZ',
-		height: 680,
+		height: height ? height : 680,
 		toolbar: [
 				['css', ['style']],
 				['style', ['bold', 'italic', 'underline', 'clear']],
@@ -49,6 +51,7 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').summernote({
 				App.upload_file(files[i], callback);
 			}
 		}
+	});
 });
 
 // MODULE sortable
