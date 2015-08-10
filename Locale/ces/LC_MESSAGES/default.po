@@ -369,7 +369,7 @@ msgstr "Upravit příspěvek"
 
 #: /Posts/admin_index.ctp:6 /Posts/admin_view.ctp:21
 msgid "New Post"
-msgstr "Noví příspěvek"
+msgstr "Nový příspěvek"
 
 #: /Posts/admin_index.ctp:8
 msgid "Posts"
