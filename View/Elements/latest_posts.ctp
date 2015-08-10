@@ -22,7 +22,7 @@
                         <div class="field-items">
                             <div class="field-item even">
                                 <p>
-                                    <?php echo $post['Post']['desc']; ?>
+                                    <?php echo $post['Post']['perex']; ?>
                                 </p>
                             </div>
                         </div>
