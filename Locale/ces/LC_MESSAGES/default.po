@@ -251,16 +251,16 @@ msgstr "Smazat"
 #: /MessageRecipients/admin_view.ctp:22 /Messages/admin_add.ctp:7
 #: /Messages/admin_edit.ctp:8 /Messages/admin_view.ctp:20
 msgid "List Messages"
-msgstr "Seznam zpráv"
+msgstr "Seznam vzkazů"
 
 #: /MessageRecipients/admin_view.ctp:23 /Messages/admin_index.ctp:6
 #: /Messages/admin_view.ctp:21
 msgid "New Message"
-msgstr "Nová zpráva"
+msgstr "Nový vzkaz"
 
 #: /MessageRecipients/admin_view.ctp:54
 msgid "Related Messages"
-msgstr "Související zprávy"
+msgstr "Související vzkazy"
 
 #: /MessageRecipients/admin_view.ctp:62 /Messages/admin_add.ctp:30
 #: /Messages/admin_edit.ctp:34 /Messages/admin_view.ctp:50
@@ -298,11 +298,11 @@ msgstr "Upravit"
 
 #: /Messages/admin_index.ctp:8
 msgid "Messages"
-msgstr "Zprávy"
+msgstr "Vzkazy"
 
 #: /Messages/admin_view.ctp:5
 msgid "Message"
-msgstr "Zpráva"
+msgstr "Vzkaz"
 
 #: /Messages/admin_view.ctp:18
 msgid "Edit Message"
@@ -310,7 +310,7 @@ msgstr "Upravit"
 
 #: /Messages/admin_view.ctp:19
 msgid "Delete Message"
-msgstr "Smataz"
+msgstr "Smazat"
 
 #: /News/admin_add.ctp:7 /News/admin_edit.ctp:8 /News/admin_view.ctp:20
 msgid "List News"
@@ -623,11 +623,11 @@ msgstr "Příjemce nebyl smazán. Zkuste to znovu."
 
 #: /Messages.php:12;41;57
 msgid "The message has been saved."
-msgstr "Zpráva byla uložena."
+msgstr "Vzkaz byl uložena."
 
 #: /Messages.php:15;44;60
 msgid "The message could not be saved. Please, try again."
-msgstr "Zpráva nebyla uložen. Zkuste to znovu."
+msgstr "Vzkaz nebyl uložen. Zkuste to znovu."
 
 #: /Messages.php:31;53;73
 msgid "Invalid message"

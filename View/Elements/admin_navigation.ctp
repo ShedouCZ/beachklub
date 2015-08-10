@@ -4,7 +4,7 @@
 		'Dlaždice'  => '/admin/tiles',
 		'Novinky'  => '/admin/news',
 		'Dokumenty'  => '/admin/documents',
-		'Zprávy'  => '/admin/messages',
+		'Vzkazy'  => '/admin/messages',
 		'Trenéři'  => '/admin/coaches',
 		'Kontakty'  => '/admin/message_recipients',
 	);

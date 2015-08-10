@@ -1,11 +1,11 @@
 [x] admin - pridat horni menu - element?
-[ ] youtube ikona - odebrat you nechat jen tube a zvetsit, aby lepe citelne
+[x] youtube ikona - odebrat you nechat jen tube a zvetsit, aby lepe citelne
 [ ] home - cze/eng
 [ ] home - vice novinek a perexy clanku
 [ ] home - searchbox
 [ ] tiles - destination page url
 [ ] sidebar u clanku - volitelny - fallback na kalendar
-[ ] slides - upload photos
+[x] slides - upload photos
 [ ] kontakty - sidebar: http://beachklubladvi.cz/kontakty.html
 [ ] kontakty - recipients
 [ ] turnaje, krouzky, treninky, kempy maji rozdeleni do dalsich kategorii
