@@ -21,6 +21,7 @@
 				<thead>
 					<tr>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
+						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 						<th><?php echo $this->Paginator->sort('published'); ?></th>
 						<th class="actions"></th>
 					</tr>
@@ -28,6 +29,7 @@
 				<tbody>
 				<?php foreach ($documents as $document) { ?>
 					<tr>
+						<td><?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?></td>
 						<td><?php echo h($document['Document']['title']); ?></td>
 						<td><?php echo h($document['Document']['published']); ?></td>
 						<td class="actions">

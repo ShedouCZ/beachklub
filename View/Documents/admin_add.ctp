@@ -24,8 +24,15 @@
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
+					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>
+				</div>
+				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
+				<div class="form-group">
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Perex')));?>
+				</div>
+				<div class="
 				<div class="form-group">
 					<?php echo $this->Form->input('published', array('class'=>'form-control', 'placeholder'=>__('Published')));?>
 				</div>
