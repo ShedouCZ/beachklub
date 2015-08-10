@@ -29,8 +29,8 @@
 				<tbody>
 				<?php foreach ($documents as $document) { ?>
 					<tr>
-						<td><?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?></td>
 						<td><?php echo h($document['Document']['title']); ?></td>
+						<td><?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?></td>
 						<td><?php echo h($document['Document']['published']); ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $document['Document']['id']), array('escape' => false)); ?>

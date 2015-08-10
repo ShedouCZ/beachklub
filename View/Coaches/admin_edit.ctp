@@ -33,8 +33,14 @@
 				<div class="form-group">
 					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Desc')));?>
 				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('url', array('class'=>'form-control', 'placeholder'=>__('Url')));?>
+				<div class="form-group dropzone">
+					<?php
+						echo $this->Form->input('gallery_picture_id', array(
+							'class'=>'form-control',
+							'data-picture'=>Coach::encode_picture(@$this->request->data['Picture']),
+							'data-album-id'=>Coach::$album_id
+						));
+					?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('ord', array('class'=>'form-control', 'placeholder'=>__('Ord')));?>

@@ -7,7 +7,7 @@
     <div class="views-row first odd">
         <div class="views-field views-field-field-coaches-photo img-left">
             <div class="field-content">
-                <img src="<?php echo $item['Coach']['url']; ?>" width="190" height="180" alt="">
+                <img src="<?php echo $item['Picture']['styles']['medium']; ?>" width="190" height="180" alt="">
             </div>
         </div>
         <div class="views-field views-field-nothing extra">

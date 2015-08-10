@@ -23,7 +23,7 @@
 						<th><?php echo $this->Paginator->sort('name'); ?></th>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
 						<th><?php echo $this->Paginator->sort('desc'); ?></th>
-						<th><?php echo $this->Paginator->sort('url'); ?></th>
+						<th><?php echo $this->Paginator->sort('image', 'Obrázek'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
@@ -33,7 +33,7 @@
 						<td><?php echo h($coach['Coach']['name']); ?></td>
 						<td><?php echo h($coach['Coach']['title']); ?></td>
 						<td><?php echo $coach['Coach']['desc']; ?></td>
-						<td><?php echo h($coach['Coach']['url']); ?></td>
+						<td><img src=<?php echo $coach['Picture']['styles']['medium']; ?> width="170" height="90" alt="" /></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $coach['Coach']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $coach['Coach']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $coach['Coach']['id'])); ?>
