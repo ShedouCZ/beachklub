@@ -261,12 +261,13 @@ CREATE TABLE `documents` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   `content` text COLLATE utf8_czech_ci,
+  `perex` text COLLATE utf8_czech_ci,
+  `user_id` int(11) NOT NULL,
   `published` tinyint(1) NOT NULL DEFAULT '1',
   `ord` int(11) NOT NULL DEFAULT '99999',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-INSERT INTO `documents` (`id`, `title`, `content`, `published`, `ord`) VALUES
-(1,	'Kontakty',	'<h1>Kontakty / Contacts</h1>	<p>Jiří Turek: jiriturekk@gmail.com, +420 775 229 856</p>	<p>Represented by PavleyeArtistManagementandProduction: jozef@pavleye.com, +420 731 151 121</p>',	1,	99999);
-
+INSERT INTO `documents` (`id`, `title`, `content`, `perex`, `user_id`, `published`, `ord`) VALUES
+(1,	'Kontakty',	'<h1>Kontakty / Contacts</h1>	<p>Jiří Turek: jiriturekk@gmail.com, +420 775 229 856</p>	<p>Represented by PavleyeArtistManagementandProduction: jozef@pavleye.com, +420 731 151 121</p>',	NULL,	0,	1,	99999);
 -- 2015-07-27 09:39:34
