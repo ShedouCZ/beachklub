@@ -1151,12 +1151,12 @@ ul.menu li {
 article.comment header{overflow:hidden; margin-bottom: 0;}
 .user-picture { float:left; margin-right:15px;}
 
-section#comments h2.title {
+/*section#comments h2.title {
 	color:#fff;
 	font-size:40px;
 	margin-bottom:15px;
 }
-
+*/
 #comment-form label,
 #contact-site-form label {
 	vertical-align:middle;
@@ -1237,13 +1237,13 @@ article.comment {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
-	article.comment h2 {
+/*	article.comment h2 {
 		color:#292a2b;
 		font-size:18px;
 		font-weight:normal;
 		text-decoration:none;
 	}
-
+*/
 .node article.comment footer {
 	overflow:hidden;
 	padding:0;

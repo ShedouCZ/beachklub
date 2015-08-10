@@ -91,25 +91,45 @@
                         </div>
                         <div class="panel-pane pane-custom pane-1 contact-information grid-12 omega"  >
 
-                            <h2 class="pane-title">Kontaktní informace</h2>
+                            <h2 class="pane-title">Kontakty na Beachklub Ládví</h2>
 
                             <div class="pane-content">
-                                <p><strong>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</strong><br />
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    et quasi architecto beatae vitae dicta sunt explicabo. Mornunc odio gravida atcursus
-                                    neus a lorem. Maecenas tristique orci ac sem. Duis ultric pharetra magna. Donec
-                                    accumsan malesuada orcic sit amet eros. Lorem ipsum dolor sit amet onsectetuer
-                                    adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus
-                                    dolor dapibus eget.
+                                <p>
+                                        <strong>ONLINE REZERVACE KURTŮ:</strong><br>
+                                        Zde nebo teletonicky na 608 862 740.
+                                        <br><br>
+                                        <strong>DLOUHODOBÉ PRONÁJMY, PROVOZNÍ ZÁLEŽITOSTI KLUBU:</strong><br>
+                                        Jarda Falc: falc@centrum.cz , 724 165 620
+                                        <br><br>
+                                        <strong>ŠÉFTRENÉR:</strong><br>
+                                        Ondra Michálek: seftrener@beachklubladvi.cz , 605 218 056
+                                        <br><br>
+                                        <strong>ADMINISTRATIVA, PŘÍMĚSTSKÉ TÁBORY, KEMPY:</strong><br>
+                                        Lucka Trnková: info@beachklubladvi.cz , 728 189 731
+                                        <br><br>
+                                        <strong>OSLAVY, FIREMNÍ AKCE AJ.:</strong><br>
+                                        Recepce: recepce@beachklubladvi.cz , 723 841 031
                                 </p>
-                                <p>The Company Name Inc.<br />
-                                    9870 St Vincent Place,<br />
-                                    Glasgow, DC 45 Fr 45.
+                            </div>
+                            <h2 class="pane-title">Jak nás najdete</h2>
+
+                            <div class="pane-content">
+                                <p>
+                                    Beachklub Ládví najdete v areálu SPŠE Eltodo v ulici Chabařovická 4 na Praze 8.
+                                    Areál se nachází cca 7 minut od stanice metra C Ládví či autem cca 10 minut z centra.
+                                    Vchod pro pěší je jak z ulice Chabařovická, tak z ulice Žernosecká.
+                                    V případě, že jedete metrem tak vyražte směrem k Multikinu Ládví a pak napříč sídlištěm dle mapy.
+                                    V případě, že jedete autem, tak můžete nově využít příjezd ze Žernosecké ulice.
+                                    Původní příjezd z Chabařovické bude dočasně ponechán v provozu, ale v nejbližší době bude uzavřen.
+                                    V areálu se dá parkovat.
                                 </p>
-                                <p>Telephone:+1 800 603 6035<br />
-                                    FAX:+1 800 889 9898<br />
-                                    E-mail: <a href="mailto:mail@beachbar.cz">mail@beachbar.cz</a>
+                                <p>
+                                    Beachklub Ládví z.s.<br>
+                                    Chabařovická 4<br>
+                                    180 00  Praha 8<br>
+                                    IČO: 22735135<br>
+                                    ICP: 1000559998<br>
+                                    korespondenční adresa: Beachklub Ládví z.s., Horáčkova 1213, Praha 4, 14000
                                 </p>
                             </div>
                         </div>
