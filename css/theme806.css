@@ -597,10 +597,10 @@ h3 {
 .node h2,
 article.comment h3 {
 	color: #00f;
-	font-size: 20px;
-	line-height: 24px;
+	font-size:50px;
+	line-height:46px;
+	margin-bottom:30px;
 	font-weight: normal;
-	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 	.node h2 a,
