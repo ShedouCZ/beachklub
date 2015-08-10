@@ -37,6 +37,8 @@ class DocumentsController extends AppController {
 				$this->Session->setFlash(__('The document could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
+		$users = $this->Document->User->find('list');
+		$this->set(compact('users'));
 	}
 
 	public function admin_edit($id = null) {

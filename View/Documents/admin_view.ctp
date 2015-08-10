@@ -41,9 +41,22 @@
 						</td>
 					</tr>
 					<tr>
+						<th><?php echo __('User'); ?></th>
+						<td>
+							<?php echo $this->Html->link($post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
 						<th><?php echo __('Content'); ?></th>
 						<td>
 							<?php echo h($document['Document']['content']); ?>
+						</td>
+					</tr>
+					<tr>
+						<th><?php echo __('Perex'); ?></th>
+						<td>
+							<?php echo h($post['Post']['perex']); ?>
 						</td>
 					</tr>
 					<tr>
@@ -58,4 +71,3 @@
 
 	</div>
 </div>
-
