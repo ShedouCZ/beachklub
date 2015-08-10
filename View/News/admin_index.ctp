@@ -30,7 +30,7 @@
 					<tr>
 						<td><?php echo h($news['News']['title']); ?></td>
 						<td><?php echo $this->Time->format($news['News']['date'], '%-d.%-m.%Y'); ?></td>
-						<td><?php echo h($news['News']['desc']); ?></td>
+						<td><?php echo $news['News']['desc']; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $news['News']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $news['News']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $news['News']['id'])); ?>
