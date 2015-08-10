@@ -599,7 +599,7 @@ article.comment h3 {
 	color: #00f;
 	font-size:50px;
 	line-height:46px;
-	margin-bottom:30px;
+	margin-bottom:10px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -764,7 +764,7 @@ ul.menu li {
 	font-family: 'BenchNine', sans-serif;
 	color: #fff;
 	font-size: 20px;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 	line-height: 24px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
