@@ -5,9 +5,11 @@
                 <div class="content">
                     <div class="view view-front-carousel view-id-front_carousel view-display-id-block view-dom-id-ea58816596ba1c5cb393dfeab559f430">
                         <div class="view-header">
-                            <div class="header-1">novinky</div>
+                            <div class="header-1">Novinky</div>
                         </div>
-                        <?php echo $this->Element('last_news'); ?>
+                        
+                        <?php echo $this->element('last_news'); ?>
+                        
                         <div class="view-footer">
                             <div class="footer-1">
                                 <div class="button">

@@ -5,11 +5,13 @@
 ?>
 <div class="view-content">
     <div class=" jcarousel-skin-default">
-        <div class="jcarousel-container jcarousel-container-vertical" style="position: relative; display: block;">
-            <div class="jcarousel-clip jcarousel-clip-vertical" style="position: relative;">
+        <div class="jcarousel-container jcarousel-container-vertical">
+            <div class="jcarousel-clip jcarousel-clip-vertical">
                 <ul class="jcarousel jcarousel-view--front-carousel--block jcarousel-dom-1 jcarousel-skin-default">
-                    <?php foreach ($items as $item): ?>
-                        <li class="jcarousel-item-1 odd" style="display: none;">
+                    <?php foreach ($items as $i => $item): ?>
+                        <?php $odd_even =  ($i % 2) ? 'even' : 'odd'; ?>
+                        <?php $j = $i + 1; ?>
+                        <li class="jcarousel-item-<?php echo "$j $odd_even";?>">
                             <div class="views-field views-field-created img-left news-date">
                                   <span class="field-content">
                                       <?php
@@ -40,3 +42,5 @@
         </div>
     </div>
 </div>
+
+

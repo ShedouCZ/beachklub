@@ -30,35 +30,10 @@
 
     <style type="text/css" media="all">
         @import url(//fonts.googleapis.com/css?family=BenchNine:700&subset=latin,latin-ext);
-        @import url("http://beachbar.vpslist.cz/modules/system/system.base.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/system/system.menus.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/system/system.messages.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/system/system.theme.css?nq22ob");
-    </style>
-    <style type="text/css" media="all">
-        @import url("http://beachbar.vpslist.cz/modules/aggregator/aggregator.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/comment/comment.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/field/theme/field.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/node/node.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/poll/poll.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/search/search.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/user/user.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/forum/forum.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/modules/views/css/views.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/modules/ckeditor/css/ckeditor.css?nq22ob");
-    </style>
-    <style type="text/css" media="all">
-        @import url("http://beachbar.vpslist.cz/sites/all/libraries/colorbox/example1/colorbox.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/modules/ctools/css/ctools.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/modules/panels/css/panels.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/modules/flexslider/assets/css/flexslider_img.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/libraries/flexslider/flexslider.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/sites/all/modules/jcarousel/skins/default/jcarousel-default.css?nq22ob");
-        @import url("http://beachbar.vpslist.cz/modules/locale/locale.css?nq22ob");
-        /*@import url("http://beachbar.vpslist.cz/sites/default/files/css/follow.css?nq22ob");*/
     </style>
 
-    <link rel="stylesheet" href="<?php echo "/css/site.css?$version" ?>" type="text/css" media="screen">
+	<link rel="stylesheet" href="<?php echo "/css/legacy.css?$version" ?>" type="text/css" media="screen">
+    <link rel="stylesheet" href="<?php echo "/css/site.css?$version"   ?>" type="text/css" media="screen">
 
     <style type="text/css" media="screen">
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/boilerplate.css?nq22ob");
@@ -146,7 +121,7 @@
                     "sites\/all\/themes\/theme806\/css\/style.css": 1,
                     "sites\/all\/themes\/theme806\/css\/maintenance-page.css": 1,
                     "sites\/all\/themes\/theme806\/css\/skeleton.css": 1,
-                    "sites\/all\/themes\/theme806\/css\/overrides.css": 1
+                    //"sites\/all\/themes\/theme806\/css\/overrides.css": 1
                 }
             },
             "colorbox": {
@@ -175,9 +150,9 @@
                         },
                         "wrap": "circular",
                         "skin": "default",
-                        "visible": 1,
+                        //"visible": 2,
                         "scroll": 1,
-                        "auto": 2,
+                        "auto": 5,
                         "autoPause": 1,
                         "start": 1,
                         "vertical": 1,

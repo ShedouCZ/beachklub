@@ -28,7 +28,17 @@
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('date', array('class'=>'form-control', 'placeholder'=>__('Date')));?>
+					<?php echo $this->Form->input('date', array(
+						'type' => 'text',
+						'data-provide' => 'datepicker',
+						'data-date-language' => Configure::read('Config.locale'),
+						'class' => 'form-control',
+						'label' => __('Date'),
+						'placeholder' => __('Date'),
+						'inputGroup' => array('append'=>'glyphicon-th'),
+						//BEWARE: datepicker needs JS initialization
+						'value' => $this->Time->format($this->data['News']['date'], '%-d.%-m.%Y')
+					));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Desc')));?>

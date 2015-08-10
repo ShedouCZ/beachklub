@@ -29,7 +29,7 @@
 				<?php foreach ($news as $news) { ?>
 					<tr>
 						<td><?php echo h($news['News']['title']); ?></td>
-						<td><?php echo h($news['News']['date']); ?></td>
+						<td><?php echo $this->Time->format($news['News']['date'], '%-d.%-m.%Y'); ?></td>
 						<td><?php echo h($news['News']['desc']); ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $news['News']['id']), array('escape' => false)); ?>

@@ -168,6 +168,18 @@ module.exports = function(grunt) {
 					separator: '\n'
 				}
 			},
+			css_legacy: {
+				src: [
+					// datetimepicker and its dependecies on bootstrap
+					'css/legacy/*.css',
+					'css/legacy/modules/*.css',
+				],
+				dest: 'webroot/css/legacy.css',
+				nonull: true,
+				options: {
+					separator: '\n'
+				}
+			},
 			css_admin: {
 				src: [
 					'css/overrides/eonasdan-datetimepicker-bs.css',
@@ -264,7 +276,7 @@ module.exports = function(grunt) {
 
 	// Task definition
 	grunt.registerTask('default', ['scripts', 'stylesheets', 'copy']);
-	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', /*'postcss', 'cssmin'*/]);
+	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', 'concat:css_legacy' /*'postcss', 'cssmin'*/]);
 	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js', 'concat:js_post', 'concat:js_admin']);
 
 	grunt.registerTask('locales', ['po2json', 'json']);
