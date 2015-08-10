@@ -7,7 +7,8 @@
 [ ] sidebar u clanku - volitelny - fallback na kalendar
 [x] slides - upload photos
 [ ] kontakty - sidebar: http://beachklubladvi.cz/kontakty.html
-[ ] kontakty - recipients
+[x] kontakty - recipients
+	[ ] kontakty - send email out!
 [ ] turnaje, krouzky, treninky, kempy maji rozdeleni do dalsich kategorii
 	http://beachklubladvi.cz/kempy-a-krouzky.html
 	- Prázdninové kempy pro děti
