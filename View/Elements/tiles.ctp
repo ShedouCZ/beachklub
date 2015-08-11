@@ -1,6 +1,6 @@
 <?php
   $items = $this->requestAction(
-    'tiles/index/sort:created/direction:asc/'
+    'tiles/index/sort:ord/direction:asc/'
   );
 ?>
 <?php foreach ($items as $i => $item):?>
