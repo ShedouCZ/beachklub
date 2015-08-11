@@ -168,3 +168,11 @@ if ($('.dropzone').length) {
 	// make whole body a dropzone
 	$(document.body).dropzone(Dropzone.options);
 }
+
+// MODULE slug.js
+if ($('input[data-provide=slug-src]')) {
+	$('input[data-provide=slug-src]').on('keyup', function () {
+		var slug_val = slug($('input[data-provide=slug-src]').val(), {lower: true});
+		$('input[data-provide=slug-dst]').val(slug_val);
+	});
+}

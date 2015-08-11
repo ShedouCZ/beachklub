@@ -1,5 +1,8 @@
 tmp
 dist
+node_modules
+Vendor
+Plugin
 webroot/css/site.css
 webroot/css/site-admin.css
 webroot/css/legacy.css

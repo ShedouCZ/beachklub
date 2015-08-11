@@ -7,6 +7,7 @@
 [ ] home - vice novinek a perexy clanku
 [ ] home - searchbox
 [ ] tiles - destination page url
+[ ] documents slug router class
 [ ] sidebar u clanku - volitelny - fallback na kalendar
 [x] slides - upload photos
 [ ] kontakty - sidebar: http://beachklubladvi.cz/kontakty.html

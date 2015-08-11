@@ -146,6 +146,7 @@ module.exports = function(grunt) {
 					'Vendor/jquery.cookie/jquery.cookie.js',
 					'Vendor/fullcalendar/dist/fullcalendar.js',
 					'Vendor/dropzone/dist/dropzone.js',
+					'Vendor/slug/slug.js',
 					'Vendor/Jed/jed.js',
 					'node_modules/grunt-contrib-handlebars/node_modules/handlebars/dist/handlebars.runtime.js',
 					'dist/js/handlebars.js',

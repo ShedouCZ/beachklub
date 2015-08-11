@@ -31,10 +31,10 @@
     "es5-shim": "es-shims/es5-shim#~4.1.1",
     "hammerjs": "~2.0.4",
     "jquery-hammerjs": "~2.0.0",
-    "summernote": "~0.6.7",
+    "summernote": "~0.6.13",
     "Sortable": "~1.2.0",
     "Jed": "SlexAxton/Jed#~0.5.0",
-    "summernote": "~0.6.13",
-    "dropzone": "~4.0.1"
+    "dropzone": "~4.0.1",
+    "slug": "~0.9.1"
   }
 }
