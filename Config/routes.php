@@ -24,7 +24,6 @@ App::uses('SlugRoute', 'Routing/Route');
  * ...and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-	Router::connect('/home', array('controller' => 'pages', 'action' => 'display', 'beachklub'));
 	Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
 	Router::connect('/novinky', array('controller' => 'pages', 'action' => 'display', 'news'));
 	Router::connect('/o-nas', array('controller' => 'pages', 'action' => 'display', 'about'));

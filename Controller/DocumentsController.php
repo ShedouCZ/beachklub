@@ -5,6 +5,13 @@ class DocumentsController extends AppController {
 
 	public $components = array('Paginator', 'Session');
 
+	public function index() {
+		$items = $this->paginate();
+		if ($this->request->is('requested')) {
+			return $items;
+		}
+		$this->set('items', $items);
+	}
 
 	public function admin_index() {
 		$this->Document->recursive = 0;
@@ -19,7 +26,7 @@ class DocumentsController extends AppController {
 		$this->set('documents', $this->Document->find('all'));
 	}
 
-	public function admin_view($id = null) {
+	public function view($id = null) {
 		if (!$this->Document->exists($id)) {
 			throw new NotFoundException(__('Invalid document'));
 		}

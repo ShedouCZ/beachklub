@@ -269,7 +269,7 @@
                                 // TODO vymyslet system na to, aby si page mohla rict, jaky chce sidebar
                                 // $this->fetch('sidebar') ???
                                 if ($this->request->here == '/') {
-                                    echo $this->Element('sidebar');
+                                    echo $this->element('sidebar');
                                 }
                             ?>
                             <?php echo $this->fetch('content'); ?>
@@ -282,7 +282,7 @@
                                     <div class="content">
                                         <div class="view view-services view-id-services view-display-id-block view-dom-id-07d750d1b768924463e867a1b7876e55">
                                             <div class="view-content">
-                                                <?php echo $this->Element('tiles'); ?>
+                                                <?php echo $this->element('tiles'); ?>
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +296,7 @@
             </div>
 
             <footer id="footer" role="contentinfo">
-                <?php echo $this->Element('footer'); ?>
+                <?php echo $this->element('footer'); ?>
             </footer>
 
         </div>
@@ -304,7 +304,6 @@
     </div>
     <!-- /#page-wrapper -->
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/flexslider/assets/js/flexslider.load.js?nq22ob"></script>
-    <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/addthis/addthis.js?nq22ob"></script>
 
     <div id="cboxOverlay" style="display: none;"></div>
     <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">

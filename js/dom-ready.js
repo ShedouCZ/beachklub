@@ -50,6 +50,13 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 				//console.log('image to upload:', files[i]);
 				App.upload_file(files[i], callback);
 			}
+		},
+		onPaste: function (e) {
+			var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+			e.preventDefault();
+			setTimeout( function(){
+				document.execCommand( 'insertText', false, bufferText );
+			}, 10 );
 		}
 	});
 });
