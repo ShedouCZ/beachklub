@@ -1,18 +1,18 @@
 <?php
-  $posts = $this->requestAction(
-    'posts/index/sort:created/direction:asc/limit:5'
+  $docs = $this->requestAction(
+    'documents/index/sort:ord/direction:desc/limit:5'
   );
 ?>
 <div id="block-system-main" class="block block-system block-even">
   <div class="content">
     <article id="node-153" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
-        <?php foreach ($posts as $post): ?>
+        <?php foreach ($docs as $doc): ?>
               <header>
                   <h2>
                       <?php
-                          $title = $post['Post']['title'];
-                          $id = $post['Post']['id'];
-                          $url = '/posts/view'.$id;
+                          $title = $doc['Document']['title'];
+                          $id = $doc['Document']['id'];
+                          $url = '/'.$doc['Document']['slug'];
                           echo $this->Html->link($title, $url);
                       ?>
                   </h2>
@@ -22,7 +22,7 @@
                         <div class="field-items">
                             <div class="field-item even">
                                 <p>
-                                    <?php echo $post['Post']['perex']; ?>
+                                    <?php echo $doc['Document']['perex']; ?>
                                 </p>
                             </div>
                         </div>
@@ -30,8 +30,10 @@
                 </div>
                 <!-- /.content -->
                 <footer>
-                    <ul class="links inline"><li class="node-readmore first"><a href="/proseries-prague/hledam-spoluhrace" rel="tag" title="Hledám spoluhráče">Číst dál<span class="element-invisible"> Hledám spoluhráče</span></a></li>
-                        <li class="comment-add"><a href="/comment/reply/153#comment-form" title="Přidat komentář k této stránce.">Přidat komentář</a></li>
+                    <ul class="links inline">
+                        <li class="node-readmore first">
+                            <?php echo $this->Html->link('Číst dál', $url, array('rel'=>'tag', 'title'=>$title)); ?>
+                        </li>
                     </ul>
                 </footer>
         <?php endforeach; ?>

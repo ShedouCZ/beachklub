@@ -581,7 +581,8 @@ ul.inline li {
 
 #content h1.title, h2, h3 {
 	font-size:50px;
-	line-height:46px;
+	line-height:53px;
+	padding-top: 10px;
 	margin-bottom:30px;
 	text-transform:uppercase;
 	color: #fff;
@@ -596,9 +597,10 @@ h3 {
 
 .node h2,
 article.comment h3 {
-	color: #00f;
+	color: #fff;
 	font-size:50px;
-	line-height:46px;
+	line-height:53px;
+	padding-top: 10px;
 	margin-bottom:10px;
 	font-weight: normal;
 	text-transform: uppercase;
