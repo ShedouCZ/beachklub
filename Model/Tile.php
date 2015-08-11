@@ -12,6 +12,9 @@ class Tile extends AppModel {
 	public $belongsTo = array(
 		'Picture' => array(
         	'className' => 'Gallery.Picture',
+			'foreignKey' => 'gallery_picture_id',
+			'conditions' => '',
+
 		),
 		'Document' => array(
 			'className' => 'Document',
