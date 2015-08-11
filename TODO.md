@@ -1,5 +1,8 @@
 [x] admin - pridat horni menu - element?
 [x] youtube ikona - odebrat you nechat jen tube a zvetsit, aby lepe citelne
+[ ] h2 on all pages - v contaktech
+[ ] coaches obrazky
+[ ] kontkat je v messages add zatim
 [ ] home - cze/eng
 [ ] home - vice novinek a perexy clanku
 [ ] home - searchbox
