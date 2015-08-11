@@ -22,3 +22,4 @@
 [ ] o nas - pod to http://beachklubladvi.cz/treneri.html
 [ ] partneri - logo + popis + proklik
 [ ] novinky - vice perexu
+[ ] změna zvíraznění na navigaci na jiné stránce
