@@ -44,6 +44,8 @@ class TilesController extends AppController {
 				$this->Session->setFlash(__('The tile could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
+		$documents = $this->Tile->Document->find('list');
+		$this->set(compact('documents'));
 	}
 
 	public function admin_edit($id = null) {
@@ -61,6 +63,8 @@ class TilesController extends AppController {
 			$options = array('conditions' => array('Tile.' . $this->Tile->primaryKey => $id));
 			$this->request->data = $this->Tile->find('first', $options);
 		}
+		$documents = $this->Tile->Document->find('list');
+		$this->set(compact('documents'));
 	}
 
 	public function admin_delete($id = null) {
