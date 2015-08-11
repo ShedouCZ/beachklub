@@ -43,9 +43,6 @@
 					?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('ord', array('class'=>'form-control', 'placeholder'=>__('Ord')));?>
-				</div>
-				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">
 						<?php echo $this->Form->submit(__('Submit'), array('class'=>'btn btn-primary')); ?>
 					</div>
