@@ -43,7 +43,9 @@ INSERT INTO `gallery_albums` (`id`, `title`, `default_name`, `path`, `model`, `m
 (1,	'Slides album',	'',	'',	'slide',	1,	'',	'published',	'2015-07-23 12:29:30',	'2015-07-23 12:29:30'),
 (2,	'Tiles album',	'',	'',	'tile',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
 (3,	'Documents album',	'',	'',	'document',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
-(4,	'Coaches album',	'',	'',	'coach',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
+(4,	'Coaches album',	'',	'',	'coach',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
+(5,	'Partners album',	'',	'',	'partner',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
+
 
 
 DROP TABLE IF EXISTS `gallery_pictures`;
@@ -279,4 +281,31 @@ INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`, `document_id`) 
 (8,	'Beachbar',	9999999,	49,	NULL),
 (9,	'Členství v klubu',	9999999,	53,	NULL);
 
+DROP TABLE IF EXISTS `partners`;
+CREATE TABLE `partners` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  `partner_type_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `partners` (`id`, `name`, `desc`, `ord`, `url`, `gallery_picture_id`, `partner_type_id`) VALUES
+(1,	'Hostel Praha Ládví',	'<p style=\"padding: 5px 0px 0px; margin-bottom: 0px; text-align: justify;\"><span style=\"color: rgb(80, 80, 80); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px;\">Hostel Praha Ládví svým zákazníků nabízí levné ubytování s možností parkování a výbornou dostupností do centra města.</span></p><p style=\"padding: 5px 0px 0px; margin-bottom: 0px; text-align: justify;\"><span style=\"color: rgb(80, 80, 80); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px;\">Náš hostel Vám nabídne pohodlné a přitom levné ubytování v 1-8 lůžkových nekuřáckých pokojích včetně řady souvisejících služeb za malý poplatek či zcela zdarma! V okolí naleznete také velké množství příležitostí pro Vaše společenské a sportovní vyžití.</span></p>',	9999999,	'http://hostelprahaladvi.cz',	77,	2);
+
+DROP TABLE IF EXISTS `partner_type`;
+CREATE TABLE `partner_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '999999999',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `partner_type` (`id`, `title`, `ord`) VALUES
+(1,	'Partneři plážového volejbalu',	999999999),
+(2,	'Sponzoři plážového volejbalu',	999999999),
+(3,	'Partneři dětských akcí',	999999999);
 -- 2015-07-27 09:39:34

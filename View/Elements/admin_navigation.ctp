@@ -7,6 +7,7 @@
 		'Vzkazy'  => '/admin/messages',
 		'Trenéři'  => '/admin/coaches',
 		'Kontakty'  => '/admin/message_recipients',
+		'Partneři' => '/admin/partners',
 	);
 ?>
 <div class="actions">
