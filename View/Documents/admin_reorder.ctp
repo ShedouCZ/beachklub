@@ -21,7 +21,7 @@
 				<?php foreach ($documents as $item) {?>
 					<div class="list-group-item" data-item-id="<?php echo h($item['Document']['id']); ?>">
 						<span class="glyphicon glyphicon-move" aria-hidden="true"></span>
-						<?php echo $this->Html->link($item['Document']['title'], array('action' => 'index', $item['Document']['id'])); ?>					</div>
+						<?php echo $this->Html->link($item['Document']['name'], array('action' => 'index', $item['Document']['id'])); ?>					</div>
 				<?php } ?>
 			</div>
 		</div> <!-- end col md 9 -->

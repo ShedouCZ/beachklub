@@ -6,11 +6,11 @@ class TilesController extends AppController {
 	public $components = array('Paginator', 'Session');
 
 	public function index() {
-		$items = $this->paginate();
-		if ($this->request->is('requested')) {
-			return $items;
-		}
-		$this->set('items', $items);
+			$items = $this->paginate();
+			if ($this->request->is('requested')) {
+					return $items;
+			}
+			$this->set('items', $items);
 	}
 
 	public function admin_index() {
@@ -44,6 +44,9 @@ class TilesController extends AppController {
 				$this->Session->setFlash(__('The tile could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
+		$galleryPictures = $this->Tile->GalleryPicture->find('list');
+		$documents = $this->Tile->Document->find('list');
+		$this->set(compact('galleryPictures', 'documents'));
 	}
 
 	public function admin_edit($id = null) {
@@ -61,6 +64,9 @@ class TilesController extends AppController {
 			$options = array('conditions' => array('Tile.' . $this->Tile->primaryKey => $id));
 			$this->request->data = $this->Tile->find('first', $options);
 		}
+		$galleryPictures = $this->Tile->GalleryPicture->find('list');
+		$documents = $this->Tile->Document->find('list');
+		$this->set(compact('galleryPictures', 'documents'));
 	}
 
 	public function admin_delete($id = null) {

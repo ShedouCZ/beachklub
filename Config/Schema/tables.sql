@@ -210,25 +210,6 @@ INSERT INTO `sliders` (`id`, `name`, `ord`, `gallery_picture_id`) VALUES
 (4,	'Slide 4',	9999999,	13),
 (5,	'Slide 5',	9999999,	17);
 
-DROP TABLE IF EXISTS `tiles`;
-CREATE TABLE `tiles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '9999999',
-  `gallery_picture_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`) VALUES
-(1,	'Rezervace Kurtů',	9999999,	21),
-(2,	'Turnaje',	9999999,	25),
-(3,	'Kroužky',	9999999,	29),
-(4,	'Tréninky',	9999999,	33),
-(5,	'Beachkempy v Čechách',	9999999,	37),
-(6,	'Beachkempy v Itálii',	9999999,	41),
-(7,	'Firemní akce',	9999999,	45),
-(8,	'Beachbar',	9999999,	49),
-(9,	'Členství v klubu',	9999999,	53);
 
 DROP TABLE IF EXISTS `tournaments`;
 CREATE TABLE `tournaments` (
@@ -268,9 +249,32 @@ CREATE TABLE `documents` (
   `user_id` int(11) NOT NULL,
   `published` tinyint(1) NOT NULL DEFAULT '1',
   `ord` int(11) NOT NULL DEFAULT '99999',
+  `slug` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-INSERT INTO `documents` (`id`, `title`, `content`, `perex`, `user_id`, `published`, `ord`) VALUES
-(1,	'Kontakty',	'<h1>Kontakty / Contacts</h1>	<p>Jiří Turek: jiriturekk@gmail.com, +420 775 229 856</p>	<p>Represented by PavleyeArtistManagementandProduction: jozef@pavleye.com, +420 731 151 121</p>',	NULL,	0,	1,	99999);
+INSERT INTO `documents` (`id`, `title`, `content`, `perex`, `user_id`, `published`, `ord`, `slug`) VALUES
+(1,	'Kontakty',	'<h1>Kontakty / Contacts</h1>	<p>Jiří Turek: jiriturekk@gmail.com, +420 775 229 856</p>	<p>Represented by PavleyeArtistManagementandProduction: jozef@pavleye.com, +420 731 151 121</p>',	NULL,	0,	1,	99999,	'');
+
+DROP TABLE IF EXISTS `tiles`;
+CREATE TABLE `tiles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  `document_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`, `document_id`) VALUES
+(1,	'Rezervace Kurtů',	9999999,	21,	NULL),
+(2,	'Turnaje',	9999999,	25,	NULL),
+(3,	'Kroužky',	9999999,	29,	NULL),
+(4,	'Tréninky',	9999999,	33,	NULL),
+(5,	'Beachkempy v Čechách',	9999999,	37,	NULL),
+(6,	'Beachkempy v Itálii',	9999999,	41,	NULL),
+(7,	'Firemní akce',	9999999,	45,	NULL),
+(8,	'Beachbar',	9999999,	49,	NULL),
+(9,	'Členství v klubu',	9999999,	53,	NULL);
+
 -- 2015-07-27 09:39:34

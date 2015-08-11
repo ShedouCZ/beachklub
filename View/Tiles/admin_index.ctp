@@ -2,11 +2,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
-					<ul class="nav nav-pills pull-right">
-						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Tile'), array('action' => 'add'), array('escape' => false)); ?></li>
-						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-sort"></span>&nbsp;&nbsp;' . __('Reorder'), array('action' => 'reorder'), array('escape' => false)); ?></li>
-					</ul>
-								<h1><?php echo __('Tiles'); ?></h1>
+				<ul class="nav nav-pills pull-right">
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Tile'), array('action' => 'add'), array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-sort"></span>&nbsp;&nbsp;' . __('Reorder'), array('action' => 'reorder'), array('escape' => false)); ?></li>
+				</ul>
+				<h1><?php echo __('Tiles'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -21,7 +21,8 @@
 				<thead>
 					<tr>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
-						<th><?php echo $this->Paginator->sort('image', 'Tile'); ?></th>
+						<th><?php echo $this->Paginator->sort('gallery_picture_id'); ?></th>
+						<th><?php echo $this->Paginator->sort('document_id'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
@@ -29,7 +30,12 @@
 				<?php foreach ($tiles as $tile) { ?>
 					<tr>
 						<td><?php echo h($tile['Tile']['title']); ?></td>
-						<td><img src=<?php echo $tile['Picture']['styles']['tile']; ?> width="170" height="90" alt="" /></td>
+								<td>
+			<?php echo $this->Html->link($tile['GalleryPicture']['name'], array('controller' => 'gallery_pictures', 'action' => 'view', $tile['GalleryPicture']['id'])); ?>
+		</td>
+								<td>
+			<?php echo $this->Html->link($tile['Document']['title'], array('controller' => 'documents', 'action' => 'view', $tile['Document']['id'])); ?>
+		</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $tile['Tile']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $tile['Tile']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $tile['Tile']['id'])); ?>

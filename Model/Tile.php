@@ -6,11 +6,19 @@ class Tile extends AppModel {
 
 	public $order = array('Tile.ord'=>'asc');
 
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
 	public $belongsTo = array(
 		'Picture' => array(
-			'className' => 'Gallery.Picture',
-			'foreignKey' => 'gallery_picture_id',
+        	'className' => 'Gallery.Picture',
+		),
+		'Document' => array(
+			'className' => 'Document',
+			'foreignKey' => 'document_id',
 			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 

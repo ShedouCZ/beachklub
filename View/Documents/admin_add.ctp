@@ -18,28 +18,31 @@
 			<?php echo $this->element('admin_navigation'); ?>
 		</div><!-- end col md 3 -->
 		<div class="col-md-9">
-			<?php echo $this->Form->create('Document', array('role'=>'form', 'class'=>'form-horizontal', 'formStyle'=>'horizontal-wide')); ?>
+			<?php echo $this->Form->create('Document', array('role'=>'form', 'class'=>'form-horizontal')); ?>
 
 				<div class="form-group">
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>
-				</div>
-				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-height'=>170 , 'class'=>'form-control', 'placeholder'=>__('Perex')));?>
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Perex')));?>
 				</div>
-				<div class="
+				<div class="form-group">
+					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>
+				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('published', array('class'=>'form-control', 'placeholder'=>__('Published')));?>
+				</div>
+				<div class="form-group">
+					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">
 						<?php echo $this->Form->submit(__('Submit'), array('class'=>'btn btn-primary')); ?>
 					</div>
+
 				</div>
 
 			<?php echo $this->Form->end() ?>

@@ -21,9 +21,7 @@
 				<?php foreach ($tiles as $item) {?>
 					<div class="list-group-item" data-item-id="<?php echo h($item['Tile']['id']); ?>">
 						<span class="glyphicon glyphicon-move" aria-hidden="true"></span>
-						<img src=<?php echo $item['Picture']['styles']['tile']; ?> width="170" height="90" alt="" />
-						<?php echo $this->Html->link($item['Tile']['title'], array('action' => 'index', $item['Tile']['id'])); ?>
-					</div>
+						<?php echo $this->Html->link($item['Tile']['name'], array('action' => 'index', $item['Tile']['id'])); ?>					</div>
 				<?php } ?>
 			</div>
 		</div> <!-- end col md 9 -->

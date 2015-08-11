@@ -56,6 +56,8 @@ class DocumentsController extends AppController {
 			$options = array('conditions' => array('Document.' . $this->Document->primaryKey => $id));
 			$this->request->data = $this->Document->find('first', $options);
 		}
+		$users = $this->Document->User->find('list');
+		$this->set(compact('users'));
 	}
 
 	public function admin_delete($id = null) {
