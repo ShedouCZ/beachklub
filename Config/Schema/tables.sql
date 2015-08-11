@@ -174,6 +174,7 @@ CREATE TABLE `news` (
 INSERT INTO `news` (`id`, `title`, `date`, `desc`) VALUES
 (1,	'Test',	'2015-06-23',	'fsafsaf'),
 (2,	'Test 2',	'2015-05-16',	'dajhlfdsvcx');
+(3,	'Novinka 3',	'2015-08-11',	'Test 3');
 
 DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
