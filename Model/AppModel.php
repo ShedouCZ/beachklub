@@ -33,6 +33,7 @@ class AppModel extends Model {
 			'size' => 1,
 			'caption' => 1,
 			'styles' => 1,
+			'id' => 1,
 		);
 		$data = array_intersect_key($data, $allowed_fields);
 		return json_encode($data);

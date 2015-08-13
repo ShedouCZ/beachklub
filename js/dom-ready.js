@@ -20,8 +20,6 @@ App.upload_file = function (file, callback) {
 		contentType: false,
 		processData: false,
 		success: function(data) {
-			console.log('cake_gallery returned:');
-			console.log(data);
 			callback(data.picture.Picture.link);
 		}
 	});
@@ -144,10 +142,12 @@ Dropzone.options = {
 			$input_el.val(null);
 		});
 		this.on('success', function(file, response) {
+			// recieved picture id goes into the form
 			$input_el.val(response.picture.Picture.id);
 		});
 
 		if (this.options.params.current_picture) {
+			// mock a picture arrival in edit forms with existing picture
 			var picture = this.options.params.current_picture;
 			this.emit('addedfile', picture);
 			this.emit('thumbnail', picture, picture.styles.medium);
@@ -170,7 +170,7 @@ if ($('.dropzone').length) {
 	Dropzone.options.params.input_id   = $input.attr('id');
 	Dropzone.options.params.input_name = $input.attr('name');
 
-	$dz.children('div').html(App.render['/Sliders/dropzone'](Dropzone.options.params));
+	$dz.children('div').html(App.render['/Elements/dropzone'](Dropzone.options.params));
 
 	// make whole body a dropzone
 	$(document.body).dropzone(Dropzone.options);
