@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="<?php echo "/css/site.css?$version"   ?>" type="text/css" media="screen">
 
     <style type="text/css" media="screen">
-        @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/boilerplate.css?nq22ob");
+        /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/boilerplate.css?nq22ob");*/
         /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/style.css?nq22ob");*/
         /*@import url("/css/theme806.css");*/
         /*@import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css?nq22ob");*/

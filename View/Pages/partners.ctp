@@ -5,7 +5,7 @@
             <div class="region region-sidebar-second-grid-4">
                 <section id="block-block-6" class="block block-block block-even">
                     <div class="content">
-                        <div class="views-field-title align-center title-indent">Naši partneři</div>
+                        <div class="views-field-title align-center title-indent"><h2>Naši partneři</h2></div>
                         <p>
                             Provoz sportovního areálu se neobejde bez partnerství města a sponzorů.
                             Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům.
@@ -68,14 +68,16 @@
                                     <div class="views-field views-field-nothing extra">
                                         <span class="field-content">
                                             <div class="views-field-title">
-                                                <a href="/praesent-vestibulum-molestie-1"><h4>Praesent vestibulum molestie</h4></a>
+                                                <a href="/praesent-vestibulum-molestie-1"><h3>Praesent vestibulum molestie</h3></a>
                                             </div>
                                             <div class="views-field-body">
-                                                Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
-                                                Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
-                                                velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
-                                                libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
-                                                Quisque vitae justo sed sem blandit
+                                                <p>
+                                                    Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
+                                                    Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
+                                                    velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
+                                                    libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
+                                                    Quisque vitae justo sed sem blandit
+                                                </p>
                                             </div>
                                         </span>
                                     </div>
@@ -101,14 +103,16 @@
                                     <div class="views-field views-field-nothing extra">
                                         <span class="field-content">
                                             <div class="views-field-title">
-                                                <a href="/praesent-vestibulum-molestie-1"><h4>Praesent vestibulum molestie</h4></a>
+                                                <a href="/praesent-vestibulum-molestie-1"><h3>Praesent vestibulum molestie</h3></a>
                                             </div>
                                             <div class="views-field-body">
-                                                Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
-                                                Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
-                                                velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
-                                                libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
-                                                Quisque vitae justo sed sem blandit
+                                                <p>
+                                                    Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
+                                                    Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
+                                                    velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
+                                                    libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
+                                                    Quisque vitae justo sed sem blandit
+                                                </p>
                                             </div>
                                         </span>
                                     </div>
@@ -134,14 +138,16 @@
                                     <div class="views-field views-field-nothing extra">
                                         <span class="field-content">
                                             <div class="views-field-title">
-                                                <a href="/praesent-vestibulum-molestie-1"><h4>Praesent vestibulum molestie</h4></a>
+                                                <a href="/praesent-vestibulum-molestie-1"><h3>Praesent vestibulum molestie</h3></a>
                                             </div>
                                             <div class="views-field-body">
-                                                Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
-                                                Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
-                                                velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
-                                                libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
-                                                Quisque vitae justo sed sem blandit
+                                                <p>
+                                                    Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
+                                                    Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
+                                                    velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
+                                                    libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
+                                                    Quisque vitae justo sed sem blandit
+                                                </p>
                                             </div>
                                         </span>
                                     </div>

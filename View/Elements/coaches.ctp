@@ -23,7 +23,7 @@
                     <h2><?php echo $item['Coach']['name']; ?></h2>
                 </div>
                 <div class="views-field-body">
-                    <h4><?php echo $item['Coach']['title']; ?></h4>
+                    <h3><?php echo $item['Coach']['title']; ?></h3>
                     <?php echo $item['Coach']['desc']; ?>
                 </div>
             </span>

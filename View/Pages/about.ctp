@@ -116,7 +116,7 @@
                 </div><!-- /.block -->
                 <section id="block-views-about-coaches-block" class="block block-views views-clearfix block-odd">
 
-                    <h2>About coaches</h2>
+                    <h1>About coaches</h1>
 
                     <div class="content">
                         <div class="view view-about-coaches view-id-about_coaches view-display-id-block view-dom-id-38c9f58f7cb3e7e70470f548b1d52fac">
