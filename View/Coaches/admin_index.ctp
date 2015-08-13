@@ -33,7 +33,16 @@
 						<td><?php echo h($coach['Coach']['name']); ?></td>
 						<td><?php echo h($coach['Coach']['title']); ?></td>
 						<td><?php echo $coach['Coach']['desc']; ?></td>
-						<td><img src=<?php echo $coach['Picture']['styles']['medium']; ?> width="170" height="90" alt="" /></td>
+						<td>
+							<img src=<?php
+							if (@$coach['Picture']['styles']['medium']) {
+								echo $coach['Picture']['styles']['medium'];
+							}
+							else {
+								echo "/img/coaches/no_image.jpg";
+							}
+								?> width="250" height="180" alt="" />
+						</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $coach['Coach']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $coach['Coach']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $coach['Coach']['id'])); ?>
