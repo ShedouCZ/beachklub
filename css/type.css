@@ -1,0 +1,111 @@
+h1 {
+    font-size:50px;
+    line-height:53px;
+    padding-top: 10px;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    color: #fff;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size:40px;
+    line-height:53px;
+    padding-top: 10px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+    color: #fff;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    padding-top: 10px;
+    margin-bottom:15px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    font-family: 'BenchNine', sans-serif;
+
+}
+
+h4 {
+	color: #fff;
+}
+
+li {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+    font-family: Arial, Helvetica;
+}
+
+p {
+    margin-bottom:20px;
+    font-size: 15px;
+}
+
+.node h2, article.comment h3 {
+    color: #fff;
+    font-size:50px;
+    line-height:53px;
+    padding-top: 10px;
+    margin-bottom:10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.node h2 a, article.comment h3 a {
+    color: #fff;
+}
+
+.node h2 a:hover, article.comment h3 a:hover {
+    text-decoration: underline;
+}
+
+#content h1.title, h2 {
+	line-height: 68px;
+	font-size: 48px;
+}
+
+section#comments h2.title {
+    color:#fff;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+
+article.comment h2 {
+    color:#292a2b;
+    font-size:18px;
+    font-weight:normal;
+    text-decoration:none;
+}
+
+
+p.submitted {
+    font-size:12px;
+    margin:5px 0 15px;
+}
+
+.submitted, p.submitted span {
+    color:#fff;
+}
+
+.submitted a {
+    color:#fff;
+    text-decoration:underline;
+}
+
+.submitted a:hover {
+    text-decoration: none;
+}
+
+#tinymce p {
+    margin-bottom: 10px;
+}
+
+#first-time p {
+    padding:10px 0;
+}

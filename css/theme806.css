@@ -10,9 +10,6 @@ body#body {
 	min-width:960px;
 }
 
-p {margin-bottom:20px;}
-
-
 .field-name-taxonomy-forums .links a,
 .panel-pane.error-page .pane-content .err-title,
 .panel-pane.error-page .pane-content span.err,
@@ -409,10 +406,6 @@ ul.inline li {
 	padding: 0;
 }
 
-
-#tinymce p {
-	margin-bottom: 10px;
-}
 .location.vcard {
 	margin-top: 0;
 }
@@ -579,41 +572,6 @@ ul.inline li {
 /*Node heading*/
 .front #page-title {display:none;}
 
-#content h1.title, h2, h3 {
-	font-size:50px;
-	line-height:53px;
-	padding-top: 10px;
-	margin-bottom:30px;
-	text-transform:uppercase;
-	color: #fff;
-	font-family: 'BenchNine', sans-serif;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: 20px;
-	line-height: 26px;
-}
-
-.node h2,
-article.comment h3 {
-	color: #fff;
-	font-size:50px;
-	line-height:53px;
-	padding-top: 10px;
-	margin-bottom:10px;
-	font-weight: normal;
-	text-transform: uppercase;
-}
-	.node h2 a,
-	article.comment h3 a {
-		color: #fff;
-	}
-		.node h2 a:hover,
-		article.comment h3 a:hover {
-			text-decoration: underline;
-		}
-
 article.node {
 	padding-bottom:20px;
 	margin-bottom:20px;
@@ -635,18 +593,6 @@ article.node {
 
 
 /*Author & date information*/
-p.submitted {
-	font-size:12px;
-	margin:5px 0 15px;
-}
-	.submitted, p.submitted span {
-		color:#fff;
-	}
-	.submitted a {
-		color:#fff;
-		text-decoration:underline;
-	}
-		.submitted a:hover {text-decoration: none;}
 
 article.node footer {
 	padding-top:0px;
@@ -702,9 +648,6 @@ article.node footer .field-name-field-tags { padding-bottom:10px;}
 	width:auto;
 }
 
-
-
-
 .item-list ul li {
 	margin-left: 0;
 	margin-bottom: 20px;
@@ -726,12 +669,9 @@ ul.menu li {
 			background:url(../images/a1.png) no-repeat 0 5px;
 			padding:0 0 7px 20px;
 			line-height:20px;
-			font-family: 'BenchNine', sans-serif;
-			text-transform: uppercase;
 		}
 			section.block .content li a {
 				color:#ffffff;
-				font-size:20px;
 				line-height:24px;
 				text-decoration:none;
 			}
@@ -1153,12 +1093,7 @@ ul.menu li {
 article.comment header{overflow:hidden; margin-bottom: 0;}
 .user-picture { float:left; margin-right:15px;}
 
-/*section#comments h2.title {
-	color:#fff;
-	font-size:40px;
-	margin-bottom:15px;
-}
-*/
+
 #comment-form label,
 #contact-site-form label {
 	vertical-align:middle;
@@ -1239,13 +1174,7 @@ article.comment {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
-/*	article.comment h2 {
-		color:#292a2b;
-		font-size:18px;
-		font-weight:normal;
-		text-decoration:none;
-	}
-*/
+
 .node article.comment footer {
 	overflow:hidden;
 	padding:0;
@@ -1354,9 +1283,6 @@ input[type="text"], input[type="password"], input[type="search"], textarea {
 #first-time {
 	display:none;
 }
-	#first-time p {
-		padding:10px 0;
-	}
 
 #first-time .item-list ul li{
 	background:none;
