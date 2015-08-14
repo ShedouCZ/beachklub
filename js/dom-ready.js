@@ -2,10 +2,17 @@
 var App = App || {};
 App.document_album_id = 3;
 
-App.upload_file = function (file, callback) {
+App.upload_file = function (file, callback, remote_url) {
 	var data = new FormData();
 	data.append('album_id', App.document_album_id);
-	data.append('file', file);
+	if (remote_url) {
+		// filename = basename(remote_url)
+		var filename = remote_url.split(/[\\/]/).pop();
+		data.append('file', file, filename);
+	} else {
+		data.append('file', file);
+	}
+	
 	var url = App.base + '/gallery/pictures/upload';
 	$.ajax({
 		url: url,
@@ -20,7 +27,7 @@ App.upload_file = function (file, callback) {
 		contentType: false,
 		processData: false,
 		success: function(data) {
-			callback(data.picture.Picture.link);
+			callback(data.picture.Picture, remote_url);
 		}
 	});
 };
@@ -41,20 +48,63 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 		],
 		onImageUpload: function(files) {
 			var $note = $(this);
-			var callback = function (url) {
-				$note.summernote('insertImage', url);
+			var callback = function (picture) {
+				$note.summernote('insertImage', picture.link);
 			};
 			for (var i=0; i<files.length; i++) {
 				//console.log('image to upload:', files[i]);
 				App.upload_file(files[i], callback);
 			}
 		},
+		styleWithSpan: false,
 		onPaste: function (e) {
-			var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+			var $note = $(this);
+			var html = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('text/html');
 			e.preventDefault();
-			setTimeout( function(){
-				document.execCommand( 'insertText', false, bufferText );
-			}, 10 );
+			// artificial div parent
+			// as 'find' needs a top level element it searches beneath
+			var $dom = $('<div/>').append($(html).not('meta'));
+			$dom.find('[style]').removeAttr('style');
+			$dom.find('.Apple-converted-space').replaceWith('&nbsp;');
+			// TODO vice informaci zde
+			
+			var callback = function (picture, remote_url) {
+				// switch img url in the content area of $note
+				// TODO reliably get correct note-editable
+				// TODO do not have exact resized size from image backend now
+				// var local_url = picture.link; - original size
+				var local_url = picture.styles.docs;
+				
+				$('.note-editable:first').find('[src="'+remote_url+'"]')
+					.attr('src', local_url)
+					.attr('width', 570)
+					.removeAttr('height')
+					.removeAttr('border')
+				;
+			};
+			
+			// upload images
+			// needs a cors proxy on vpslist.cz:8080 working
+			$dom.find('img').each(function (i,e) {
+				var remote_url = $(e).attr('src');
+				var proxy_url  = 'http://vpslist.cz:8080/' + remote_url;
+				var xhr = new XMLHttpRequest();
+				xhr.onload = function () {
+					App.upload_file(this.response, callback, remote_url);
+				};
+				xhr.onerror = function () {
+					alert('error getting ' + proxy_url + "\n\n" + 'Is the cors proxy running?');
+				};
+				xhr.open('GET', proxy_url);
+				xhr.responseType = 'blob';
+				xhr.send();
+			});
+			setTimeout( function() {
+				// append children of our artificial div parent
+				$dom.children().each(function (i,e) {
+					$note.summernote('insertNode', e);
+				});
+			}, 10);
 		}
 	});
 });

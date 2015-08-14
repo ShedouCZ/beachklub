@@ -33,7 +33,7 @@
 					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('published', array('class'=>'form-control', 'placeholder'=>__('Published')));?>
+					<?php echo $this->Form->input('published', array('class'=>'form-control', 'placeholder'=>__('Published'), 'checked'=>true));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('slug', array('data-provide'=>'slug-dst', 'class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>

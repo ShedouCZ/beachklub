@@ -6,6 +6,7 @@
 				<ul class="nav nav-pills pull-right">
 					<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete'), array('action'=>'delete', $this->Form->value('Document.id')), array('escape'=>false), __('Are you sure you want to delete # %s?', $this->Form->value('Document.id'))); ?></li>
 					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Documents'), array('action'=>'index'), array('escape'=>false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;' . __('View'), '/' . $this->request->data['Document']['slug'], array('escape'=>false)); ?></li>
 				</ul>
 				<h1><?php echo __('Admin Edit Document'); ?></h1>
 			</div>
@@ -28,6 +29,9 @@
 					<?php echo $this->Form->input('title', array('data-provide'=>'slug-src', 'class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
+					<?php echo $this->Form->input('slug', array('data-provide'=>'slug-dst', 'class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
+				</div>
+				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
 				<div class="form-group">
@@ -38,9 +42,6 @@
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('published', array('class'=>'form-control', 'placeholder'=>__('Published')));?>
-				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('slug', array('data-provide'=>'slug-dst', 'class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">

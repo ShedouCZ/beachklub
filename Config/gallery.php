@@ -6,6 +6,7 @@ Configure::write('GalleryOptions.Pictures.styles',
 		'medium' => array(255, 170, $cropped=true),
 		'slide'  => array(926, 0,   $cropped=false),
 		'tile'   => array(309, 153, $cropped=true),
+		'docs'   => array(570, 0,   $cropped=false),
 	) 
 );
 Configure::write('GalleryOptions.Pictures.jpg_quality', 92);

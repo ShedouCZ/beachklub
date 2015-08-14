@@ -17,6 +17,11 @@
 								<p class="submitted">
 									Od autora <span class="username"><?php echo $document['User']['username'];?></span>
 									<time pubdate="" datetime="2013-08-22T18:57:34"><?php //echo $document['Document']['created'];?></time>
+									<?php
+										if (AuthComponent::user()) {
+											echo $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
+										}
+									?>
 								</p>
 							</header>
 
