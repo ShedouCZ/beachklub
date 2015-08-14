@@ -1,12 +1,12 @@
-[ ] partneri - logo + popis + proklik
+[x] partneri - logo + popis + proklik
 [ ] cakegallery - control somehow which styles versions get created!
 [ ] copy paste i s obrazkem
 	[ ] - select some reasonable size instead of original
-	
+
 [x] admin - pridat horni menu - element?
 [x] youtube ikona - odebrat you nechat jen tube a zvetsit, aby lepe citelne
-[ ] h2 on all pages - v contaktech
-[ ] coaches obrazky
+[x] h2 on all pages - v contaktech
+[x] coaches obrazky
 [ ] kontkat je v messages add zatim
 [ ] home - cze/eng
 [ ] home - vice novinek a perexy clanku
@@ -15,7 +15,7 @@
 [x] documents slug router class
 [ ] sidebar u clanku - volitelny - fallback na kalendar
 [x] slides - upload photos
-[ ] kontakty - sidebar: http://beachklubladvi.cz/kontakty.html
+[x] kontakty - sidebar: http://beachklubladvi.cz/kontakty.html
 [x] kontakty - recipients
 	[ ] kontakty - send email out!
 [ ] turnaje, krouzky, treninky, kempy maji rozdeleni do dalsich kategorii
@@ -24,6 +24,6 @@
 	- Prodloužené víkendy v Poděbradech
 	- Beachvolejbalové kempy u Máchova jezera
 	- atd
-[ ] o nas - pod to http://beachklubladvi.cz/treneri.html
+[x] o nas - pod to http://beachklubladvi.cz/treneri.html
 [ ] novinky - vice perexu
 [ ] změna zvíraznění na navigaci na jiné stránce
