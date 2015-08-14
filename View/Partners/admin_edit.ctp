@@ -37,8 +37,8 @@
 					<?php
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
-							'data-album-id'=>Partner::$album_id,
-							'data-model-name'=>'Partner'
+							'data-picture'=>Partner::encode_picture(@$this->request->data['Picture']),
+							'data-album-id'=>Partner::$album_id
 						));
 					?>
 				</div>
