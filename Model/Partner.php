@@ -11,7 +11,7 @@ class Partner extends AppModel {
 
 	public $belongsTo = array(
 		'Picture' => array(
-			'className' => 'GalleryPicture',
+			'className' => 'Gallery.Picture',
 			'foreignKey' => 'gallery_picture_id',
 			'conditions' => '',
 		),
