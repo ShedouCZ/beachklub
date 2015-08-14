@@ -2,13 +2,20 @@
 App::uses('AppController', 'Controller');
 class DocumentsController extends AppController {
 	public $layout = 'BootstrapCake.bootstrap';
-
 	public $components = array('Paginator', 'Session');
 
 	public function index() {
-		$items = $this->paginate();
 		if ($this->request->is('requested')) {
+			$items = $this->Document->find('all', array(
+				'limit' => 5,
+				'order' => 'Document.ord desc',
+				'conditions' => array(
+					'Document.published' => 1
+				)
+			));
 			return $items;
+		} else {
+			$items = $this->paginate();
 		}
 		$this->set('items', $items);
 	}

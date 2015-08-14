@@ -1,6 +1,6 @@
 <?php
   $docs = $this->requestAction(
-    'documents/index/sort:ord/direction:desc/limit:5'
+    'documents/index'
   );
 ?>
 <div id="block-system-main" class="block block-system block-even">

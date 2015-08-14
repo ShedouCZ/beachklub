@@ -22,7 +22,7 @@
 					<tr>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
 						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
-						<th><?php echo $this->Paginator->sort('published'); ?></th>
+						<th class="c"><?php echo $this->Paginator->sort('published'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
@@ -30,10 +30,10 @@
 				<?php foreach ($documents as $document) { ?>
 					<tr>
 						<td><?php echo h($document['Document']['title']); ?></td>
-								<td>
-			<?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?>
-		</td>
-						<td><?php echo h($document['Document']['published']); ?></td>
+						<td>
+							<?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?>
+						</td>
+						<td class="c"><?php echo $document['Document']['published'] ? 'ano' : 'ne'; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $document['Document']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $document['Document']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $document['Document']['id'])); ?>
