@@ -34,7 +34,7 @@
 						<td><?php echo h($partner['Partner']['name']); ?></td>
 						<td><?php echo ($partner['Partner']['desc']); ?></td>
 						<td><?php echo h($partner['Partner']['url']); ?></td>
-						<td><img src=<?php echo $partner['Picture']['styles']['medium']; ?> width="170" height="90" alt="" /></td>
+						<td><img src=<?php echo $partner['Picture']['styles']['docs']; ?> width="170" height="150" alt="" /></td>
 						<td><?php echo $this->Html->link($partner['PartnerType']['title'], array('controller' => 'partner_types', 'action' => 'view', $partner['PartnerType']['id'])); ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $partner['Partner']['id']), array('escape' => false)); ?>
