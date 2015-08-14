@@ -26,3 +26,4 @@
 	- atd
 [ ] o nas - pod to http://beachklubladvi.cz/treneri.html
 [ ] novinky - vice perexu
+[ ] změna zvíraznění na navigaci na jiné stránce

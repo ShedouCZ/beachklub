@@ -75,7 +75,7 @@
                                         <div class="form-item form-type-textarea form-item-message">
                                             <label for="edit-message">Zpráva <span class="form-required" title="Toto pole je vyžadováno.">*</span></label>
                                             <div class="form-textarea-wrapper resizable">
-                                                <textarea id="edit-message" name="data[Message][desc]" cols="60" rows="5" class="form-textarea required"></textarea>
+                                                <textarea id="edit-message" name="data[Message][desc]" cols="60" rows="15" class="form-textarea required"></textarea>
                                             </div>
                                         </div>
                                         <input type="hidden" name="form_build_id" value="form-e0Z7vJ5GxQVC9DhvmOf3AwYmbysWtLzGrga8yjj1XaU" />
@@ -129,7 +129,7 @@
                                     180 00  Praha 8<br>
                                     IČO: 22735135<br>
                                     ICP: 1000559998<br>
-                                    korespondenční adresa: Beachklub Ládví z.s., Horáčkova 1213, Praha 4, 14000
+                                    Korespondenční adresa: Beachklub Ládví z.s., Horáčkova 1213, Praha 4, 14000
                                 </p>
                             </div>
                         </div>

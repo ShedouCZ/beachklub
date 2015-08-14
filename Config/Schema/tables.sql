@@ -47,7 +47,6 @@ INSERT INTO `gallery_albums` (`id`, `title`, `default_name`, `path`, `model`, `m
 (5,	'Partners album',	'',	'',	'partner',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
 
 
-
 DROP TABLE IF EXISTS `gallery_pictures`;
 CREATE TABLE `gallery_pictures` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -122,7 +121,11 @@ INSERT INTO `gallery_pictures` (`id`, `name`, `path`, `size`, `album_id`, `main_
 (53,	'slide3.jpg',	'27932e5b110f50a47b33068383f24314.jpg',	289474,	2,	NULL,	NULL,	'full',	9999999,	'2015-07-27 11:32:50',	'2015-07-27 11:32:50'),
 (54,	'medium-slide3.jpg',	'medium-27932e5b110f50a47b33068383f24314.jpg',	11750,	2,	53,	NULL,	'medium',	9999999,	'2015-07-27 11:32:50',	'2015-07-27 11:32:50'),
 (55,	'slide-slide3.jpg',	'slide-27932e5b110f50a47b33068383f24314.jpg',	58396,	2,	53,	NULL,	'slide',	9999999,	'2015-07-27 11:32:50',	'2015-07-27 11:32:50'),
-(56,	'tile-slide3.jpg',	'tile-27932e5b110f50a47b33068383f24314.jpg',	11882,	2,	53,	NULL,	'tile',	9999999,	'2015-07-27 11:32:50',	'2015-07-27 11:32:50');
+(56,	'tile-slide3.jpg',	'tile-27932e5b110f50a47b33068383f24314.jpg',	11882,	2,	53,	NULL,	'tile',	9999999,	'2015-07-27 11:32:50',	'2015-07-27 11:32:50'),
+(57,	'ondramichalek.jpg',	'86d61bc5dfaa4fe0e1eacdd80bbdd6f5.jpg',	173865,	4,	NULL,	NULL,	'full',	9999999,	'2015-08-13 10:32:17',	'2015-08-13 10:32:17'),
+(58,	'medium-ondramichalek.jpg',	'medium-86d61bc5dfaa4fe0e1eacdd80bbdd6f5.jpg',	11053,	4,	57,	NULL,	'medium',	9999999,	'2015-08-13 10:32:17',	'2015-08-13 10:32:17'),
+(59,	'slide-ondramichalek.jpg',	'slide-86d61bc5dfaa4fe0e1eacdd80bbdd6f5.jpg',	77236,	4,	57,	NULL,	'slide',	9999999,	'2015-08-13 10:32:17',	'2015-08-13 10:32:17'),
+(60,	'tile-ondramichalek.jpg',	'tile-86d61bc5dfaa4fe0e1eacdd80bbdd6f5.jpg',	9721,	4,	57,	NULL,	'tile',	9999999,	'2015-08-13 10:32:17',	'2015-08-13 10:32:17');
 
 DROP TABLE IF EXISTS `headlines`;
 CREATE TABLE `headlines` (

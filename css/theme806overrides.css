@@ -28,14 +28,6 @@ showing just one event in the calendar + need to adjust in js settings as well
 	padding-top: 50px;
 	padding-bottom: 15px;
 }
-#content h1.title, h2, h3 {
-	line-height: 68px;
-	font-size: 48px;
-}
-
-#content h4 {
-	color: #fff;
-}
 
 section.block .content li a.active-trail.active {
 	color: #BC2800;

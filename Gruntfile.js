@@ -193,6 +193,7 @@ module.exports = function(grunt) {
 					'Vendor/summernote/dist/summernote.css',
 					'css/admin/*.css',
 					'css/superfish.css',
+					'css/type.css',
 					'css/theme806overrides.css'
 				],
 				dest: 'webroot/css/site-admin.css',

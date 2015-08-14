@@ -7,7 +7,14 @@
     <div class="views-row first odd">
         <div class="views-field views-field-field-coaches-photo img-left">
             <div class="field-content">
-                <img src="<?php echo $item['Picture']['styles']['medium']; ?>" width="190" height="180" alt="">
+                <img src=<?php
+                if (@$item['Picture']['styles']['medium']) {
+                    echo $item['Picture']['styles']['medium'];
+                }
+                else {
+                    echo "/img/coaches/no_image.jpg";
+                }
+                    ?> width="190" height="180" alt="" />
             </div>
         </div>
         <div class="views-field views-field-nothing extra">
@@ -16,7 +23,7 @@
                     <h2><?php echo $item['Coach']['name']; ?></h2>
                 </div>
                 <div class="views-field-body">
-                    <h4><?php echo $item['Coach']['title']; ?></h4>
+                    <h3><?php echo $item['Coach']['title']; ?></h3>
                     <?php echo $item['Coach']['desc']; ?>
                 </div>
             </span>
