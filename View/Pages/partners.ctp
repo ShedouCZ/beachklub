@@ -1,3 +1,8 @@
+<?php
+  $partner_types = $this->requestAction(
+    'partnerTypes/index'
+  );
+?>
 <div id="main" class="clearfix">
 
     <aside id="sidebar-second-grid-8" class="column column_right prefix-1 grid-8 omega" role="complementary">
@@ -11,9 +16,9 @@
                             Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům.
                         </p>
                         <p>
-                        Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce
-                        plánujete zasáhnout celou republiku? Napište nám na marketing@beachklubladvi.cz a my
-                        Vám připravíme zajímavou a konkrétní nabídku.
+                            Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce
+                            plánujete zasáhnout celou republiku? Napište nám na marketing@beachklubladvi.cz a my
+                            Vám připravíme zajímavou a konkrétní nabídku.
                         </p>
                         <p>
                             Usilovně hledáme
@@ -22,6 +27,8 @@
                                 <li>partnery finanční i materiálové pro naše turnaje</li>
                                 <li>partnery pro sportovní turnaj v přehazované pro děti z dětských domovů</li>
                             </ul>
+                        </p>
+                        <p>
                             Nechcete plýtvat s rozpočtem v dobách finanční krize? Nebojte se a napište.
                             Nemáme velké oči a oceníme každou pomoc. A tu velmi rychle poznáte na kvalitě
                             našich služeb.
@@ -51,112 +58,42 @@
                     </div><!-- /.content -->
                 </div><!-- /.block -->
 
-                <section id="block-views-upcoming-tournaments-block" class="block block-views views-clearfix block-even">
+                <?php foreach ($partner_types as $type) { ?>
+                    <section id="block-views-upcoming-tournaments-block" class="block block-views views-clearfix block-even">
 
-                    <h2>Partneři plážového volejbalu</h2>
+                        <h2><?php echo $type['PartnerType']['title'];?></h2>
 
-                    <div class="content">
-                        <div class="view view-upcoming-tournaments view-id-upcoming_tournaments view-display-id-block view-dom-id-7aa8b03895c96536fd397502c23fec68">
-                            <div class="view-content">
-                                <div class="views-row views-row-1 views-row-odd views-row-first">
+                        <?php foreach ($type['Partner'] as $item) { ?>
+                            <div class="content">
+                                <div class="view view-upcoming-tournaments view-id-upcoming_tournaments view-display-id-block view-dom-id-7aa8b03895c96536fd397502c23fec68">
+                                    <div class="view-content">
+                                        <div class="views-row views-row-1 views-row-odd views-row-first">
 
-                                    <div class="views-field views-field-field-tournaments-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/210x170/public/field/image/Image00022.jpg?itok=CG3NyBzR" width="210" height="170" alt="">
+                                            <div class="views-field views-field-field-tournaments-photo img-left">
+                                                <div class="field-content">
+                                                    <a href ='<?php echo $item['url'];?>'><img src="<?php echo $item['Picture']['styles']['docs'];?>" width="210" alt=""> </a>
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-nothing extra">
+                                                <span class="field-content">
+                                                    <div class="views-field-title">
+                                                        <a href="<?php echo $item['url'];?>"><h1><?php echo $item['name'];?></h1></a>
+                                                    </div>
+                                                    <div class="views-field-body">
+                                                        <p>
+                                                            <?php echo $item['desc'];?>
+                                                        </p>
+                                                    </div>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title">
-                                                <a href="/praesent-vestibulum-molestie-1"><h3>Praesent vestibulum molestie</h3></a>
-                                            </div>
-                                            <div class="views-field-body">
-                                                <p>
-                                                    Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
-                                                    Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
-                                                    velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
-                                                    libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
-                                                    Quisque vitae justo sed sem blandit
-                                                </p>
-                                            </div>
-                                        </span>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div><!-- /.content -->
-                </section><!-- /.block -->
-                <section id="block-views-upcoming-tournaments-block" class="block block-views views-clearfix block-even">
-
-                    <h2>Sponzoři plážového volejbalu</h2>
-
-                    <div class="content">
-                        <div class="view view-upcoming-tournaments view-id-upcoming_tournaments view-display-id-block view-dom-id-7aa8b03895c96536fd397502c23fec68">
-                            <div class="view-content">
-                                <div class="views-row views-row-1 views-row-odd views-row-first">
-
-                                    <div class="views-field views-field-field-tournaments-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/210x170/public/field/image/Image00022.jpg?itok=CG3NyBzR" width="210" height="170" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title">
-                                                <a href="/praesent-vestibulum-molestie-1"><h3>Praesent vestibulum molestie</h3></a>
-                                            </div>
-                                            <div class="views-field-body">
-                                                <p>
-                                                    Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
-                                                    Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
-                                                    velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
-                                                    libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
-                                                    Quisque vitae justo sed sem blandit
-                                                </p>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.content -->
-                </section><!-- /.block -->
-                <section id="block-views-upcoming-tournaments-block" class="block block-views views-clearfix block-even">
-
-                    <h2>Partneři dětských akcí</h2>
-
-                    <div class="content">
-                        <div class="view view-upcoming-tournaments view-id-upcoming_tournaments view-display-id-block view-dom-id-7aa8b03895c96536fd397502c23fec68">
-                            <div class="view-content">
-                                <div class="views-row views-row-1 views-row-odd views-row-first">
-
-                                    <div class="views-field views-field-field-tournaments-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/210x170/public/field/image/Image00022.jpg?itok=CG3NyBzR" width="210" height="170" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title">
-                                                <a href="/praesent-vestibulum-molestie-1"><h3>Praesent vestibulum molestie</h3></a>
-                                            </div>
-                                            <div class="views-field-body">
-                                                <p>
-                                                    Quisque lectus dui, aliquet eu placerat eu, viverra at velit.
-                                                    Nunc sed magna ut tortor tempor mollis a eu justo. Fusce ultrices,
-                                                    velit eget aliquam auctor, turpis dui tincidunt tellus, id porta
-                                                    libero mauris ac ligula. Donec rutrum est id nisl euismod facilisis.
-                                                    Quisque vitae justo sed sem blandit
-                                                </p>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.content -->
-                </section><!-- /.block -->
+                            </div><!-- /.content -->
+                            <?php }; ?>
+                        </section><!-- /.block -->
+                        <?php }; ?>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>

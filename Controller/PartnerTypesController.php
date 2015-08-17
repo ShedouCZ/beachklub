@@ -5,6 +5,19 @@ class PartnerTypesController extends AppController {
 
 	public $components = array('Paginator', 'Session');
 
+	public function index() {
+		if ($this->request->is('requested')) {
+			$this->PartnerType->recursive = 2;
+			$items = $this->PartnerType->find('all', array(
+				'order' => 'PartnerType.ord asc',
+				)
+			);
+			return $items;
+		} else {
+			$items = $this->paginate();
+		}
+		$this->set('items', $items);
+	}
 
 	public function admin_index() {
 		$this->PartnerType->recursive = 0;

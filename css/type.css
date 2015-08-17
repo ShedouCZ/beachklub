@@ -64,11 +64,6 @@ p {
     text-decoration: underline;
 }
 
-#content h1.title, h2 {
-	line-height: 68px;
-	font-size: 48px;
-}
-
 section#comments h2.title {
     color:#fff;
     font-size:40px;
@@ -81,12 +76,6 @@ article.comment h2 {
     font-size:18px;
     font-weight:normal;
     text-decoration:none;
-}
-
-
-p.submitted {
-    font-size:12px;
-    margin:5px 0 15px;
 }
 
 .submitted, p.submitted span {

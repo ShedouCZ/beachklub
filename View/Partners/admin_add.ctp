@@ -24,7 +24,7 @@
 					<?php echo $this->Form->input('name', array('class'=>'form-control', 'placeholder'=>__('Name')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Desc')));?>
+					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'data-wysiwyg-height'=>300, 'class'=>'form-control', 'placeholder'=>__('Desc')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('url', array('class'=>'form-control', 'placeholder'=>__('Url')));?>
