@@ -18,66 +18,7 @@
 
                 </section><!-- /.block -->
                 <section id="block-views-testimonials-block" class="block block-views views-clearfix block-odd">
-
-                    <h2>Testimonials</h2>
-
-                    <div class="content">
-                        <div class="view view-testimonials view-id-testimonials view-display-id-block view-dom-id-493a3081944069a986b08acba962aa64">
-                            <div class="view-content">
-                                <div class="views-row views-row-1 views-row-odd views-row-first">
-                                    <div class="views-field views-field-field-testimonials-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/90x100/public/field/image/Image00014.jpg?itok=V-YW1UC2" width="90" height="100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/sam-kromstain">Sam Kromstain:</a>
-                                            </div>
-                                            <div class="views-field-body">"Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan..."
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="views-row views-row-2 views-row-even">
-                                    <div class="views-field views-field-field-testimonials-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/90x100/public/field/image/Image00005.jpg?itok=tMmfhkN0" width="90" height="100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/alexa-smith">Alexa Smith:</a>
-                                            </div>
-                                            <div class="views-field-body">"Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan..."
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="views-row views-row-3 views-row-odd views-row-last">
-                                    <div class="views-field views-field-field-testimonials-photo img-left">
-                                        <div class="field-content">
-                                            <img src="http://beachbar.vpslist.cz/sites/default/files/styles/90x100/public/field/image/Image00006.jpg?itok=6-fXYxMF" width="90" height="100" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="views-field views-field-nothing extra">
-                                        <span class="field-content">
-                                            <div class="views-field-title title-indent">
-                                                <a href="/jessica-priston">Jessica Priston:</a>
-                                            </div>
-                                            <div class="views-field-body">"Vivamus vel eros eget magna volutpat sagittis.
-                                                Nulla faucibus nibh a magna tincidunt accumsan..."
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.content -->
+                    <?php echo $this->Element('testimonials'); ?>
                 </section><!-- /.block -->
             </div>
         </div>

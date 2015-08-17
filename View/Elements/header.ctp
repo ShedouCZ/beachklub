@@ -22,11 +22,11 @@
             <section id="block-locale-language" class="block block-locale block-even">
                 <div class="content">
                     <ul class="language-switcher-locale-session">
-                        <li class="cs first active"><a href="/" class="language-link session-active active" xml:lang="cs">Čeština</a></li>
-                        <li class="en last active"><a href="/?language=en" class="language-link active" xml:lang="en">English</a></li>
+                        <li class="en last active"><a href="/?language=en" class="language-link active" xml:lang="en"><p>Anglicky</p></a></li>
                     </ul>
                 </div>
             </section>
+            <?php echo $this->Element('search-bar'); ?>
         </div>
     </div>
 </div>
