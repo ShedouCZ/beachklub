@@ -32,7 +32,7 @@ CREATE TABLE `documents` (
   `perex` text COLLATE utf8_czech_ci,
   `user_id` int(11) NOT NULL,
   `published` tinyint(1) NOT NULL DEFAULT '1',
-  `ord` int(11) NOT NULL DEFAULT '99999',
+  `ord` int(11) NOT NULL ,
   `slug` varchar(255) COLLATE utf8_czech_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
