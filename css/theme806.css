@@ -574,7 +574,7 @@ ul.inline li {
 
 article.node {
 	padding-bottom:20px;
-	margin-bottom:20px;
+	/*margin-bottom:20px;*/
 }
 	article.node.node-blog {
 		border-bottom: 0px solid #000;

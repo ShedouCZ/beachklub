@@ -5,8 +5,8 @@
 ?>
 <div id="block-system-main" class="block block-system block-even">
   <div class="content">
-    <article id="node-153" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
         <?php foreach ($docs as $doc): ?>
+            <article id="doc-<?php echo $doc['Document']['id']?>" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
               <header>
                   <h2>
                       <?php
@@ -36,8 +36,8 @@
                         </li>
                     </ul>
                 </footer>
+            </article><!-- /.node -->
         <?php endforeach; ?>
-    </article><!-- /.node -->
     </div>
     <!-- /.content -->
 </div>

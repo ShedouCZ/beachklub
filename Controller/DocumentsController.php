@@ -38,6 +38,7 @@ class DocumentsController extends AppController {
 		}
 		$options = array('conditions' => array('Document.' . $this->Document->primaryKey => $id));
 		$this->set('document', $this->Document->find('first', $options));
+		$this->set('neighbors', $this->Document->find('neighbors', array('field'=>'id', 'value'=>$id)));
 	}
 
 	public function admin_add() {
