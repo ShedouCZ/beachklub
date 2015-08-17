@@ -24,6 +24,23 @@ INSERT INTO `coaches` (`id`, `name`, `title`, `desc`, `url`, `ord`, `gallery_pic
 (4,	'Míra Svoboda',	'Trenér plážového volejbalu v Beachklubu Ládví',	'<p>Narozen 11. 09. 1979</p><p>Profesionální volejbalová kariéra:</p><ul><li>1. místo MČR 2006, 1. místo Řecký okruh 2005 - Korfu, 1. místo Akademické &nbsp;MČR 2002, 2003, celkový vítěz Českého poháru 2002, 2003</li><li>2. místo MČR 2008, 2. místo Řecký okruh 2006 - Nafplio, Mykonos</li><li>3. místo MČR 2004, 2005, 2009, 2012, 3. místo FIVB Satelite 2005 - Itálie</li><li>5. místo CEV Challenger 2004 - Slavkov u Brna</li><li>9. místo ME do 23. let 2001 - Portugalsko, 9. místo FIVB Challenger 2007 - Brno</li><li>15 sezon vrcholového šestkového volejbalu</li><li>zahraniční angažmá: Argentina, Španělsko, Kypr, Rakousko, Holandsko</li><li>juniorská reprezentace - 3. místo ME, 4. místo MS</li></ul><p>Trenérská kvalifikace:</p><ul><li>absolvent FSPS, Pedagogická fakulta MU Brno</li><li>2. trenérská třída</li></ul><p>Kontakt: telefon: 737 417 443, e-mail: mirecsvoboda@seznam.cz</p><p>Cena: 400 Kč / 1 hodina trénování</p>',	'',	4,	NULL),
 (5,	'Rosťa Vorálek',	'Trenér výkonnostní mládeže v Beachklubu Ládví',	'<p style=\"border: none; float: none; clear: both; padding: 0px 10px;\">Trenérská kvalifikace:</p><ul><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">diplomovaný trenér I. třídy ve volejbale&nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">držitel II. trenérské třídy FIVB</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">trenér III. třídy v beach volejbalu</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">pedagog na Fakultě tělesné výchovy (katedra sportovních her – oddělení volejbalu)</li></ul><p style=\"border: none; float: none; clear: both; padding: 0px 10px;\">Trenérská činnost:</p><ul><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">trenér akademického volejbalového výběru Univerzity Karlovy &nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">1998 – 2000 druhý trenér reprezentačního družstva kadetek ČR</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2002 – 2004 druhý trenér reprezentačního družstva kadetek ČR</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2002 – 2007 trenér družstva PVK Olymp Praha – extraliga (kadetky) &nbsp; &nbsp; &nbsp; &nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2007 - 2008 hlavní trenérem reprezentačního družstva juniorek ČR</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2009 trenér družstva PVK Olymp – extraliga (kadetky) &nbsp;&nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2013 – 2014 trenér beachvolejbalu</li></ul>',	'',	5,	NULL);
 
+DROP TABLE IF EXISTS `documents`;
+CREATE TABLE `documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `content` text COLLATE utf8_czech_ci,
+  `perex` text COLLATE utf8_czech_ci,
+  `user_id` int(11) NOT NULL,
+  `published` tinyint(1) NOT NULL DEFAULT '1',
+  `ord` int(11) NOT NULL DEFAULT '99999',
+  `slug` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `documents` (`id`, `title`, `content`, `perex`, `user_id`, `published`, `ord`, `slug`) VALUES
+(1,	'První zápas Kiki po rozchodu s Maki? Již v pátek v Beachklubu Ládví!',	'<p>Pražský Beachklub Ládví coby spolupořadatel prestižního turnaje s mezinárodní účastí<strong>&nbsp;Staropramen Cool Super Cup</strong>, kterého se účastní největší hvězdy českého&nbsp;plážového volejbalu včetně olympioniků&nbsp;<strong>Přemysla Kubaly, Lenky Háječkové, Soni Novákové - Dosoudilové a Kristýny Kolocové</strong>, bude dějištěm velké sportovní show. A právě na poslední jmenovanou,&nbsp;<strong>Kiki</strong>, bude směřovat veškerá pozornost, protože po rozchodu s Maki (Markétou Slukovou) se poprvé představí s novou partnerkou, taktéž účastnicí olympijských her v Londýně, Hankou Skalníkovou (roz. Klapalovou).</p><p><img src=\"/files/gallery/3/docs-0feaa0f9d07d7538435e9f146cbb2d48.jpg\" width=\"570\"></p><p>Jako druhý nasazený pár turnaje nastoupí dvojice Kolocová - Skalníková do hlavní soutěže v&nbsp;<strong>pátek 14. srpna</strong>&nbsp;odpoledne, konkrétně v&nbsp;<strong>17:20</strong>. Věříme, že nás čeká velmi atraktivní utkání!</p><p>Těšíme se na vás.</p><p>&nbsp;</p><p><br>Beachklub Ládví</p>',	'<p>Pražský Beachklub Ládví coby spolupořadatel prestižního turnaje s mezinárodní účastí<strong>&nbsp;Staropramen Cool Super Cup</strong>, kterého se účastní největší hvězdy českého&nbsp;plážového volejbalu včetně olympioniků&nbsp;<strong>Přemysla Kubaly, Lenky Háječkové, Soni Novákové - Dosoudilové a Kristýny Kolocové</strong>, bude dějištěm velké sportovní show. A právě na poslední jmenovanou,&nbsp;<strong>Kiki</strong>, bude směřovat veškerá pozornost, protože po rozchodu s Maki (Markétou Slukovou) se poprvé představí s novou partnerkou, taktéž účastnicí olympijských her v Londýně, Hankou Skalníkovou (roz. Klapalovou). Více informací&nbsp;<a href=\"/prvni-zapas-kiki-po-rozchodu-s-maki\">zde</a>.</p><p><img src=\"/files/gallery/3/docs-4e3b7b637c22bc5b46a958ebf61869c7.jpg\" width=\"570\"></p>',	2,	1,	99999,	'prvni-zapas-kiki-po-rozchodu-s-maki'),
+(2,	'Vyhraje Kiki svůj první turnaj v nově složené dvojici s Hanou Skalníkovou?',	'<h3>Beachvolejbalová sezóna je v plném proudu a letošní léto je v Česku ve znamení špičkového plážového volejbalu. Již tento víkend 14. – 16. srpna 2015 se odehraje nejprestižnější turnaj „Staropramen Cool Super Cup 2015“ v Praze v areálu Beachklubu Ládví a na Císařské louce. Bude to první turnaj, na kterém se ukáže Kristýna Kolocová po rozpadu páru Maki a Kiki…</h3><p><img src=\"/files/gallery/3/docs-b8afe89df2f50a41071837da57b0b5d4.jpg\" width=\"570\"></p><p>Kromě Kristýny Kolocové se představí i olympionička Lenka Háječková se Soňou Novákovou - Dosoudilovou, Diana Žolnerčíková, Martina Jakubšová, Eliška Gálová, Šárka Nakládalová, nebo Martina Bonnerová, v mužské kategorii se můžeme těšit na bronzové medailisty z Evropských her v Baku Jana Hadravu a olympionika Přemysla Kubalu, Roberta Kufu, Jana Dumka a další.</p><p>Systém turnaje je dvoudenní s kvalifikací před turnajem. V hlavní soutěži se přestaví 16 párů, jsou připraveny 2 divoké karty pro zahraniční dvojice a 1 divoká karta pro zajímavou českou dvojici. Diváci tak uvidí 9 nejlepších dvojic aktuálního českého žebříčku a zbylé páry doplní 4 postupující z kvalifikace.</p><p>Finálové zápasy obou kategorií budou za účasti kamer ČT4 Sport, a tak budou mít možnost i diváci, kteří se nedostanou na turnaj, sledovat ten nejlepší beachvolejbal v České republice.</p><p>Na turnaji Super Cup jako turnaji nejvyšší kategorie jsou připraveny prize money ve výši 100.000,- Kč na kategorii. Tuto částku si rozdělí 12 nejlepších dvojic z hlavní soutěže.</p><p><strong>Harmonogram turnaje:</strong></p><p>14. – 15. 8. 2015&nbsp;kvalifikace a hlavní soutěže (Beachklub Ládví)<br>16. 8. 2015&nbsp;&nbsp;semifinále a finále (Císařská louka)</p><p>Diváky v Beachklubu Ládví čeká kromě profesionálních sportovních výkonů bohatý doprovodný program. Rodiny s dětmi uvítají dětský koutek s nafukovacími atrakcemi a na své si přijdou i labužníci, kteří ocení dobroty z venkovního grilu v bezprostřední blízkosti centrkurtu.</p><p><em>\"Jsem nesmírně ráda, že je to po roce opět Městská část Praha 8, která v areálu Beachklubu Ládví hostí tak významnou sportovní událost, kterou Staropramen Cool Super Cup bezpochyby je,\"</em>&nbsp;zve na beachvolejbalovou událost léta místostarostka paní Alena Borhyová.</p><p>Partnery turnaje jsou Staropramen Cool, Český volejbalový svaz, Hlavní město Praha, Městská část Praha 8, Oakley, Neumann, Metaxa, Monstera International, ITS Billa Travel, Adidas, Happy Plugs a E.On.</p><p>Doražte, těšíme se na vás!</p><p>&nbsp;</p><p>Beachklub Ládví</p>',	'<p>Beachvolejbalová sezóna je v plném proudu a letošní léto je v Česku ve znamení špičkového plážového volejbalu. Již tento víkend 14. – 16. srpna 2015 se odehraje nejprestižnější turnaj „Staropramen Cool Super Cup 2015“ v Praze v areálu Beachklubu Ládví a na Císařské louce. Bude to první turnaj, na kterém se ukáže Kristýna Kolocová po rozpadu páru Maki a Kiki… Více informací o celém turnaji naleznete v článku&nbsp;<a href=\"/vyhraje-kiki-svuj-prvni-turnaj\">zde</a>.</p><h3><img src=\"/files/gallery/3/docs-4605e06484fadd2af769d75c338d96ee.jpg\" width=\"570\"></h3>',	2,	1,	99999,	'vyhraje-kiki-svuj-prvni-turnaj');
+
 DROP TABLE IF EXISTS `gallery_albums`;
 CREATE TABLE `gallery_albums` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -45,7 +62,6 @@ INSERT INTO `gallery_albums` (`id`, `title`, `default_name`, `path`, `model`, `m
 (3,	'Documents album',	'',	'',	'document',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
 (4,	'Coaches album',	'',	'',	'coach',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
 (5,	'Partners album',	'',	'',	'partner',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
-
 
 DROP TABLE IF EXISTS `gallery_pictures`;
 CREATE TABLE `gallery_pictures` (
@@ -169,7 +185,27 @@ INSERT INTO `gallery_pictures` (`id`, `name`, `path`, `size`, `album_id`, `main_
 (102,	'medium-mcp8-logo.png',	'medium-642d171adb216de849cf6bff77c7800e.jpg',	18617,	5,	101,	NULL,	'medium',	9999999,	'2015-08-14 11:56:54',	'2015-08-14 11:56:54'),
 (103,	'slide-mcp8-logo.png',	'slide-642d171adb216de849cf6bff77c7800e.jpg',	173170,	5,	101,	NULL,	'slide',	9999999,	'2015-08-14 11:56:55',	'2015-08-14 11:56:55'),
 (104,	'tile-mcp8-logo.png',	'tile-642d171adb216de849cf6bff77c7800e.jpg',	18001,	5,	101,	NULL,	'tile',	9999999,	'2015-08-14 11:56:55',	'2015-08-14 11:56:55'),
-(105,	'docs-mcp8-logo.png',	'docs-642d171adb216de849cf6bff77c7800e.jpg',	89092,	5,	101,	NULL,	'docs',	9999999,	'2015-08-14 11:56:55',	'2015-08-14 11:56:55');
+(105,	'docs-mcp8-logo.png',	'docs-642d171adb216de849cf6bff77c7800e.jpg',	89092,	5,	101,	NULL,	'docs',	9999999,	'2015-08-14 11:56:55',	'2015-08-14 11:56:55'),
+(106,	'kiki.jpg',	'4e3b7b637c22bc5b46a958ebf61869c7.jpg',	196665,	3,	NULL,	NULL,	'full',	9999999,	'2015-08-17 10:45:19',	'2015-08-17 10:45:19'),
+(107,	'medium-kiki.jpg',	'medium-4e3b7b637c22bc5b46a958ebf61869c7.jpg',	11769,	3,	106,	NULL,	'medium',	9999999,	'2015-08-17 10:45:19',	'2015-08-17 10:45:19'),
+(108,	'slide-kiki.jpg',	'slide-4e3b7b637c22bc5b46a958ebf61869c7.jpg',	81469,	3,	106,	NULL,	'slide',	9999999,	'2015-08-17 10:45:19',	'2015-08-17 10:45:19'),
+(109,	'tile-kiki.jpg',	'tile-4e3b7b637c22bc5b46a958ebf61869c7.jpg',	12275,	3,	106,	NULL,	'tile',	9999999,	'2015-08-17 10:45:19',	'2015-08-17 10:45:19'),
+(110,	'docs-kiki.jpg',	'docs-4e3b7b637c22bc5b46a958ebf61869c7.jpg',	38925,	3,	106,	NULL,	'docs',	9999999,	'2015-08-17 10:45:19',	'2015-08-17 10:45:19'),
+(111,	'plakat_supercup15.jpg',	'0feaa0f9d07d7538435e9f146cbb2d48.jpg',	231623,	3,	NULL,	NULL,	'full',	9999999,	'2015-08-17 10:45:37',	'2015-08-17 10:45:37'),
+(112,	'medium-plakat_supercup15.jpg',	'medium-0feaa0f9d07d7538435e9f146cbb2d48.jpg',	24281,	3,	111,	NULL,	'medium',	9999999,	'2015-08-17 10:45:37',	'2015-08-17 10:45:37'),
+(113,	'slide-plakat_supercup15.jpg',	'slide-0feaa0f9d07d7538435e9f146cbb2d48.jpg',	340467,	3,	111,	NULL,	'slide',	9999999,	'2015-08-17 10:45:37',	'2015-08-17 10:45:37'),
+(114,	'tile-plakat_supercup15.jpg',	'tile-0feaa0f9d07d7538435e9f146cbb2d48.jpg',	23146,	3,	111,	NULL,	'tile',	9999999,	'2015-08-17 10:45:37',	'2015-08-17 10:45:37'),
+(115,	'docs-plakat_supercup15.jpg',	'docs-0feaa0f9d07d7538435e9f146cbb2d48.jpg',	159003,	3,	111,	NULL,	'docs',	9999999,	'2015-08-17 10:45:37',	'2015-08-17 10:45:37'),
+(116,	'plakat_supercup15.jpg',	'b8afe89df2f50a41071837da57b0b5d4.jpg',	231623,	3,	NULL,	NULL,	'full',	9999999,	'2015-08-17 10:46:17',	'2015-08-17 10:46:17'),
+(117,	'medium-plakat_supercup15.jpg',	'medium-b8afe89df2f50a41071837da57b0b5d4.jpg',	24281,	3,	116,	NULL,	'medium',	9999999,	'2015-08-17 10:46:17',	'2015-08-17 10:46:17'),
+(118,	'slide-plakat_supercup15.jpg',	'slide-b8afe89df2f50a41071837da57b0b5d4.jpg',	340467,	3,	116,	NULL,	'slide',	9999999,	'2015-08-17 10:46:17',	'2015-08-17 10:46:17'),
+(119,	'tile-plakat_supercup15.jpg',	'tile-b8afe89df2f50a41071837da57b0b5d4.jpg',	23146,	3,	116,	NULL,	'tile',	9999999,	'2015-08-17 10:46:17',	'2015-08-17 10:46:17'),
+(120,	'docs-plakat_supercup15.jpg',	'docs-b8afe89df2f50a41071837da57b0b5d4.jpg',	159003,	3,	116,	NULL,	'docs',	9999999,	'2015-08-17 10:46:17',	'2015-08-17 10:46:17'),
+(121,	'plakat_supercup15.jpg',	'4605e06484fadd2af769d75c338d96ee.jpg',	231623,	3,	NULL,	NULL,	'full',	9999999,	'2015-08-17 10:46:51',	'2015-08-17 10:46:51'),
+(122,	'medium-plakat_supercup15.jpg',	'medium-4605e06484fadd2af769d75c338d96ee.jpg',	24281,	3,	121,	NULL,	'medium',	9999999,	'2015-08-17 10:46:51',	'2015-08-17 10:46:51'),
+(123,	'slide-plakat_supercup15.jpg',	'slide-4605e06484fadd2af769d75c338d96ee.jpg',	340467,	3,	121,	NULL,	'slide',	9999999,	'2015-08-17 10:46:51',	'2015-08-17 10:46:51'),
+(124,	'tile-plakat_supercup15.jpg',	'tile-4605e06484fadd2af769d75c338d96ee.jpg',	23146,	3,	121,	NULL,	'tile',	9999999,	'2015-08-17 10:46:51',	'2015-08-17 10:46:51'),
+(125,	'docs-plakat_supercup15.jpg',	'docs-4605e06484fadd2af769d75c338d96ee.jpg',	159003,	3,	121,	NULL,	'docs',	9999999,	'2015-08-17 10:46:51',	'2015-08-17 10:46:51');
 
 DROP TABLE IF EXISTS `headlines`;
 CREATE TABLE `headlines` (
@@ -225,6 +261,41 @@ INSERT INTO `news` (`id`, `title`, `date`, `desc`) VALUES
 (2,	'Test 2',	'2015-05-16',	'dajhlfdsvcx'),
 (3,	'Novinka 3',	'2015-08-11',	'Test 3');
 
+DROP TABLE IF EXISTS `partners`;
+CREATE TABLE `partners` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  `partner_type_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `partners` (`id`, `name`, `desc`, `ord`, `url`, `gallery_picture_id`, `partner_type_id`) VALUES
+(1,	'Hostel Praha Ládví',	'<p>Hostel Praha Ládví svým zákazníků nabízí levné ubytování s možností parkování a výbornou dostupností do centra města.</p><p>Náš hostel Vám nabídne pohodlné a přitom levné ubytování v 1-8 lůžkových nekuřáckých pokojích včetně řady souvisejících služeb za malý poplatek či zcela zdarma! V okolí naleznete také velké množství příležitostí pro Vaše společenské a sportovní vyžití.</p>',	9999999,	'http://hostelprahaladvi.cz',	61,	2),
+(2,	'Wilson',	'<p><span style=\"line-height: 1.42857143;\">Wilson (Wilson Sporting Goods Company) je americká firma se sídlem v&nbsp;Chicagu, která je zaměřena na výrobu příslušenství pro raketové a míčové sporty. Historie značky sahá až k&nbsp;roku 1914.</span><br></p><p>Dnes je Wilson značkou s&nbsp;dominantním podílem na trhu. Toho dosáhl svým silným zaměřením na kvalitu, inovace a díky vášni posouvat sport stále dál. Produkty jsou navrhovány tak, aby byl jejich výkon nepřekonatelný a aby splňovaly požadavky mnoha sportovců různých úrovní.</p>',	9999999,	'http://www.amersports.cz/wilson',	66,	1),
+(3,	'Aquacentrum Šutka',	'<p><span style=\"line-height: 1.42857143;\">Aquacentrum Šutka je nově otevřeným a&nbsp;zároveň jedním z&nbsp;nejmodernějších plaveckých areálů v&nbsp;Praze i&nbsp;celé České republice.</span><br></p>\r\n<p>Plavecký areál Šutka byl pro veřejnost otevřen v&nbsp;prosinci roku 2012 a&nbsp;dnes může svým návštěvníkům nabídnout nejen padesátimetrový krytý bazén, ale též vířivku, divokou řeku, 2 tobogány, vodopád, relaxační bazén, dětské brouzdaliště i&nbsp;vodní bar s&nbsp;občerstvením. Pro milovníky wellness jsou v&nbsp;areálu k&nbsp;dispozici dvě finské sauny s&nbsp;venkovními ochlazovacími bazénky a&nbsp;dvě parní lázně.</p>',	9999999,	'http://www.sutka.eu/',	71,	3),
+(4,	'NEUMANN',	'<p>NEUMANN, spol. s r.o.&nbsp;je česká, rodinná firma specializující se na výrobu&nbsp;střešních boxů&nbsp;a&nbsp;střešních nosičů. Společnost začala jako první prodávat tyto výrobky na českém trhu. Prvními výrobky byly&nbsp;střešní nosiče na vozy Škoda.</p><p>NEUMANN patří k největším výrobcům i prodejcům uvedeného druhu výrobků v České republice. Ve stále větším rozsahu míří jeho vlastní produkce do zahraničí a export je velmi významnou částí obratu společnosti.</p><p>Výrobky NEUMANN&nbsp;jsou testovány a certifikovány zkušebnami TÜV.&nbsp;www.neumax.cz&nbsp;je jeden z mála internetových obchodů, který je schopen, díky zázemí firmy, garantovat pro naše zákazníky, záruční i pozáruční servis!</p>',	9999999,	'http://www.neumannr.cz/cs/',	76,	3),
+(5,	'Ferdinand',	'<p>Pivovar vyrábí&nbsp;okolo&nbsp;25 000 hektolitrů piva ročně. Produkuje celkem&nbsp;sedm druhů piv od nealkoholického až po speciální piva. Obchodní politika pivovaru se zaměřuje především domácí region a dále na exportní trhy.</p><p>Výroba piva vychází z původní receptury vaření piva s použitím českého sladu vlastní výroby a žateckého chmele, pomocí klasické technologie s otevřeným spodním kvašením a dokvašováním v ležáckých sklepích. V žádném případě nepoužíváme moderní metody výroby piva, zvláště pak CK tanky a ani dodatečně neředíme pivo vodou na požadovanou stupňovitost.</p>',	9999999,	'http://www.pivovarferdinand.cz/',	81,	2),
+(6,	'Monstera International',	'<p>Již 10 let je &nbsp;společnost partnerem pro velký počet větších i menších firem v investiční oblasti se zaměřením na komerční objekty. Společnost Monstera je developerskou organizací zabývající se investiční činností v oblasti komerčních nemovitostí a se zaměřením na výstavbu čerpacích stanic pohonných hmot.</p><ul><li>pomoc při zajištění finančních prostředků na výstavbu ČSPHL (leasing, spolupráce s významými distributory PHL, apod.)</li><li>zajištění financování výstavby</li></ul>',	9999999,	'http://www.monstera.cz/',	86,	3),
+(7,	'Praha',	'<p><span>Praha je hlavní a současně největší město České republiky a 15. největší město Evropské unie. Leží mírně na sever od středu Čech na řece Vltavě, uvnitř Středočeského kraje, jehož je správním centrem, ale jako samostatný kraj není jeho součástí.</span><br></p>',	9999999,	'http://www.praha.eu/',	91,	1),
+(8,	'Městská Část Praha 8',	'<p>Městský obvod&nbsp;Praha 8<span>&nbsp;se spádovým centrem v&nbsp;</span>Libni<span>&nbsp;označený arabskou číslicí poprvé existoval v letech 1949–1960 jako jeden z 16 městských obvodů, podruhé byl v odlišném vymezení ustaven zákonem o územním členění státu s účinností od&nbsp;</span>1. července<span>&nbsp;</span>1960<span>&nbsp;jako jeden z 10 městských obvodů. Od roku&nbsp;</span>1990<span>&nbsp;byl předefinován výčtem městských částí.</span><br></p>',	9999999,	'http://www.praha8.cz/',	101,	1);
+
+DROP TABLE IF EXISTS `partner_type`;
+CREATE TABLE `partner_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '999999999',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `partner_type` (`id`, `title`, `ord`) VALUES
+(1,	'Partneři plážového volejbalu',	999999999),
+(2,	'Sponzoři plážového volejbalu',	999999999),
+(3,	'Partneři dětských akcí',	999999999);
+
 DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -260,6 +331,26 @@ INSERT INTO `sliders` (`id`, `name`, `ord`, `gallery_picture_id`) VALUES
 (4,	'Slide 4',	9999999,	13),
 (5,	'Slide 5',	9999999,	17);
 
+DROP TABLE IF EXISTS `tiles`;
+CREATE TABLE `tiles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  `document_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`, `document_id`) VALUES
+(1,	'Rezervace Kurtů',	9999999,	21,	NULL),
+(2,	'Turnaje',	9999999,	25,	NULL),
+(3,	'Kroužky',	9999999,	29,	NULL),
+(4,	'Tréninky',	9999999,	33,	NULL),
+(5,	'Beachkempy v Čechách',	9999999,	37,	NULL),
+(6,	'Beachkempy v Itálii',	9999999,	41,	NULL),
+(7,	'Firemní akce',	9999999,	45,	NULL),
+(8,	'Beachbar',	9999999,	49,	NULL),
+(9,	'Členství v klubu',	9999999,	53,	NULL);
 
 DROP TABLE IF EXISTS `tournaments`;
 CREATE TABLE `tournaments` (
@@ -291,75 +382,4 @@ INSERT INTO `users` (`id`, `username`, `password`, `mail`, `created`, `modified`
 (1,	'admin',	'$2a$10$oTInOZNrfJqOdFEjVAb00ugqLRwquceqkt39aam1pY/4m1/py4.nq',	NULL,	'2015-06-24 10:37:25',	'2015-06-24 10:37:25'),
 (2,	'veronika',	'$2a$10$v1cjUd5kGH0X7UE.O8pStOzUTOuGwct1dOEY01NI2A14t4s9cMSSe',	NULL,	'2015-08-05 23:41:33',	'2015-08-05 23:41:33');
 
-DROP TABLE IF EXISTS `documents`;
-CREATE TABLE `documents` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `content` text COLLATE utf8_czech_ci,
-  `perex` text COLLATE utf8_czech_ci,
-  `user_id` int(11) NOT NULL,
-  `published` tinyint(1) NOT NULL DEFAULT '1',
-  `ord` int(11) NOT NULL DEFAULT '99999',
-  `slug` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `documents` (`id`, `title`, `content`, `perex`, `user_id`, `published`, `ord`, `slug`) VALUES
-(1,	'Kontakty',	'<h1>Kontakty / Contacts</h1>	<p>Jiří Turek: jiriturekk@gmail.com, +420 775 229 856</p>	<p>Represented by PavleyeArtistManagementandProduction: jozef@pavleye.com, +420 731 151 121</p>',	NULL,	0,	1,	99999,	'');
-
-DROP TABLE IF EXISTS `tiles`;
-CREATE TABLE `tiles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '9999999',
-  `gallery_picture_id` int(11) DEFAULT NULL,
-  `document_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`, `document_id`) VALUES
-(1,	'Rezervace Kurtů',	9999999,	21,	NULL),
-(2,	'Turnaje',	9999999,	25,	NULL),
-(3,	'Kroužky',	9999999,	29,	NULL),
-(4,	'Tréninky',	9999999,	33,	NULL),
-(5,	'Beachkempy v Čechách',	9999999,	37,	NULL),
-(6,	'Beachkempy v Itálii',	9999999,	41,	NULL),
-(7,	'Firemní akce',	9999999,	45,	NULL),
-(8,	'Beachbar',	9999999,	49,	NULL),
-(9,	'Členství v klubu',	9999999,	53,	NULL);
-
-DROP TABLE IF EXISTS `partners`;
-CREATE TABLE `partners` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '9999999',
-  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `gallery_picture_id` int(11) DEFAULT NULL,
-  `partner_type_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `partners` (`id`, `name`, `desc`, `ord`, `url`, `gallery_picture_id`, `partner_type_id`) VALUES
-(1,	'Hostel Praha Ládví',	'<p>Hostel Praha Ládví svým zákazníků nabízí levné ubytování s možností parkování a výbornou dostupností do centra města.</p><p>Náš hostel Vám nabídne pohodlné a přitom levné ubytování v 1-8 lůžkových nekuřáckých pokojích včetně řady souvisejících služeb za malý poplatek či zcela zdarma! V okolí naleznete také velké množství příležitostí pro Vaše společenské a sportovní vyžití.</p>',	9999999,	'http://hostelprahaladvi.cz',	61,	2),
-(2,	'Wilson',	'<p><span style=\"line-height: 1.42857143;\">Wilson (Wilson Sporting Goods Company) je americká firma se sídlem v&nbsp;Chicagu, která je zaměřena na výrobu příslušenství pro raketové a míčové sporty. Historie značky sahá až k&nbsp;roku 1914.</span><br></p><p>Dnes je Wilson značkou s&nbsp;dominantním podílem na trhu. Toho dosáhl svým silným zaměřením na kvalitu, inovace a díky vášni posouvat sport stále dál. Produkty jsou navrhovány tak, aby byl jejich výkon nepřekonatelný a aby splňovaly požadavky mnoha sportovců různých úrovní.</p>',	9999999,	'http://www.amersports.cz/wilson',	66,	1),
-(3,	'Aquacentrum Šutka',	'<p><span style=\"line-height: 1.42857143;\">Aquacentrum Šutka je nově otevřeným a&nbsp;zároveň jedním z&nbsp;nejmodernějších plaveckých areálů v&nbsp;Praze i&nbsp;celé České republice.</span><br></p>\r\n<p>Plavecký areál Šutka byl pro veřejnost otevřen v&nbsp;prosinci roku 2012 a&nbsp;dnes může svým návštěvníkům nabídnout nejen padesátimetrový krytý bazén, ale též vířivku, divokou řeku, 2 tobogány, vodopád, relaxační bazén, dětské brouzdaliště i&nbsp;vodní bar s&nbsp;občerstvením. Pro milovníky wellness jsou v&nbsp;areálu k&nbsp;dispozici dvě finské sauny s&nbsp;venkovními ochlazovacími bazénky a&nbsp;dvě parní lázně.</p>',	9999999,	'http://www.sutka.eu/',	71,	3),
-(4,	'NEUMANN',	'<p>NEUMANN, spol. s r.o.&nbsp;je česká, rodinná firma specializující se na výrobu&nbsp;střešních boxů&nbsp;a&nbsp;střešních nosičů. Společnost začala jako první prodávat tyto výrobky na českém trhu. Prvními výrobky byly&nbsp;střešní nosiče na vozy Škoda.</p><p>NEUMANN patří k největším výrobcům i prodejcům uvedeného druhu výrobků v České republice. Ve stále větším rozsahu míří jeho vlastní produkce do zahraničí a export je velmi významnou částí obratu společnosti.</p><p>Výrobky NEUMANN&nbsp;jsou testovány a certifikovány zkušebnami TÜV.&nbsp;www.neumax.cz&nbsp;je jeden z mála internetových obchodů, který je schopen, díky zázemí firmy, garantovat pro naše zákazníky, záruční i pozáruční servis!</p>',	9999999,	'http://www.neumannr.cz/cs/',	76,	3),
-(5,	'Ferdinand',	'<p>Pivovar vyrábí&nbsp;okolo&nbsp;25 000 hektolitrů piva ročně. Produkuje celkem&nbsp;sedm druhů piv od nealkoholického až po speciální piva. Obchodní politika pivovaru se zaměřuje především domácí region a dále na exportní trhy.</p><p>Výroba piva vychází z původní receptury vaření piva s použitím českého sladu vlastní výroby a žateckého chmele, pomocí klasické technologie s otevřeným spodním kvašením a dokvašováním v ležáckých sklepích. V žádném případě nepoužíváme moderní metody výroby piva, zvláště pak CK tanky a ani dodatečně neředíme pivo vodou na požadovanou stupňovitost.</p>',	9999999,	'http://www.pivovarferdinand.cz/',	81,	2),
-(6,	'Monstera International',	'<p>Již 10 let je &nbsp;společnost partnerem pro velký počet větších i menších firem v investiční oblasti se zaměřením na komerční objekty. Společnost Monstera je developerskou organizací zabývající se investiční činností v oblasti komerčních nemovitostí a se zaměřením na výstavbu čerpacích stanic pohonných hmot.</p><ul><li>pomoc při zajištění finančních prostředků na výstavbu ČSPHL (leasing, spolupráce s významými distributory PHL, apod.)</li><li>zajištění financování výstavby</li></ul>',	9999999,	'http://www.monstera.cz/',	86,	3),
-(7,	'Praha',	'<p><span>Praha je hlavní a současně největší město České republiky a 15. největší město Evropské unie. Leží mírně na sever od středu Čech na řece Vltavě, uvnitř Středočeského kraje, jehož je správním centrem, ale jako samostatný kraj není jeho součástí.</span><br></p>',	9999999,	'http://www.praha.eu/',	91,	1),
-(8,	'Městská Část Praha 8',	'<p>Městský obvod&nbsp;Praha 8<span>&nbsp;se spádovým centrem v&nbsp;</span>Libni<span>&nbsp;označený arabskou číslicí poprvé existoval v letech 1949–1960 jako jeden z 16 městských obvodů, podruhé byl v odlišném vymezení ustaven zákonem o územním členění státu s účinností od&nbsp;</span>1. července<span>&nbsp;</span>1960<span>&nbsp;jako jeden z 10 městských obvodů. Od roku&nbsp;</span>1990<span>&nbsp;byl předefinován výčtem městských částí.</span><br></p>',	9999999,	'http://www.praha8.cz/',	101,	1);
-
-DROP TABLE IF EXISTS `partner_type`;
-CREATE TABLE `partner_type` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '999999999',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `partner_type` (`id`, `title`, `ord`) VALUES
-(1,	'Partneři plážového volejbalu',	999999999),
-(2,	'Sponzoři plážového volejbalu',	999999999),
-(3,	'Partneři dětských akcí',	999999999);
--- 2015-07-27 09:39:34
+-- 2015-08-17 08:48:25
