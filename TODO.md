@@ -1,7 +1,7 @@
 [ ] partneri - logo + popis + proklik
 [ ] cakegallery - control somehow which styles versions get created!
 [ ] copy paste i s obrazkem
-	[ ] - select some reasonable size instead of original
+	[x] - select some reasonable size instead of original
 	
 [x] admin - pridat horni menu - element?
 [x] youtube ikona - odebrat you nechat jen tube a zvetsit, aby lepe citelne

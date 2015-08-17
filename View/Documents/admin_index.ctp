@@ -35,6 +35,7 @@
 						</td>
 						<td class="c"><?php echo $document['Document']['published'] ? 'ano' : 'ne'; ?></td>
 						<td class="actions">
+							<?php echo $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>', '/' . $document['Document']['slug'], array('escape'=>false)); ?>
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $document['Document']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $document['Document']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $document['Document']['id'])); ?>
 						</td>

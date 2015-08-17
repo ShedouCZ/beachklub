@@ -60,13 +60,24 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 		onPaste: function (e) {
 			var $note = $(this);
 			var html = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('text/html');
-			e.preventDefault();
+			
 			// artificial div parent
 			// as 'find' needs a top level element it searches beneath
 			var $dom = $('<div/>').append($(html).not('meta'));
 			$dom.find('[style]').removeAttr('style');
 			$dom.find('.Apple-converted-space').replaceWith('&nbsp;');
-			// TODO vice informaci zde
+			$dom.find('.Apple-interchange-newline').replaceWith('<br/>');
+			if ($dom.find('h1').length == 1) {
+				// make title from the sole h1 we got
+				$('input#DocumentTitle').val($dom.find('h1').text()).trigger('keyup'); // keyup to notify slug module
+				$dom.find('h1').remove();
+			}
+			// h2 -> h3
+			$dom.find('h2').replaceWith( function () {
+				return $("<h3 />").append($(this).contents());
+			});
+			// vice informaci zde
+			$('input[data-provide=slug-dst]').trigger('keyup'); // keyup to notify slug-dst observers;
 			
 			var callback = function (picture, remote_url) {
 				// switch img url in the content area of $note
@@ -75,7 +86,7 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 				// var local_url = picture.link; - original size
 				var local_url = picture.styles.docs;
 				
-				$('.note-editable:first').find('[src="'+remote_url+'"]')
+				$('.note-editable').find('[src="'+remote_url+'"]')
 					.attr('src', local_url)
 					.attr('width', 570)
 					.removeAttr('height')
@@ -99,12 +110,27 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 				xhr.responseType = 'blob';
 				xhr.send();
 			});
-			setTimeout( function() {
-				// append children of our artificial div parent
-				$dom.children().each(function (i,e) {
-					$note.summernote('insertNode', e);
-				});
-			}, 10);
+			
+			//NOGO - access denied in Chrome
+			//e.originalEvent.clipboardData.clearData();
+			//e.originalEvent.clipboardData.setData('text/html', $dom.html());
+			
+			e.preventDefault();
+			
+			console.log($note.code());
+			if ($note.code() == '<p><br></p>' || $note.code() === '' || $note.code() === '<h1><br></h1>') {
+				// works, but destroys previous contents
+				$note.code($dom.html());
+			} else {
+				// dont' know why setTimeout is set
+				// $note.summernote('pasteHTML', $dom.html());
+				setTimeout( function() {
+					// append children of our artificial div parent
+					$dom.children().each(function (i,e) {
+						$note.summernote('insertNode', e);
+					});
+				}, 10);
+			}
 		}
 	});
 });
@@ -228,8 +254,17 @@ if ($('.dropzone').length) {
 
 // MODULE slug.js
 if ($('input[data-provide=slug-src]')) {
+	// observe slug-src to update slug-dst
 	$('input[data-provide=slug-src]').on('keyup', function () {
 		var slug_val = slug($('input[data-provide=slug-src]').val(), {lower: true});
-		$('input[data-provide=slug-dst]').val(slug_val);
+		$('input[data-provide=slug-dst]').val(slug_val).trigger('keyup'); // keyup to notify slug-dst observers;
+	});
+	// observe slug-dst to update summernote content links
+	$('input[data-provide=slug-dst]').on('keyup', function () {
+		// vice informaci zde
+		$('.note-editable').find('a:contains(zde)').each(function (i,e) {
+			var url = '/' + $('input[data-provide=slug-dst]').val();
+			$(e).attr('href', url);
+		});
 	});
 }
