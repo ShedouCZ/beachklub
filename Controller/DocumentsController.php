@@ -8,7 +8,6 @@ class DocumentsController extends AppController {
 		if ($this->request->is('requested')) {
 			$items = $this->Document->find('all', array(
 				'limit' => 5,
-				'order' => 'Document.ord asc', 'Document.id desc',
 				'conditions' => array(
 					'Document.published' => 1
 				)

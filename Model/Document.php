@@ -4,7 +4,7 @@ App::uses('AppModel', 'Model');
 class Document extends AppModel {
 	public $displayField = 'title';
 
-	public $order = array('Document.ord'=>'asc');
+	public $order = array('Document.ord'=>'asc', 'Document.id'=>'desc');
 
 	public $validate = array(
 			'title' => array(
