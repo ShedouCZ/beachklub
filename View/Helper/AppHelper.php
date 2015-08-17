@@ -22,7 +22,7 @@ App::uses('Helper', 'View');
  */
 class AppHelper extends Helper {
     public function nbsp_prepositions($t) {
-    	$t = preg_replace('/\b([svkzo]) \b/', 's&nbsp;', $t);
+    	$t = preg_replace('/\b([svkzo]) \b/', '\1&nbsp;', $t);
     	return $t;
     }
 }
