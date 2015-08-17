@@ -18,7 +18,7 @@
         					foreach ($links as $title => $url) {
         						$link = $this->Html->link($title, $url);
         						$options = array();
-        						if (strpos($this->request->here, Router::url($url)) === 0) { // detect query string + params
+        						if ($this->request->here == Router::url($url)) { // detect query string + params
         							$options = array('class' => 'active-trail');
         						}
         						echo $this->Html->tag('li', $link, $options);
