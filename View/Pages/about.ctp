@@ -5,29 +5,15 @@
             <div class="region region-sidebar-second-grid-4">
                 <section id="block-block-6" class="block block-block block-even">
 
-                    <h2>Statements</h2>
-
                     <div class="content">
-                        <div class="views-field-title align-center title-indent">Mission Statement</div>
                         <p>
-                            Beaches Volleyball Academy is a youth volleyball club for girls ages 9-16.
-                            The mission of Beaches is to teach, develop and advance the game of volleyball
-                            through consistent and proficient fundamental training and game progression.
+                            Chodíte pravidelně na plážový volejbal a cítíte, že byste chtěli ještě víc?
+                            Rádi byste se zlepšili v technice nebo taktice? Je Vás celá parta kamarádů
+                            a chtěli byste si s kamarády udělat vlastní kemp o víkendu? Připravili jsme
+                            pro Vás možnost trénovat s našimi trenéry na areálu Beachklubu Ládví. Místo
+                            na kempech si můžete rezervovat online. V případě, že chcete zkusit individuální
+                            tréninky kontaktujte přímo naše trenéry.
                         </p>
-                        <div class="views-field-title align-center title-indent">University of Florida Head
-                            Coach Mary Wise comments on Coach Baker</div>
-                            <p>
-                                “I have known Valorie since 1991 when she worked on the staff at The University
-                                of Louisville and I was an assistant at The University of Kentucky.  Since then,
-                                we eventually both moved into head coaching jobs- me at Florida, Val at Wake
-                                Forest.
-                            </p>
-                            <p>
-                                Val’s teams competed and played as if they really enjoyed the game of volleyball.
-                                The thought of having Val’s talent working with young players is an exciting concept
-                                for North Florida.  The players that come through the program will reap the benefits
-                                not only in skill training, but learning to love the game of volleyball.”
-                            </p>
                     </div><!-- /.content -->
 
                 </section><!-- /.block -->
@@ -116,7 +102,7 @@
                 </div><!-- /.block -->
                 <section id="block-views-about-coaches-block" class="block block-views views-clearfix block-odd">
 
-                    <h1>About coaches</h1>
+                    <h1>Trenéři plážového volejbalu v Praze v Beachklubu Ládví</h1>
 
                     <div class="content">
                         <div class="view view-about-coaches view-id-about_coaches view-display-id-block view-dom-id-38c9f58f7cb3e7e70470f548b1d52fac">
