@@ -1,8 +1,8 @@
 <?php
     $links = array(
         'Domů' => '/',
-        'Galerie' => '/o-nas',
-        'O nás' => '/partneri',
+        'O nás' => '/o-nas',
+        'Partneři' => '/partneri',
         'Novinky' => '/novinky',
         'Kontakty' => '/kontakty',
     );
