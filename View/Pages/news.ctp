@@ -1,62 +1,63 @@
 <div id="main" class="clearfix">
+    <?php $this->start('sidebar'); ?>
+        <aside id="sidebar-second-grid-6" class="column column_right prefix-1 grid-6 omega" role="complementary">
+            <div class="section">
+                <div class="region region-sidebar-second-grid-3">
+                    <section id="block-poll-recent" class="block block-poll block-even">
 
-    <aside id="sidebar-second-grid-6" class="column column_right prefix-1 grid-6 omega" role="complementary">
-        <div class="section">
-            <div class="region region-sidebar-second-grid-3">
-                <section id="block-poll-recent" class="block block-poll block-even">
+                        <h2>Anketa</h2>
 
-                    <h2>Anketa</h2>
-
-                    <div class="content">
-                        <form action="/blog" method="post" id="poll-view-voting" accept-charset="UTF-8">
-                            <div>
-                                <div class="poll">
-                                    <div class="vote-form">
-                                        <div class="choices">
-                                            <div class="title">What do you think about us?
-                                            </div>
-                                            <div class="form-item form-type-radios form-item-choice">
-                                                <label class="element-invisible" for="edit-choice">Možnosti výběru </label>
-                                                <div id="edit-choice" class="form-radios">
-                                                    <div class="form-item form-type-radio form-item-choice">
-                                                        <input type="radio" id="edit-choice-1" name="choice" value="1" class="form-radio">
-                                                        <label class="option" for="edit-choice-1">Super </label>
-                                                    </div>
-                                                    <div class="form-item form-type-radio form-item-choice">
-                                                        <input type="radio" id="edit-choice-2" name="choice" value="2" class="form-radio">
-                                                        <label class="option" for="edit-choice-2">Good </label>
-                                                    </div>
-                                                    <div class="form-item form-type-radio form-item-choice">
-                                                        <input type="radio" id="edit-choice-3" name="choice" value="3" class="form-radio">
-                                                        <label class="option" for="edit-choice-3">Normal </label>
-                                                    </div>
-                                                    <div class="form-item form-type-radio form-item-choice">
-                                                        <input type="radio" id="edit-choice-4" name="choice" value="4" class="form-radio">
-                                                        <label class="option" for="edit-choice-4">Bad </label>
+                        <div class="content">
+                            <form action="/blog" method="post" id="poll-view-voting" accept-charset="UTF-8">
+                                <div>
+                                    <div class="poll">
+                                        <div class="vote-form">
+                                            <div class="choices">
+                                                <div class="title">What do you think about us?
+                                                </div>
+                                                <div class="form-item form-type-radios form-item-choice">
+                                                    <label class="element-invisible" for="edit-choice">Možnosti výběru </label>
+                                                    <div id="edit-choice" class="form-radios">
+                                                        <div class="form-item form-type-radio form-item-choice">
+                                                            <input type="radio" id="edit-choice-1" name="choice" value="1" class="form-radio">
+                                                            <label class="option" for="edit-choice-1">Super </label>
+                                                        </div>
+                                                        <div class="form-item form-type-radio form-item-choice">
+                                                            <input type="radio" id="edit-choice-2" name="choice" value="2" class="form-radio">
+                                                            <label class="option" for="edit-choice-2">Good </label>
+                                                        </div>
+                                                        <div class="form-item form-type-radio form-item-choice">
+                                                            <input type="radio" id="edit-choice-3" name="choice" value="3" class="form-radio">
+                                                            <label class="option" for="edit-choice-3">Normal </label>
+                                                        </div>
+                                                        <div class="form-item form-type-radio form-item-choice">
+                                                            <input type="radio" id="edit-choice-4" name="choice" value="4" class="form-radio">
+                                                            <label class="option" for="edit-choice-4">Bad </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <input type="submit" id="edit-vote" name="op" value="Hlasovat" class="form-submit">
                                         </div>
-                                        <input type="submit" id="edit-vote" name="op" value="Hlasovat" class="form-submit">
+                                        <input type="hidden" name="form_build_id" value="form-MeEWmHX95nNNwBTu0ZaUbYtKD_9xNbc9OukQ82NPIY8">
+                                        <input type="hidden" name="form_id" value="poll_view_voting">
                                     </div>
-                                    <input type="hidden" name="form_build_id" value="form-MeEWmHX95nNNwBTu0ZaUbYtKD_9xNbc9OukQ82NPIY8">
-                                    <input type="hidden" name="form_id" value="poll_view_voting">
                                 </div>
-                            </div>
-                        </form>
-                        <ul class="links">
-                            <li class="0 first">
-                                <a href="/poll" title="Zobrazit seznam anket.">Starší ankety</a>
-                            </li>
-                            <li class="1 last">
-                                <a href="/node/11/results" title="Zobrazit výsledky aktuální ankety.">Výsledky</a>
-                            </li>
-                        </ul>
-                    </div><!-- /.content -->
-                </section><!-- /.block -->
+                            </form>
+                            <ul class="links">
+                                <li class="0 first">
+                                    <a href="/poll" title="Zobrazit seznam anket.">Starší ankety</a>
+                                </li>
+                                <li class="1 last">
+                                    <a href="/node/11/results" title="Zobrazit výsledky aktuální ankety.">Výsledky</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.content -->
+                    </section><!-- /.block -->
+                </div>
             </div>
-        </div>
-    </aside>
+        </aside>
+    <?php $this->end(); ?>
 
     <div id="content" class="column" role="main">
         <div class="section">

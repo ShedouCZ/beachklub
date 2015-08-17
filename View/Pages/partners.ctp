@@ -4,7 +4,7 @@
   );
 ?>
 <div id="main" class="clearfix">
-
+    <?php $this->start('sidebar'); ?>
     <aside id="sidebar-second-grid-8" class="column column_right prefix-1 grid-8 omega" role="complementary">
         <div class="section">
             <div class="region region-sidebar-second-grid-4">
@@ -39,6 +39,7 @@
             </div>
         </div>
     </aside>
+    <?php $this->end(); ?>
 
     <div id="content" class="column" role="main">
         <div class="section">

@@ -1,3 +1,6 @@
+<?php
+    $this->assign('sidebar', '');
+?>
 <div class="panel-flexible panels-flexible-1 clearfix" id="contacts">
     <div class="panel-flexible-inside panels-flexible-1-inside">
         <div class="panels-flexible-row panels-flexible-row-1-main-row panels-flexible-row-first clearfix">

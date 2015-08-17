@@ -265,13 +265,7 @@
                 <div class="container-24">
                     <div class="grid-24">
                         <div id="main" class="clearfix">
-                            <?php
-                                // TODO vymyslet system na to, aby si page mohla rict, jaky chce sidebar
-                                // $this->fetch('sidebar') ???
-                                if ($this->request->here == '/') {
-                                    echo $this->element('sidebar');
-                                }
-                            ?>
+                            <?php echo $this->fetch('sidebar', $default=$this->element('sidebar')); ?>
                             <?php echo $this->fetch('content'); ?>
                         </div>
                         <!-- /#main -->

@@ -1,28 +1,29 @@
 <div id="main" class="clearfix">
+    <?php $this->start('sidebar'); ?>
+        <aside id="sidebar-second-grid-8" class="column column_right prefix-1 grid-8 omega" role="complementary">
+            <div class="section">
+                <div class="region region-sidebar-second-grid-4">
+                    <section id="block-block-6" class="block block-block block-even">
 
-    <aside id="sidebar-second-grid-8" class="column column_right prefix-1 grid-8 omega" role="complementary">
-        <div class="section">
-            <div class="region region-sidebar-second-grid-4">
-                <section id="block-block-6" class="block block-block block-even">
+                        <div class="content">
+                            <p>
+                                Chodíte pravidelně na plážový volejbal a cítíte, že byste chtěli ještě víc?
+                                Rádi byste se zlepšili v technice nebo taktice? Je Vás celá parta kamarádů
+                                a chtěli byste si s kamarády udělat vlastní kemp o víkendu? Připravili jsme
+                                pro Vás možnost trénovat s našimi trenéry na areálu Beachklubu Ládví. Místo
+                                na kempech si můžete rezervovat online. V případě, že chcete zkusit individuální
+                                tréninky kontaktujte přímo naše trenéry.
+                            </p>
+                        </div><!-- /.content -->
 
-                    <div class="content">
-                        <p>
-                            Chodíte pravidelně na plážový volejbal a cítíte, že byste chtěli ještě víc?
-                            Rádi byste se zlepšili v technice nebo taktice? Je Vás celá parta kamarádů
-                            a chtěli byste si s kamarády udělat vlastní kemp o víkendu? Připravili jsme
-                            pro Vás možnost trénovat s našimi trenéry na areálu Beachklubu Ládví. Místo
-                            na kempech si můžete rezervovat online. V případě, že chcete zkusit individuální
-                            tréninky kontaktujte přímo naše trenéry.
-                        </p>
-                    </div><!-- /.content -->
-
-                </section><!-- /.block -->
-                <section id="block-views-testimonials-block" class="block block-views views-clearfix block-odd">
-                    <?php echo $this->Element('testimonials'); ?>
-                </section><!-- /.block -->
+                    </section><!-- /.block -->
+                    <section id="block-views-testimonials-block" class="block block-views views-clearfix block-odd">
+                        <?php echo $this->Element('testimonials'); ?>
+                    </section><!-- /.block -->
+                </div>
             </div>
-        </div>
-    </aside>
+        </aside>
+    <?php $this->end(); ?>
 
     <div id="content" class="column" role="main">
         <div class="section">
