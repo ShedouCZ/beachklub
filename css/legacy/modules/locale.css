@@ -24,9 +24,3 @@
   float: left; /* LTR */
   padding: 3ex 0 0 1em; /* LTR */
 }
-.language-switcher-locale-session a.active {
-  color: #0062A0;
-}
-.language-switcher-locale-session a.session-active {
-  color: #000000;
-}
