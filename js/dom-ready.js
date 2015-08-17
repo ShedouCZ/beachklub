@@ -76,8 +76,6 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 			$dom.find('h2').replaceWith( function () {
 				return $("<h3 />").append($(this).contents());
 			});
-			// vice informaci zde
-			$('input[data-provide=slug-dst]').trigger('keyup'); // keyup to notify slug-dst observers;
 			
 			var callback = function (picture, remote_url) {
 				// switch img url in the content area of $note
@@ -121,6 +119,9 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 			if ($note.code() == '<p><br></p>' || $note.code() === '' || $note.code() === '<h1><br></h1>') {
 				// works, but destroys previous contents
 				$note.code($dom.html());
+				
+				// vice informaci zde
+				$('input[data-provide=slug-dst]').trigger('keyup'); // keyup to notify slug-dst observers;
 			} else {
 				// dont' know why setTimeout is set
 				// $note.summernote('pasteHTML', $dom.html());
@@ -129,6 +130,9 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 					$dom.children().each(function (i,e) {
 						$note.summernote('insertNode', e);
 					});
+					
+					// vice informaci zde
+					$('input[data-provide=slug-dst]').trigger('keyup'); // keyup to notify slug-dst observers;
 				}, 10);
 			}
 		}
