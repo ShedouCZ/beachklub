@@ -10,10 +10,10 @@
               <header>
                   <h2>
                       <?php
-                          $title = $doc['Document']['title'];
+                          $title = $this->Html->nbsp_prepositions($doc['Document']['title']);
                           $id = $doc['Document']['id'];
                           $url = '/'.$doc['Document']['slug'];
-                          echo $this->Html->link($title, $url);
+                          echo $this->Html->link($title, $url, array('escape'=>false));
                       ?>
                   </h2>
                 </header>

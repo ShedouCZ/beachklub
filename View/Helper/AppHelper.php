@@ -21,4 +21,8 @@ App::uses('Helper', 'View');
  * @package       app.View.Helper
  */
 class AppHelper extends Helper {
+    public function nbsp_prepositions($t) {
+    	$t = preg_replace('/\b([svkzo]) \b/', 's&nbsp;', $t);
+    	return $t;
+    }
 }

@@ -12,7 +12,7 @@
 						<article id="node-94" class="node node-blog node-teaser node-odd published with-comments node-teaser clearfix">
 
 							<header>
-								<h2><?php echo $document['Document']['title'];?></h2>
+								<h2><?php echo $this->Html->nbsp_prepositions($document['Document']['title']);?></h2>
 
 								<p class="submitted">
 									Od autora <span class="username"><?php echo $document['User']['username'];?></span>
