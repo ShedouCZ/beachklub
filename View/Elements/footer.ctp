@@ -1,3 +1,12 @@
+<?php
+	$links = array(
+		'Domů' => '/',
+		'O nás' => '/o-nas',
+		'Partneři' => '/partneri',
+		'Novinky' => '/novinky',
+		'Kontakty' => '/kontakty',
+	);
+?>
     <div class="container-24">
         <div class="grid-24">
             <div class="footer-wrapper clearfix">
@@ -7,11 +16,16 @@
 
                         <div class="content">
                             <ul class="menu clearfix">
-                                <li class="first leaf dom- mid-201"><a href="/" title="" class="active">Domů</a></li>
-                                <li class="leaf id mid-4033"><a href="/about" title="">O nás</a></li>
-                                <li class="leaf partne-i mid-4034"><a href="/tournaments" title="">Partneři</a></li>
-                                <li class="leaf novinky mid-668"><a href="/blog" title="">Novinky</a></li>
-                                <li class="last leaf kontakty mid-442"><a href="/kontakty" title="">Kontakty</a></li>
+                                <?php
+        							foreach ($links as $title => $url) {
+        								$link = $this->Html->link($title, $url);
+        								$options = array();
+        								if ($this->request->here == Router::url($url)) { // detect query string + params
+        									$options = array('class' => 'active-trail');
+        								}
+        								echo $this->Html->tag('li', $link, $options);
+        							}
+        						?>
                             </ul>
                         </div>
                         <!-- /.content -->
