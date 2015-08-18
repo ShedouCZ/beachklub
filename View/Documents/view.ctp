@@ -6,7 +6,7 @@
 						<article id="doc-<?php echo $document['Document']['id']?>" class="node node-blog node-teaser node-odd published with-comments node-teaser clearfix">
 
 							<header>
-								<h2><?php echo $this->Html->nbsp_prepositions($document['Document']['title']);?></h2>
+								<h2 class="air-mode"><?php echo $this->Html->nbsp_prepositions($document['Document']['title']);?></h2>
 
 								<p class="submitted">
 									Od autora <span class="username"><?php echo $document['User']['username'];?></span>
@@ -19,7 +19,7 @@
 								</p>
 							</header>
 
-							<div class="content">
+							<div class="content air-mode">
 								<?php echo $document['Document']['content'];?>
 							</div><!-- /.content -->
 

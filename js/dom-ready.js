@@ -1,6 +1,7 @@
 // MODULE summernote
 var App = App || {};
 App.document_album_id = 3;
+var $ = $ || jQuery;
 
 App.upload_file = function (file, callback, remote_url) {
 	var data = new FormData();
@@ -138,6 +139,12 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 		}
 	});
 });
+if ($().summernote) $('.air-mode').each(function (i,e) {
+	$(e).summernote({
+		lang: 'cs-CZ',
+		airMode: true
+	});
+});
 
 // MODULE sortable
 $('.list-group').each(function (i,e) {
@@ -161,7 +168,7 @@ $('.list-group').each(function (i,e) {
 });
 
 // MODULE: eonasdan timepicker
-$('input[data-provide=datepicker]').datetimepicker({
+if ($().datetimepicker) $('input[data-provide=datepicker]').datetimepicker({
 	format: 'D.M.YYYY',
 	locale: App.session_locale,
 	useCurrent: false,
@@ -198,62 +205,64 @@ if ($().swipebox && $('.swipebox')) {
 }
 
 // MODULE dropzone
-Dropzone.autoDiscover = false;
-Dropzone.options = {
-	url: '/gallery/pictures/upload',
-	params: {
-		album_id: 'to-be-replaced-at-bind-time'
-	},
-	thumbnailWidth: 628,
-	thumbnailHeight: null,
-	maxFiles:  1,
-	autoQueue: true,
-	clickable: ".dz-clickable",
-	addRemoveLinks: true,
-	previewsContainer: '.dropzone-previews',
-	init: function() {
-		var $input_el = $('.dropzone #' + this.options.params.input_id);
+if (typeof Dropzone != 'undefined') {
+	Dropzone.autoDiscover = false;
+	Dropzone.options = {
+		url: '/gallery/pictures/upload',
+		params: {
+			album_id: 'to-be-replaced-at-bind-time'
+		},
+		thumbnailWidth: 628,
+		thumbnailHeight: null,
+		maxFiles:  1,
+		autoQueue: true,
+		clickable: ".dz-clickable",
+		addRemoveLinks: true,
+		previewsContainer: '.dropzone-previews',
+		init: function() {
+			var $input_el = $('.dropzone #' + this.options.params.input_id);
 
-		this.on('addedfile', function(file) {
-			$('.dropzone .dz-clickable').hide();
-		});
-		this.on('removedfile', function(file) {
-			$('.dropzone .dz-clickable').show();
-			$input_el.val(null);
-		});
-		this.on('success', function(file, response) {
-			// recieved picture id goes into the form
-			$input_el.val(response.picture.Picture.id);
-		});
+			this.on('addedfile', function(file) {
+				$('.dropzone .dz-clickable').hide();
+			});
+			this.on('removedfile', function(file) {
+				$('.dropzone .dz-clickable').show();
+				$input_el.val(null);
+			});
+			this.on('success', function(file, response) {
+				// recieved picture id goes into the form
+				$input_el.val(response.picture.Picture.id);
+			});
 
-		if (this.options.params.current_picture) {
-			// mock a picture arrival in edit forms with existing picture
-			var picture = this.options.params.current_picture;
-			this.emit('addedfile', picture);
-			this.emit('thumbnail', picture, picture.styles.medium);
-			this.emit('complete',  picture);
+			if (this.options.params.current_picture) {
+				// mock a picture arrival in edit forms with existing picture
+				var picture = this.options.params.current_picture;
+				this.emit('addedfile', picture);
+				this.emit('thumbnail', picture, picture.styles.medium);
+				this.emit('complete',  picture);
+			}
 		}
+	};
+	if ($('.dropzone').length) {
+		var $dz = $('.dropzone');
+		var $input = $dz.find('[data-album-id]');
+
+		 // for showing current picture in the edit action
+		Dropzone.options.params.current_picture = $input.data('picture');
+
+		// fresh post values for cakegallery which does the server side saving
+		Dropzone.options.params.album_id   = $input.data('album-id');
+		Dropzone.options.params.model_name = $input.data('model-name');
+
+		// for rendering hidden input with new picture
+		Dropzone.options.params.input_id   = $input.attr('id');
+		Dropzone.options.params.input_name = $input.attr('name');
+
+		$dz.children('div').html(App.render['/Elements/dropzone'](Dropzone.options.params));
+
+		// make whole body a dropzone
+		$(document.body).dropzone(Dropzone.options);
 	}
-};
-if ($('.dropzone').length) {
-	var $dz = $('.dropzone');
-	var $input = $dz.find('[data-album-id]');
-
-	 // for showing current picture in the edit action
-	Dropzone.options.params.current_picture = $input.data('picture');
-
-	// fresh post values for cakegallery which does the server side saving
-	Dropzone.options.params.album_id   = $input.data('album-id');
-	Dropzone.options.params.model_name = $input.data('model-name');
-
-	// for rendering hidden input with new picture
-	Dropzone.options.params.input_id   = $input.attr('id');
-	Dropzone.options.params.input_name = $input.attr('name');
-
-	$dz.children('div').html(App.render['/Elements/dropzone'](Dropzone.options.params));
-
-	// make whole body a dropzone
-	$(document.body).dropzone(Dropzone.options);
 }
 
 // MODULE slug.js

@@ -137,6 +137,19 @@ module.exports = function(grunt) {
 					separator: ';\n'
 				}
 			},
+			js_air_mode: {
+				src: [
+					'Vendor/bootstrap/dist/js/bootstrap.js',
+					'Vendor/summernote/dist/summernote.js',
+					'Vendor/summernote/lang/summernote-cs-CZ.js',
+					'js/dom-ready.js'
+				],
+				dest: 'webroot/js/air-mode.js',
+				nonull: true,
+				options: {
+					separator: ';\n'
+				}
+			},
 			js_admin: {
 				src: [
 					'Vendor/summernote/dist/summernote.js',
@@ -160,10 +173,22 @@ module.exports = function(grunt) {
 			},
 			css: {
 				src: [
-					// datetimepicker and its dependecies on bootstrap
 					'css/*.css'
 				],
 				dest: 'webroot/css/site.css',
+				nonull: true,
+				options: {
+					separator: '\n'
+				}
+			},
+			css_air_mode: {
+				src: [
+					// summenote for air mode and its dependecies on bootstrap
+					'dist/air-mode.css',
+					'Vendor/font-awesome/css/font-awesome.css',
+					'Vendor/summernote/dist/summernote.css'
+				],
+				dest: 'webroot/css/air-mode.css',
 				nonull: true,
 				options: {
 					separator: '\n'
@@ -173,7 +198,7 @@ module.exports = function(grunt) {
 				src: [
 					// datetimepicker and its dependecies on bootstrap
 					'css/legacy/*.css',
-					'css/legacy/modules/*.css',
+					'css/legacy/modules/*.css'
 				],
 				dest: 'webroot/css/legacy.css',
 				nonull: true,
@@ -205,6 +230,14 @@ module.exports = function(grunt) {
 		},
 		// compile less into css
 		less: {
+			air_mode: {
+				options: {
+					compress: true
+				},
+				files: {
+					'dist/air-mode.css':'css/overrides/air-mode.less',
+				}
+			},
 			development: {
 				options: {
 					compress: true
@@ -222,14 +255,16 @@ module.exports = function(grunt) {
 			site: {
 				files: {
 					'webroot/js/site-post.js': 'webroot/js/site-post.js',
-					'webroot/js/site-pre.js': 'webroot/js/site-pre.js'
+					'webroot/js/site-pre.js': 'webroot/js/site-pre.js',
+					'webroot/js/air-mode.js': 'webroot/js/air-mode.js'
 				}
 			}
 		},
 		cssmin: {
 			site: {
 				files: {
-					'webroot/css/site.css': 'webroot/css/site.css'
+					'webroot/css/site.css': 'webroot/css/site.css',
+					'webroot/css/legacy.css': 'webroot/css/legacy.css'
 				}
 			}
 		},
@@ -278,8 +313,8 @@ module.exports = function(grunt) {
 
 	// Task definition
 	grunt.registerTask('default', ['scripts', 'stylesheets', 'copy']);
-	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', 'concat:css_legacy' /*'postcss', 'cssmin'*/]);
-	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js', 'concat:js_post', 'concat:js_admin']);
+	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', 'concat:css_legacy', 'concat:css_air_mode', /*'postcss',*/ 'cssmin']);
+	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js', 'concat:js_post', 'concat:js_admin', 'concat:js_air_mode' /*, 'uglify'*/]);
 
 	grunt.registerTask('locales', ['po2json', 'json']);
 	//grunt.registerTask('stylesheets', ['less', 'concat:css', 'cssmin']);

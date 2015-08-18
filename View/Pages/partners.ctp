@@ -9,8 +9,8 @@
         <div class="section">
             <div class="region region-sidebar-second-grid-4">
                 <section id="block-block-6" class="block block-block block-even">
-                    <div class="content">
-                        <div class="views-field-title align-center title-indent"><h2>Naši partneři</h2></div>
+                    <div class="content air-mode">
+                        <div class="views-field-title align-left title-indent"><h2>Naši partneři</h2></div>
                         <p>
                             Provoz sportovního areálu se neobejde bez partnerství města a sponzorů.
                             Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům.
