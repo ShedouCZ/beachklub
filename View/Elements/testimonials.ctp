@@ -30,11 +30,11 @@
                                 <div class="views-field-title title-indent">
                                     <h3>Články k MS ve střižbě</h3>
                                     <ul>
-                                        <li><a href="http://revue.idnes.cz/mistrovstvi-sveta-ve-strizbe-vyhrala-desetileta-divka-pip-/zajimavosti.aspx?c=A120529_140007_zajimavosti_nh">První</a></li>
-                                        <li><a href="http://www.blesk.cz/clanek/zpravy-udalosti/174750/ms-kamen-nuzky-papir-mistry-sveta-vyskolila-desetileta-viky.html">Druhý</a></li>
-                                        <li><a href="http://www.blesk.cz/clanek/zpravy-udalosti/174750/ms-kamen-nuzky-papir-mistry-sveta-vyskolila-desetileta-viky.html">Třetí</a></li>
-                                        <li><a href="http://www.metro.cz/kamen-nuzky-papir-stante-se-prvnim-mistrem-sveta-ve-strizbe-plx-/co-se-deje.aspx?c=A120518_134928_co-se-deje_sar">Čtvrtý</a></li>
-                                        <li><a href="http://prazsky.denik.cz/zpravy_region/olympionici-a-mistri-sveta-strihali-v-praze-o-svetovy-titul-20120519.html">Pátý</a></li>
+                                        <li><a href="http://revue.idnes.cz/mistrovstvi-sveta-ve-strizbe-vyhrala-desetileta-divka-pip-/zajimavosti.aspx?c=A120529_140007_zajimavosti_nh">VIDEO: Desetiletá dívka přestřihala slavné sportovce a je mistryní světa</a></li>
+                                        <li><a href="http://www.blesk.cz/clanek/zpravy-udalosti/174750/ms-kamen-nuzky-papir-mistry-sveta-vyskolila-desetileta-viky.html">MS Kámen, nůžky, papír: Mistry světa vyškolila desetiletá Viky!</a></li>
+                                        <li><a href="http://www.novinky.cz/cestovani/tipy-na-vylety/266579-tipy-na-vikend-setkani-parohatych-mest-mistrovstvi-ve-strizbe-a-pivni-festival.html">Tipy na víkend: Setkání parohatých měst, mistrovství ve střižbě a pivní festival</a></li>
+                                        <li><a href="http://www.metro.cz/kamen-nuzky-papir-stante-se-prvnim-mistrem-sveta-ve-strizbe-plx-/co-se-deje.aspx?c=A120518_134928_co-se-deje_sar">Kámen, nůžky, papír. Staňte se prvním mistrem světa ve střižbě</a></li>
+                                        <li><a href="http://prazsky.denik.cz/zpravy_region/olympionici-a-mistri-sveta-strihali-v-praze-o-svetovy-titul-20120519.html">Olympionici a mistři světa stříhali v Praze o světový titul</a></li>
                                     </ul>
                                 </div>
                             </span>
