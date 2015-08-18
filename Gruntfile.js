@@ -219,6 +219,7 @@ module.exports = function(grunt) {
 					'css/admin/*.css',
 					'css/superfish.css',
 					'css/type.css',
+					'css/search-bar.css',
 					'css/theme806overrides.css'
 				],
 				dest: 'webroot/css/site-admin.css',
