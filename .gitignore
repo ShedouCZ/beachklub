@@ -7,6 +7,7 @@ webroot/css/site.css
 webroot/css/site-admin.css
 webroot/css/legacy.css
 webroot/css/air-mode.css
+webroot/js/site-pre.js
 webroot/js/site.js
 webroot/js/site-admin.js
 webroot/js/site-post.js
