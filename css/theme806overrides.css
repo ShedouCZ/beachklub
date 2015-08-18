@@ -1,14 +1,14 @@
-/*
-showing just one event in the calendar + need to adjust in js settings as well
+/*showing just one event in the calendar + need to adjust in js settings as well*/
+
+.vertical-carousel .jcarousel-skin-default .jcarousel-clip-vertical {
+	height: 520px;
+}
+
 .vertical-carousel .jcarousel-skin-default .jcarousel-container-vertical {
-	height: 260px;
+	height: 520px;
 	width: auto;
 	padding: 0;
 }
-.vertical-carousel .jcarousel-skin-default .jcarousel-clip-vertical {
-	height: 130px;
-}
-*/
 
 #superfish-1 a {
 	padding: 14px 0;
