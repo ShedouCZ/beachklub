@@ -32,23 +32,23 @@
         @import url(//fonts.googleapis.com/css?family=BenchNine:700&subset=latin,latin-ext);
     </style>
 
-	<link rel="stylesheet" href="<?php echo "/css/legacy.css?$version"  ?>" type="text/css" media="screen">
+	<link rel="stylesheet" href="<?php echo "/css/legacy.css?$version" ?>" type="text/css" media="screen">
 	<?php if (AuthComponent::user()) { ?>
-		<link rel="stylesheet" href="<?php echo "/css/air-mode.css?$version"?>" type="text/css" media="screen">
+		<link rel="stylesheet" href="<?php echo "/css/air-mode.css?$version" ?>" type="text/css" media="screen">
 	<?php } ?>
-    <link rel="stylesheet" href="<?php echo "/css/site.css?$version"    ?>" type="text/css" media="screen">
+    <link rel="stylesheet" href="<?php echo "/css/site.css?$version" ?>" type="text/css" media="screen">
 
     <style type="text/css" media="screen">
         /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/boilerplate.css?nq22ob");*/
         /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/style.css?nq22ob");*/
         /*@import url("/css/theme806.css");*/
         /*@import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css?nq22ob");*/
-        @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/maintenance-page.css?nq22ob");
+        /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/maintenance-page.css?nq22ob");*/
         @import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/skeleton.css?nq22ob");
         /*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/overrides.css?nq22ob");*/
     </style>
     <!--script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script-->
-	<script type="text/javascript" src="/js/site-pre.js"></script>
+	<script type="text/javascript" src="<?php echo "/js/site-pre.js?$version" ?>"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/misc/jquery.once.js?v=1.2"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/misc/drupal.js?nq22ob"></script>
     <script type="text/javascript" src="http://beachbar.vpslist.cz/sites/default/files/languages/cs_fNhZh1s_mLWYTjHG9kUX-4GzpTxNenM6cod96_vpy5I.js?nq22ob"></script>
