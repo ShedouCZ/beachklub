@@ -37,7 +37,6 @@
 
                         <div class="content">
                             beachklubladvi.cz © 2015
-                            <span class="separaror">|</span> <a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a> </div>
                         <!-- /.content -->
 
                     </div>

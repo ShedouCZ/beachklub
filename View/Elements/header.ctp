@@ -22,7 +22,7 @@
             <section id="block-locale-language" class="block block-locale block-even">
                 <div class="content">
                     <ul class="language-switcher-locale-session">
-                        <li class="en last active"><a href="/?language=en" class="language-link active" xml:lang="en"><p>Anglicky</p></a></li>
+                        <li class="en last active"><a href="/beach-volleyball-in-prague" class="language-link active" xml:lang="en"><p>English Version</p></a></li>
                     </ul>
                 </div>
             </section>
