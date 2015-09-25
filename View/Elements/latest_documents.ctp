@@ -2,6 +2,11 @@
   $docs = $this->requestAction(
     'documents/index'
   );
+  
+  $num1 = array_shift($docs);
+  if ($first) {
+      $docs = array($num1);
+  }
 ?>
 <div id="block-system-main" class="block block-system block-even">
   <div class="content">

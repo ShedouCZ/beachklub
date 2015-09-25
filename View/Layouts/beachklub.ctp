@@ -273,22 +273,6 @@
                             <?php echo $this->fetch('content'); ?>
                         </div>
                         <!-- /#main -->
-
-                        <?php if ($this->request->here == '/') { ?>
-                            <div class="region region-content-bottom">
-                                <div id="block-views-services-block" class="block block-views block-even">
-                                    <div class="content">
-                                        <div class="view view-services view-id-services view-display-id-block view-dom-id-07d750d1b768924463e867a1b7876e55">
-                                            <div class="view-content">
-                                                <?php echo $this->element('tiles'); ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.content -->
-                                </div>
-                                <!-- /.block -->
-                            </div>
-                        <?php } ?>
                     </div>
                 </div>
             </div>
