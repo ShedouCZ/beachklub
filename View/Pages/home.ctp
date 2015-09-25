@@ -1,3 +1,12 @@
+<style>
+	.content article img {
+		width: 60%;
+	}
+	#flexslider-1 .field-content img {
+		max-height:350px!important; 
+	}
+</style>
+
 <div id="content" class="column" role="main">
     <div class="section">
         <div class="tabs">
