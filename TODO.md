@@ -1,4 +1,5 @@
 [x] partneri - logo + popis + proklik
+[ ] remove docs next/previous links in non public docs
 [ ] cakegallery - control somehow which styles versions get created!
 [ ] copy paste i s obrazkem
 	[x] - select some reasonable size instead of original
@@ -26,3 +27,4 @@
 [x] o nas - pod to http://beachklubladvi.cz/treneri.html
 [ ] novinky - vice perexu
 [ ] změna zvíraznění na navigaci na jiné stránce
+[ ] documents 2x klik na odeslat - tak ulozi 2x

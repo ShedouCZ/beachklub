@@ -5,6 +5,8 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
+USE `beachklub`;
+
 DROP TABLE IF EXISTS `coaches`;
 CREATE TABLE `coaches` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -23,206 +25,6 @@ INSERT INTO `coaches` (`id`, `name`, `title`, `desc`, `url`, `ord`, `gallery_pic
 (3,	'Kamil Tuček',	'Trenér plážového volejbalu v Beachklubu Ládví',	'<p>Narozen 17. 12. 1976</p><p>Profesionální volejbalová kariéra:</p><ul><li>4 roky hráč volejbalové extraligy (ŽS BRNO, VK DUKLA LIBEREC,VK KARBO BENÁTKY)</li><li>sedm let první liga (VK KARBO BENÁTKY)</li><li>dlouholetý hráč plážového volejbalu pod ČVS</li></ul><p>Trenérská kvalifikace:</p><ul><li>vystudoval FTVS – specializace volejbal, kondiční trenér</li><li>diplomovaný trenér volejbalu – trenérská I. třída</li><li>asistent trenéra u reprezentace ČR žen. Účast na ME v Polsku.</li><li>hlavní trenér u družstva žen Sokol Nusle – 1. liga žen</li><li>hlavní trenér mládeže USK Praha, PVK Olymp Praha, SK Prosek Praha</li></ul><p>Kontakt: telefon: 604 241 391, e-mail: kamiltucek@seznam.cz</p><p>Cena: 400 Kč / 1 hodina trénování</p>',	'',	3,	NULL),
 (4,	'Míra Svoboda',	'Trenér plážového volejbalu v Beachklubu Ládví',	'<p>Narozen 11. 09. 1979</p><p>Profesionální volejbalová kariéra:</p><ul><li>1. místo MČR 2006, 1. místo Řecký okruh 2005 - Korfu, 1. místo Akademické &nbsp;MČR 2002, 2003, celkový vítěz Českého poháru 2002, 2003</li><li>2. místo MČR 2008, 2. místo Řecký okruh 2006 - Nafplio, Mykonos</li><li>3. místo MČR 2004, 2005, 2009, 2012, 3. místo FIVB Satelite 2005 - Itálie</li><li>5. místo CEV Challenger 2004 - Slavkov u Brna</li><li>9. místo ME do 23. let 2001 - Portugalsko, 9. místo FIVB Challenger 2007 - Brno</li><li>15 sezon vrcholového šestkového volejbalu</li><li>zahraniční angažmá: Argentina, Španělsko, Kypr, Rakousko, Holandsko</li><li>juniorská reprezentace - 3. místo ME, 4. místo MS</li></ul><p>Trenérská kvalifikace:</p><ul><li>absolvent FSPS, Pedagogická fakulta MU Brno</li><li>2. trenérská třída</li></ul><p>Kontakt: telefon: 737 417 443, e-mail: mirecsvoboda@seznam.cz</p><p>Cena: 400 Kč / 1 hodina trénování</p>',	'',	4,	NULL),
 (5,	'Rosťa Vorálek',	'Trenér výkonnostní mládeže v Beachklubu Ládví',	'<p style=\"border: none; float: none; clear: both; padding: 0px 10px;\">Trenérská kvalifikace:</p><ul><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">diplomovaný trenér I. třídy ve volejbale&nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">držitel II. trenérské třídy FIVB</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">trenér III. třídy v beach volejbalu</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">pedagog na Fakultě tělesné výchovy (katedra sportovních her – oddělení volejbalu)</li></ul><p style=\"border: none; float: none; clear: both; padding: 0px 10px;\">Trenérská činnost:</p><ul><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">trenér akademického volejbalového výběru Univerzity Karlovy &nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">1998 – 2000 druhý trenér reprezentačního družstva kadetek ČR</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2002 – 2004 druhý trenér reprezentačního družstva kadetek ČR</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2002 – 2007 trenér družstva PVK Olymp Praha – extraliga (kadetky) &nbsp; &nbsp; &nbsp; &nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2007 - 2008 hlavní trenérem reprezentačního družstva juniorek ČR</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2009 trenér družstva PVK Olymp – extraliga (kadetky) &nbsp;&nbsp;</li><li style=\"border: none; float: none; clear: both; padding: 0px 10px;\">2013 – 2014 trenér beachvolejbalu</li></ul>',	'',	5,	NULL);
-
-DROP TABLE IF EXISTS `gallery_albums`;
-CREATE TABLE `gallery_albums` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) NOT NULL,
-  `default_name` varchar(255) NOT NULL,
-  `path` varchar(255) NOT NULL,
-  `model` varchar(255) DEFAULT NULL,
-  `model_id` int(11) DEFAULT NULL,
-  `tags` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-INSERT INTO `gallery_albums` (`id`, `title`, `default_name`, `path`, `model`, `model_id`, `tags`, `status`, `created`, `modified`) VALUES
-(1,	'Slides album',	'',	'',	'slide',	1,	'',	'published',	'2015-07-23 12:29:30',	'2015-07-23 12:29:30'),
-(2,	'Tiles album',	'',	'',	'tile',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
-(3,	'Documents album',	'',	'',	'document',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
-(4,	'Coaches album',	'',	'',	'coach',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
-(5,	'Partners album',	'',	'',	'partner',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
-
-
-DROP TABLE IF EXISTS `headlines`;
-CREATE TABLE `headlines` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `user_id` int(10) unsigned DEFAULT NULL,
-  `created` datetime NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`user_id`),
-  CONSTRAINT `headlines_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-
-DROP TABLE IF EXISTS `messages`;
-CREATE TABLE `messages` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `subject` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  `message_recipient_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `message_recipient_id` (`message_recipient_id`),
-  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`message_recipient_id`) REFERENCES `message_recipients` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-
-DROP TABLE IF EXISTS `message_recipients`;
-CREATE TABLE `message_recipients` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `message_recipients` (`id`, `email`) VALUES
-(1,	'info@beachklubladvi.cz'),
-(2,	'marketing@beachklubladvi.cz'),
-(3,	'bar@beachklubladvi.cz'),
-(4,	'seftrener@beachklubladvi.cz');
-
-DROP TABLE IF EXISTS `news`;
-CREATE TABLE `news` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
-  `date` date NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `news` (`id`, `title`, `date`, `desc`) VALUES
-(1,	'Test',	'2015-06-23',	'fsafsaf'),
-(2,	'Test 2',	'2015-05-16',	'dajhlfdsvcx'),
-(3,	'Novinka 3',	'2015-08-11',	'Test 3');
-
-DROP TABLE IF EXISTS `partners`;
-CREATE TABLE `partners` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '9999999',
-  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `gallery_picture_id` int(11) DEFAULT NULL,
-  `partner_type_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `partners` (`id`, `name`, `desc`, `ord`, `url`, `gallery_picture_id`, `partner_type_id`) VALUES
-(1,	'Hostel Praha Ládví',	'<p>Hostel Praha Ládví svým zákazníků nabízí levné ubytování s možností parkování a výbornou dostupností do centra města.</p><p>Náš hostel Vám nabídne pohodlné a přitom levné ubytování v 1-8 lůžkových nekuřáckých pokojích včetně řady souvisejících služeb za malý poplatek či zcela zdarma! V okolí naleznete také velké množství příležitostí pro Vaše společenské a sportovní vyžití.</p>',	9999999,	'http://hostelprahaladvi.cz',	61,	2),
-(2,	'Wilson',	'<p><span style=\"line-height: 1.42857143;\">Wilson (Wilson Sporting Goods Company) je americká firma se sídlem v&nbsp;Chicagu, která je zaměřena na výrobu příslušenství pro raketové a míčové sporty. Historie značky sahá až k&nbsp;roku 1914.</span><br></p><p>Dnes je Wilson značkou s&nbsp;dominantním podílem na trhu. Toho dosáhl svým silným zaměřením na kvalitu, inovace a díky vášni posouvat sport stále dál. Produkty jsou navrhovány tak, aby byl jejich výkon nepřekonatelný a aby splňovaly požadavky mnoha sportovců různých úrovní.</p>',	9999999,	'http://www.amersports.cz/wilson',	66,	1),
-(3,	'Aquacentrum Šutka',	'<p><span style=\"line-height: 1.42857143;\">Aquacentrum Šutka je nově otevřeným a&nbsp;zároveň jedním z&nbsp;nejmodernějších plaveckých areálů v&nbsp;Praze i&nbsp;celé České republice.</span><br></p>\r\n<p>Plavecký areál Šutka byl pro veřejnost otevřen v&nbsp;prosinci roku 2012 a&nbsp;dnes může svým návštěvníkům nabídnout nejen padesátimetrový krytý bazén, ale též vířivku, divokou řeku, 2 tobogány, vodopád, relaxační bazén, dětské brouzdaliště i&nbsp;vodní bar s&nbsp;občerstvením. Pro milovníky wellness jsou v&nbsp;areálu k&nbsp;dispozici dvě finské sauny s&nbsp;venkovními ochlazovacími bazénky a&nbsp;dvě parní lázně.</p>',	9999999,	'http://www.sutka.eu/',	71,	3),
-(4,	'NEUMANN',	'<p>NEUMANN, spol. s r.o.&nbsp;je česká, rodinná firma specializující se na výrobu&nbsp;střešních boxů&nbsp;a&nbsp;střešních nosičů. Společnost začala jako první prodávat tyto výrobky na českém trhu. Prvními výrobky byly&nbsp;střešní nosiče na vozy Škoda.</p><p>NEUMANN patří k největším výrobcům i prodejcům uvedeného druhu výrobků v České republice. Ve stále větším rozsahu míří jeho vlastní produkce do zahraničí a export je velmi významnou částí obratu společnosti.</p><p>Výrobky NEUMANN&nbsp;jsou testovány a certifikovány zkušebnami TÜV.&nbsp;www.neumax.cz&nbsp;je jeden z mála internetových obchodů, který je schopen, díky zázemí firmy, garantovat pro naše zákazníky, záruční i pozáruční servis!</p>',	9999999,	'http://www.neumannr.cz/cs/',	76,	3),
-(5,	'Ferdinand',	'<p>Pivovar vyrábí&nbsp;okolo&nbsp;25 000 hektolitrů piva ročně. Produkuje celkem&nbsp;sedm druhů piv od nealkoholického až po speciální piva. Obchodní politika pivovaru se zaměřuje především domácí region a dále na exportní trhy.</p><p>Výroba piva vychází z původní receptury vaření piva s použitím českého sladu vlastní výroby a žateckého chmele, pomocí klasické technologie s otevřeným spodním kvašením a dokvašováním v ležáckých sklepích. V žádném případě nepoužíváme moderní metody výroby piva, zvláště pak CK tanky a ani dodatečně neředíme pivo vodou na požadovanou stupňovitost.</p>',	9999999,	'http://www.pivovarferdinand.cz/',	81,	2),
-(6,	'Monstera International',	'<p>Již 10 let je &nbsp;společnost partnerem pro velký počet větších i menších firem v investiční oblasti se zaměřením na komerční objekty. Společnost Monstera je developerskou organizací zabývající se investiční činností v oblasti komerčních nemovitostí a se zaměřením na výstavbu čerpacích stanic pohonných hmot.</p><ul><li>pomoc při zajištění finančních prostředků na výstavbu ČSPHL (leasing, spolupráce s významými distributory PHL, apod.)</li><li>zajištění financování výstavby</li></ul>',	9999999,	'http://www.monstera.cz/',	86,	3),
-(7,	'Praha',	'<p><span>Praha je hlavní a současně největší město České republiky a 15. největší město Evropské unie. Leží mírně na sever od středu Čech na řece Vltavě, uvnitř Středočeského kraje, jehož je správním centrem, ale jako samostatný kraj není jeho součástí.</span><br></p>',	9999999,	'http://www.praha.eu/',	91,	1),
-(8,	'Městská Část Praha 8',	'<p>Městský obvod&nbsp;Praha 8<span>&nbsp;se spádovým centrem v&nbsp;</span>Libni<span>&nbsp;označený arabskou číslicí poprvé existoval v letech 1949–1960 jako jeden z 16 městských obvodů, podruhé byl v odlišném vymezení ustaven zákonem o územním členění státu s účinností od&nbsp;</span>1. července<span>&nbsp;</span>1960<span>&nbsp;jako jeden z 10 městských obvodů. Od roku&nbsp;</span>1990<span>&nbsp;byl předefinován výčtem městských částí.</span><br></p>',	9999999,	'http://www.praha8.cz/',	101,	1);
-
-DROP TABLE IF EXISTS `partner_type`;
-CREATE TABLE `partner_type` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '999999999',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `partner_type` (`id`, `title`, `ord`) VALUES
-(1,	'Partneři plážového volejbalu',	999999999),
-(2,	'Sponzoři plážového volejbalu',	999999999),
-(3,	'Partneři dětských akcí',	999999999);
-
-DROP TABLE IF EXISTS `posts`;
-CREATE TABLE `posts` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `user_id` int(10) unsigned DEFAULT NULL,
-  `created` datetime DEFAULT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  `perex` text COLLATE utf8_czech_ci,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`user_id`),
-  CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `posts` (`id`, `title`, `user_id`, `created`, `desc`, `perex`) VALUES
-(1,	'Hledam spoluhrace',	1,	'2015-06-24 11:41:11',	'Hoho!',	''),
-(2,	'novej 2',	1,	'2015-07-02 10:08:21',	'gasgr',	'aegas'),
-(3,	'dalsi3',	1,	'2015-07-02 10:08:30',	'dalsi3',	'dalsi3');
-
-DROP TABLE IF EXISTS `sliders`;
-CREATE TABLE `sliders` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '9999999',
-  `gallery_picture_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `gallery_picture_id` (`gallery_picture_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `sliders` (`id`, `name`, `ord`, `gallery_picture_id`) VALUES
-(1,	'Slide 1',	9999999,	1),
-(2,	'Slide 2',	9999999,	5),
-(3,	'Slide 3',	9999999,	9),
-(4,	'Slide 4',	9999999,	13),
-(5,	'Slide 5',	9999999,	17);
-
-
-DROP TABLE IF EXISTS `tournaments`;
-CREATE TABLE `tournaments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `datetime` datetime NOT NULL,
-  `desc` text COLLATE utf8_czech_ci NOT NULL,
-  `perex` text COLLATE utf8_czech_ci NOT NULL,
-  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `user_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`user_id`),
-  CONSTRAINT `tournaments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) COLLATE utf8_czech_ci DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
-  `mail` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `users` (`id`, `username`, `password`, `mail`, `created`, `modified`) VALUES
-(1,	'admin',	'$2a$10$oTInOZNrfJqOdFEjVAb00ugqLRwquceqkt39aam1pY/4m1/py4.nq',	NULL,	'2015-06-24 10:37:25',	'2015-06-24 10:37:25'),
-(2,	'veronika',	'$2a$10$v1cjUd5kGH0X7UE.O8pStOzUTOuGwct1dOEY01NI2A14t4s9cMSSe',	NULL,	'2015-08-05 23:41:33',	'2015-08-05 23:41:33');
-
-DROP TABLE IF EXISTS `tiles`;
-CREATE TABLE `tiles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `ord` int(11) NOT NULL DEFAULT '9999999',
-  `gallery_picture_id` int(11) DEFAULT NULL,
-  `document_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
-
-INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`, `document_id`) VALUES
-(1,	'Rezervace Kurtů',	0,	21,	5),
-(2,	'Turnaje',	1,	25,	6),
-(3,	'Kroužky',	2,	29,	4),
-(4,	'Tréninky',	3,	33,	8),
-(5,	'Beachkempy v Čechách',	4,	37,	10),
-(6,	'Beachkempy v Itálii',	5,	41,	9),
-(7,	'Firemní akce',	6,	45,	NULL),
-(8,	'Beachbar',	7,	49,	NULL),
-(9,	'Členství v klubu',	8,	53,	7);
-
 
 DROP TABLE IF EXISTS `documents`;
 CREATE TABLE `documents` (
@@ -253,7 +55,30 @@ INSERT INTO `documents` (`id`, `title`, `content`, `perex`, `user_id`, `publishe
 (15,	'Kondiční tréninky nejen pro sportovce',	'<p>Beachklub Ládví nově otevírá nedělní kondiční tréninky. Nyní máte možnost si neobvyklým způsobem splnit svá novoroční předsevzetí o lepší kondici a krásné postavě. Vyměňte fitness studia, vyzkoušejte pohyb v jemné písku, díky kterému je trénink intenzivnější a přitom šetrnější k pohybovému aparátu.</p><p>Základní náplní našich tréninků je zdravotně preventivní příprava, výkonnostní příprava (rozvoj vyrtvalostních, rychlostních, silových, koordinačních schopností a pohyblivosti) a celkový rozvoj pohybových dovedností. využíváme cvičení na písku, díky kterému se zapojuje více svalových partíí a tím dochází ke komplexnějšímu zpevnění celého těla. Trénink je vhodný pro všechny věkové i výkonnostní kategorie. Přiďte si s námi zacvičit pro svou radost z pohybu.</p><h3>Kondiční tréninky</h3><p><span>Kondiční tréninky pořádáme nově každou neděli od 19 hodin. Trénink je vhodný jak pro mládež, tak pro dospělé včetně všech výkonnostních kategorií.</span></p><p></p><h3>Obsah a rozdělení jednotlivých tréninků:</h3><ul><li><p>Každou první neděli v měsíci bude trénink zaměřen na reakční rychlost a rychlost jako takovou. Při tréninku využijeme růžných odporových metod a reakčních cvičení. Od letní sezony i kontrastních cvičení pevný povrch-písek.</p></li><li>Každou druhou neděli v měsíci se zaměříme na tonizaci a posílení všech důležitých svalových skupin pomocí kruhového tréninku za použití různých pomůcek a zajímavých obměn již známých cviků.</li><li>Každou třetí neděli v měsíci dáme zabrat hlavně našim nohám při nácviku naší odrazové síly. Využívat budeme i různé překážky. Od léta opět zařadíme kontrastní cvičení mimo písek.</li><li>Každou čtvrtou neděli v měsíci se budeme soustředit na zpevěnění našeho posttoje a hlavně na posílení HSS (hlubokého stabilizačního systému). Cvičit budeme jak se svojí vahou, tak s pomůckami a využijeme i cvičení ve dvojicích.</li><li>Od letní sezony s přidáním tréninkových hodin i ve všední dny přidáme tréninky zaměřené na kompenzační cvičení pro volejbalisty, vytrvalostní trénink, různé posilovací tréninky s pomůckami i bez nich a tréninky na zlepšení celkové kondice. Při větším zájmu můžeme kterýkoliv trénink zařadit již nyní.</li></ul><h3>Náplň tréninkové jednotky:</h3><p><span><span>·<span>&nbsp;</span></span></span><span>Zahřátí</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Protažení</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Hlavní tréninková jednotka</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Závěrečné protažení</span></p><p>&nbsp;</p><h3>Cvičíme jak sami, tak ve dvojicích a při tréninku využíváme:</h3><ul><li><strong>Váhu vlastního těla</strong></li><li>Medicimbaly</li><li>TRX</li><li>Lavičky</li><li>Expandery</li><li>Aerobary</li></ul><h3><span><strong>Součástí kondičního tréninku jsou:</strong></span></h3><p><span><span>·<span>&nbsp;</span></span></span><span>Zdravotně preventivní příprava</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Kompenzační cvičení</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Výkonnostní příprava (zlepšení vytrvalostních, rychlostních, silových, odrazových, koordinačních schopností a pohyblivosti)</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Celkový rozvoj pohybových dovedností</span></p><h3><span><strong>Cíle kondičního tréninku jsou:</strong></span></h3><p><span><span>·<span>&nbsp;</span></span></span><span>Odstranění svalových disbalancí</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Zpevnění svalového tonusu</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Zlepšení celkové kondice</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Vytvarování postavy</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Redukce váhy na úkor tuků</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Nárůst svalové hmoty</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Zlepšení držení těla</span></p><p><span><span>·<span>&nbsp;</span></span></span><span>Zlepšení pohyblivosti</span></p><h3><span><strong>Délka tréninkové jednotky</strong></span></h3><p><span>90 minut</span></p><h3><span><strong>Cena tréninkové jednotky</strong></span></h3><p><span>1&nbsp;lekce 90 min. - 250 Kč. Do konce února zaváděcí sleva 20</span><span>%</span><span>&nbsp;na 200 Kč.&nbsp;<strong>První hodina je pro každého účastníka ZDARMA.</strong><br></span></p><p><span style=\"line-height: 1.42857143;\">Kondiční tréninky budeme vypisovat v našem rezervačním systému, kde se můžete on-line přihlašovat. Rezervační systém naleznete&nbsp;</span><a href=\"http://www.beach-ladvi.rezervuju.cz/training\" style=\"line-height: 1.42857143; background-color: rgb(255, 163, 54);\">zde</a><span style=\"line-height: 1.42857143;\">.</span><br></p>',	'<p><br></p>',	2,	0,	0,	'kondicni-treninky'),
 (16,	'Tréninkové beach volejbalové turnaje v Praze',	'<p>Chcete natrénovat na beach volejbalový turnaj bez zbytečného stresu? Máte problém sehnat soupeře na stejné úrovni? Chcete si zahrát beach volejbal s novými protihráči, ale nechcete trávit celý den na turnaji? Pokud jste si zodpověděli alespoň jednou ano, tak právě pro vás jsme připravili tréninkové beachvolejbalové turnaje v Praze na Ládví.</p><h3>Turnaje v plážovém volejbale nanečisto</h3><p>Smyslem těchto turnajů je umožnit dvojicím se sehrát bez zbytečného stresu a bez klasických turnajových prodlev. V průběhu beach volejbalového turnaje nanečisto se nepočítají body ani skóre. Po odehrání setu se automaticky přesunete k dalšímu soupeři a hrajete dál. Nemusíte čekat ani se nervovat kvůli bodům.</p><h3>Páteční beach volejbalové párty v Praze pro mírně pokročilé</h3><p>Páteční beach volejbalové párty v Praze na Ládví jsou rezervované pro ty, kteří se chtějí odreagovat po náročném pracovním týdnu. Úroveň dvojic by se dala hodnotit jako mírně pokročilá, ale soupeře si zde najdou i dvojice pokročilé. Přijít můžete ve dvojice i sami. Garantujeme nepřetržitou hru po dobu 180 minut. Cena je 250 Kč, v případě permanentky 200 Kč.</p><p>Online rezervace<a href=\"http://www.beach-ladvi.rezervuju.cz/training\">&nbsp;zde.</a></p>',	'<p><br></p>',	2,	0,	0,	'treninkove-turnaje-praha'),
 (17,	'Beachvolejbalové kempy v Bibione',	'<h3>Bibione - široké pláže, kvalitní služby a nízké ceny</h3><div><p><span>Populární středisko neustále zkvalitňuje své služby a&nbsp;infrastrukturu. Po&nbsp;právu proto patří k&nbsp;nejznámějším a&nbsp;nejoblíbenějším italským letoviskům vůbec, když v&nbsp;jeho prospěch &nbsp;hovoří i i&nbsp;malá vzdálenost z&nbsp;ČR. Bibione je ale také jednoznačným příkladem střediska, kterému předchází výrazně horší pověst, než je realita samotná. Častokrát je dokonce vnímáno jako synonymum nejlevnější masové turistiky začátku 90. let minulého století. Skutečnost dnešních dní je ale diametrálně odlišná. Ano, je pravdou, že lůžková kapacita je zde v&nbsp;řádu desítek tisíc lůžek, ale tomu odpovídá i&nbsp;velikost střediska, a&nbsp;již jen letmý pohled do&nbsp;ceníku naznačuje, že se nedá mluvit ani o&nbsp;letovisku nejlevnějším. I&nbsp;v&nbsp;tomto ohledu to je spíše naopak.</span></p></div><div><p><span>Nesčetné obchody včetně značkových butiků, široký výběr restaurací s&nbsp;typickou italskou i&nbsp;mezinárodní kuchyní, bary, herny, diskotéky, široké sportovní zázemí (namátkou lze jmenovat tenis, volejbal, fotbal, basketbal, lodičky, vodní lyže, windsurfing, vodní šlapadla, kajaky, rybaření, petanque, bowling, golf, minigolf, trampolíny, stolní tenis, jízdu na&nbsp;koni, půjčovny kol, kolečkových bruslí a&nbsp;šlapacích „čtyřkolek“, motokáry, aerobic, atd.), ale především bujarý večerní život s&nbsp;hlavní promenádou měnící se každodenně v&nbsp;korzující lidské mraveniště, to je ten typický obrázek letního Bibione. Nikdo z&nbsp;rekreantů si zpravidla nenechá ujít ani tradiční velké trhy konané každé úterý či návštěvu velkého a&nbsp;hlavně celosezónně otevřeného lunaparku. K&nbsp;návštěvě však láká i rozsáhlý vodní park Aquasplash a&nbsp;dětský pohádkový svět Gulliverlandia v&nbsp;jen 10 km vzdáleném Lignanu. To také již napovídá, že Bibione je ideálním místem pro děti. A&nbsp;je tomu skutečně tak. Vždyť jemný písek a&nbsp;pozvolný vstup do&nbsp;vody uchrání každého před starostmi o&nbsp;své ratolesti přes den a&nbsp;nepřeberné množství hřišť, dětských heren i&nbsp;další zábavy zase nabídne dokonalé rozptýlení na&nbsp;večer. Pláže jsou v&nbsp;Bibione až neskutečně dlouhé a&nbsp;široké.</span></p></div><div><p><span>V Bibione jsou též termální lázně celoročně vyhledávané pro ozdravné pobyty. Nabízejí řadu účinných léčebných kúr, když mezi nejžádanější patří zejména bahenní a&nbsp;vodní terapie či inhalační léčba dýchacích cest. Neopomeňme ale také Bibione jako příkladný prototyp letoviska, které Vás nenechá otálet ve&nbsp;dnech, kdy sluneční paprsky ještě nejsou tak intenzivně teplé či dokonce jsou schovány za&nbsp;nějakým tím mrakem. A&nbsp;to především díky výhodné poloze, která toto středisko doslova předurčuje k&nbsp;zajímavým výletům za&nbsp;poznáním. V&nbsp;pomyslném čele je dozajista nedaleká perla Jadranu - světoznámé Benátky, stejně snadno dostupný je ale i&nbsp;působivý přístav Terst, jehož dějiny jsou tak úzce svázány s&nbsp;těmi našimi, klenoty raného středověku Aquileia a&nbsp;Padova či Shakespearovým Romeem a&nbsp;Julií proslavená Verona. Neméně atraktivní jsou i&nbsp;výlety lodí po&nbsp;lagunách v&nbsp;oblasti mezi Bibione a&nbsp;Caorle nebo o&nbsp;něco delší plavba okolo benátských ostrovů.</span></p></div><p><span style=\"font-family: BenchNine, sans-serif; font-size: 20px; line-height: 26px;\">Ubytování týmu Beachklubu Ládví</span><br></p><h3>Villaggio Michelangelo a San Siro***</h3><h4>Poloha / Pláž</h4><p>Bibione - centrum, pláž - 550 - 600 m</p><h4>Upřesňující popis</h4><p>Rozsáhlý komplex dvoupodlažních řadových vilek s několika bazény (Michelangelo) a sousední menší komplex jednopodlažních a dvoupodlažních řadových vilek s jedním bazénem (San Siro).</p><h4>Vybavenost a služby</h4><p>dětské hřiště (jen Michelangelo), 1 vyhrazené venkovní parkovací stání / apartmán (další parkování v blízkosti)</p><h4>Sport a relaxace</h4><p>několik různě velkých bazénů a dětských bazénků</p><h4>Vybavenost apartmánů</h4><p>zpravidla TV, trezor, u typologií quadrilo a trilo zpravidla též venkovní krb</p><h4>Popis apartmánů</h4><p>mono 4 - 25 m2 - obývací pokoj s kuchyňským koutem a 2 rozkládacími gauči (možno i typ „šuplík“) pro 2 osoby či 1 rozkládacím gaučem (možno i typ „šuplík“) a palandou, sociální zařízení se sprchou, předzahrádka; apartmány jsou výhradně ve Villaggiu San Siro</p><p>bilo 3/4/5 - 35 m2 - 1 ložnice s manželskou postelí a&nbsp;<br>případně 1 samostatným lůžkem, obývací pokoj s kuchyňským koutem a rozkládacím gaučem pro 1 či 2 osoby (možno i typ „šuplík“), sociální zařízení se sprchou, balkon či předzahrádka případně s terasou<br><br>trilo 5/6/7 - 45 až 55 m2 - 1 ložnice s manželskou postelí, 1 ložnice se 2 samostatnými lůžky či 1 samostatným lůžkem a palandou délky 180 cm, obývací pokoj s kuchyňským koutem a rozkládacím gaučem pro 1 či 2 osoby (možno i typ „šuplík“), sociální zařízení se sprchou, balkon či terasa a předzahrádka;&nbsp;<br><br>některé apartmány jsou dvoupodlažní, když ve 2. podlaží jsou obě ložnice a sociální zařízení</p><h4>Důležitá upozornění</h4><p>bazény v rámci jednotlivých ubytovacích kapacit jsou v provozu cca od 15.05. do 15.09.</p><h4>VÝHODY A NEVÝHODY</h4><ul><li>příjemné, velmi oblíbené a v posledních letech i vůbec nejžádanější konkrétní ubytování v Bibione</li><li>dostatek klidu, soukromí i zeleně</li><li>ideální poloha vzhledem k rušnému centru</li><li>nabídka nejžádanějších typologií</li><li>dostatečná kapacita i pro skupinové zájezdy</li><li>u některých apartmánů starší vybavení a zařízení</li></ul>',	'<p><br></p>',	2,	0,	0,	'kempy-v-bibione'),
-(18,	'Beach volleyball in Prague',	'<h3>About Beachklub Ládví<br></h3><p>Beachklub Ládví is the biggest beach volleyball centre in Prague. We started in 2008 by building first 6 pitches. We were lucky and got the chance to buy all the sand from the first FIVB World Tour tournament in Prague. Nowadays there are 15 beach volleyball courts open. You would not believe that we have already transported around 3.750 tuns of sand. Naturally all of them from the past a few World Tour tournament in Prague :). It means we are not only the biggest, but we have also the best sand.</p><h3>Book a beach volleybal court<br></h3><p>We have altogether 15 beach volleyball pitches. You can book them online&nbsp;<a href=\"https://jdemenato.cz/reservation/beachklub-ladvi/reservationcalendaroverview\">here.</a></p><h3>Beach volleyball trainings</h3><p>We have several experienced beach volleyball&nbsp;<a href=\"/o-nas\">coaches</a>. Ondřej played the first division in Austria and in Cyprus. Jarda even trained the Austrian U19 national team and played also first division abroad (Portugal, Austria).</p><div><p>We have beach volleyball trainings for all the age categories. Starting with the small children from 3 years and ending by 50+ groups. You can either join the group during the beachcamps or have the private, individual lessons.</p><h3>Beach volleyball tournaments</h3><p>Nearly every weekend we organize beach volleyball tournaments for amateures, kids and sometimes even for the profi players. Check&nbsp;<a href=\"/turnaje\">the tournament list</a>&nbsp;to find out the dates and categories.</p><h3>Beachbar</h3><p></p><p>What would&nbsp;be&nbsp;a beachvolleyball sport club without a beachbar. You can rely on us. We serve nice food (steaks, soups, burgers and some Czech Specials like hermelín or párek v rohlíku). We have draft beer (12´, 10´. light) and all kinds of soft drinks.</p><p><br>Just come and enjoy.</p></div>',	'<p><br></p>',	2,	0,	0,	'beach-volleyball-in-prague');
+(18,	'Beach volleyball in Prague',	'<h3>About Beachklub Ládví<br></h3><p>Beachklub Ládví is the biggest beach volleyball centre in Prague. We started in 2008 by building first 6 pitches. We were lucky and got the chance to buy all the sand from the first FIVB World Tour tournament in Prague. Nowadays there are 15 beach volleyball courts open. You would not believe that we have already transported around 3.750 tuns of sand. Naturally all of them from the past a few World Tour tournament in Prague :). It means we are not only the biggest, but we have also the best sand.</p><h3>Book a beach volleybal court<br></h3><p>We have altogether 15 beach volleyball pitches. You can book them online&nbsp;<a href=\"https://jdemenato.cz/reservation/beachklub-ladvi/reservationcalendaroverview\">here.</a></p><h3>Beach volleyball trainings</h3><p>We have several experienced beach volleyball&nbsp;<a href=\"/o-nas\">coaches</a>. Ondřej played the first division in Austria and in Cyprus. Jarda even trained the Austrian U19 national team and played also first division abroad (Portugal, Austria).</p><div><p>We have beach volleyball trainings for all the age categories. Starting with the small children from 3 years and ending by 50+ groups. You can either join the group during the beachcamps or have the private, individual lessons.</p><h3>Beach volleyball tournaments</h3><p>Nearly every weekend we organize beach volleyball tournaments for amateures, kids and sometimes even for the profi players. Check&nbsp;<a href=\"/turnaje\">the tournament list</a>&nbsp;to find out the dates and categories.</p><h3>Beachbar</h3><p></p><p>What would&nbsp;be&nbsp;a beachvolleyball sport club without a beachbar. You can rely on us. We serve nice food (steaks, soups, burgers and some Czech Specials like hermelín or párek v rohlíku). We have draft beer (12´, 10´. light) and all kinds of soft drinks.</p><p><br>Just come and enjoy.</p></div>',	'<p><br></p>',	2,	0,	0,	'beach-volleyball-in-prague'),
+(19,	'Prasátko Peppa v Beachklubu Ládví aneb Táta Fest již tuto neděli!',	'<p>Táta fest, zábavné odpoledne pro děti, se uskuteční příští neděli 13. září 2015 v Beachklubu Ládví na Praze 8. Na děti tu bude čekat oblíbená postavička prasátko Peppa, popelářský vůz Pražských služeb, Městská policie, hasičský vůz, sanitka, vycvičení pejsci a loutkové divadlo Jiskra. Každé dítě dostane nanuk Mrož a buřt na opékání. Vstupné je zdarma.</p><p><img style=\"float: left; width: 547px; height: 201.87px;\" src=\"/files/gallery/3/2fc75fcccdaeee756c6a13e7240452b2.jpg\" class=\"pull-left\"></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p>První ročník Táta festu na Ládví přinese spoustu zábavy a soutěží nejen pro děti. Kromě popelářů, hasičů nebo opékání buřtů si všichni budou moci vyzkoušet plážový volejbal, lukostřelbu, pétanque, stolní tenis anebo třeba bungee running. Přijde i malé prasátko Peppa a rozdá mezi děti 500 nanuků Mrož a špekáčků k opékání na venkovním ohništi! Na akci bude připraven i fotograf dětské televize Minimax, a tak si každé dítě bude moci odnést svoji fotku s prasátkem. \"Věřím, že název akce neodradí maminky a že se za námi také přijdou podívat,\" přeje si Roman Petrus, starosta Městské části Praha 8.</p><p>Táta fest se uskuteční v areálu Beachklubu Ládví v Chabařovické ulici na Praze 8. Vstupné je zdarma. Akce je pořádána pod záštitou pana Petruse, starosty městské části Prahy 8 a za podpory hlavního města Prahy a dětské televize Minimax.</p><p>Důležité upozornění na závěr! Dne 13. září 2015 nebude možný vjezd návštěvníků do areálu, neboť parkoviště zaplní automobily a stánky policie, hasičů aj. Děkujeme za pochopení.<br></p>',	'<p>\r\nTáta fest, zábavné odpoledne pro děti, se uskuteční příští neděli 13. září 2015 v Beachklubu Ládví na Praze 8. Na děti tu bude čekat oblíbená postavička prasátko Peppa, popelářský vůz Pražských služeb, Městská policie, hasičský vůz, sanitka, vycvičení pejsci a loutkové divadlo Jiskra. Každé dítě dostane nanuk Mrož a buřt na opékání. Vstupné je zdarma.\r\n</p><p><img style=\"width: 574px; height: 212.52px;\" src=\"/files/gallery/3/a0dda347b4bcb372209d79ee29657f5f.jpg\"><br><br></p>',	2,	1,	0,	'prasatko-peppa-v-beachklubu-ladvi-aneb-tata-fest-jiz-tuto-nedeli');
+
+DROP TABLE IF EXISTS `gallery_albums`;
+CREATE TABLE `gallery_albums` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `default_name` varchar(255) NOT NULL,
+  `path` varchar(255) NOT NULL,
+  `model` varchar(255) DEFAULT NULL,
+  `model_id` int(11) DEFAULT NULL,
+  `tags` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `gallery_albums` (`id`, `title`, `default_name`, `path`, `model`, `model_id`, `tags`, `status`, `created`, `modified`) VALUES
+(1,	'Slides album',	'',	'',	'slide',	1,	'',	'published',	'2015-07-23 12:29:30',	'2015-07-23 12:29:30'),
+(2,	'Tiles album',	'',	'',	'tile',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
+(3,	'Documents album',	'',	'',	'document',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
+(4,	'Coaches album',	'',	'',	'coach',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14'),
+(5,	'Partners album',	'',	'',	'partner',	1,	'',	'published',	'2015-07-24 13:05:14',	'2015-07-24 13:05:14');
 
 DROP TABLE IF EXISTS `gallery_pictures`;
 CREATE TABLE `gallery_pictures` (
@@ -537,6 +362,197 @@ INSERT INTO `gallery_pictures` (`id`, `name`, `path`, `size`, `album_id`, `main_
 (262,	'medium-oakley_ellipse_logotype_wht.jpg',	'medium-ae16300279ad4329d70b3659c1fd1a43.jpg',	9488,	3,	261,	NULL,	'medium',	9999999,	'2015-08-24 11:21:58',	'2015-08-24 11:21:58'),
 (263,	'slide-oakley_ellipse_logotype_wht.jpg',	'slide-ae16300279ad4329d70b3659c1fd1a43.jpg',	30687,	3,	261,	NULL,	'slide',	9999999,	'2015-08-24 11:21:58',	'2015-08-24 11:21:58'),
 (264,	'tile-oakley_ellipse_logotype_wht.jpg',	'tile-ae16300279ad4329d70b3659c1fd1a43.jpg',	9330,	3,	261,	NULL,	'tile',	9999999,	'2015-08-24 11:21:58',	'2015-08-24 11:21:58'),
-(265,	'docs-oakley_ellipse_logotype_wht.jpg',	'docs-ae16300279ad4329d70b3659c1fd1a43.jpg',	16141,	3,	261,	NULL,	'docs',	9999999,	'2015-08-24 11:21:58',	'2015-08-24 11:21:58');
+(265,	'docs-oakley_ellipse_logotype_wht.jpg',	'docs-ae16300279ad4329d70b3659c1fd1a43.jpg',	16141,	3,	261,	NULL,	'docs',	9999999,	'2015-08-24 11:21:58',	'2015-08-24 11:21:58'),
+(266,	'banner_FB_850x315.jpg',	'277154b280942dfe44565f621bdff25d.jpg',	536179,	3,	NULL,	NULL,	'full',	9999999,	'2015-09-16 00:25:10',	'2015-09-16 00:25:10'),
+(267,	'medium-banner_FB_850x315.jpg',	'medium-277154b280942dfe44565f621bdff25d.jpg',	21765,	3,	266,	NULL,	'medium',	9999999,	'2015-09-16 00:25:10',	'2015-09-16 00:25:10'),
+(268,	'slide-banner_FB_850x315.jpg',	'slide-277154b280942dfe44565f621bdff25d.jpg',	103224,	3,	266,	NULL,	'slide',	9999999,	'2015-09-16 00:25:10',	'2015-09-16 00:25:10'),
+(269,	'tile-banner_FB_850x315.jpg',	'tile-277154b280942dfe44565f621bdff25d.jpg',	24069,	3,	266,	NULL,	'tile',	9999999,	'2015-09-16 00:25:10',	'2015-09-16 00:25:10'),
+(270,	'docs-banner_FB_850x315.jpg',	'docs-277154b280942dfe44565f621bdff25d.jpg',	51252,	3,	266,	NULL,	'docs',	9999999,	'2015-09-16 00:25:10',	'2015-09-16 00:25:10'),
+(271,	'banner_FB_850x315.jpg',	'2fc75fcccdaeee756c6a13e7240452b2.jpg',	536179,	3,	NULL,	NULL,	'full',	9999999,	'2015-09-16 00:26:02',	'2015-09-16 00:26:02'),
+(272,	'medium-banner_FB_850x315.jpg',	'medium-2fc75fcccdaeee756c6a13e7240452b2.jpg',	21765,	3,	271,	NULL,	'medium',	9999999,	'2015-09-16 00:26:02',	'2015-09-16 00:26:02'),
+(273,	'slide-banner_FB_850x315.jpg',	'slide-2fc75fcccdaeee756c6a13e7240452b2.jpg',	103224,	3,	271,	NULL,	'slide',	9999999,	'2015-09-16 00:26:02',	'2015-09-16 00:26:02'),
+(274,	'tile-banner_FB_850x315.jpg',	'tile-2fc75fcccdaeee756c6a13e7240452b2.jpg',	24069,	3,	271,	NULL,	'tile',	9999999,	'2015-09-16 00:26:02',	'2015-09-16 00:26:02'),
+(275,	'docs-banner_FB_850x315.jpg',	'docs-2fc75fcccdaeee756c6a13e7240452b2.jpg',	51252,	3,	271,	NULL,	'docs',	9999999,	'2015-09-16 00:26:02',	'2015-09-16 00:26:02'),
+(276,	'banner_FB_850x315.jpg',	'a0dda347b4bcb372209d79ee29657f5f.jpg',	536179,	3,	NULL,	NULL,	'full',	9999999,	'2015-09-16 00:30:28',	'2015-09-16 00:30:28'),
+(277,	'medium-banner_FB_850x315.jpg',	'medium-a0dda347b4bcb372209d79ee29657f5f.jpg',	21765,	3,	276,	NULL,	'medium',	9999999,	'2015-09-16 00:30:28',	'2015-09-16 00:30:28'),
+(278,	'slide-banner_FB_850x315.jpg',	'slide-a0dda347b4bcb372209d79ee29657f5f.jpg',	103224,	3,	276,	NULL,	'slide',	9999999,	'2015-09-16 00:30:28',	'2015-09-16 00:30:28'),
+(279,	'tile-banner_FB_850x315.jpg',	'tile-a0dda347b4bcb372209d79ee29657f5f.jpg',	24069,	3,	276,	NULL,	'tile',	9999999,	'2015-09-16 00:30:28',	'2015-09-16 00:30:28'),
+(280,	'docs-banner_FB_850x315.jpg',	'docs-a0dda347b4bcb372209d79ee29657f5f.jpg',	51252,	3,	276,	NULL,	'docs',	9999999,	'2015-09-16 00:30:28',	'2015-09-16 00:30:28');
 
--- 2015-08-17 08:48:25
+DROP TABLE IF EXISTS `headlines`;
+CREATE TABLE `headlines` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `user_id` int(10) unsigned DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `headlines_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `subject` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `message_recipient_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `message_recipient_id` (`message_recipient_id`),
+  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`message_recipient_id`) REFERENCES `message_recipients` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+DROP TABLE IF EXISTS `message_recipients`;
+CREATE TABLE `message_recipients` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `message_recipients` (`id`, `email`) VALUES
+(1,	'info@beachklubladvi.cz'),
+(2,	'marketing@beachklubladvi.cz'),
+(3,	'bar@beachklubladvi.cz'),
+(4,	'seftrener@beachklubladvi.cz');
+
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `date` date NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `news` (`id`, `title`, `date`, `desc`) VALUES
+(1,	'Test',	'2015-06-23',	'fsafsaf'),
+(2,	'Test 2',	'2015-05-16',	'dajhlfdsvcx'),
+(3,	'Novinka 3',	'2015-08-11',	'Test 3'),
+(4,	'Nový rezervační systém',	'2015-08-12',	'<span>Online rezervace kurtů, tréninků a turnajů&nbsp;</span><a href=\"https://jdemenato.cz/reservation/beachklub-ladvi/reservationcalendaroverview\">zde</a><span>.</span>');
+
+DROP TABLE IF EXISTS `partners`;
+CREATE TABLE `partners` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  `partner_type_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `partners` (`id`, `name`, `desc`, `ord`, `url`, `gallery_picture_id`, `partner_type_id`) VALUES
+(1,	'Hostel Praha Ládví',	'<p>Hostel Praha Ládví svým zákazníků nabízí levné ubytování s možností parkování a výbornou dostupností do centra města.</p><p>Náš hostel Vám nabídne pohodlné a přitom levné ubytování v 1-8 lůžkových nekuřáckých pokojích včetně řady souvisejících služeb za malý poplatek či zcela zdarma! V okolí naleznete také velké množství příležitostí pro Vaše společenské a sportovní vyžití.</p>',	9999999,	'http://hostelprahaladvi.cz',	61,	2),
+(2,	'Wilson',	'<p><span style=\"line-height: 1.42857143;\">Wilson (Wilson Sporting Goods Company) je americká firma se sídlem v&nbsp;Chicagu, která je zaměřena na výrobu příslušenství pro raketové a míčové sporty. Historie značky sahá až k&nbsp;roku 1914.</span><br></p><p>Dnes je Wilson značkou s&nbsp;dominantním podílem na trhu. Toho dosáhl svým silným zaměřením na kvalitu, inovace a díky vášni posouvat sport stále dál. Produkty jsou navrhovány tak, aby byl jejich výkon nepřekonatelný a aby splňovaly požadavky mnoha sportovců různých úrovní.</p>',	9999999,	'http://www.amersports.cz/wilson',	66,	1),
+(3,	'Aquacentrum Šutka',	'<p><span style=\"line-height: 1.42857143;\">Aquacentrum Šutka je nově otevřeným a&nbsp;zároveň jedním z&nbsp;nejmodernějších plaveckých areálů v&nbsp;Praze i&nbsp;celé České republice.</span><br></p>\r\n<p>Plavecký areál Šutka byl pro veřejnost otevřen v&nbsp;prosinci roku 2012 a&nbsp;dnes může svým návštěvníkům nabídnout nejen padesátimetrový krytý bazén, ale též vířivku, divokou řeku, 2 tobogány, vodopád, relaxační bazén, dětské brouzdaliště i&nbsp;vodní bar s&nbsp;občerstvením. Pro milovníky wellness jsou v&nbsp;areálu k&nbsp;dispozici dvě finské sauny s&nbsp;venkovními ochlazovacími bazénky a&nbsp;dvě parní lázně.</p>',	9999999,	'http://www.sutka.eu/',	71,	3),
+(4,	'NEUMANN',	'<p>NEUMANN, spol. s r.o.&nbsp;je česká, rodinná firma specializující se na výrobu&nbsp;střešních boxů&nbsp;a&nbsp;střešních nosičů. Společnost začala jako první prodávat tyto výrobky na českém trhu. Prvními výrobky byly&nbsp;střešní nosiče na vozy Škoda.</p><p>NEUMANN patří k největším výrobcům i prodejcům uvedeného druhu výrobků v České republice. Ve stále větším rozsahu míří jeho vlastní produkce do zahraničí a export je velmi významnou částí obratu společnosti.</p><p>Výrobky NEUMANN&nbsp;jsou testovány a certifikovány zkušebnami TÜV.&nbsp;www.neumax.cz&nbsp;je jeden z mála internetových obchodů, který je schopen, díky zázemí firmy, garantovat pro naše zákazníky, záruční i pozáruční servis!</p>',	9999999,	'http://www.neumannr.cz/cs/',	76,	3),
+(5,	'Ferdinand',	'<p>Pivovar vyrábí&nbsp;okolo&nbsp;25 000 hektolitrů piva ročně. Produkuje celkem&nbsp;sedm druhů piv od nealkoholického až po speciální piva. Obchodní politika pivovaru se zaměřuje především domácí region a dále na exportní trhy.</p><p>Výroba piva vychází z původní receptury vaření piva s použitím českého sladu vlastní výroby a žateckého chmele, pomocí klasické technologie s otevřeným spodním kvašením a dokvašováním v ležáckých sklepích. V žádném případě nepoužíváme moderní metody výroby piva, zvláště pak CK tanky a ani dodatečně neředíme pivo vodou na požadovanou stupňovitost.</p>',	9999999,	'http://www.pivovarferdinand.cz/',	81,	2),
+(6,	'Monstera International',	'<p>Již 10 let je &nbsp;společnost partnerem pro velký počet větších i menších firem v investiční oblasti se zaměřením na komerční objekty. Společnost Monstera je developerskou organizací zabývající se investiční činností v oblasti komerčních nemovitostí a se zaměřením na výstavbu čerpacích stanic pohonných hmot.</p><ul><li>pomoc při zajištění finančních prostředků na výstavbu ČSPHL (leasing, spolupráce s významými distributory PHL, apod.)</li><li>zajištění financování výstavby</li></ul>',	9999999,	'http://www.monstera.cz/',	86,	3),
+(7,	'Praha',	'<p><span>Praha je hlavní a současně největší město České republiky a 15. největší město Evropské unie. Leží mírně na sever od středu Čech na řece Vltavě, uvnitř Středočeského kraje, jehož je správním centrem, ale jako samostatný kraj není jeho součástí.</span><br></p>',	9999999,	'http://www.praha.eu/',	91,	1),
+(8,	'Městská Část Praha 8',	'<p>Městský obvod&nbsp;Praha 8<span>&nbsp;se spádovým centrem v&nbsp;</span>Libni<span>&nbsp;označený arabskou číslicí poprvé existoval v letech 1949–1960 jako jeden z 16 městských obvodů, podruhé byl v odlišném vymezení ustaven zákonem o územním členění státu s účinností od&nbsp;</span>1. července<span>&nbsp;</span>1960<span>&nbsp;jako jeden z 10 městských obvodů. Od roku&nbsp;</span>1990<span>&nbsp;byl předefinován výčtem městských částí.</span><br></p>',	9999999,	'http://www.praha8.cz/',	101,	1);
+
+DROP TABLE IF EXISTS `partner_type`;
+CREATE TABLE `partner_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '999999999',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `partner_type` (`id`, `title`, `ord`) VALUES
+(1,	'Partneři plážového volejbalu',	999999999),
+(2,	'Sponzoři plážového volejbalu',	999999999),
+(3,	'Partneři dětských akcí',	999999999);
+
+DROP TABLE IF EXISTS `posts`;
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `user_id` int(10) unsigned DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `perex` text COLLATE utf8_czech_ci,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `posts` (`id`, `title`, `user_id`, `created`, `desc`, `perex`) VALUES
+(1,	'Hledam spoluhrace',	1,	'2015-06-24 11:41:11',	'Hoho!',	''),
+(2,	'novej 2',	1,	'2015-07-02 10:08:21',	'gasgr',	'aegas'),
+(3,	'dalsi3',	1,	'2015-07-02 10:08:30',	'dalsi3',	'dalsi3');
+
+DROP TABLE IF EXISTS `sliders`;
+CREATE TABLE `sliders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `gallery_picture_id` (`gallery_picture_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `sliders` (`id`, `name`, `ord`, `gallery_picture_id`) VALUES
+(1,	'Slide 1',	9999999,	1),
+(2,	'Slide 2',	9999999,	5),
+(3,	'Slide 3',	9999999,	9),
+(4,	'Slide 4',	9999999,	13),
+(5,	'Slide 5',	9999999,	17);
+
+DROP TABLE IF EXISTS `tiles`;
+CREATE TABLE `tiles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ord` int(11) NOT NULL DEFAULT '9999999',
+  `gallery_picture_id` int(11) DEFAULT NULL,
+  `document_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `tiles` (`id`, `title`, `ord`, `gallery_picture_id`, `document_id`) VALUES
+(1,	'Rezervace Kurtů',	0,	21,	5),
+(2,	'Turnaje',	1,	25,	6),
+(3,	'Kroužky',	2,	29,	4),
+(4,	'Tréninky',	3,	33,	8),
+(5,	'Beachkempy v Čechách',	4,	37,	10),
+(6,	'Beachkempy v Itálii',	5,	41,	9),
+(7,	'Firemní akce',	6,	45,	NULL),
+(8,	'Beachbar',	7,	49,	NULL),
+(9,	'Členství v klubu',	8,	53,	7);
+
+DROP TABLE IF EXISTS `tournaments`;
+CREATE TABLE `tournaments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `datetime` datetime NOT NULL,
+  `desc` text COLLATE utf8_czech_ci NOT NULL,
+  `perex` text COLLATE utf8_czech_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `tournaments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) COLLATE utf8_czech_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `mail` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `users` (`id`, `username`, `password`, `mail`, `created`, `modified`) VALUES
+(1,	'admin',	'$2a$10$oTInOZNrfJqOdFEjVAb00ugqLRwquceqkt39aam1pY/4m1/py4.nq',	NULL,	'2015-06-24 10:37:25',	'2015-06-24 10:37:25'),
+(2,	'veronika',	'$2a$10$v1cjUd5kGH0X7UE.O8pStOzUTOuGwct1dOEY01NI2A14t4s9cMSSe',	NULL,	'2015-08-05 23:41:33',	'2015-08-05 23:41:33');
+
+-- 2015-09-25 07:16:50

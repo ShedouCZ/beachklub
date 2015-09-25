@@ -40,8 +40,8 @@
     <!-- /.block -->
 </div>
 
-<div class="column column_left grid-8 alpha ">
-    <h2>Léto 2015</h2>
+<div class="column column_right prefix-1 grid-8 omega ">
+    <h2 style="margin-top:45px">Léto 2015</h2>
     <h3>Pondělí - pátek</h3>
     <p>08 - 16 hod: 140,- Kč / 1 hod<br>16 - 21 hod: 300,- Kč / 1 hod</p>
     <h3>Sobota</h3>
@@ -58,7 +58,7 @@
             <div id="block-system-main" class="block block-system block-even">
                 <div class="content">
                     <article id="node-153" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
-                        <h3>další novinky:</h3>
+                        <h3>DALŠÍ NOVINKY:</h3>
                         <?php echo $this->element('latest_documents', array('first'=>false)); ?>
                     </article>
                     <!-- /.node -->
