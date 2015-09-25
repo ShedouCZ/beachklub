@@ -5,7 +5,7 @@
                 <div class="content">
                     <div class="view view-front-carousel view-id-front_carousel view-display-id-block view-dom-id-ea58816596ba1c5cb393dfeab559f430">
                         <div class="view-header">
-                            <div class="header-1">Novinky</div>
+                            <div class="header-1">Kalendář akcí</div>
                         </div>
                         
                         <?php echo $this->element('last_news'); ?>
@@ -13,7 +13,7 @@
                         <div class="view-footer">
                             <div class="footer-1">
                                 <div class="button">
-                                    <a href="/odber">objednat novinky</a>
+                                    <a href="/kalendar-akci">další akce</a>
                                 </div>
                             </div>
                         </div>

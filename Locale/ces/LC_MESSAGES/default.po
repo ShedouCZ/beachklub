@@ -5,15 +5,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-08-05 12:03+0100\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-09-25 09:33+0100\n"
+"Last-Translator: Jan Ptacek <jan.ptacek@gmail.com>\n"
 "Language-Team: EMAIL@ADDRESS\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.6.7\n"
 
 #: /Coaches/admin_add.ctp:7 /Coaches/admin_edit.ctp:8
 #: /Coaches/admin_view.ctp:20
@@ -77,7 +77,7 @@ msgstr "Pořadí"
 #: /Users/add.ctp:9 /Users/admin_add.ctp:34 /Users/admin_edit.ctp:38
 #: /Users/login.ctp:26
 msgid "Submit"
-msgstr "Odeslat"
+msgstr "Uložit"
 
 #: /Coaches/admin_edit.ctp:7 /Documents/admin_edit.ctp:7
 #: /MessageRecipients/admin_edit.ctp:7 /Messages/admin_edit.ctp:7
@@ -314,11 +314,11 @@ msgstr "Smazat"
 
 #: /News/admin_add.ctp:7 /News/admin_edit.ctp:8 /News/admin_view.ctp:20
 msgid "List News"
-msgstr "Seznam novinek"
+msgstr "Seznam akcí"
 
 #: /News/admin_add.ctp:9
 msgid "Admin Add News"
-msgstr "Přidat novinku"
+msgstr "Přidat akci"
 
 #: /News/admin_add.ctp:27 /News/admin_edit.ctp:31 /News/admin_view.ctp:44
 msgid "Date"
@@ -326,23 +326,23 @@ msgstr "Datum"
 
 #: /News/admin_edit.ctp:10
 msgid "Admin Edit News"
-msgstr "Upravit novinky"
+msgstr "Upravit akce"
 
 #: /News/admin_index.ctp:6 /News/admin_view.ctp:21
 msgid "New News"
-msgstr "Nová novinka"
+msgstr "Nová akce"
 
 #: /News/admin_index.ctp:8 /News/admin_view.ctp:5
 msgid "News"
-msgstr "Novinky"
+msgstr "Kalendář akcí"
 
 #: /News/admin_view.ctp:18
 msgid "Edit News"
-msgstr "Upravit novinky"
+msgstr "Upravit akci"
 
 #: /News/admin_view.ctp:19
 msgid "Delete News"
-msgstr "Smazat novinky"
+msgstr "Smazat akci"
 
 #: /Posts/admin_add.ctp:7 /Posts/admin_edit.ctp:8 /Posts/admin_view.ctp:20
 msgid "List Posts"
