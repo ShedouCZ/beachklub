@@ -257,9 +257,11 @@
                         <div class="section-3">
                             <?php echo $this->Element('navigation'); ?>
                         </div>
+						<?php if ($this->request->here == '/') { ?>
                         <div class="section-2 clearfix">
                             <?php echo $this->Element('slider'); ?>
                         </div>
+						<?php } ?>
                     </div>
                 </div>
             </header>

@@ -27,3 +27,7 @@
 section.block .content li a.active-trail.active {
 	color: #BC2800;
 }
+
+.view-id-services {
+	clear:both;
+}

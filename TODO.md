@@ -1,3 +1,17 @@
+[ ] obrazky na homepage v rozmerech: 926px x 350px (veronika)
+[x] dlazdice pod 1. novinku
+[ ] dokumenty -> novinky + stranky
+[ ] presun obsahu ze stare stranky (veronika)
+[ ] kalendar-akci jako stranka
+[ ] strankovani novinek
+[ ] specifikovat a nacenit: hledam spoluhrace
+	- nastenka s moznosti vkladat oznameni: text+kontakt
+	- upozorneni mailem na nove prispevky
+	- verejne zobrazit az po odsouhlaseni
+	- pro zadavatele moznost odebrat, kdyz najde
+
+
+
 [x] partneri - logo + popis + proklik
 [ ] remove docs next/previous links in non public docs
 [ ] cakegallery - control somehow which styles versions get created!
