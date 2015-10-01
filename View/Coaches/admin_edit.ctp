@@ -38,7 +38,8 @@
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
 							'data-picture'=>Coach::encode_picture(@$this->request->data['Picture']),
-							'data-album-id'=>Coach::$album_id
+							'data-album-id'=>Coach::$album_id,
+							'label' => 'Obrázek<p>190x180</p>',
 						));
 					?>
 				</div>

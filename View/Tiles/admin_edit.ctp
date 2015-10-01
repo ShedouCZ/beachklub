@@ -33,7 +33,8 @@
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
 							'data-picture'=>Tile::encode_picture(@$this->request->data['Picture']),
-							'data-album-id'=>Tile::$album_id
+							'data-album-id'=>Tile::$album_id,
+							'label' => 'Obrázek<p>289x133</p>',
 						));
 					?>
 				</div>

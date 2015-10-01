@@ -31,3 +31,8 @@ section.block .content li a.active-trail.active {
 .view-id-services {
 	clear:both;
 }
+label p {
+	color: gray;
+	font-weight: normal;
+	font-size: 11px;
+}

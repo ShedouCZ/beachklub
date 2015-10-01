@@ -7,12 +7,12 @@
 
                         <div class="content">
                             <p>
-                                Chodíte pravidelně na plážový volejbal a cítíte, že byste chtěli ještě víc?
-                                Rádi byste se zlepšili v technice nebo taktice? Je Vás celá parta kamarádů
-                                a chtěli byste si s kamarády udělat vlastní kemp o víkendu? Připravili jsme
-                                pro Vás možnost trénovat s našimi trenéry na areálu Beachklubu Ládví. Místo
-                                na kempech si můžete rezervovat online. V případě, že chcete zkusit individuální
-                                tréninky kontaktujte přímo naše trenéry.
+                                Chodíte pravidelně na plážový volejbal a&nbsp;cítíte, že byste chtěli ještě víc?
+                                Rádi byste se zlepšili v technice nebo taktice? Je Vás třeba celá parta kamarádů?
+                            </p>
+                            <p>
+                                Připravili jsme pro Vás možnost trénovat s trenéry v našem areálu.
+                                Místo na tréninkových kempech si můžete rezervovat on-line v&nbsp;rezervačním systému. V případě, že chcete zkusit individuální tréninky, kontaktujte přímo naše trenéry.
                             </p>
                         </div><!-- /.content -->
 

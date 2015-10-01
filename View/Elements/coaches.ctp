@@ -4,12 +4,12 @@
     );
 ?>
 <?php foreach ($items as $item): ?>
-    <div class="views-row first odd">
+    <div class="views-row first odd coaches">
         <div class="views-field views-field-field-coaches-photo img-left">
             <div class="field-content">
                 <img src=<?php
-                if (@$item['Picture']['styles']['medium']) {
-                    echo $item['Picture']['styles']['medium'];
+                if (@$item['Picture']['styles']['square']) {
+                    echo $item['Picture']['styles']['square'];
                 }
                 else {
                     echo "/img/coaches/no_image.jpg";

@@ -669,6 +669,21 @@ ul.menu li {
 			padding:0 0 7px 20px;
 			line-height:20px;
 		}
+		.coaches p b {
+			color: white;
+		}
+		.coaches li {
+			position:relative;
+			background: none!important;
+		}
+		.coaches li:before{
+			content: "•";
+			color: white;
+			position:absolute;
+			left: 3px;
+			font-size: 24px;
+		}
+		
 			section.block .content li a {
 				line-height:24px;
 				text-decoration:none;

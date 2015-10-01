@@ -29,7 +29,8 @@
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
 							'data-album-id'=>Tile::$album_id,
-							'data-model-name'=>'Tile'
+							'data-model-name'=>'Tile',
+							'label' => 'Obrázek<p>289x133</p>',
 						));
 					?>
 				</div>
