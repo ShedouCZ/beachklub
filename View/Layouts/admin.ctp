@@ -70,16 +70,6 @@
 	<?php } ?>
 </head>
 
-<header id="header" role="banner" class="clearfix">
-	<div class="container-24">
-		<div class="grid-24">
-			<div class="section-3">
-				<?php echo $this->Element('navigation'); ?>
-			</div>
-		</div>
-	</div>
-</header>
-
 <?php
 	echo $this->Html->tag('body', null, array(
 		'data-controller'	=> $this->request->params['controller'],
@@ -89,6 +79,17 @@
 		'data-admin'        => Configure::read('Routing.admin')
 	));
 ?>
+
+<header id="header" role="banner" class="clearfix">
+	<div class="container-24">
+		<div class="grid-24">
+			<div class="section-3" style="margin-top:45px">
+				<?php echo $this->Element('navigation'); ?>
+			</div>
+		</div>
+	</div>
+</header>
+
 			<?php //echo $this->Element('header'); ?>
 			<?php echo $this->Session->flash(); ?>
 			<?php if ($this->request->here == '/') echo $this->Element('carousel'); ?>
