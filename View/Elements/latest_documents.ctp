@@ -3,9 +3,9 @@
     'documents/index'
   );
   
-  $num1 = array_shift($docs);
+  $heads = array_splice($docs, 0, 2);
   if ($first) {
-      $docs = array($num1);
+      $docs = $heads;
   }
 ?>
 <div id="block-system-main" class="block block-system block-even">
