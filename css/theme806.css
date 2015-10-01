@@ -94,8 +94,8 @@ ul.inline li {
 	.section-1 .col1 {float:left; position: relative; height: 110px;}
 	#logo {
 		position: absolute;
-		top: 0;
-		left: -30px;
+		top: 5px;
+		left: 10px;
 	}
 	.section-1 .col2 {float:right; padding-top: 25px; padding-bottom: 25px;}
 .section-2 {
