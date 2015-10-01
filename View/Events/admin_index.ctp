@@ -28,12 +28,12 @@
 				<tbody>
 				<?php foreach ($news as $news) { ?>
 					<tr>
-						<td><?php echo h($news['News']['title']); ?></td>
-						<td><?php echo $this->Time->format($news['News']['date'], '%-d.%-m.%Y'); ?></td>
-						<td><?php echo $news['News']['desc']; ?></td>
+						<td><?php echo h($news['Event']['title']); ?></td>
+						<td><?php echo $this->Time->format($news['Event']['date'], '%-d.%-m.%Y'); ?></td>
+						<td><?php echo $news['Event']['desc']; ?></td>
 						<td class="actions">
-							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $news['News']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $news['News']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $news['News']['id'])); ?>
+							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $news['Event']['id']), array('escape' => false)); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $news['Event']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $news['Event']['id'])); ?>
 						</td>
 					</tr>
 				<?php } ?>

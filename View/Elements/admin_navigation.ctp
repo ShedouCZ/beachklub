@@ -2,7 +2,7 @@
 	$links = array(
 		'Slidy'  => '/admin/sliders',
 		'Dlaždice'  => '/admin/tiles',
-		'Kalendář akcí'  => '/admin/news',
+		'Kalendář akcí'  => '/admin/events',
 		'Dokumenty'  => '/admin/documents',
 		'Vzkazy'  => '/admin/messages',
 		'Trenéři'  => '/admin/coaches',

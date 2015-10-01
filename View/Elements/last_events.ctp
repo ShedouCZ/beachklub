@@ -1,9 +1,9 @@
 <?php
   $items = $this->requestAction(
-    'news/index/sort:created/direction:asc/limit:5'
+    'events/index/sort:created/direction:asc/limit:5'
   );
 ?>
-<div class="view-content">
+<div class="view-content events">
     <div class=" jcarousel-skin-default">
         <div class="jcarousel-container jcarousel-container-vertical">
             <div class="jcarousel-clip jcarousel-clip-vertical">
@@ -15,7 +15,7 @@
                             <div class="views-field views-field-created img-left news-date">
                                   <span class="field-content">
                                       <?php
-                                        $parts = explode ('-', $item['News']['date']);
+                                        $parts = explode ('-', $item['Event']['date']);
                                         echo $parts['2'];
                                       ?>
                                   </span>
@@ -24,13 +24,13 @@
                                 <span class="field-content">
                                     <div class="title-2">
                                         <?php
-                                            $title = $item['News']['title'];
-                                            $id    = $item['News']['id'];
-                                            $url   = '/items/view'.$id;
+                                            $title = $item['Event']['title'];
+                                            $id    = $item['Event']['id'];
+                                            $url   = '/akce/'.$id;
                                             echo $this->Html->link($title, $url);
                                         ?>
                                     </div>
-                                    <div><?php echo $item['News']['desc']; ?></div>
+                                    <div><?php echo $item['Event']['desc']; ?></div>
                                  </span>
                             </div>
                         </li>

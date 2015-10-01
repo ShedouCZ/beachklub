@@ -8,7 +8,7 @@
                             <div class="header-1">Kalendář akcí</div>
                         </div>
                         
-                        <?php echo $this->element('last_news'); ?>
+                        <?php echo $this->element('last_events'); ?>
                         
                         <div class="view-footer">
                             <div class="footer-1">
