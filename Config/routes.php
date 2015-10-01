@@ -25,7 +25,7 @@ App::uses('SlugRoute', 'Routing/Route');
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
-	Router::connect('/novinky', array('controller' => 'pages', 'action' => 'display', 'news'));
+	Router::connect('/novinky/*', array('controller' => 'news', 'action' => 'index'));
 	Router::connect('/akce/:id', array('controller' => 'events', 'action' => 'view', 'id' => '[0-9]+'), array('pass' => array('id')));
 	Router::connect('/o-nas', array('controller' => 'pages', 'action' => 'display', 'about'));
 	Router::connect('/turnaje', array('controller' => 'pages', 'action' => 'display', 'tournaments'));

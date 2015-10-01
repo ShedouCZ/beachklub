@@ -1,16 +1,6 @@
-<?php
-  $docs = $this->requestAction(
-    'documents/index'
-  );
-  
-  $heads = array_splice($docs, 0, 2);
-  if ($first) {
-      $docs = $heads;
-  }
-?>
 <div id="block-system-main" class="block block-system block-even">
   <div class="content">
-        <?php foreach ($docs as $doc): ?>
+        <?php foreach ($items as $doc): ?>
             <article id="doc-<?php echo $doc['Document']['id']?>" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
               <header>
                   <h2>
@@ -46,15 +36,14 @@
     </div>
     <!-- /.content -->
     
-<?php if (!$first) { ?>
     <div class="item-list">
         <ul class="pager">
             <li class="pager-current first">1</li>
             <li class="pager-item">
-                <a title="Přejít na stranu 2" href="/novinky/page:2">2</a>
+                <a title="Přejít na stranu 2" href="/blog?page=1">2</a>
             </li>
             <li class="pager-item">
-                <a title="Přejít na stranu 3" href="/novinky/page:3">3</a>
+                <a title="Přejít na stranu 3" href="/blog?page=2">3</a>
             </li>
             <li class="pager-item">
                 <a title="Přejít na stranu 4" href="/blog?page=3">4</a>
@@ -73,6 +62,5 @@
             </li>
         </ul>
     </div>
-<?php } ?>    
     
 </div>
