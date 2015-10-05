@@ -29,18 +29,9 @@
 	<?php } ?>
 	<link rel="stylesheet" href="<?php echo "/css/site.css?$version" ?>" type="text/css" media="screen">
 
-	<style type="text/css" media="screen">
-		/*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/boilerplate.css");*/
-		/*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/style.css");*/
-		/*@import url("/css/theme806.css");*/
-		/*@import url("http://beachbar.vpslist.cz/sites/all/libraries/superfish/css/superfish.css");*/
-		/*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/maintenance-page.css");*/
-		@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/skeleton.css");
-		/*@import url("http://beachbar.vpslist.cz/sites/all/themes/theme806/css/overrides.css");*/
-	</style>
 	<!--script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script-->
 	<script type="text/javascript" src="<?php echo "/js/site-pre.js?$version" ?>"></script>
-	
+
 	<script type="text/javascript">
 
 		<!--//--><![CDATA[//><!--
@@ -262,7 +253,7 @@
 		<!-- /#page -->
 	</div>
 	<!-- /#page-wrapper -->
-	<script type="text/javascript" src="http://beachbar.vpslist.cz/sites/all/modules/flexslider/assets/js/flexslider.load.js"></script>
+	<script type="text/javascript" src="<?php echo "/js/site-post.js?$version"; ?>"></script>
 	<?php if (AuthComponent::user()) { ?>
 		<script src="<?php echo "/js/air-mode.js?$version"; ?>" type="text/javascript"></script>
 	<?php } ?>

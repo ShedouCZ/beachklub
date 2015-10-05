@@ -29,7 +29,8 @@ if (!Array.prototype.indexOf) {
 }
 
 // jQuery Browser Detect Tweak For IE7
-jQuery.browser.version = jQuery.browser.msie && parseInt(jQuery.browser.version) == 6 && window["XMLHttpRequest"] ? "7.0" : jQuery.browser.version;
+// jQuery.browser.version = jQuery.browser.msie && parseInt(jQuery.browser.version) == 6 && window["XMLHttpRequest"] ? "7.0" : jQuery.browser.version;
+
 
 // Console.log wrapper to avoid errors when firebug is not present
 // usage: log('inside coolFunc',this,arguments);

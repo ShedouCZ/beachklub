@@ -100,6 +100,6 @@
 
 			<?php if (!Configure::read('Routing.admin')) echo $this->element('footer'); ?>
 
-	<script src="<?php echo "/js/site-post.js?$version"; ?>" type="text/javascript"></script>
+	<script src="<?php echo "/js/admin-post.js?$version"; ?>" type="text/javascript"></script>
 </body>
 </html>

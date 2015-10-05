@@ -103,22 +103,21 @@ module.exports = function(grunt) {
 					// legacy js
 					'js/legacy/jquery.once.js',
 					'js/legacy/drupal.js',
-					'js/legacy/cs_fNhZh1s_mLWYTjHG9kUX-4GzpTxNenM6cod96_vpy5I.js',
-					'js/legacy/jquery.colorbox-min.js',
-					'js/legacy/colorbox.js',
+					//'js/legacy/cs_fNhZh1s_mLWYTjHG9kUX-4GzpTxNenM6cod96_vpy5I.js',
+					//'js/legacy/jquery.colorbox-min.js',
+					//'js/legacy/colorbox.js',
 					'js/legacy/jquery.flexslider-min.js',
 					'js/legacy/jquery.jcarousel.min.js',
 					'js/legacy/jcarousel.js',
-					'js/legacy/jquery.hoverIntent.minified.js',
-					'js/legacy/sftouchscreen.js',
-					'js/legacy/superfish.js',
-					'js/legacy/jquery.easing.js',
-					'js/legacy/supersubs.js',
-					'js/legacy/superfish.js',
+					//'js/legacy/jquery.hoverIntent.minified.js',
+					//'js/legacy/sftouchscreen.js',
+					//'js/legacy/superfish.js',
+					//'js/legacy/jquery.easing.js',
+					//'js/legacy/supersubs.js',
+					//'js/legacy/superfish.js',
 					'js/legacy/theme806.core.js',
-					'js/legacy/jquery.loader.js',
-					'js/legacy/jquery.debouncedresize.js',
-
+					//'js/legacy/jquery.loader.js',
+					//'js/legacy/jquery.debouncedresize.js',
 
 					'Vendor/moment/moment.js',
 					//'js/modernizr.preserve3d.js', // brings modernizr for defunctr
@@ -133,7 +132,7 @@ module.exports = function(grunt) {
 					separator: ';\n'
 				}
 			},
-			js_post: {
+			js_admin_post: {
 				src: [
 					//'Vendor/react/react.js',
 					'Vendor/moment/locale/cs.js',
@@ -150,6 +149,17 @@ module.exports = function(grunt) {
 					'Vendor/hammerjs/hammer.js',
 					'Vendor/jquery-hammerjs/jquery.hammer.js',
 					'Vendor/Sortable/Sortable.js',
+					'js/admin/dom-ready.js'
+				],
+				dest: 'webroot/js/admin-post.js',
+				nonull: true,
+				options: {
+					separator: ';\n'
+				}
+			},
+			js_post: {
+				src: [
+					'js/legacy/flexslider.load.js',
 					'js/dom-ready.js'
 				],
 				dest: 'webroot/js/site-post.js',
@@ -308,7 +318,7 @@ module.exports = function(grunt) {
 				tasks: ['stylesheets']
 			},
 			scripts: {
-				files: ['Locale/**/messages.po', 'jsx/**.jsx', '<%= concat.js_pre.src %>', '<%= concat.js_post.src %>', '<%= concat.js_admin.src %>', 'Plugin/BlueUpload/View/Elements/*.hbs', 'View/**/*.hbs'],
+				files: ['Locale/**/messages.po', 'jsx/**.jsx', '<%= concat.js_pre.src %>', '<%= concat.js_post.src %>', '<%= concat.js_admin_post.src %>', '<%= concat.js_admin.src %>', 'Plugin/BlueUpload/View/Elements/*.hbs', 'View/**/*.hbs'],
 				tasks: ['scripts']
 			},
 			grunt: {
@@ -336,7 +346,7 @@ module.exports = function(grunt) {
 	// Task definition
 	grunt.registerTask('default', ['scripts', 'stylesheets', 'copy']);
 	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', 'concat:css_legacy', 'concat:css_air_mode', /*'postcss',*/ 'cssmin']);
-	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js_pre', 'concat:js_post', 'concat:js_admin', 'concat:js_air_mode' /*, 'uglify'*/]);
+	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js_pre', 'concat:js_post', 'concat:js_admin', 'concat:js_admin_post', 'concat:js_air_mode' /*, 'uglify'*/]);
 
 	grunt.registerTask('locales', ['po2json', 'json']);
 	//grunt.registerTask('stylesheets', ['less', 'concat:css', 'cssmin']);
