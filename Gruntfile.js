@@ -191,10 +191,11 @@ module.exports = function(grunt) {
 					'Vendor/fullcalendar/dist/fullcalendar.js',
 					'Vendor/dropzone/dist/dropzone.js',
 					'Vendor/slug/slug.js',
-					'Vendor/Jed/jed.js',
-					'node_modules/grunt-contrib-handlebars/node_modules/handlebars/dist/handlebars.runtime.js',
-					'dist/js/handlebars.js',
-					'dist/js/messages.js',
+					// i10n not used now
+					//'Vendor/Jed/jed.js',
+					//'node_modules/grunt-contrib-handlebars/node_modules/handlebars/dist/handlebars.runtime.js',
+					//'dist/js/handlebars.js',
+					//'dist/js/messages.js',
 				],
 				dest: 'webroot/js/site-admin.js',
 				nonull: true,
@@ -239,11 +240,8 @@ module.exports = function(grunt) {
 			},
 			css_admin: {
 				src: [
-					'css/overrides/eonasdan-datetimepicker-bs.css',
-					'dist/bs-custom.css',
 					'Vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
 					'dist/bootstrap.css',
-					'css/bootstrap-validation.css',
 					'Vendor/font-awesome/css/font-awesome.css',
 					'Vendor/fullcalendar/dist/fullcalendar.css',
 					'Vendor/summernote/dist/summernote.css',

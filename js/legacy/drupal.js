@@ -2,7 +2,8 @@
 var Drupal = Drupal || { 'settings': {}, 'behaviors': {}, 'locale': {} };
 
 // Allow other JavaScript libraries to use $.
-jQuery.noConflict();
+// ptica: nope, I want jQuery under $
+//jQuery.noConflict();
 
 (function ($) {
 
