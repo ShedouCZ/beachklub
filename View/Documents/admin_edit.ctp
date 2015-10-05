@@ -26,10 +26,10 @@
 					<?php echo $this->Form->input('id', array('class'=>'form-control', 'placeholder'=>__('Id')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('title', array('data-provide'=>'slug-src', 'class'=>'form-control', 'placeholder'=>__('Title')));?>
+					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('slug', array('data-provide'=>'slug-dst', 'class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
+					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
