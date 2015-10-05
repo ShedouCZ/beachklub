@@ -33,34 +33,8 @@
                 </footer>
             </article><!-- /.node -->
         <?php endforeach; ?>
-    </div>
-    <!-- /.content -->
-    
-    <div class="item-list">
-        <ul class="pager">
-            <li class="pager-current first">1</li>
-            <li class="pager-item">
-                <a title="Přejít na stranu 2" href="/blog?page=1">2</a>
-            </li>
-            <li class="pager-item">
-                <a title="Přejít na stranu 3" href="/blog?page=2">3</a>
-            </li>
-            <li class="pager-item">
-                <a title="Přejít na stranu 4" href="/blog?page=3">4</a>
-            </li>
-            <li class="pager-item">
-                <a title="Přejít na stranu 5" href="/blog?page=4">5</a>
-            </li>
-            <li class="pager-item">
-                <a title="Přejít na stranu 6" href="/blog?page=5">6</a>
-            </li>
-            <li class="pager-next">
-                <a title="Přejít na další stranu" href="/blog?page=1">následující ›</a>
-            </li>
-            <li class="pager-last last">
-                <a title="Přejít na poslední stranu" href="/blog?page=5">poslední »</a>
-            </li>
-        </ul>
-    </div>
-    
+
+        <?php echo $this->Element('pager', array('paging' => $this->params['paging']['Document'])) ?>
+
+    </div><!-- /.content -->
 </div>

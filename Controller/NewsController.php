@@ -6,19 +6,21 @@ class NewsController extends AppController {
 	public $uses = array('Document');
 
 	public function index() {
+		$this->paginate = array(
+			'limit' => 5,
+			'conditions' => array(
+				'Document.published' => 1
+			)
+		);
+
 		if ($this->request->is('requested')) {
-			$items = $this->Document->find('all', array(
-				'limit' => 5,
-				'conditions' => array(
-					'Document.published' => 1
-				)
-			));
-			return $items;
-		} else {
-			$this->Paginator->settings = array(
-				'conditions' => array('published'=>1),
-				'limit' => 5
+			$items  = $this->paginate('Document');
+			$paging = $this->params['paging'];
+			return array(
+				'items' => $items,
+				'paging' => $paging
 			);
+		} else {
 			$items = $this->Paginator->paginate('Document');
 		}
 		$this->set('items', $items);
