@@ -49,9 +49,8 @@ class AppController extends Controller {
             'admin' => false
         );
         $this->Auth->loginRedirect = array(
-            'controller' => 'pages',
-            'action' => 'display',
-            'home',
+            'controller' => 'news',
+            'action' => 'index',
             'admin' => true
         );
         $this->Auth->logoutRedirect = array(

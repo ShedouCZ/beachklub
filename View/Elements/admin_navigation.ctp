@@ -1,10 +1,11 @@
 <?php
 	$links = array(
+		'Novinky'  => '/admin',
+		'Stránky'  => '/admin/documents',
+		'Vzkazy'  => '/admin/messages',
 		'Slidy'  => '/admin/sliders',
 		'Dlaždice'  => '/admin/tiles',
 		'Kalendář akcí'  => '/admin/events',
-		'Dokumenty'  => '/admin/documents',
-		'Vzkazy'  => '/admin/messages',
 		'Trenéři'  => '/admin/coaches',
 		'Kontakty'  => '/admin/message_recipients',
 		'Partneři' => '/admin/partners',
@@ -19,7 +20,9 @@
 						foreach ($links as $title => $url) {
 							$link = $this->Html->link(__($title), $url);
 							$options = array();
-							if (strpos($this->request->here, Router::url($url)) === 0) { // detect query string + params
+							if ($url == '/admin') {
+								if ($this->request->here == '/admin') $options = array('class' => 'active');
+							} else if (strpos($this->request->here, Router::url($url)) === 0) { // detect query string + params
 								$options = array('class' => 'active');
 							}
 							echo $this->Html->tag('li', $link, $options);

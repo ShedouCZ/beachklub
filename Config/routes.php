@@ -33,11 +33,11 @@ App::uses('SlugRoute', 'Routing/Route');
 
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
-	Router::connect('/admin', array('controller' => 'documents', 'action' => 'index', 'admin' => true));
-	
+	Router::connect('/admin', array('controller' => 'news', 'action' => 'index', 'admin' => true));
+
 	Router::connect('/:slug', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('slug'=>'[\w-]+', 'routeClass'=>'SlugRoute'));
-	
-	
+
+
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

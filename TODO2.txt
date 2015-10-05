@@ -4,23 +4,23 @@ OK 02. Fotky "slide" v rozměru 926 x 350 oříznuty a uploadovány.
 OK 03. Když otevřu homepage, změnšit mezeru mezi horním okrajem a linkou s buttony "domů", "o nás", "partneři", "kalendář".
 OK 04. Na YouTube kanál prosím odkazovat sem: https://www.youtube.com/user/beachklubladvi.
 OK 05. Zobrazování novinek: Vejde se nad dlaždice zobrazení alespoň dvou novinek? Celkový počet novinek na homepage bude pět?
-!! Kam se řadí ostatní novinky, resp. články a aktuality?
+OK Kam se řadí ostatní novinky, resp. články a aktuality?
 OK 06. Je možné zmenšit velikost písma u nadpisu novinek? Je to příliš velké.
 
 O nás:
 OK 07: Prosím o zaslání vhodného rozměru trenérských fotek.
-OK 08: Můžeme použít jiné symboly na začátku každého řádku místo těch šipek? 
+OK 08: Můžeme použít jiné symboly na začátku každého řádku místo těch šipek?
 OK 09: Potřebuji zvýraznit: profesionální volejbalová kariéra, trenérská kvalifikace, kontakt, cena. - v editoru oznacit mysi a dat Bold
-OK 10: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení: 
+OK 10: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení:
 ?? 11: V rubrice Napsali o nás můžete články bez nadpisů (Články k MS ve střižbě, Ostatní) seřadit přehledně pod sebe. Tak to stačí.
 
 Partneři:
 12: Prosím o zaslání vhodného rozměru pro nahrávání jednotlivých log.
 13: Partnery nadpisově oddělit jako: Partneři Beachklubu Ládví a Partneři dětských akcí.
 14: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení:
-Provoz sportovního areálu se neobejde bez partnerství města a sponzorů. Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům. 
+Provoz sportovního areálu se neobejde bez partnerství města a sponzorů. Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům.
 
-Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce plánujete zasáhnout celou republiku? Napište nám na marketing@beachklubladvi.cz a my Vám připravíme zajímavou a konkrétní nabídku. 
+Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce plánujete zasáhnout celou republiku? Napište nám na marketing@beachklubladvi.cz a my Vám připravíme zajímavou a konkrétní nabídku.
 
 Usilovně hledáme:
 - sponzory konkrétních projektů, které chystáme v areálu pro Vás - umělé osvětlení, dětské hřiště, tribuna, atd.,
@@ -137,7 +137,7 @@ O co se u nás v zimě hraje?
 
 V každé turnaji na Vás čekají zajímavé věcné ceny od našich partnerů.
 
-20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by 
+20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by
 měl být zřejmý po rozkliknutí toho turnaje. Co myslíte?!
 
 Kontakty:
@@ -153,7 +153,7 @@ Chabařovická 4
 IČO: 22735135
 ICP: 1000559998
 
-Korespondenční adresa: 
+Korespondenční adresa:
 Beachklub Ládví z.s.
 Horáčkova 1213
 140 00 Praha 4
@@ -175,7 +175,7 @@ Dlaždice "Tréninky":
 Je možné vložit pouze typy tréninků s prolinkem na další popis tréninků?
 
 Dlaždice "Firemní akce":
-27: Vložila jsem aktuální text. 
+27: Vložila jsem aktuální text.
 
 Dlaždice "Beachbar":
 28: Vložila jsem aktuální text.
