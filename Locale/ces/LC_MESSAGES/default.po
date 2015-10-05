@@ -314,11 +314,11 @@ msgstr "Smazat"
 
 #: /News/admin_add.ctp:7 /News/admin_edit.ctp:8 /News/admin_view.ctp:20
 msgid "List News"
-msgstr "Seznam akcí"
+msgstr "Seznam novinek"
 
 #: /News/admin_add.ctp:9
 msgid "Admin Add News"
-msgstr "Přidat akci"
+msgstr "Přidat novinku"
 
 #: /News/admin_add.ctp:27 /News/admin_edit.ctp:31 /News/admin_view.ctp:44
 msgid "Date"
@@ -326,23 +326,23 @@ msgstr "Datum"
 
 #: /News/admin_edit.ctp:10
 msgid "Admin Edit News"
-msgstr "Upravit akce"
+msgstr "Upravit novinku"
 
 #: /News/admin_index.ctp:6 /News/admin_view.ctp:21
 msgid "New News"
-msgstr "Nová akce"
+msgstr "Nová novinka"
 
 #: /News/admin_index.ctp:8 /News/admin_view.ctp:5
 msgid "News"
-msgstr "Kalendář akcí"
+msgstr "Novinky"
 
 #: /News/admin_view.ctp:18
 msgid "Edit News"
-msgstr "Upravit akci"
+msgstr "Upravit novinku"
 
 #: /News/admin_view.ctp:19
 msgid "Delete News"
-msgstr "Smazat akci"
+msgstr "Smazat novinku"
 
 #: /Posts/admin_add.ctp:7 /Posts/admin_edit.ctp:8 /Posts/admin_view.ctp:20
 msgid "List Posts"

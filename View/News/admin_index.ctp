@@ -3,10 +3,10 @@
 		<div class="col-md-12">
 			<div class="page-header">
 				<ul class="nav nav-pills pull-right">
-					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Document'), array('action' => 'add'), array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New News'), array('action' => 'add'), array('escape' => false)); ?></li>
 					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-sort"></span>&nbsp;&nbsp;' . __('Reorder'), array('action' => 'reorder'), array('escape' => false)); ?></li>
 				</ul>
-				<h1><?php echo __('Documents'); ?></h1>
+				<h1><?php echo __('News'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -29,7 +29,7 @@
 				<tbody>
 				<?php foreach ($documents as $document) { ?>
 					<tr>
-						<td><?php echo h($document['Document']['title']); ?></td>
+						<td><?php echo $this->Html->link($document['Document']['title'], array('action' => 'edit', $document['Document']['id'])); ?></td>
 						<td>
 							<?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?>
 						</td>

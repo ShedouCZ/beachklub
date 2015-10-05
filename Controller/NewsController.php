@@ -9,7 +9,7 @@ class NewsController extends AppController {
 		$this->paginate = array(
 			'limit' => 5,
 			'conditions' => array(
-				'Document.published' => 1
+				'Document.is_news' => 1
 			)
 		);
 
@@ -27,6 +27,11 @@ class NewsController extends AppController {
 	}
 
 	public function admin_index() {
+		$this->paginate = array(
+			'conditions' => array(
+				'Document.is_news' => 1
+			)
+		);
 		$this->Document->recursive = 0;
 		$this->set('documents', $this->Paginator->paginate());
 	}

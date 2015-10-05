@@ -5,10 +5,10 @@
 			<div class="page-header">
 				<ul class="nav nav-pills pull-right">
 					<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete'), array('action'=>'delete', $this->Form->value('Document.id')), array('escape'=>false), __('Are you sure you want to delete # %s?', $this->Form->value('Document.id'))); ?></li>
-					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Documents'), array('action'=>'index'), array('escape'=>false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List News'), array('action'=>'index'), array('escape'=>false)); ?></li>
 					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;' . __('View'), '/' . $this->request->data['Document']['slug'], array('escape'=>false)); ?></li>
 				</ul>
-				<h1><?php echo __('Admin Edit Document'); ?></h1>
+				<h1><?php echo __('Admin Edit News'); ?></h1>
 			</div>
 		</div>
 	</div>

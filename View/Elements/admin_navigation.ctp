@@ -1,6 +1,6 @@
 <?php
 	$links = array(
-		'Novinky'  => '/admin',
+		'Novinky'  => '/admin/news',
 		'Stránky'  => '/admin/documents',
 		'Vzkazy'  => '/admin/messages',
 		'Slidy'  => '/admin/sliders',
@@ -20,9 +20,7 @@
 						foreach ($links as $title => $url) {
 							$link = $this->Html->link(__($title), $url);
 							$options = array();
-							if ($url == '/admin') {
-								if ($this->request->here == '/admin') $options = array('class' => 'active');
-							} else if (strpos($this->request->here, Router::url($url)) === 0) { // detect query string + params
+							if (strpos($this->request->here, Router::url($url)) === 0) { // detect query string + params
 								$options = array('class' => 'active');
 							}
 							echo $this->Html->tag('li', $link, $options);
