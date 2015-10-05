@@ -1,5 +1,6 @@
-<div id="block-system-main" class="block block-system block-even">
-  <div class="content">
+<div id="main" class="clearfix">
+    
+    <div id="content" class="column content" role="main">
         <?php foreach ($items as $doc): ?>
             <article id="doc-<?php echo $doc['Document']['id']?>" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
               <header>
@@ -35,6 +36,5 @@
         <?php endforeach; ?>
 
         <?php echo $this->Element('pager', array('paging' => $this->params['paging']['Document'])) ?>
-
-    </div><!-- /.content -->
+    </div>
 </div>

@@ -43,22 +43,7 @@
 
     <div id="content" class="column" role="main">
         <div class="section">
-            <div class="tabs">
-            </div>
             <div class="region region-content">
-                <div id="block-system-main" class="block block-system block-odd">
-                    <div class="content">
-                        <div class="panel-flexible panels-flexible-5 clearfix">
-                            <div class="panel-flexible-inside panels-flexible-5-inside">
-                                <div class="panels-flexible-region panels-flexible-region-5-center panels-flexible-region-first panels-flexible-region-last">
-                                    <div class="inside panels-flexible-region-inside panels-flexible-region-5-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.content -->
-                </div><!-- /.block -->
-
                 <?php foreach ($partner_types as $type) { ?>
                     <section id="block-views-upcoming-tournaments-block" class="block block-views views-clearfix block-even">
 
@@ -93,8 +78,8 @@
                             </div><!-- /.content -->
                             <?php }; ?>
                         </section><!-- /.block -->
-                        <?php }; ?>
-                    </div>
-                </div>
+                <?php }; ?>
             </div>
         </div>
+    </div>
+</div>
