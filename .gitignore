@@ -10,6 +10,9 @@ webroot/css/air-mode.css
 webroot/js/site-pre.js
 webroot/js/site.js
 webroot/js/site-admin.js
+webroot/js/admin-post.js
 webroot/js/site-post.js
 webroot/js/air-mode.js
 webroot/files
+webroot/logs
+webroot/fonts
