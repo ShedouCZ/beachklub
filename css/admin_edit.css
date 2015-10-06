@@ -1,0 +1,8 @@
+.admin_edit.left {
+    position: absolute;
+    left: -111px;
+}
+.admin_edit.right {
+    position: absolute;
+    right: -111px;
+}
