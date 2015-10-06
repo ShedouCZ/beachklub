@@ -62,7 +62,12 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 		styleWithSpan: false,
 		onPaste: function (e) {
 			var $note = $(this);
-			var html = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('text/html');
+			var data_transfer = ((e.originalEvent || e).clipboardData || window.clipboardData);
+			var html = data_transfer.getData('text/html');
+			var text = data_transfer.getData('text/plain');
+
+			// default processing for non-html data types
+			if (text && !html) return;
 
 			// artificial div parent
 			// as 'find' needs a top level element it searches beneath

@@ -34,7 +34,8 @@
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
 							'data-album-id'=>Partner::$album_id,
-							'data-model-name'=>'Partner'
+							'data-model-name'=>'Partner',
+							'label' => 'Obrázek<p>210px na šířku</p>',
 						));
 					?>
 				</div>
