@@ -15,11 +15,12 @@ class Event extends AppModel {
 
 	public function beforeSave($options = array()) {
 		parent::beforeSave();
-		if (!$this->id && $this->data['Event']['title']) {
-			// only on add
-			$title = $this->data['Event']['title'];
-			$this->data['Event']['slug'] = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove; Lower();", $title);
-			$this->data['Event']['slug'] = str_replace(' ', '-', $this->data['Event']['slug']);
+		if ($this->data['Event']['slug']) {
+			// sluggize slug
+			$slug = $this->data['Event']['slug'];
+			$slug = str_replace('-', ' ', $slug);
+			$slug = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove; Lower();", $slug);
+			$this->data['Event']['slug'] = str_replace(' ', '-', $slug);
 		}
 		return true;
 	}
