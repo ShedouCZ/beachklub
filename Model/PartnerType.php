@@ -18,7 +18,7 @@ class PartnerType extends AppModel {
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
-			'order' => '',
+			'order' => 'Partner.ord',
 			'limit' => '',
 			'offset' => '',
 			'exclusive' => '',
