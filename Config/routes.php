@@ -24,12 +24,12 @@ App::uses('SlugRoute', 'Routing/Route');
  * ...and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-	Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
 	Router::connect('/novinky/*', array('controller' => 'news', 'action' => 'index'));
 	Router::connect('/akce/:id', array('controller' => 'events', 'action' => 'view'), array('id' => '[0-9]+', 'pass' => array('id')));
 	//Router::connect('/o-nas', array('controller' => 'pages', 'action' => 'display', 'about'));
 	//Router::connect('/turnaje', array('controller' => 'pages', 'action' => 'display', 'tournaments'));
 	//Router::connect('/partneri', array('controller' => 'pages', 'action' => 'display', 'partners'));
+	//Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
 
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));

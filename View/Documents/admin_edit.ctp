@@ -29,7 +29,7 @@
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
+					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Address'), 'label'=>__('Address')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>

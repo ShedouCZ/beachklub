@@ -2,9 +2,12 @@
 App::uses('AppController', 'Controller');
 class MessageRecipientsController extends AppController {
 	public $layout = 'BootstrapCake.bootstrap';
-
 	public $components = array('Paginator', 'Session');
 
+	public function get() {
+		$messageRecipients = $this->MessageRecipient->find('list');
+		return $messageRecipients;
+	}
 
 	public function admin_index() {
 		$this->MessageRecipient->recursive = 0;

@@ -1,24 +1,36 @@
 <?php
-    if (!empty($document['Document']['perex']) && $document['Document']['perex'] != '<p><br></p>') {
-        $this->start('sidebar'); ?>
-            <aside class="column column_right prefix-1 grid-8 omega" role="complementary">
-                <?php
-                    if (AuthComponent::user()) {
-                        $link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id'] . '#sidebar');
-                        echo $this->Html->div('button admin_edit right', $link);
-                    }
-                ?>
-                <?php echo $document['Document']['perex']; ?>
-            </aside><?php
-        $this->end();
-        //$this->assign('sidebar', $document['Document']['perex']);
+    if (AuthComponent::user()) {
+        $link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
+        echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:17px'));
+    }
+?>
+
+<?php
+    $sidebar = $document['Document']['perex'];
+    if (!empty($sidebar) && $sidebar != '<p><br></p>') {
+        if ($sidebar == '<p>[[none]]</p>') {
+            $this->assign('sidebar', '');
+        } else {
+            $this->start('sidebar'); ?>
+                <aside class="column column_right prefix-1 grid-8 omega" role="complementary">
+                    <?php
+                        if (AuthComponent::user()) {
+                            $link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id'] . '#sidebar');
+                            echo $this->Html->div('button admin_edit right', $link);
+                        }
+                    ?>
+                    <?php echo $document['Document']['perex']; ?>
+                </aside><?php
+            $this->end();
+            //$this->assign('sidebar', $sidebar);
+        }
     }
 
     if (strpos($document['Document']['content'], '[[') !== false) {
         // replace element tags
         // [[element:name]]
         $matches = array();
-        preg_match_all('/\[\[element:(.*)\]\]/', $document['Document']['content'], $matches, PREG_SET_ORDER);
+        preg_match_all('/\[\[element:(.*?)\]\]/', $document['Document']['content'], $matches, PREG_SET_ORDER);
         foreach ($matches as $match) {
             $element      = $match[1];
             $placeholder  = $match[0];
