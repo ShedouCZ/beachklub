@@ -19,115 +19,13 @@ Partneři:
 OK 12: Prosím o zaslání vhodného rozměru pro nahrávání jednotlivých log.
 OK 13: Partnery nadpisově oddělit jako: Partneři Beachklubu Ládví a Partneři dětských akcí.
 OK 14: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení
-
 OK 15: Zkrátila jsem popisky jednotlivých partnerů.
 OK 16: Prosím o zmenšení písma u nadpisu jednotlivých partnerů.
-17: Prosím o vložení partnera dětských akcí, mne to nejde, text se totálně rozhazuje, nevím proč (Decathlon):
-Decathlon je významný maloobchodní prodejce sportovního vybavení, oblečení a obuvi. Ve svých prodejnách v 19 zemích světa nabízí sortiment až pro 70 druhů sportů!
-18: Prosím o vložení partnera dětských akcí (Prima):
-Společnost Bidvest vyvíjí, vyrábí a dodává zmrzlinu Prima do obchodů, cukráren a restaurací. Ve vlastním moderním závodě v Opavě vyrobí 12 miliónů litrů zmrzliny za rok. Mezi ně patří oblíbené nanuky Mrož a Pegas, Ruská zmrzlina, zmrzlinové dorty, zmrzlinové vany a další zmrzlinové výrobky.
+OK 17: Prosím o vložení partnera dětských akcí, mne to nejde, text se totálně rozhazuje, nevím proč (Decathlon):
+OK 18: Prosím o vložení partnera dětských akcí (Prima):
 
 Kalendář:
 19: Prosím o vložení editovatelného textu s přehledným seznamem turnajů (časem bych byla ráda, aby se tam dala jako obrázek vložit přehledná grafika ve formátu .jpg):
-
-Pro zimní beachvolejbalovou sezónu 2015/2016 jsme si pro Vás připravili hned několik zajímavých turnajů. Pro usnadnění Vaší orientace budeme pořádat beachvolejbalové turnaje konkrétní herní úrovně vždy stejný víkend v měsíci.
-
-První víkend v měsíci...
-
-sobota: DECATHLON LÁDVÍK CUP
-
-Dětská beachvolejbalová sezóna bude zahájena sérii turnajů pro ty nejmenší, tzv. Ládvík Cupem. Ten odstartoval již první zářijový víkend a další turnaje na sebe nenechají dlouho čekat.
-
-Kategorie:
-
-- turnaj pro rodiče s dětmi - děti do 10 let
-- minibeachvolejbal v přehazované - dvojice do 10 let
-- minibeachvolejbal - děti do 13 let
-- beachvolejbal - děti do 18 let
-
-Své místo v oblíbeném turnaji si můžete pohlídat již nyní. Turnaj se bude opakovat každý měsíc a slouží jako kvalitní příprava na Pražskou Juniorligu (www.beachliga.cz).
-
-Termíny:
-
-- 04. 10. 2015
-- 07. 11. 2015
-- 05. 12. 2015
-
-Začátky utkání:
-
-- děti do 10 let - 09:00
-- děti nad 10 let - 10:00
-
-neděle: MÍRACUP mixy
-
-Oblíbený turnaj pro amatérské hráče, kempaře a kamarády. Registrace do turnaje v 9:45, začátek turnaje v 10:00.
-
-Termíny:
-
-- 11. 10. 2015
-- 01. 11. 2015
-- 06. 12. 2015
-
-Kapacita: 24 dvojic
-
-Startovné: 250,- Kč na osobu
-
-Organizátor: Míra Justián
-
-Třetí víkend v měsíci...
-
-sobota: ABL muži & ženy
-
-Vracíme se k samotné podstatě názvu tohoto turnaje ABL neboli Amatérská beachvolejbalová liga. Registrace do turnaje je v 8:45, začátek turnaje v 9:00.
-
-Termíny:
-
-- 17. 10. 2015
-- 14. 11. 2015
-- 19. 12. 2015
-
-Kapacita: 16 dvojic žen / 16 dvojic mužů
-
-Startovné: 250,- Kč na osobu
-
-Organizátor: Ondra Michálek
-
-neděle: ABL mixy
-
-Vracíme se k samotné podstatě názvu tohoto turnaje ABL neboli Amatérská beachvolejbalová liga. Registrace do turnaje je v 10:45, začátek turnaje v 11:00.
-
-Termíny:
-
-- 18. 10. 2015
-- 15. 11. 2015
-- 20. 12. 2015
-
-Kapacita: 24 dvojic
-
-Startovné: 250,- Kč na osobu
-
-Organizátor: Ondra Michálek
-
-Různé...
-
-VII. ročník Hradecko-pražského derby
-
-Pojďme poměřit své síly proti Hradci! Pojďme reprezentovat barvy Prahy! Šestnáctka smíšených královéhradeckých dvojic dorazí opět do metropole, aby poměřila své síly proti jiné šestnáctce, proti té pražské. Za startovné pak každý tým dostane garanci nejméně čtyř utkání, která v turnaji odehraje. Po ukončení sedmého ročníku téhle celodenní sportovně kulturní akce proběhne standardní vyhlášení turnaje v místním beachbaru s následnou zábavou s hudební a foto projekcí! Resumé? Připoj se aktivně do hradecko-pražského derby organizovaného ve spolupráci Beachklubu Ládví a Beach Centra Hradec Králové.
-
-Termín:
-
-- 21. 11. 2015
-
-Kapacita: 16 dvojic Praha / 16 dvojic Hradec Králové
-
-Startovné: 250,- Kč na osobu
-
-Organizátor: Ondra Michálek & Martin
-
-O co se u nás v zimě hraje?
-
-V každé turnaji na Vás čekají zajímavé věcné ceny od našich partnerů.
-
 20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by
 měl být zřejmý po rozkliknutí toho turnaje. Co myslíte?!
 

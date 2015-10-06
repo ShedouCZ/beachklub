@@ -1,5 +1,5 @@
 <?php
-    if (!empty($document['Document']['perex'])) {
+    if (!empty($document['Document']['perex']) && $document['Document']['perex'] != '<p><br></p>') {
         $this->start('sidebar'); ?>
             <aside class="column column_right prefix-1 grid-8 omega" role="complementary">
                 <?php
@@ -15,7 +15,8 @@
     }
 
     if (strpos($document['Document']['content'], '[[') !== false) {
-        // replace elements
+        // replace element tags
+        // [[element:name]]
         $matches = array();
         preg_match_all('/\[\[element:(.*)\]\]/', $document['Document']['content'], $matches, PREG_SET_ORDER);
         foreach ($matches as $match) {
