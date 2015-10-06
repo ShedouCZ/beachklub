@@ -4,8 +4,9 @@ OK 02. Fotky "slide" v rozměru 926 x 350 oříznuty a uploadovány.
 OK 03. Když otevřu homepage, změnšit mezeru mezi horním okrajem a linkou s buttony "domů", "o nás", "partneři", "kalendář".
 OK 04. Na YouTube kanál prosím odkazovat sem: https://www.youtube.com/user/beachklubladvi.
 OK 05. Zobrazování novinek: Vejde se nad dlaždice zobrazení alespoň dvou novinek? Celkový počet novinek na homepage bude pět?
-OK Kam se řadí ostatní novinky, resp. články a aktuality?
+OK Kam se řadí ostatní novinky, resp. články a aktuality? - dodelal jsem strankovani
 OK 06. Je možné zmenšit velikost písma u nadpisu novinek? Je to příliš velké.
+OK 30: editovatelny sidebar na homepage
 
 O nás:
 OK 07: Prosím o zaslání vhodného rozměru trenérských fotek.
@@ -26,8 +27,7 @@ OK 18: Prosím o vložení partnera dětských akcí (Prima):
 
 Kalendář:
 OK 19: Prosím o vložení editovatelného textu s přehledným seznamem turnajů (časem bych byla ráda, aby se tam dala jako obrázek vložit přehledná grafika ve formátu .jpg):
-20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by
-měl být zřejmý po rozkliknutí toho turnaje. Co myslíte?!
+OK 20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by
 
 Kontakty:
 21: Posílám aktualizaci textu Jak nás najdete:
@@ -73,5 +73,3 @@ Dlaždice "Beachbar":
 Dlaždice "Beachkempy v Čechách":
 29: Vložila jsem aktuální text.
 Je možné vložit pouze druhy beachkempu s prolinkem na další popis kempů?
-
-30: editovatelny sidebar na homepage

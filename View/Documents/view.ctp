@@ -6,7 +6,7 @@
 						<article id="doc-<?php echo $document['Document']['id']?>" class="node node-blog node-teaser node-odd published with-comments node-teaser clearfix">
 							<?php
 								if (AuthComponent::user()) {
-									$link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
+									$link = $this->Html->link('upravit', '/admin/news/edit/' . $document['Document']['id']);
 									echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:7px'));
 								}
 							?>
