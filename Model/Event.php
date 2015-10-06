@@ -15,6 +15,9 @@ class Event extends AppModel {
 
 	public function beforeSave($options = array()) {
 		parent::beforeSave();
+		if (empty($this->data['Event']['slug'])) {
+			$this->data['Event']['slug'] = $this->data['Event']['title']
+		}
 		if ($this->data['Event']['slug']) {
 			// sluggize slug
 			$slug = $this->data['Event']['slug'];
