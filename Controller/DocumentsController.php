@@ -45,7 +45,14 @@ class DocumentsController extends AppController {
 		$item = $this->Document->find('first', $options);
 
 		$this->set('document', $item);
-		$this->set('neighbors', $this->Document->find('neighbors', array('field'=>'id', 'value'=>$id)));
+		$this->set('neighbors', $this->Document->find('neighbors', array(
+			'field'=>'id',
+			'value'=>$id,
+			'conditions'=>array(
+				'is_page'=>$item['Document']['is_page'],
+				'is_news'=>$item['Document']['is_news'],
+			)
+		)));
 
 		if ($item['Document']['is_page']) {
 			$this->render('view_page');

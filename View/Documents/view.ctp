@@ -27,12 +27,14 @@
 								<ul class="links inline">
 									<?php if ($neighbors['prev']) { ?>
 										<li class="node-readmore first">
-											<a href="/<?php echo $neighbors['prev']['Document']['slug']; ?>" rel="tag" title="">Předchozí</a>
+											<!--a href="/<?php echo $neighbors['prev']['Document']['slug']; ?>" rel="tag" title="">Předchozí</a-->
+											<?php echo $this->Html->link('předchozí: ' . $neighbors['prev']['Document']['title'], '/'.$neighbors['prev']['Document']['slug']); ?>
 										</li>
 									<?php } ?>
 									<?php if ($neighbors['next']) { ?>
 										<li class="node-readmore last">
-											<a href="/<?php echo $neighbors['next']['Document']['slug']; ?>" rel="tag" title="">Další</a>
+											<!--a href="/<?php echo $neighbors['next']['Document']['slug']; ?>" rel="tag" title="">Další</a-->
+											<?php echo $this->Html->link('další: ' . $neighbors['next']['Document']['title'], '/'.$neighbors['next']['Document']['slug']); ?>
 										</li>
 									<?php } ?>
 								</ul>
