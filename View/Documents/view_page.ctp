@@ -31,21 +31,6 @@
                             <?php echo $document['Document']['content'];?>
                         </div><!-- /.content -->
 
-                        <footer>
-                            <ul class="links inline">
-                                <?php if ($neighbors['prev']) { ?>
-                                    <li class="node-readmore first">
-                                        <a href="/<?php echo $neighbors['prev']['Document']['slug']; ?>" rel="tag" title="">Předchozí</a>
-                                    </li>
-                                <?php } ?>
-                                <?php if ($neighbors['next']) { ?>
-                                    <li class="node-readmore last">
-                                        <a href="/<?php echo $neighbors['next']['Document']['slug']; ?>" rel="tag" title="">Další</a>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </footer>
-
                     </article><!-- /.node -->
                 </div><!-- /.content -->
             </div><!-- /.block -->
