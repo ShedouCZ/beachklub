@@ -56,6 +56,9 @@ class NewsController extends AppController {
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Document->create();
+			// defaults
+			$this->request->data['Document']['is_news'] = 1;
+			$this->request->data['Document']['is_page'] = 0;
 			if ($this->Document->save($this->request->data)) {
 				$this->Session->setFlash(__('The document has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));

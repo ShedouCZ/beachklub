@@ -5,10 +5,10 @@
 			<div class="page-header">
 				<ul class="nav nav-pills pull-right">
 					<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete'), array('action'=>'delete', $this->Form->value('Document.id')), array('escape'=>false), __('Are you sure you want to delete # %s?', $this->Form->value('Document.id'))); ?></li>
-					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Documents'), array('action'=>'index'), array('escape'=>false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Pages'), array('action'=>'index'), array('escape'=>false)); ?></li>
 					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;' . __('View'), '/' . $this->request->data['Document']['slug'], array('escape'=>false)); ?></li>
 				</ul>
-				<h1><?php echo __('Admin Edit Document'); ?></h1>
+				<h1><?php echo __('Admin Edit Page'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-height'=>170, 'class'=>'form-control', 'placeholder'=>__('Perex')));?>
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>330, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>

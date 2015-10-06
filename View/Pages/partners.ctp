@@ -16,23 +16,20 @@
                             Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům.
                         </p>
                         <p>
-                            Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce
-                            plánujete zasáhnout celou republiku? Napište nám na marketing@beachklubladvi.cz a my
-                            Vám připravíme zajímavou a konkrétní nabídku.
+                            Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce plánujete zasáhnout celou republiku?
+                            Napište nám na marketing@beachklubladvi.cz a my Vám připravíme zajímavou a konkrétní nabídku.
                         </p>
                         <p>
                             Usilovně hledáme
                             <ul>
-                                <li>sponzory konkrétních projektů, které chystáme v areálu pro Vás - umělé osvětlení, dětské hřiště, tribuna, atd.</li>
-                                <li>partnery finanční i materiálové pro naše turnaje</li>
-                                <li>partnery pro sportovní turnaj v přehazované pro děti z dětských domovů</li>
+                                <li>sponzory konkrétních projektů, které chystáme v areálu pro Vás - umělé osvětlení, dětské hřiště, tribuna, atd.,</li>
+                                <li>partnery finanční i materiálové pro naše turnaje,</li>
+                                <li>partnery pro sportovní turnaj v&nbsp;přehazované pro děti z dětských domovů.</li>
                             </ul>
                         </p>
                         <p>
-                            Nechcete plýtvat s rozpočtem v dobách finanční krize? Nebojte se a napište.
-                            Nemáme velké oči a oceníme každou pomoc. A tu velmi rychle poznáte na kvalitě
-                            našich služeb.
-                            Předem děkujeme
+                            Nechcete plýtvat s rozpočtem v dobách finanční krize? Nebojte se a napište. Nemáme velké oči a oceníme každou pomoc.
+                            A tu velmi rychle poznáte na kvalitě našich služeb. Předem děkujeme!
                         </p>
                     </div><!-- /.content -->
                 </section><!-- /.block -->

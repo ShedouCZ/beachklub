@@ -17,17 +17,7 @@ OK 10: Zde je mírně upravený text do pravého horního rohu. Prosím o vlože
 Partneři:
 12: Prosím o zaslání vhodného rozměru pro nahrávání jednotlivých log.
 13: Partnery nadpisově oddělit jako: Partneři Beachklubu Ládví a Partneři dětských akcí.
-14: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení:
-Provoz sportovního areálu se neobejde bez partnerství města a sponzorů. Touto stránkou bychom rádi poděkovali všem našim příznivcům a podporovatelům.
-
-Máte rádi sport a přemýšlíte o podpoře smysluplného projektu na Praze 8 nebo dokonce plánujete zasáhnout celou republiku? Napište nám na marketing@beachklubladvi.cz a my Vám připravíme zajímavou a konkrétní nabídku.
-
-Usilovně hledáme:
-- sponzory konkrétních projektů, které chystáme v areálu pro Vás - umělé osvětlení, dětské hřiště, tribuna, atd.,
-- partnery finanční i materiálové pro naše turnaje,
-- partnery pro sportovní turnaj v přehazované pro děti z dětských domovů.
-
-Nechcete plýtvat s rozpočtem v dobách finanční krize? Nebojte se a napište. Nemáme velké oči a oceníme každou pomoc. A tu velmi rychle poznáte na kvalitě našich služeb. Předem děkujeme!
+OK 14: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení:
 
 15: Zkrátila jsem popisky jednotlivých partnerů.
 16: Prosím o zmenšení písma u nadpisu jednotlivých partnerů.
