@@ -4,9 +4,9 @@
 		<div class="col-md-12">
 			<div class="page-header">
 				<ul class="nav nav-pills pull-right">
-					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Documents'), array('action'=>'index'), array('escape'=>false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Pages'), array('action'=>'index'), array('escape'=>false)); ?></li>
 				</ul>
-				<h1><?php echo __('Admin Add Document'); ?></h1>
+				<h1><?php echo __('Admin Add Page'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -30,7 +30,7 @@
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-height'=>170, 'class'=>'form-control', 'placeholder'=>__('Perex')));?>
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>330, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('user_id', array('default'=>2 ,'class'=>'form-control', 'placeholder'=>__('User Id')));?>

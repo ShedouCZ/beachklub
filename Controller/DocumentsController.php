@@ -9,7 +9,7 @@ class DocumentsController extends AppController {
 			$items = $this->Document->find('all', array(
 				'limit' => 5,
 				'conditions' => array(
-					'Document.published' => 1
+					'Document.is_page' => 1
 				)
 			));
 			return $items;
@@ -20,6 +20,11 @@ class DocumentsController extends AppController {
 	}
 
 	public function admin_index() {
+		$this->paginate = array(
+			'conditions' => array(
+				'Document.is_page' => 1
+			)
+		);
 		$this->Document->recursive = 0;
 		$this->set('documents', $this->Paginator->paginate());
 	}
@@ -37,13 +42,22 @@ class DocumentsController extends AppController {
 			throw new NotFoundException(__('Invalid document'));
 		}
 		$options = array('conditions' => array('Document.' . $this->Document->primaryKey => $id));
-		$this->set('document', $this->Document->find('first', $options));
+		$item = $this->Document->find('first', $options);
+
+		$this->set('document', $item);
 		$this->set('neighbors', $this->Document->find('neighbors', array('field'=>'id', 'value'=>$id)));
+
+		if ($item['Document']['is_page']) {
+			$this->render('view_page');
+		}
 	}
 
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Document->create();
+			// defaults
+			$this->request->data['Document']['is_news'] = 0;
+			$this->request->data['Document']['is_page'] = 1;
 			if ($this->Document->save($this->request->data)) {
 				$this->Session->setFlash(__('The document has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));

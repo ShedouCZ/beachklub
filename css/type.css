@@ -20,6 +20,10 @@ h2 {
     font-weight: 700;
 }
 
+#sidebar-second-grid-8 {
+    padding-top: 6px;
+}
+
 h3 {
     padding-top: 10px;
     margin-bottom:15px;
@@ -55,7 +59,7 @@ p {
     color: #fff;
     font-size:36px;
     line-height:40px;
-    padding-top: 10px;
+    padding-top: 6px;
     margin-bottom:10px;
     font-weight: normal;
     text-transform: uppercase;

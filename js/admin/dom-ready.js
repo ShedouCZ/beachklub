@@ -35,9 +35,11 @@ App.upload_file = function (file, callback, remote_url) {
 
 if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 	var height = $(e).data('wysiwyg-height');
+	var width  = $(e).data('wysiwyg-width');
 	$(e).summernote({
 		lang: 'cs-CZ',
 		height: height ? height : 680,
+		width:  width  ? width  : false,
 		toolbar: [
 				['css', ['style']],
 				['style', ['bold', 'italic', 'underline', 'clear']],
@@ -70,7 +72,7 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 			$dom.find('*[class=""]').removeAttr('class');
 			$dom.find('.Apple-converted-space').replaceWith('&nbsp;');
 			$dom.find('.Apple-interchange-newline').replaceWith('<br/>');
-			if ($dom.find('h1').length == 1) {
+			if (0 && $dom.find('h1').length == 1) {
 				// make title from the sole h1 we got
 				$('input#DocumentTitle').val($dom.find('h1').text()).trigger('keyup'); // keyup to notify slug module
 				$dom.find('h1').remove();

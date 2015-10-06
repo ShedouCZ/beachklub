@@ -3,10 +3,10 @@
 		<div class="col-md-12">
 			<div class="page-header">
 				<ul class="nav nav-pills pull-right">
-					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Document'), array('action' => 'add'), array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Page'), array('action' => 'add'), array('escape' => false)); ?></li>
 					<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-sort"></span>&nbsp;&nbsp;' . __('Reorder'), array('action' => 'reorder'), array('escape' => false)); ?></li>
 				</ul>
-				<h1><?php echo __('Documents'); ?></h1>
+				<h1><?php echo __('Pages'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -22,18 +22,18 @@
 					<tr>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
 						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
-						<th class="c"><?php echo $this->Paginator->sort('published'); ?></th>
+						<!--th class="c"><?php echo $this->Paginator->sort('published'); ?></th-->
 						<th class="actions"></th>
 					</tr>
 				</thead>
 				<tbody>
 				<?php foreach ($documents as $document) { ?>
 					<tr>
-						<td><?php echo h($document['Document']['title']); ?></td>
+						<td><?php echo $this->Html->link($document['Document']['title'], array('action' => 'edit', $document['Document']['id'])); ?></td>
 						<td>
 							<?php echo $this->Html->link($document['User']['username'], array('controller' => 'users', 'action' => 'view', $document['User']['id'])); ?>
 						</td>
-						<td class="c"><?php echo $document['Document']['published'] ? 'ano' : 'ne'; ?></td>
+						<!--td class="c"><?php echo $document['Document']['published'] ? 'ano' : 'ne'; ?></td-->
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>', '/' . $document['Document']['slug'], array('escape'=>false)); ?>
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $document['Document']['id']), array('escape' => false)); ?>

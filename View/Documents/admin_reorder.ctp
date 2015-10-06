@@ -3,10 +3,10 @@
 		<div class="col-md-12">
 			<div class="page-header">
 					<ul class="nav nav-pills pull-right">
-						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Document'), array('action' => 'add'), array('escape' => false)); ?></li>
+						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;' . __('New Page'), array('action' => 'add'), array('escape' => false)); ?></li>
 						<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-sort"></span>&nbsp;&nbsp;' . __('Reorder'), array('action' => 'reorder'), array('escape' => false)); ?></li>
 					</ul>
-								<h1><?php echo __('Documents'); ?></h1>
+					<h1><?php echo __('Pages'); ?></h1>
 			</div>
 		</div>
 	</div>
