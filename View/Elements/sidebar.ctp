@@ -4,12 +4,18 @@
             <div id="block-views-front-carousel-block" class="block block-views vertical-carousel block-odd">
                 <div class="content">
                     <div class="view view-front-carousel view-id-front_carousel view-display-id-block view-dom-id-ea58816596ba1c5cb393dfeab559f430">
+                        <?php
+                          if (AuthComponent::user()) {
+                              $link = $this->Html->link('přidat', '/admin/events/add/');
+                              echo $this->Html->div('button admin_edit right', $link, array('style'=>'margin-top:-7px'));
+                          }
+                        ?>
                         <div class="view-header">
                             <div class="header-1">Kalendář akcí</div>
                         </div>
-                        
+
                         <?php echo $this->element('last_events'); ?>
-                        
+
                         <div class="view-footer">
                             <div class="footer-1">
                                 <div class="button">

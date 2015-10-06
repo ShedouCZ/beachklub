@@ -4,18 +4,18 @@
 				<div id="block-system-main" class="block block-system block-odd">
 					<div class="content">
 						<article id="doc-<?php echo $document['Document']['id']?>" class="node node-blog node-teaser node-odd published with-comments node-teaser clearfix">
-
+							<?php
+								if (AuthComponent::user()) {
+									$link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
+									echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:7px'));
+								}
+							?>
 							<header>
 								<h2 class="air-mode"><?php echo $this->Html->nbsp_prepositions($document['Document']['title']);?></h2>
 
 								<p class="submitted">
 									Od autora <span class="username"><?php echo $document['User']['username'];?></span>
 									<time pubdate="" datetime="2013-08-22T18:57:34"><?php //echo $document['Document']['created'];?></time>
-									<?php
-										if (AuthComponent::user()) {
-											echo $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
-										}
-									?>
 								</p>
 							</header>
 

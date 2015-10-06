@@ -2,7 +2,13 @@
     if (!empty($document['Document']['perex'])) {
         $this->start('sidebar'); ?>
             <aside class="column column_right prefix-1 grid-8 omega" role="complementary">
-                    <?php echo $document['Document']['perex']; ?>
+                <?php
+                    if (AuthComponent::user()) {
+                        $link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
+                        echo $this->Html->div('button admin_edit right', $link);
+                    }
+                ?>
+                <?php echo $document['Document']['perex']; ?>
             </aside><?php
         $this->end();
         //$this->assign('sidebar', $document['Document']['perex']);

@@ -174,3 +174,5 @@ Dlaždice "Beachbar":
 Dlaždice "Beachkempy v Čechách":
 29: Vložila jsem aktuální text.
 Je možné vložit pouze druhy beachkempu s prolinkem na další popis kempů?
+
+30: editovatelny sidebar na homepage

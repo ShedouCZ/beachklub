@@ -47,7 +47,7 @@
                         <h2><?php echo $type['PartnerType']['title'];?></h2>
 
                         <?php foreach ($type['Partner'] as $item) { ?>
-                            <div class="content">
+                            <div class="content partners">
                                 <div class="view view-upcoming-tournaments view-id-upcoming_tournaments view-display-id-block view-dom-id-7aa8b03895c96536fd397502c23fec68">
                                     <div class="view-content">
                                         <div class="views-row views-row-1 views-row-odd views-row-first">
@@ -60,7 +60,7 @@
                                             <div class="views-field views-field-nothing extra">
                                                 <span class="field-content">
                                                     <div class="views-field-title">
-                                                        <a href="<?php echo $item['url'];?>"><h1><?php echo $item['name'];?></h1></a>
+                                                        <a href="<?php echo $item['url'];?>"><h2><?php echo $item['name'];?></h2></a>
                                                     </div>
                                                     <div class="views-field-body">
                                                         <p>
