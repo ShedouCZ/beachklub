@@ -4,7 +4,13 @@
     );
 ?>
 <?php foreach ($items as $item): ?>
-    <div class="views-row first odd coaches">
+    <div class="views-row coaches">
+        <?php
+            if (AuthComponent::user()) {
+                $link = $this->Html->link('upravit', '/admin/coaches/edit/' . $item['Coach']['id']);
+                echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:15px'));
+            }
+        ?>
         <div class="views-field views-field-field-coaches-photo img-left">
             <div class="field-content">
                 <img src=<?php

@@ -12,7 +12,8 @@ OK 07: Prosím o zaslání vhodného rozměru trenérských fotek.
 OK 08: Můžeme použít jiné symboly na začátku každého řádku místo těch šipek?
 OK 09: Potřebuji zvýraznit: profesionální volejbalová kariéra, trenérská kvalifikace, kontakt, cena. - v editoru oznacit mysi a dat Bold
 OK 10: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení:
-?? 11: V rubrice Napsali o nás můžete články bez nadpisů (Články k MS ve střižbě, Ostatní) seřadit přehledně pod sebe. Tak to stačí.
+OK 11: V rubrice Napsali o nás můžete články bez nadpisů (Články k MS ve střižbě, Ostatní) seřadit přehledně pod sebe. Tak to stačí.
+       upravit na http://beachklub.vpslist.cz/o-nas
 
 Partneři:
 12: Prosím o zaslání vhodného rozměru pro nahrávání jednotlivých log.
