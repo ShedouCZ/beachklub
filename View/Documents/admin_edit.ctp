@@ -34,8 +34,8 @@
 				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>330, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
+				<div class="form-group" id="sidebar">
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>349, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>

@@ -29,7 +29,7 @@ App::uses('SlugRoute', 'Routing/Route');
 	Router::connect('/akce/:id', array('controller' => 'events', 'action' => 'view', 'id' => '[0-9]+'), array('pass' => array('id')));
 	//Router::connect('/o-nas', array('controller' => 'pages', 'action' => 'display', 'about'));
 	//Router::connect('/turnaje', array('controller' => 'pages', 'action' => 'display', 'tournaments'));
-	Router::connect('/partneri', array('controller' => 'pages', 'action' => 'display', 'partners'));
+	//Router::connect('/partneri', array('controller' => 'pages', 'action' => 'display', 'partners'));
 
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));

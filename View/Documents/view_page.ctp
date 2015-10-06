@@ -4,7 +4,7 @@
             <aside class="column column_right prefix-1 grid-8 omega" role="complementary">
                 <?php
                     if (AuthComponent::user()) {
-                        $link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id']);
+                        $link = $this->Html->link('upravit', '/admin/documents/edit/' . $document['Document']['id'] . '#sidebar');
                         echo $this->Html->div('button admin_edit right', $link);
                     }
                 ?>
@@ -31,7 +31,7 @@
         <div class="region region-content">
             <div id="block-system-main" class="block block-system block-odd">
                 <div class="content">
-                    <article id="doc-<?php echo $document['Document']['id']?>" class="node node-blog node-teaser node-odd published with-comments node-teaser clearfix">
+                    <article id="doc-<?php echo $document['Document']['id']?>" class="clearfix">
 
                         <div class="content air-mode">
                             <?php echo $document['Document']['content'];?>

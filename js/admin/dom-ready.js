@@ -78,7 +78,7 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 				$dom.find('h1').remove();
 			}
 			// h2 -> h3
-			$dom.find('h2').replaceWith( function () {
+			if (0) $dom.find('h2').replaceWith( function () {
 				return $("<h3 />").append($(this).contents());
 			});
 

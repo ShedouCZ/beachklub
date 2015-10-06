@@ -30,7 +30,7 @@
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>330, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>349, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('user_id', array('default'=>2 ,'class'=>'form-control', 'placeholder'=>__('User Id')));?>
