@@ -39,7 +39,14 @@ class DocumentsController extends AppController {
 
 	public function view($id = null) {
 		if (!$this->Document->exists($id)) {
-			throw new NotFoundException(__('Invalid document'));
+			// serve homepage by default (used by sidebar_2_homepage element)
+			if ($this->request->is('requested')) {
+				$options = array('conditions' => array('Document.slug' => ''));
+				$item = $this->Document->find('first', $options);
+				return $item;
+			} else {
+				throw new NotFoundException(__('Invalid document'));
+			}
 		}
 		$options = array('conditions' => array('Document.' . $this->Document->primaryKey => $id));
 		$item = $this->Document->find('first', $options);

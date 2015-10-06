@@ -3,7 +3,7 @@
 		width: 60%;
 	}
 	#flexslider-1 .field-content img {
-		max-height:350px!important; 
+		max-height:350px!important;
 	}
 </style>
 
@@ -41,13 +41,7 @@
 </div>
 
 <div class="column column_right prefix-1 grid-8 omega ">
-    <h2 style="margin-top:45px">Léto 2015</h2>
-    <h3>Pondělí - pátek</h3>
-    <p>08 - 16 hod: 140,- Kč / 1 hod<br>16 - 21 hod: 300,- Kč / 1 hod</p>
-    <h3>Sobota</h3>
-    <p>08 - 21hod: 140,- Kč / 1 hod</p>
-    <h3>Neděle</h3>
-    <p>08 - 16 hod: 140,- Kč / 1 hod<br>16 - 21 hod: 250,- Kč / 1 hod</p>
+	<?php echo $this->element('sidebar_2_homepage') ?>
 </div>
 
 <div id="content" class="column">
@@ -69,6 +63,3 @@
         </div>
     </div>
 </div>
-
-
-
