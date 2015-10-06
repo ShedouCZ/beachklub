@@ -16,9 +16,9 @@ OK 11: V rubrice Napsali o nás můžete články bez nadpisů (Články k MS ve
        upravit na http://beachklub.vpslist.cz/o-nas
 
 Partneři:
-12: Prosím o zaslání vhodného rozměru pro nahrávání jednotlivých log.
-13: Partnery nadpisově oddělit jako: Partneři Beachklubu Ládví a Partneři dětských akcí.
-OK 14: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení:
+OK 12: Prosím o zaslání vhodného rozměru pro nahrávání jednotlivých log.
+OK 13: Partnery nadpisově oddělit jako: Partneři Beachklubu Ládví a Partneři dětských akcí.
+OK 14: Zde je mírně upravený text do pravého horního rohu. Prosím o vložení
 
 15: Zkrátila jsem popisky jednotlivých partnerů.
 16: Prosím o zmenšení písma u nadpisu jednotlivých partnerů.

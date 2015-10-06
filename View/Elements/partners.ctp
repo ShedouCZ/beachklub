@@ -15,6 +15,12 @@
 
                         <?php foreach ($type['Partner'] as $item) { ?>
                             <div class="content partners">
+                                <?php
+                                    if (AuthComponent::user()) {
+                                        $link = $this->Html->link('upravit', '/admin/partners/edit/' . $item['id']);
+                                        echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:15px'));
+                                    }
+                                ?>
                                 <div class="view view-upcoming-tournaments view-id-upcoming_tournaments view-display-id-block view-dom-id-7aa8b03895c96536fd397502c23fec68">
                                     <div class="view-content">
                                         <div class="views-row views-row-1 views-row-odd views-row-first">

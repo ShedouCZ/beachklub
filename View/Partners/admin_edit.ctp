@@ -38,7 +38,8 @@
 						echo $this->Form->input('gallery_picture_id', array(
 							'class'=>'form-control',
 							'data-picture'=>Partner::encode_picture(@$this->request->data['Picture']),
-							'data-album-id'=>Partner::$album_id
+							'data-album-id'=>Partner::$album_id,
+							'label' => 'Obrázek<p>210px na šířku</p>',
 						));
 					?>
 				</div>

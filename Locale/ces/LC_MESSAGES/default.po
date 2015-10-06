@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-09-25 09:33+0100\n"
+"PO-Revision-Date: 2015-10-06 11:03+0200\n"
 "Last-Translator: Jan Ptacek <jan.ptacek@gmail.com>\n"
 "Language-Team: EMAIL@ADDRESS\n"
 "Language: cs_CZ\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #: /Coaches/admin_add.ctp:7 /Coaches/admin_edit.ctp:8
 #: /Coaches/admin_view.ctp:20
@@ -58,7 +58,7 @@ msgstr "Popisek"
 #: /Tiles/admin_view.ctp:50 /Tournaments/admin_add.ctp:45
 #: /Tournaments/admin_edit.ctp:49 /Tournaments/admin_view.ctp:64
 msgid "Url"
-msgstr "Cesta"
+msgstr "Web"
 
 #: /Coaches/admin_add.ctp:36 /Coaches/admin_edit.ctp:40
 #: /Coaches/admin_view.ctp:62 /Sliders/admin_view.ctp:44
@@ -96,11 +96,10 @@ msgstr "Smazat"
 #: /News/admin_edit.ctp:7 /News/admin_index.ctp:36 /News/admin_view.ctp:19
 #: /Posts/admin_edit.ctp:7 /Posts/admin_index.ctp:42 /Posts/admin_view.ctp:19
 #: /Sliders/admin_edit.ctp:7 /Sliders/admin_index.ctp:35
-#: /Sliders/admin_view.ctp:19 /Tiles/admin_edit.ctp:7
-#: /Tiles/admin_index.ctp:35 /Tiles/admin_view.ctp:19
-#: /Tournaments/admin_edit.ctp:7 /Tournaments/admin_index.ctp:44
-#: /Tournaments/admin_view.ctp:19 /Users/admin_edit.ctp:7
-#: /Users/admin_index.ctp:40 /Users/admin_view.ctp:19
+#: /Sliders/admin_view.ctp:19 /Tiles/admin_edit.ctp:7 /Tiles/admin_index.ctp:35
+#: /Tiles/admin_view.ctp:19 /Tournaments/admin_edit.ctp:7
+#: /Tournaments/admin_index.ctp:44 /Tournaments/admin_view.ctp:19
+#: /Users/admin_edit.ctp:7 /Users/admin_index.ctp:40 /Users/admin_view.ctp:19
 msgid "Are you sure you want to delete # %s?"
 msgstr "Jste si jist že chcete smazat # %?"
 
@@ -110,12 +109,11 @@ msgstr "Upravit trenéry"
 
 #: /Coaches/admin_edit.ctp:25 /Coaches/admin_view.ctp:32
 #: /Documents/admin_edit.ctp:22 /Documents/admin_view.ctp:32
-#: /MessageRecipients/admin_edit.ctp:25
-#: /MessageRecipients/admin_view.ctp:34;59 /Messages/admin_edit.ctp:25
-#: /Messages/admin_view.ctp:32 /News/admin_edit.ctp:25 /News/admin_view.ctp:32
-#: /Posts/admin_edit.ctp:25 /Posts/admin_view.ctp:34
-#: /Sliders/admin_edit.ctp:25 /Sliders/admin_view.ctp:32
-#: /Tiles/admin_edit.ctp:25 /Tiles/admin_view.ctp:32
+#: /MessageRecipients/admin_edit.ctp:25 /MessageRecipients/admin_view.ctp:34;59
+#: /Messages/admin_edit.ctp:25 /Messages/admin_view.ctp:32
+#: /News/admin_edit.ctp:25 /News/admin_view.ctp:32 /Posts/admin_edit.ctp:25
+#: /Posts/admin_view.ctp:34 /Sliders/admin_edit.ctp:25
+#: /Sliders/admin_view.ctp:32 /Tiles/admin_edit.ctp:25 /Tiles/admin_view.ctp:32
 #: /Tournaments/admin_edit.ctp:25 /Tournaments/admin_view.ctp:34
 #: /Users/admin_edit.ctp:25 /Users/admin_view.ctp:32
 msgid "Id"
@@ -452,8 +450,7 @@ msgstr "Přidat dlaždici"
 msgid "Admin Edit Tile"
 msgstr "Upravit dlaždici"
 
-#: /Tiles/admin_index.ctp:6 /Tiles/admin_reorder.ctp:6
-#: /Tiles/admin_view.ctp:21
+#: /Tiles/admin_index.ctp:6 /Tiles/admin_reorder.ctp:6 /Tiles/admin_view.ctp:21
 msgid "New Tile"
 msgstr "Nová dlaždice"
 

@@ -191,10 +191,10 @@ module.exports = function(grunt) {
 					'Vendor/fullcalendar/dist/fullcalendar.js',
 					'Vendor/dropzone/dist/dropzone.js',
 					'Vendor/slug/slug.js',
-					// i10n not used now
+					// i10n not used now, but dropzone is calling App.render!
 					//'Vendor/Jed/jed.js',
-					//'node_modules/grunt-contrib-handlebars/node_modules/handlebars/dist/handlebars.runtime.js',
-					//'dist/js/handlebars.js',
+					'node_modules/grunt-contrib-handlebars/node_modules/handlebars/dist/handlebars.runtime.js',
+					'dist/js/handlebars.js',
 					//'dist/js/messages.js',
 				],
 				dest: 'webroot/js/site-admin.js',
