@@ -21,16 +21,16 @@
 					<tr>
 						<th><?php echo $this->Paginator->sort('title'); ?></th>
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
-						<th><?php echo $this->Paginator->sort('desc'); ?></th>
+						<th><?php echo $this->Paginator->sort('perex'); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
 				<tbody>
 				<?php foreach ($news as $news) { ?>
 					<tr>
-						<td><?php echo h($news['Event']['title']); ?></td>
-						<td><?php echo $this->Time->format($news['Event']['date'], '%-d.%-m.%Y'); ?></td>
-						<td><?php echo $news['Event']['desc']; ?></td>
+						<td><?php echo $this->Html->link($news['Event']['title'], array('action' => 'edit', $news['Event']['id'])); ?></td>
+						<td class="c"><?php echo $this->Time->format($news['Event']['date'], '%-d.%-m.%Y'); ?></td>
+						<td><?php echo $news['Event']['perex']; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $news['Event']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $news['Event']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $news['Event']['id'])); ?>

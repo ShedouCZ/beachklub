@@ -87,6 +87,11 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 				return $("<h3 />").append($(this).contents());
 			});
 
+			// remove font element
+			$dom.find('font').replaceWith( function () {
+				return $(this).contents();
+			});
+
 			var callback = function (picture, remote_url) {
 				// switch img url in the content area of $note
 				// TODO reliably get correct note-editable
@@ -124,8 +129,9 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 			//e.originalEvent.clipboardData.setData('text/html', $dom.html());
 
 			e.preventDefault();
+			//console.log($dom.html());
 
-			console.log($note.code());
+			//console.log($note.code());
 			if ($note.code() == '<p><br></p>' || $note.code() === '' || $note.code() === '<h1><br></h1>') {
 				// works, but destroys previous contents
 				$note.code($dom.html());

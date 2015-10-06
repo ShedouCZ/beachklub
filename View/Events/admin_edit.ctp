@@ -41,13 +41,18 @@
 					));?>
 				</div>
 				<div class="form-group">
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-height'=>70, 'class'=>'form-control', 'label'=>'Perex', 'placeholder'=>__('Perex')));?>
+				</div>
+				<div class="form-group">
 					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Desc')));?>
+				</div>
+				<div class="form-group">
+					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Address'), 'label'=>__('Address')));?>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">
 						<?php echo $this->Form->submit(__('Submit'), array('class'=>'btn btn-primary')); ?>
 					</div>
-
 				</div>
 
 			<?php echo $this->Form->end() ?>

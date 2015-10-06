@@ -36,6 +36,9 @@
 					));?>
 				</div>
 				<div class="form-group">
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-height'=>70, 'class'=>'form-control', 'label'=>'Perex', 'placeholder'=>__('Perex')));?>
+				</div>
+				<div class="form-group">
 					<?php echo $this->Form->input('desc', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Desc')));?>
 				</div>
 				<div class="form-group">

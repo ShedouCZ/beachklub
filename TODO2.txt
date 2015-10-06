@@ -25,7 +25,7 @@ OK 17: Prosím o vložení partnera dětských akcí, mne to nejde, text se tot�
 OK 18: Prosím o vložení partnera dětských akcí (Prima):
 
 Kalendář:
-19: Prosím o vložení editovatelného textu s přehledným seznamem turnajů (časem bych byla ráda, aby se tam dala jako obrázek vložit přehledná grafika ve formátu .jpg):
+OK 19: Prosím o vložení editovatelného textu s přehledným seznamem turnajů (časem bych byla ráda, aby se tam dala jako obrázek vložit přehledná grafika ve formátu .jpg):
 20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by
 měl být zřejmý po rozkliknutí toho turnaje. Co myslíte?!
 

@@ -26,7 +26,7 @@ App::uses('SlugRoute', 'Routing/Route');
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	Router::connect('/kontakty', array('controller' => 'messages', 'action' => 'add',));
 	Router::connect('/novinky/*', array('controller' => 'news', 'action' => 'index'));
-	Router::connect('/akce/:id', array('controller' => 'events', 'action' => 'view', 'id' => '[0-9]+'), array('pass' => array('id')));
+	Router::connect('/akce/:id', array('controller' => 'events', 'action' => 'view'), array('id' => '[0-9]+', 'pass' => array('id')));
 	//Router::connect('/o-nas', array('controller' => 'pages', 'action' => 'display', 'about'));
 	//Router::connect('/turnaje', array('controller' => 'pages', 'action' => 'display', 'tournaments'));
 	//Router::connect('/partneri', array('controller' => 'pages', 'action' => 'display', 'partners'));
@@ -35,6 +35,7 @@ App::uses('SlugRoute', 'Routing/Route');
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
 	Router::connect('/admin', array('controller' => 'news', 'action' => 'index', 'admin' => true));
 
+	Router::connect('/akce/:slug', array('controller' => 'events', 'action' => 'view', 'model' => 'Event'), array('slug'=>'[\w-]+', 'routeClass'=>'SlugRoute'));
 	Router::connect('/:slug', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('slug'=>'[\w-]+', 'routeClass'=>'SlugRoute'));
 
 

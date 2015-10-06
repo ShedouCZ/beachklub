@@ -16,7 +16,8 @@
                                   <span class="field-content">
                                       <?php
                                         $parts = explode ('-', $item['Event']['date']);
-                                        echo $parts['2'];
+                                        //echo $parts['2'];
+                                        echo $this->Time->format($item['Event']['date'], '%-d.%-m.');
                                       ?>
                                   </span>
                             </div>
@@ -26,11 +27,11 @@
                                         <?php
                                             $title = $item['Event']['title'];
                                             $id    = $item['Event']['id'];
-                                            $url   = '/akce/'.$id;
+                                            $url   = '/akce/' . $item['Event']['slug'];
                                             echo $this->Html->link($title, $url);
                                         ?>
                                     </div>
-                                    <div><?php echo $item['Event']['desc']; ?></div>
+                                    <div><?php echo $item['Event']['perex']; ?></div>
                                  </span>
                             </div>
                         </li>

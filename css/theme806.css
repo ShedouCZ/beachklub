@@ -482,7 +482,8 @@ ul.inline li {
 	text-align: center;
 	color: #585858;
 	background: url(../images/date.png) 0 0 no-repeat;
-	font-size: 50px;
+	font-size: 38px;
+	padding-left: 5px;
 	line-height: 50px;
 	font-family: 'BenchNine', sans-serif;
 	padding-top: 18px;
