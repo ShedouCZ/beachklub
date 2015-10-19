@@ -74,4 +74,20 @@ class AppController extends Controller {
             $this->layout = 'beachklub';
         }
     }
+
+    protected function remember_index_page() {
+		$here = $this->request->here;
+		$this->Session->write('remembered_index_page', $here);
+	}
+	protected function remember_referer_as_index_page() {
+		$referer = $this->request->referer($local=true);
+		$this->Session->write('remembered_index_page', $referer);
+	}
+	protected function recall_index_page() {
+		if ($this->Session->check('remembered_index_page')) {
+			return $this->Session->read('remembered_index_page');
+		} else {
+			return array('action'=>'index');
+		}
+	}
 }

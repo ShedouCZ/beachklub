@@ -90,13 +90,15 @@ class DocumentsController extends AppController {
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Document->save($this->request->data)) {
 				$this->Session->setFlash(__('The document has been saved.'), 'default', array('class' => 'alert alert-success'));
-				return $this->redirect(array('action' => 'index'));
+				//return $this->redirect(array('action' => 'index'));
+				return $this->redirect($this->recall_index_page());
 			} else {
 				$this->Session->setFlash(__('The document could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
 			}
 		} else {
 			$options = array('conditions' => array('Document.' . $this->Document->primaryKey => $id));
 			$this->request->data = $this->Document->find('first', $options);
+			$this->remember_referer_as_index_page();
 		}
 		$users = $this->Document->User->find('list');
 		$this->set(compact('users'));

@@ -219,10 +219,10 @@
 				<div class="container-24">
 					<div class="grid-24">
 						<?php echo $this->Element('header'); ?>
-						<?php echo $this->Session->flash(); ?>
 						<div class="section-3">
 							<?php echo $this->Element('navigation'); ?>
 						</div>
+						<?php echo $this->Session->flash(); ?>
 						<?php if ($this->request->here == '/') { ?>
 						<div class="section-2 clearfix">
 							<?php echo $this->Element('slider'); ?>

@@ -1,10 +1,10 @@
 [ ] obrazky na homepage v rozmerech: 926px x 350px (veronika)
 [x] dlazdice pod 1. novinku
-[ ] dokumenty -> novinky + stranky
+[x] dokumenty -> novinky + stranky
 [ ] presun obsahu ze stare stranky (veronika)
-[ ] kalendar-akci jako stranka
-[ ] strankovani novinek
-[ ] specifikovat a nacenit: hledam spoluhrace
+[x] kalendar-akci jako stranka
+[x] strankovani novinek
+[x] specifikovat a nacenit: hledam spoluhrace
 	- nastenka s moznosti vkladat oznameni: text+kontakt
 	- upozorneni mailem na nove prispevky
 	- verejne zobrazit az po odsouhlaseni

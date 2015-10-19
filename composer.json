@@ -30,7 +30,7 @@
         "codaxis/cakephp-bootstrap3-helpers": "1.1",
         "ceeram/clear_cache": "~1.1",
         "webtechnick/configuration": "dev-bootstrap_theme",
-        "hugodias/cakegallery": "dev-nopath",
+        "hugodias/cakegallery": "dev-limit_styles",
         "cakephp/debug_kit": "~2.2"
     },
     "config": {

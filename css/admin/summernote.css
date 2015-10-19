@@ -1,4 +1,11 @@
 .note-editor .note-editing-area .note-editable {
     background: #FFA336 url(../images/main-bg.jpg) 0 0 repeat-x;
-    color: #fff;
+    color: #bc2800;
+    font: 12px/20px Arial,Helvetica,sans-serif;
+}
+.note-editor .note-toolbar h1,
+.note-editor .note-toolbar h2,
+.note-editor .note-toolbar h3,
+.note-editor .note-toolbar h4 {
+    color: black;
 }

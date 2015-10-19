@@ -1,3 +1,12 @@
+Burza hracu:
+- nastenka s moznosti vkladat oznameni: text+kontakt
+- upozorneni mailem na nove prispevky
+- verejne zobrazit az po odsouhlaseni
+- pro zadavatele moznost odebrat oznameni, kdyz spoluhrace najde
+
+[ ] vlozit file: pdf, atd
+
+
 Homepage:
 OK 01. Nejde vidět celé logo Beachklubu Ládví.
 OK 02. Fotky "slide" v rozměru 926 x 350 oříznuty a uploadovány.
@@ -30,26 +39,13 @@ OK 19: Prosím o vložení editovatelného textu s přehledným seznamem turnaj�
 OK 20: Vypsala jsem do kalendáře všechny nadcházející akce. Ráda bych k nim připojila popisek, což jsem u některých udělala, ale pak se to špatně zobrazuje v tom kalendáři. Ten popisek turnaje by
 
 Kontakty:
-21: Posílám aktualizaci textu Jak nás najdete:
+OK 21: Posílám aktualizaci textu Jak nás najdete:
+OK 22: Prosím doplnit nadpis Fakturační a korespondenční adresa:
 
-Beachklub Ládví najdete v areálu SPŠE Eltodo v ulici Chabařovická 4 na Praze 8. Areál se nachází cca 7 minut od stanice metra C Ládví či autem cca 10 minut z centra. Vchod pro pěší je jak z ulice Chabařovická, tak z ulice Žernosecká. V případě, že jedete metrem tak vyražte směrem k Multikinu Ládví a pak napříč sídlištěm dle mapy. V případě, že jedete autem, tak můžete nově využít příjezd ze Žernosecké ulice. Původní příjezd z Chabařovické je uzavřen. V areálu se dá parkovat.
-
-22: Prosím doplnit nadpis Fakturační a korespondenční adresa:
-
-Beachklub Ládví z.s.
-Chabařovická 4
-180 00 Praha 8
-IČO: 22735135
-ICP: 1000559998
-
-Korespondenční adresa:
-Beachklub Ládví z.s.
-Horáčkova 1213
-140 00 Praha 4
 
 Dlaždice "Rezervace kurtů":
-23: Prosím o zaslání rozměru pro nové fotky dlaždic.
-24: Vložila jsem aktuální text k rezervaci kurtů.
+OK 23: Prosím o zaslání rozměru pro nové fotky dlaždic.
+OK 24: Vložila jsem aktuální text k rezervaci kurtů.
 
 Dlaždice "Turnaje":
 25: Vložila jsem aktuální text.

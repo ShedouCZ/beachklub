@@ -49,6 +49,7 @@ if ($().summernote) $('textarea[data-provide=wysiwyg]').each(function (i,e) {
 				['misc', ['codeview', 'fullscreen']],
 				['help', ['help']],
 		],
+		styleTags: ['p', 'h1', 'h2', 'h3', 'blockquote'],
 		onImageUpload: function(files) {
 			var $note = $(this);
 			var callback = function (picture) {
