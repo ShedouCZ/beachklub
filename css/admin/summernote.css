@@ -13,3 +13,16 @@
 .note-editor .note-editing-area .note-editable a {
     color: #fff;
 }
+
+.note-editor .note-editing-area .note-editable .sidebar-menu ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.note-editor .note-editing-area .note-editable .sidebar-menu li {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    background: url(../images/a1.png) 0 5px no-repeat;
+    padding: 0 0 7px 20px;
+}

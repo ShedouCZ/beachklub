@@ -14,7 +14,7 @@
         <div class="region region-content">
             <div id="block-system-main" class="block block-system block-even">
                 <div class="content">
-                    <article id="node-153" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
+                    <article class="node node-page node-promoted node-teaser published with-comments promote clearfix">
                         <?php echo $this->element('latest_documents', array('first'=>true)); ?>
                     </article>
                     <!-- /.node -->
@@ -29,7 +29,7 @@
 <div class="region region-content-bottom" style="margin-bottom: 45px">
     <div id="block-views-services-block" class="block block-views block-even">
         <div class="content">
-            <div class="view view-services view-id-services view-display-id-block view-dom-id-07d750d1b768924463e867a1b7876e55">
+            <div class="view view-services view-id-services view-display-id-block">
                 <div class="view-content">
                     <?php echo $this->element('tiles'); ?>
                 </div>
@@ -40,7 +40,7 @@
     <!-- /.block -->
 </div>
 
-<div class="column column_right prefix-1 grid-8 omega ">
+<div class="column column_right prefix-1 grid-8 omega">
 	<?php echo $this->element('sidebar_2_homepage') ?>
 </div>
 

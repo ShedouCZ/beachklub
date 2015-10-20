@@ -31,7 +31,8 @@
         "ceeram/clear_cache": "~1.1",
         "webtechnick/configuration": "dev-bootstrap_theme",
         "hugodias/cakegallery": "dev-limit_styles",
-        "cakephp/debug_kit": "~2.2"
+        "cakephp/debug_kit": "~2.2",
+        "querypath/querypath": "~3.04"
     },
     "config": {
         "vendor-dir": "Vendor/"

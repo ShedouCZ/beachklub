@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b91cc69712c14719dab6179211790d0",
+    "hash": "c8e5774528f119abc80d518d96ae272d",
     "packages": [
         {
             "name": "cakephp/cakephp",
-            "version": "2.6.10",
+            "version": "2.6.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "727b73e2189fe1221e5ae338743812ad8e9f0631"
+                "reference": "3e0b6cc285e283b7f097b9ecf4898ba3b92b477d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/727b73e2189fe1221e5ae338743812ad8e9f0631",
-                "reference": "727b73e2189fe1221e5ae338743812ad8e9f0631",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/3e0b6cc285e283b7f097b9ecf4898ba3b92b477d",
+                "reference": "3e0b6cc285e283b7f097b9ecf4898ba3b92b477d",
                 "shasum": ""
             },
             "require": {
@@ -47,20 +47,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-07-23 02:08:48"
+            "time": "2015-08-07 01:35:52"
         },
         {
             "name": "cakephp/debug_kit",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "c91103061d9b7ec3141e642913f88090a292b2bf"
+                "reference": "6c318a779b63bd567fd17811aecc7654a74bbec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/c91103061d9b7ec3141e642913f88090a292b2bf",
-                "reference": "c91103061d9b7ec3141e642913f88090a292b2bf",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/6c318a779b63bd567fd17811aecc7654a74bbec5",
+                "reference": "6c318a779b63bd567fd17811aecc7654a74bbec5",
                 "shasum": ""
             },
             "require": {
@@ -96,7 +96,7 @@
                 "debug",
                 "kit"
             ],
-            "time": "2014-11-22 17:58:32"
+            "time": "2015-09-13 20:07:55"
         },
         {
             "name": "ceeram/clear_cache",
@@ -266,16 +266,16 @@
         },
         {
             "name": "hugodias/cakegallery",
-            "version": "dev-nopath",
+            "version": "dev-limit_styles",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptica/cakegallery.git",
-                "reference": "22ed38eb2b1e36d51265b0b847c7a63af5a97330"
+                "reference": "66422520e4c3fc9962c57bdf71eaaaf249404198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptica/cakegallery/zipball/22ed38eb2b1e36d51265b0b847c7a63af5a97330",
-                "reference": "22ed38eb2b1e36d51265b0b847c7a63af5a97330",
+                "url": "https://api.github.com/repos/ptica/cakegallery/zipball/66422520e4c3fc9962c57bdf71eaaaf249404198",
+                "reference": "66422520e4c3fc9962c57bdf71eaaaf249404198",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,72 @@
                 "issues": "https://github.com/hugodias/cakegallery/issues",
                 "source": "https://github.com/hugodias/cakegallery"
             },
-            "time": "2015-08-05 06:32:53"
+            "time": "2015-10-14 13:30:20"
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "8f782e0f01a6e33a319bdc8f6de9cfd6569979a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/8f782e0f01a6e33a319bdc8f6de9cfd6569979a4",
+                "reference": "8f782e0f01a6e33a319bdc8f6de9cfd6569979a4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-libxml": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "sami/sami": "~2.0",
+                "satooshi/php-coveralls": "0.6.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "time": "2015-06-07 08:43:18"
         },
         {
             "name": "ptica/BootstrapCake",
@@ -311,12 +376,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptica/BootstrapCake.git",
-                "reference": "c922d76245b95f3cca53c02fcab5e9573020112c"
+                "reference": "44f28db38af34d3a11c7a5025c9d0658a33e26f5"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ptica/BootstrapCake/zipball/44f28db38af34d3a11c7a5025c9d0658a33e26f5",
-                "reference": "c922d76245b95f3cca53c02fcab5e9573020112c",
+                "reference": "44f28db38af34d3a11c7a5025c9d0658a33e26f5",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +392,49 @@
             "support": {
                 "source": "https://github.com/ptica/BootstrapCake/tree/master"
             },
-            "time": "2015-07-01 08:55:28"
+            "time": "2015-07-29 14:50:58"
+        },
+        {
+            "name": "querypath/querypath",
+            "version": "3.04",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/technosophos/querypath.git",
+                "reference": "20e8a1ea75840ad61fe2664f7d8658daa05d4348"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/technosophos/querypath/zipball/20e8a1ea75840ad61fe2664f7d8658daa05d4348",
+                "reference": "20e8a1ea75840ad61fe2664f7d8658daa05d4348",
+                "shasum": ""
+            },
+            "require": {
+                "masterminds/html5": "2.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "QueryPath": "src/"
+                },
+                "files": [
+                    "src/qp_functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTML/XML querying (CSS 4 or XPath) and processing (like jQuery)",
+            "homepage": "https://github.com/technosophos/querypath",
+            "keywords": [
+                "css",
+                "html",
+                "jquery",
+                "xml",
+                "xslt"
+            ],
+            "time": "2015-10-10 20:46:32"
         },
         {
             "name": "webtechnick/configuration",

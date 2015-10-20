@@ -139,4 +139,6 @@ hr {
     font-family: 'BenchNine', sans-serif;
     font-size: 20px;
     line-height: 24px;
+    background: url(../images/a1.png) 0 5px no-repeat;
+    padding: 0 0 7px 20px;
 }

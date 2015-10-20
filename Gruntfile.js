@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 				src: [
 					//'Vendor/es5-shim/es5-shim.js',
 					//'Vendor/es5-shim/es5-sham.js',
-					'Vendor/jquery/dist/jquery.js',
+					'Vendor/jquery/dist/jquery.min.js',
 
 					// legacy js
 					'js/legacy/jquery.once.js',
@@ -119,11 +119,11 @@ module.exports = function(grunt) {
 					//'js/legacy/jquery.loader.js',
 					//'js/legacy/jquery.debouncedresize.js',
 
-					'Vendor/moment/moment.js',
+					'Vendor/moment/min/moment.min.js',
 					//'js/modernizr.preserve3d.js', // brings modernizr for defunctr
 					'js/modernizr.custom.svg.js',   // // brings modernizr for defunctr
 					'Vendor/defunctr/src/defunctr.js',
-					'Vendor/moment-range/lib/moment-range.js',
+					//'Vendor/moment-range/lib/moment-range.min.js',
 					'js/app.js',
 				],
 				dest: 'webroot/js/site-pre.js',
@@ -159,6 +159,7 @@ module.exports = function(grunt) {
 			},
 			js_post: {
 				src: [
+					'Vendor/Stickyfill/dist/stickyfill.js',
 					'js/legacy/flexslider.load.js',
 					'js/dom-ready.js'
 				],
