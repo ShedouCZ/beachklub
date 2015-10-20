@@ -9,3 +9,7 @@
 .note-editor .note-toolbar h4 {
     color: black;
 }
+
+.note-editor .note-editing-area .note-editable a {
+    color: #fff;
+}

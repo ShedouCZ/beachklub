@@ -172,8 +172,7 @@ module.exports = function(grunt) {
 				src: [
 					'Vendor/bootstrap/dist/js/bootstrap.js',
 					'Vendor/summernote/dist/summernote.js',
-					'Vendor/summernote/lang/summernote-cs-CZ.js',
-					'js/dom-ready.js'
+					'Vendor/summernote/lang/summernote-cs-CZ.js'
 				],
 				dest: 'webroot/js/air-mode.js',
 				nonull: true,

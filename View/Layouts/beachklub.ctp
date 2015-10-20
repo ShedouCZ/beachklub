@@ -238,7 +238,7 @@
 					<div class="grid-24">
 						<div id="main" class="clearfix">
 							<?php echo $this->fetch('sidebar', $default=$this->element('sidebar')); ?>
-							<section class="block">
+							<section class="block cake-content">
 								<?php echo $this->fetch('content'); ?>
 							</section>
 						</div>
