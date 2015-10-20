@@ -47,4 +47,36 @@ class Document extends AppModel {
 		)
 	);
 
+	public function beforeSave($options = array()) {
+		parent::beforeSave();
+		$placeholder = '[[generate:h2-menu]]';
+		if (strpos($this->data['Document']['perex'], $placeholder) !== false) {
+			// TODO: refactor this whole code!!
+			require_once "../Vendor/autoload.php";
+			$content = $this->data['Document']['content'];
+			$html5 = new Masterminds\HTML5();
+			$dom = $html5->loadHTML($content);
+			$qp = qp($dom);
+			$h2 = $qp->find('h2');
+			$titles = array();
+			foreach ($h2 as $i => $el) {
+				$title = $el->text();
+				$slug = $this->to_slug($title);
+				$el->attr('id', $slug);
+				$titles[$slug] = $title;
+			}
+			// persist new h2 ids
+			$this->data['Document']['content'] = $qp->innerHTML();
+
+			// render
+			$document = $this->data;
+			$element = 'h2-menu';
+			App::import('Controller', 'Documents');
+			$Documents = new DocumentsController;
+			$View = new View($Documents, false);
+			$this->data['Document']['perex'] = str_replace($placeholder, $View->element($element, compact('titles')), $document['Document']['perex']);
+		}
+		return true;
+	}
+
 }

@@ -69,4 +69,12 @@ class AppModel extends Model {
 		return true;
 	}
 
+	public function to_slug($string) {
+		$slug = $string;
+		$slug = str_replace('-', ' ', $slug);
+		$slug = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove; Lower();", $slug);
+		$slug = str_replace(' ', '-', $slug);
+		return $slug;
+	}
+
 }

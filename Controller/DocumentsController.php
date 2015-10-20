@@ -88,31 +88,6 @@ class DocumentsController extends AppController {
 			throw new NotFoundException(__('Invalid document'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			// dom document test
-			if (1) {
-				// php dom magic
-				$dom = new DOMDocument();
-				$dom->encoding = 'utf-8';
-				$content = mb_convert_encoding($this->request->data['Document']['content'], 'HTML-ENTITIES', 'UTF-8');
-				$content = '<div>' . $content . '</div>';
-				$ok = $dom->loadHTML($content);
-				$container = $dom->getElementsByTagName('div')->item(0);
-				$container = $container->parentNode->removeChild($container);
-				while ($dom->firstChild) {
-					$dom->removeChild($dom->firstChild);
-				}
-				while ($container->firstChild ) {
-					$dom->appendChild($container->firstChild);
-				}
-				//
-				$h2 = $dom->getElementsByTagName('h2');
-				foreach ($h2 as $book) {
-				    echo $book->nodeValue, PHP_EOL;
-				}
-				debug($dom->saveHTML($dom));
-				die();
-			}
-
 			if ($this->Document->save($this->request->data)) {
 				$this->Session->setFlash(__('The document has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect($this->recall_index_page());
