@@ -48,24 +48,24 @@ OK 23: Prosím o zaslání rozměru pro nové fotky dlaždic.
 OK 24: Vložila jsem aktuální text k rezervaci kurtů.
 
 Dlaždice "Turnaje":
-25: Vložila jsem aktuální text.
-Je možné vložit pouze typy turnajů s prolinkem na další popis turnajů?
+OK 25: Vložila jsem aktuální text.
+OK Je možné vložit pouze typy turnajů s prolinkem na další popis turnajů?
 
 Dlaždice "Kroužky":
-25: Vložila jsem aktuální text.
-Je možné vložit pouze typy kroužků s prolinkem na další popis kroužků?
+OK 25: Vložila jsem aktuální text.
+OK Je možné vložit pouze typy kroužků s prolinkem na další popis kroužků?
 
 Dlaždice "Tréninky":
-26: Vložila jsem aktuální text.
-Je možné vložit pouze typy tréninků s prolinkem na další popis tréninků?
+OK 26: Vložila jsem aktuální text.
+OK Je možné vložit pouze typy tréninků s prolinkem na další popis tréninků?
 
 Dlaždice "Firemní akce":
-27: Vložila jsem aktuální text.
+OK 27: Vložila jsem aktuální text.
 
 Dlaždice "Beachbar":
-28: Vložila jsem aktuální text.
-Šlo by vložit na stránku pouze např. nápojový lístek a prolink na stránku s možností editace? Tzn. nápojový lístek, gril apod.
+OK 28: Vložila jsem aktuální text.
+OK Šlo by vložit na stránku pouze např. nápojový lístek a prolink na stránku s možností editace? Tzn. nápojový lístek, gril apod.
 
 Dlaždice "Beachkempy v Čechách":
-29: Vložila jsem aktuální text.
-Je možné vložit pouze druhy beachkempu s prolinkem na další popis kempů?
+OK 29: Vložila jsem aktuální text.
+OK Je možné vložit pouze druhy beachkempu s prolinkem na další popis kempů?
