@@ -3,7 +3,8 @@
 		'Domů' => '/',
 		'O nás' => '/o-nas',
 		'Partneři' => '/partneri',
-		'Novinky' => '/novinky',
+		'Kalendář' => '/kalendar-akci',
+		'Burza' => '/burza',
 		'Kontakty' => '/kontakty',
 	);
 ?>

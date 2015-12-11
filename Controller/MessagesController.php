@@ -1,7 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
 class MessagesController extends AppController {
-	public $layout = 'BootstrapCake.bootstrap';
 	public $components = array('Paginator', 'Session');
 
 	// declare public actions

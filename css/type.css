@@ -142,3 +142,11 @@ hr {
     background: url(../images/a1.png) 0 5px no-repeat;
     padding: 0 0 7px 20px;
 }
+.backlink {
+    margin: 0 10px;
+    font-size: 14px;
+}
+.backlink a {
+    margin: 0 5px;
+    font-size: 14px;
+}

@@ -4,6 +4,7 @@
 		'O nás' => '/o-nas',
 		'Partneři' => '/partneri',
 		'Kalendář' => '/kalendar-akci',
+		'Burza' => '/burza',
 		'Kontakty' => '/kontakty',
 	);
 ?>

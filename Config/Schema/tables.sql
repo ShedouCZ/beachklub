@@ -675,4 +675,40 @@ INSERT INTO `users` (`id`, `username`, `password`, `mail`, `created`, `modified`
 (1,	'admin',	'$2a$10$oTInOZNrfJqOdFEjVAb00ugqLRwquceqkt39aam1pY/4m1/py4.nq',	NULL,	'2015-06-24 10:37:25',	'2015-06-24 10:37:25'),
 (2,	'veronika',	'$2a$10$v1cjUd5kGH0X7UE.O8pStOzUTOuGwct1dOEY01NI2A14t4s9cMSSe',	NULL,	'2015-08-05 23:41:33',	'2015-08-05 23:41:33');
 
+DROP TABLE IF EXISTS `ads`;
+CREATE TABLE `ads` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `description` text COLLATE utf8_czech_ci NOT NULL,
+  `contact` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `public` tinyint(1) NOT NULL DEFAULT '1',
+  `created` datetime NOT NULL,
+  `token` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+INSERT INTO `ads` (`id`, `description`, `contact`, `email`, `public`, `created`, `token`) VALUES
+(1,	'hledam',	'jan.ptacek@gmail.com',	'p@email.cz',	1,	'2015-10-21 00:00:00',	''),
+(2,	'sd',	'',	'',	1,	'2015-10-21 00:00:00',	NULL),
+(3,	'dalsi 3',	'',	'',	1,	'2015-10-21 00:00:00',	NULL),
+(4,	'dsgf',	NULL,	'jan.ptacek@gmail',	1,	'2015-10-21 00:00:00',	NULL),
+(5,	'sadfdsfg',	NULL,	'j@email.cz',	1,	'2015-10-21 00:00:00',	NULL),
+(6,	'Slovinsko jen s obtížemi zvládá tisíce uprchlíků, kteří se přes drobný stát snaží dostat do Evropy. V táboře ve slovinském městě Brežice ve středu ráno vypukl požár, podle některých zpráv stany zapálili uprchlíci. Migranti také prchli z detenčního centra u rakouských hranic.',	NULL,	'',	1,	'2015-10-21 00:00:00',	NULL),
+(7,	'text inzeratu',	NULL,	'jan.ptacek@gmail.com',	1,	'2015-10-22 00:00:00',	NULL);
+
+DROP TABLE IF EXISTS `ad_replies`;
+CREATE TABLE `ad_replies` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ad_id` int(255) NOT NULL,
+  `description` text COLLATE utf8_czech_ci NOT NULL,
+  `contact` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  `public` tinyint(1) NOT NULL DEFAULT '1',
+  `created` datetime NOT NULL,
+  `token` varchar(255) COLLATE utf8_czech_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ad_id` (`ad_id`),
+  CONSTRAINT `ad_replies_ibfk_1` FOREIGN KEY (`ad_id`) REFERENCES `ads` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
 -- 2015-10-21 06:30:29

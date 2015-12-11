@@ -53,7 +53,7 @@
     <!-- /.content -->
 
 <?php if (!$first) { ?>
-    <?php echo $this->Element('pager', array('paging' => $docs['paging']['Document'])) ?>
+    <?php echo $this->Element('pager', array('url' => '/novinky', 'paging' => $docs['paging']['Document'])) ?>
 <?php } ?>
 
 </div>

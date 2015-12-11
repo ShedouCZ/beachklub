@@ -50,6 +50,7 @@ ul.menu li {
 }
 #superfish-1>li>a {
   width: 184px;
+  width: 152px;
   background: url(../images/menu-separator.png) 0 50% no-repeat;
 }
 #superfish-1 a {

@@ -140,6 +140,7 @@ ul.inline li {
 	}
 	#superfish-1>li>a {
 		width: 184px;
+		width: 157px;
 		background: url(../images/menu-separator.png) 0 50% no-repeat;
 	}
 	#superfish-1>li:first-child>a {
@@ -1283,7 +1284,7 @@ th {background:#f36b00; color: #fff; padding: 5px;}
 html.js .collapsible.collapsed.collapsible .fieldset-legend {background-image:url(../images/menu-collapsed.png);}
 html.js .collapsible.collapsible .fieldset-legend {background-image:url(../images/menu-expanded.png);}
 
-input[type="text"], input[type="password"], input[type="search"], textarea {
+input[type="text"], input[type="password"], input[type="search"], input[type="emailBREAKS-ADS_add_FOrM"], textarea {
 	background:#fff;
 	background: url(../images/form-bg.png);
 	border:none;
