@@ -19,6 +19,7 @@
             $end = $paging['page'] + ($modulus - $paging['page']) + 1;
         }
     }
+    if (!@$url) $url = '/novinky';
 ?>
 <ul class="pager">
     <?php if (($page == $end || $start != 1) && $paging['prevPage']) { ?>
