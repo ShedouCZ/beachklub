@@ -6,7 +6,7 @@ class EventsController extends AppController {
 	public $components = array('Paginator', 'Session');
 
 	public function index() {
-	    $items = $this->paginate();
+	    $items = $this->Paginator->paginate('Event');
 	    if ($this->request->is('requested')) {
 	        return $items;
 	    }

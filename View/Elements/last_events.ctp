@@ -1,6 +1,6 @@
 <?php
   $items = $this->requestAction(
-    'events/index/sort:created/direction:asc/limit:5'
+    'events/index/sort:date/direction:asc'
   );
 ?>
 <div class="view-content events">
