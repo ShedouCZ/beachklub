@@ -9,6 +9,7 @@
     $sidebar = $document['Document']['perex'];
     if (!empty($sidebar) && $sidebar != '<p><br></p>') {
         if ($sidebar == '<p>[[none]]</p>') {
+            // empty sidebar
             $this->assign('sidebar', '');
         } else {
             $this->start('sidebar'); ?>
@@ -19,22 +20,10 @@
                             echo $this->Html->div('button admin_edit right', $link);
                         }
                     ?>
-                    <?php echo $document['Document']['perex']; ?>
+                    <?php echo $this->Html->replace_elements($document['Document']['perex']); ?>
                 </aside><?php
             $this->end();
             //$this->assign('sidebar', $sidebar);
-        }
-    }
-
-    if (strpos($document['Document']['content'], '[[') !== false) {
-        // replace element tags
-        // [[element:name]]
-        $matches = array();
-        preg_match_all('/\[\[element:(.*?)\]\]/', $document['Document']['content'], $matches, PREG_SET_ORDER);
-        foreach ($matches as $match) {
-            $element      = $match[1];
-            $placeholder  = $match[0];
-            $document['Document']['content'] = str_replace($placeholder, $this->element($element), $document['Document']['content']);
         }
     }
 ?>
@@ -47,7 +36,7 @@
                     <article id="doc-<?php echo $document['Document']['id']?>" class="clearfix">
 
                         <div class="content air-mode">
-                            <?php echo $document['Document']['content'];?>
+                            <?php echo $this->Html->replace_elements($document['Document']['content']);?>
                         </div><!-- /.content -->
 
                     </article><!-- /.node -->

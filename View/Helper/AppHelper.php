@@ -25,4 +25,19 @@ class AppHelper extends Helper {
     	$t = preg_replace('/\b([svkzo]) \b/', '\1&nbsp;', $t);
     	return $t;
     }
+
+    public function replace_elements($content) {
+        if (strpos($content, '[[') !== false) {
+            // replace element tags
+            // [[element:name]]
+            $matches = array();
+            preg_match_all('/\[\[element:(.*?)\]\]/', $content, $matches, PREG_SET_ORDER);
+            foreach ($matches as $match) {
+                $element      = $match[1];
+                $placeholder  = $match[0];
+                $content = str_replace($placeholder, $this->_View->element($element), $content);
+            }
+        }
+        return $content;
+    }
 }

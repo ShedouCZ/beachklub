@@ -14,8 +14,19 @@ class Coach extends AppModel {
 		)
 	);
 
-		// create a dedicated album in Config/sql/tables.sql
-		// and fill the id here
-		// so uploaded images end up in the dedicated album
-		public static $album_id = 4;
+	// create a dedicated album in Config/sql/tables.sql
+	// and fill the id here
+	// so uploaded images end up in the dedicated album
+	public static $album_id = 4;
+
+	public function beforeSave($options = array()) {
+		parent::beforeSave();
+		if (empty($this->data['Coach']['slug'])) {
+			$this->data['Coach']['slug'] = $this->data['Coach']['name'];
+		}
+		if ($this->data['Coach']['slug']) {
+			$this->data['Coach']['slug'] = $this->to_slug($this->data['Coach']['slug']);
+		}
+		return true;
+	}
 }

@@ -1,6 +1,6 @@
 <?php
     $items = $this->requestAction(
-    'coaches/index/sort:created/direction:asc'
+    'coaches/index/sort:ord/direction:asc'
     );
 ?>
 <?php foreach ($items as $item): ?>
@@ -26,7 +26,7 @@
         <div class="views-field views-field-nothing extra">
             <span class="field-content">
                 <div class="views-field-title title-indent">
-                    <h2><?php echo $item['Coach']['name']; ?></h2>
+                    <?php echo $this->Html->tag('h2', $item['Coach']['name'], array('id'=>$item['Coach']['slug'])); ?>
                 </div>
                 <div class="views-field-body">
                     <h3><?php echo $item['Coach']['title']; ?></h3>
