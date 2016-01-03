@@ -18,7 +18,7 @@
 	<?php foreach ($ads as $ad) { ?>
 		<div class="ad">
 			<?php echo $this->Time->format($ad['Ad']['created'], '%-d.%-m.&nbsp;%Y'); ?>
-			<?php $view_url = array('action' => 'view', $ad['Ad']['id']); ?>
+			<?php $view_url = array('action' => 'view', 'id' => $ad['Ad']['id']); ?>
 			<?php echo $this->Html->link('', $view_url, array('class' => 'view')); ?>
 			<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $ad['Ad']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $ad['Ad']['id'])); ?>
 			<div class="desc">

@@ -23,6 +23,19 @@ class AdsController extends AppController {
 		if (!$this->Ad->exists($id)) {
 			throw new NotFoundException(__('Invalid ad'));
 		}
+		if ($this->request->is('post')) {
+			// adding a reply
+			$this->AdReply->create();
+			$this->request->data['AdReply']['ad_id'] = $id;
+			$this->request->data['AdReply']['token'] = uniqid();
+			if ($this->AdReply->save($this->request->data)) {
+				$this->Session->setFlash(__('Odpověď byla v pořádku uložena.'), 'default', array('class' => 'alert alert-success'));
+				return $this->redirect(array('action' => 'view', 'id'=>$id));
+			} else {
+				$this->Session->setFlash(__('Odpověď se nepodařilo uložit. Zkuste to znovu prosím.'), 'default', array('class' => 'alert alert-danger'));
+			}
+		}
+
 		$options = array('conditions' => array('Ad.' . $this->Ad->primaryKey => $id));
 		$this->set('ad', $this->Ad->find('first', $options));
 	}
@@ -30,6 +43,7 @@ class AdsController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Ad->create();
+			$this->request->data['Ad']['token'] = uniqid();
 			if ($this->Ad->save($this->request->data)) {
 				$this->Session->setFlash(__('Inzerát byl v pořádku uložen.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));

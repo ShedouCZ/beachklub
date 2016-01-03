@@ -7,6 +7,14 @@
     position: relative;
     cursor:pointer;
 }
+.ad.view {
+    cursor: default;
+    width: 100%;
+}
+.ad.reply {
+    margin-left: 15%;
+    width: 85%;
+}
 .ad:after {
     display: block;
     content: '';
@@ -70,6 +78,10 @@
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+.form-horizontal.view {
+    width:85%;
+    margin-left:15%;
+}
 .form-control:focus {
     border-color: #66afe9;
     outline: 0;
@@ -83,7 +95,9 @@ textarea.form-control {
     margin-bottom: 15px;
 }
 input[name="data[Ad][email]"],
-textarea[name="data[Ad][description]"] {
+textarea[name="data[Ad][description]"],
+input[name="data[AdReply][email]"],
+textarea[name="data[AdReply][description]"] {
     color: #585858;
     font-family: BenchNine,sans-serif;
     font-size: 28px;
