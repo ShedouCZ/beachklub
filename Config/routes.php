@@ -1,6 +1,7 @@
 <?php
 
 App::uses('SlugRoute', 'Routing/Route');
+App::uses('AliasRoute', 'Routing/Route');
 
 /**
  * Routes configuration
@@ -39,7 +40,9 @@ App::uses('SlugRoute', 'Routing/Route');
 	Router::connect('/admin', array('controller' => 'news', 'action' => 'index', 'admin' => true));
 
 	Router::connect('/akce/:slug', array('controller' => 'events', 'action' => 'view', 'model' => 'Event'), array('slug'=>'[\w-]+', 'routeClass'=>'SlugRoute'));
-	Router::connect('/:slug', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('slug'=>'[\w-]+', 'routeClass'=>'SlugRoute'));
+	Router::connect('/:slug', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('slug'=>'[\w-.]+', 'routeClass'=>'SlugRoute'));
+
+	Router::connect('/:alias', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('alias'=>'[\w-.]+', 'routeClass'=>'AliasRoute'));
 
 
 /**

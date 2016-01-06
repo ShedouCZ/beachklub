@@ -4,7 +4,7 @@
 		<div class="col-md-12">
 			<div class="page-header">
 									<ul class="nav nav-pills pull-right">
-							<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List News'), array('action'=>'index'), array('escape'=>false)); ?></li>
+							<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Events'), array('action'=>'index'), array('escape'=>false)); ?></li>
 					</ul>
 								<h1><?php echo __('Admin Add Event'); ?></h1>
 			</div>
