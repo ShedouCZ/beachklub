@@ -72,8 +72,11 @@ class AppModel extends Model {
 	public function to_slug($string) {
 		$slug = $string;
 		$slug = str_replace('-', ' ', $slug);
+		$slug = str_replace('&', '', $slug);
+		$slug = str_replace('|', '', $slug);
+		// TODO remove &,|
 		$slug = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove; Lower();", $slug);
-		$slug = str_replace(' ', '-', $slug);
+		$slug = preg_replace('/ +/', '-', $slug);
 		return $slug;
 	}
 

@@ -4,7 +4,7 @@
 		<div class="col-md-12">
 			<div class="page-header">
 									<ul class="nav nav-pills pull-right">
-							<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete'), array('action'=>'delete', $this->Form->value('News.id')), array('escape'=>false), __('Are you sure you want to delete # %s?', $this->Form->value('News.id'))); ?></li>
+							<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;' . __('Delete'), array('action'=>'delete', $this->Form->value('Event.id')), array('escape'=>false), __('Are you sure you want to delete # %s?', $this->Form->value('Event.id'))); ?></li>
 							<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;' . __('List Events'), array('action'=>'index'), array('escape'=>false)); ?></li>
 					</ul>
 								<h1><?php echo __('Admin Edit News'); ?></h1>
