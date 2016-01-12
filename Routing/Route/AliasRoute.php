@@ -18,7 +18,7 @@ class AliasRoute extends RedirectRoute {
 		$model = $params['model'];
 		$alias  = $params['alias'];
 
-		// TODO!
+		// DISABLE CACHE
 		if (0 && is_null($this->cache)) {
 			$this->cache = Cache::read('AliasRoute' . $model);
 		}
@@ -50,7 +50,7 @@ class AliasRoute extends RedirectRoute {
 			return false;
 		}
 
-		// TODO redirect
+		// redirect
 		$redirect = $slug;
 		$status = 301;
 		if (isset($this->options['status']) && ($this->options['status'] >= 300 && $this->options['status'] < 400)) {
