@@ -22,7 +22,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 2);
+	Configure::write('debug', 0);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
@@ -157,7 +157,7 @@ Configure::write('Routing.prefixes', array('admin'));
  * or in each action using $this->cacheAction = true.
  *
  */
-	//Configure::write('Cache.check', true);
+	Configure::write('Cache.check', true);
 
 /**
  * Enable cache view prefixes.
@@ -167,7 +167,13 @@ Configure::write('Routing.prefixes', array('admin'));
  * for instance. Each version can then have its own view cache namespace.
  * Note: The final cache file name will then be `prefix_cachefilename`.
  */
-	//Configure::write('Cache.viewPrefix', 'prefix');
+	// we need separate cache for mobile and admins
+	// so start session + mock CakeRequest to decide the Cache.viewPrefix
+	session_start();
+	App::uses('CakeRequest', 'Network');
+	$mobile = (new CakeRequest('/', false))->is('mobile') ? 'mobile' : '';
+	$admin  = isset($_SESSION['Auth']['User']) ? 'admin' : '';
+	Configure::write('Cache.viewPrefix', $admin . $mobile);
 
 /**
  * Session configuration.
@@ -334,7 +340,7 @@ $engine = 'File';
 // In development mode, caches should expire quickly.
 $duration = '+999 days';
 if (Configure::read('debug') > 0) {
-	$duration = '+10 seconds';
+	$duration = '+100 seconds';
 }
 
 // Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.
@@ -349,7 +355,8 @@ Cache::config('_cake_core_', array(
 	'prefix' => $prefix . 'cake_core_',
 	'path' => CACHE . 'persistent' . DS,
 	'serialize' => ($engine === 'File'),
-	'duration' => $duration
+	'duration' => $duration,
+	'lock' => true
 ));
 
 /**

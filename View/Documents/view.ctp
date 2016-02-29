@@ -1,3 +1,7 @@
+<?php
+        $this->assign('title', $document['Document']['title']);
+        $this->assign('perex', trim(strip_tags(preg_replace('/&nbsp;/', ' ', $document['Document']['perex']))));
+?>
 	<div id="content" class="column" role="main">
 		<div class="section">
 			<div class="region region-content">

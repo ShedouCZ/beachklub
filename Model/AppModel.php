@@ -66,6 +66,7 @@ class AppModel extends Model {
 
 	public function beforeSave($options = array()) {
 		$this->convert_date_fields();
+		clearCache();
 		return true;
 	}
 

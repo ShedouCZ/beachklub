@@ -1,6 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=BenchNine:700&subset=latin,latin-ext);
 
-
 /* ------------------------- DRUPAL 7 FRAMEWORK ------------------------- */
 body#body {
 	background: #fff;
@@ -140,7 +139,7 @@ ul.inline li {
 	}
 	#superfish-1>li>a {
 		width: 184px;
-		width: 157px;
+		width: 152px;
 		background: url(../images/menu-separator.png) 0 50% no-repeat;
 	}
 	#superfish-1>li:first-child>a {
@@ -1395,3 +1394,4 @@ label.option {vertical-align:middle;}
 	margin-right: 0;
 	border: none;
 }
+

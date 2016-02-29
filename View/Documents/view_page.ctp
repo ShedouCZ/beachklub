@@ -6,6 +6,9 @@
 ?>
 
 <?php
+    $this->assign('title', $document['Document']['title']);
+    $this->assign('perex', $document['Document']['description']);
+
     $sidebar = $document['Document']['perex'];
     if (!empty($sidebar) && $sidebar != '<p><br></p>') {
         if ($sidebar == '<p>[[none]]</p>') {

@@ -27,6 +27,8 @@ class PagesController extends AppController {
  * @var array
  */
 	public $uses = array();
+	public $helpers = array('Cache');
+	public $cacheAction = "7 days";
 
 /**
  * Displays a view

@@ -1,4 +1,5 @@
 <?php
+	$this->assign('title', 'Burza hráčů');
 	$this->assign('sidebar', '<aside class="column column_right prefix-1 grid-8 omega" role="complementary">
 	<section class="sidebar-menu">
 	<ul style="margin-top:11px">

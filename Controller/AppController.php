@@ -31,7 +31,13 @@ class AppController extends Controller {
     public $helpers = array(
         'Form' => array('className' => 'Bs3Helpers.Bs3Form'),
         'Html' => array('className' => 'Bs3Helpers.Bs3Html'),
+	'MinifyHtml.MinifyHtml',
     );
+
+    public function beforeRender() {
+	$mobile = $this->request->is('mobile');
+	$this->set('mobile', $mobile);
+    }
 
     public function beforeFilter() {
         /**

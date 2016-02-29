@@ -1,0 +1,3 @@
+@media (max-device-width: 700px) { 
+ #block-views-slider-block { display:none; }
+}

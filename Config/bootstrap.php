@@ -21,7 +21,8 @@ CakePlugin::load(array(
 	//'RangeParser',
 	//'Localized',
 	//'DebugKit',
-	'Gallery' => array('bootstrap'=>true, 'routes'=>true)
+	'Gallery' => array('bootstrap'=>true, 'routes'=>true),
+	'MinifyHtml',
 ));
 
 // Setup a 'default' cache configuration for use in the application.

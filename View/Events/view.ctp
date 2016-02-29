@@ -1,10 +1,12 @@
 <div class="content">
-	<?php
-		if (AuthComponent::user()) {
-			$link = $this->Html->link('upravit', '/admin/events/edit/' . $event['Event']['id']);
-			echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:18px'));
-		}
-	?>
+<?php
+	if (AuthComponent::user()) {
+		$link = $this->Html->link('upravit', '/admin/events/edit/' . $event['Event']['id']);
+		echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:18px'));
+	}
+        $this->assign('title', $event['Event']['title']);
+        $this->assign('perex', trim(strip_tags(preg_replace('/&nbsp;/', ' ', $event['Event']['perex']))));
+?>
 
 	<h1 class="air-mode"><?php echo $event['Event']['title'] ?></h1>
 

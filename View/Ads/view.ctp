@@ -1,3 +1,6 @@
+<?php
+	$this->assign('title', 'Burza hráčů');
+?>
 <h1>Burza hráčů - inzerát</h1>
 
 <?php

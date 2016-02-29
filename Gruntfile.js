@@ -203,6 +203,17 @@ module.exports = function(grunt) {
 					separator: ';\n'
 				}
 			},
+			js_async: {
+				src: [
+					'webroot/js/site-pre.js',
+					'webroot/js/site-post.js'
+				],
+				dest: 'webroot/js/site-async.js',
+				nonull: true,
+				options: {
+					separator: ';\n'
+				}
+			},
 			css: {
 				src: [
 					'css/*.css'
@@ -255,6 +266,17 @@ module.exports = function(grunt) {
 				options: {
 					separator: '\n'
 				}
+			},
+			above_fold: {
+				src: [
+					'css/superfish.css',
+					'css/search-bar.css'
+				],
+				dest: 'webroot/css/above-fold.css',
+				nonull: true,
+				options: {
+					separator: '\n'
+				}
 			}
 		},
 		// compile less into css
@@ -285,7 +307,8 @@ module.exports = function(grunt) {
 				files: {
 					'webroot/js/site-post.js': 'webroot/js/site-post.js',
 					'webroot/js/site-pre.js': 'webroot/js/site-pre.js',
-					'webroot/js/air-mode.js': 'webroot/js/air-mode.js'
+					'webroot/js/air-mode.js': 'webroot/js/air-mode.js',
+					'webroot/js/site-async.js': 'webroot/js/site-async.js'
 				}
 			}
 		},
@@ -293,7 +316,9 @@ module.exports = function(grunt) {
 			site: {
 				files: {
 					'webroot/css/site.css': 'webroot/css/site.css',
-					'webroot/css/legacy.css': 'webroot/css/legacy.css'
+					'webroot/css/legacy.css': 'webroot/css/legacy.css',
+					'webroot/css/air-mode.css': 'webroot/css/air-mode.css',
+					'webroot/css/above-fold.css': 'webroot/css/above-fold.css'
 				}
 			}
 		},
@@ -342,8 +367,8 @@ module.exports = function(grunt) {
 
 	// Task definition
 	grunt.registerTask('default', ['scripts', 'stylesheets', 'copy']);
-	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', 'concat:css_legacy', 'concat:css_air_mode', /*'postcss',*/ 'cssmin']);
-	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js_pre', 'concat:js_post', 'concat:js_admin', 'concat:js_admin_post', 'concat:js_air_mode' /*, 'uglify'*/]);
+	grunt.registerTask('stylesheets', ['less', 'concat:css', 'concat:css_admin', 'concat:css_legacy', 'concat:css_air_mode', 'concat:above_fold',  /*'postcss',*/ 'cssmin']);
+	grunt.registerTask('scripts', ['handlebars', /*'react',*/ 'concat:js_pre', 'concat:js_post', 'concat:js_admin', 'concat:js_admin_post', 'concat:js_air_mode', 'concat:js_async' /*, 'uglify'*/]);
 
 	grunt.registerTask('locales', ['po2json', 'json']);
 	//grunt.registerTask('stylesheets', ['less', 'concat:css', 'cssmin']);

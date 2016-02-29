@@ -1,3 +1,6 @@
+<?php
+	$this->assign('title', $document['Document']['title']);
+?>
 	<div id="content" class="column" role="main">
 		<div class="section">
 			<div class="region region-content">

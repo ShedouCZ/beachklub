@@ -24,11 +24,14 @@
 					<?php echo $this->Form->input('title', array('data-provide'=>'slug-src', 'class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('slug', array('data-provide'=>'slug-dst', 'class'=>'form-control', 'placeholder'=>__('Address'), 'label'=>__('Address')));?>
+					<?php echo $this->Form->input('slug', array('data-provide'=>'slug-dst', 'class'=>'form-control', 'placeholder'=>'Url', 'label'=>'Url'));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
+				<div class="form-group" id="description">
+                                        <?php echo $this->Form->input('description', array('class'=>'form-control', 'label'=>'Perex', 'placeholder'=>__('Perex')));?>
+                                </div>
 				<div class="form-group">
 					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>349, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
 				</div>

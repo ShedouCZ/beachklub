@@ -29,7 +29,7 @@
 					<?php echo $this->Form->input('title', array('class'=>'form-control', 'placeholder'=>__('Title')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>__('Url')));?>
+					<?php echo $this->Form->input('slug', array('class'=>'form-control', 'placeholder'=>__('Url'), 'label'=>'Url'));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('alias', array('class'=>'form-control', 'placeholder'=>__('Alias'), 'label'=>__('Alias')));?>
@@ -37,8 +37,11 @@
 				<div class="form-group">
 					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
 				</div>
+				<div class="form-group" id="description">
+					<?php echo $this->Form->input('description', array('class'=>'form-control', 'label'=>'Perex', 'placeholder'=>__('Perex')));?>
+				</div>
 				<div class="form-group" id="sidebar">
-					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>349, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Perex')));?>
+					<?php echo $this->Form->input('perex', array('data-provide'=>'wysiwyg', 'data-wysiwyg-width'=>349, 'class'=>'form-control', 'label'=>'Sidebar', 'placeholder'=>__('Sidebar')));?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('user_id', array('class'=>'form-control', 'placeholder'=>__('User Id')));?>
