@@ -181,6 +181,17 @@ module.exports = function(grunt) {
 					separator: ';\n'
 				}
 			},
+			js_async: {
+				src: [
+					'webroot/js/site-pre.js',
+					'webroot/js/site-post.js'
+				],
+				dest: 'webroot/js/site-async.js',
+				nonull: true,
+				options: {
+					separator: ';\n'
+				}
+			},
 			js_admin: {
 				src: [
 					'Vendor/summernote/dist/summernote.js',
@@ -293,7 +304,8 @@ module.exports = function(grunt) {
 			site: {
 				files: {
 					'webroot/css/site.css': 'webroot/css/site.css',
-					'webroot/css/legacy.css': 'webroot/css/legacy.css'
+					'webroot/css/legacy.css': 'webroot/css/legacy.css',
+					'webroot/css/air-mode.css': 'webroot/css/air-mode.css'
 				}
 			}
 		},
