@@ -31,7 +31,10 @@ class AdsController extends AppController {
 			$this->request->data['AdReply']['ad_id'] = $id;
 			$this->request->data['AdReply']['token'] = uniqid();
 			if ($this->AdReply->save($this->request->data)) {
-				$this->email_reply($id);
+				if ($this->request->data['AdReply']['sum'] == 2) {
+					// js check passed
+					$this->email_reply($id);
+				}
 				$this->Session->setFlash(__('Odpověď byla v pořádku uložena.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'view', 'id'=>$id));
 			} else {

@@ -12,6 +12,8 @@
 
 <div class="" style="width:500px">
 <?php echo $this->Form->create('Ad', array('role'=>'form', 'class'=>'form-horizontal')); ?>
+	<?php echo $this->Form->hidden('sum', array('value'=>1)); ?>
+	<script> document.getElementById('AdSum').value = 2; </script>
 	<div class="ad-form-group">
 		<label for="edit-name" title="Toto pole je vyžadováno.">Váš email <span class="form-required">*</span></label>
 		<?php echo $this->Form->input('email', array('label'=>false, 'wrap' => false));?>

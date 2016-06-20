@@ -3,6 +3,21 @@ App::uses('AppController', 'Controller');
 class DocumentsController extends AppController {
 	public $layout = 'BootstrapCake.bootstrap';
 	public $components = array('Paginator', 'Session');
+	private $token;
+
+	public function beforeFilter() {
+		parent::beforeFilter();
+		// allow admin_edit with correct token
+		if ($this->request->query['token']) {
+			$token = $this->request->query['token'];
+			$id    = $this->request->pass[0];
+			
+			if ($this->Document->check_token($id, $token)) {
+				$this->Auth->allow('admin_edit');
+				$this->token = $token;
+			}
+		}
+	}
 
 	public function index() {
 		if ($this->request->is('requested')) {
@@ -101,6 +116,7 @@ class DocumentsController extends AppController {
 		}
 		$users = $this->Document->User->find('list');
 		$this->set(compact('users'));
+		$this->set('token', $this->token);
 	}
 
 	public function admin_delete($id = null) {

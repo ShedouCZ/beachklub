@@ -81,4 +81,12 @@ class AppModel extends Model {
 		return $slug;
 	}
 
+	public function check_token($id, $token) {
+		$this->id = $id;
+		if ($token == $this->field('token')) {
+			return true;
+		}
+		return false;
+	}
+
 }
