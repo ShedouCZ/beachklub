@@ -10,12 +10,14 @@
 ?>
 <div id="block-system-main" class="block block-system block-even">
   <div class="content">
+      <!--nocache-->
       <?php
         if ($first && AuthComponent::user()) {
             $link = $this->Html->link('přidat', '/admin/news/add/');
             echo $this->Html->div('button admin_edit left', $link, array('style'=>'margin-top:7px'));
         }
       ?>
+      <!--/nocache-->
         <?php foreach ($docs['items'] as $doc): ?>
             <article id="doc-<?php echo $doc['Document']['id']?>" class="node node-page node-promoted node-teaser node-odd published with-comments promote node-teaser clearfix">
               <header>

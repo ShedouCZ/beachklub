@@ -35,7 +35,13 @@
 					<?php echo $this->Form->input('alias', array('class'=>'form-control', 'placeholder'=>__('Alias'), 'label'=>__('Alias')));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));?>
+					<?php 
+						if (@$token) {
+							echo $this->Form->input('content', array('data-provide'=>'', 'class'=>'form-control', 'style'=>'height:1200px', 'placeholder'=>__('Content')));
+						} else {
+							echo $this->Form->input('content', array('data-provide'=>'wysiwyg', 'class'=>'form-control', 'placeholder'=>__('Content')));
+						}
+					?>
 				</div>
 				<div class="form-group" id="description">
 					<?php echo $this->Form->input('description', array('class'=>'form-control', 'label'=>'Perex', 'placeholder'=>__('Perex')));?>

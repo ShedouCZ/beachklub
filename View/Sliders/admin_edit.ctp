@@ -37,6 +37,10 @@
 						));
 					?>
 				</div>
+
+				<div class="form-group">
+					<?php echo $this->Form->input('dest_url', array('class'=>'form-control', 'placeholder'=>__('Url')));?>
+				</div>
 				
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8">
