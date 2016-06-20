@@ -181,6 +181,17 @@ module.exports = function(grunt) {
 					separator: ';\n'
 				}
 			},
+			js_async: {
+				src: [
+					'webroot/js/site-pre.js',
+					'webroot/js/site-post.js'
+				],
+				dest: 'webroot/js/site-async.js',
+				nonull: true,
+				options: {
+					separator: ';\n'
+				}
+			},
 			js_admin: {
 				src: [
 					'Vendor/summernote/dist/summernote.js',

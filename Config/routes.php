@@ -28,6 +28,7 @@ App::uses('AliasRoute', 'Routing/Route');
 	Router::connect('/novinky/*', array('controller' => 'news', 'action' => 'index'));
 	Router::connect('/burza/novy-inzerat', array('controller' => 'ads', 'action'=>'add'));
 	Router::connect('/burza/:id', array('controller' => 'ads', 'action'=>'view'), array('id' => '[0-9]+', 'pass' => array('id')));
+	Router::connect('/upravit/:token', array('controller' => 'ads', 'action' => 'author_edit', 'token' => '[a-z0-9]+'), array('pass' => array('token')));
 	Router::connect('/burza', array('controller' => 'ads', 'action'=>'index'));
 	Router::connect('/akce/:id', array('controller' => 'events', 'action' => 'view'), array('id' => '[0-9]+', 'pass' => array('id')));
 	//Router::connect('/o-nas', array('controller' => 'pages', 'action' => 'display', 'about'));
@@ -43,6 +44,8 @@ App::uses('AliasRoute', 'Routing/Route');
 	Router::connect('/:slug', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('slug'=>'[\w-.]+', 'routeClass'=>'SlugRoute'));
 
 	Router::connect('/:alias', array( 'controller' => 'documents', 'action' => 'view', 'model' => 'Document'), array('alias'=>'[\w-.]+', 'routeClass'=>'AliasRoute'));
+
+	Router::connect('/admin/config/*', array('controller' => 'configurations', 'plugin' => 'configuration'));
 
 
 /**

@@ -28,6 +28,10 @@
 			<div class="button">
 				<?php echo $this->Html->link('odepsat', $view_url); ?>
 			</div>
+			<?php if (count($ad['AdReply'])) {
+				echo $this->Html->div('response-place', '');
+				echo $this->Html->div('response-count', 'Odpovědí: ' . count($ad['AdReply']));
+			} ?>
 		</div>
 	<?php } ?>
 

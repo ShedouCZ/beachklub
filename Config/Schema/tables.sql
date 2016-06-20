@@ -712,3 +712,12 @@ CREATE TABLE `ad_replies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 -- 2015-10-21 06:30:29
+
+DROP TABLE IF EXISTS `configurations`;
+CREATE TABLE `configurations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8_czech_ci NOT NULL,
+  `value` text COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;

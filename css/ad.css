@@ -103,3 +103,10 @@ textarea[name="data[AdReply][description]"] {
     font-size: 28px;
     line-height: 34px;
 }
+.ad .response-count {
+    position: absolute;
+    bottom: 15px;
+}
+.ad .response-place {
+  margin-top: 11px;
+}
