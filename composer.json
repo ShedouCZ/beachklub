@@ -7,6 +7,10 @@
         }
     ],
     "repositories": [
+	{
+	   "type": "vcs",
+	   "url": "https://github.com/ptica/MinifyHtml"
+	},
         {
             "type": "vcs",
             "url": "https://github.com/ptica/BootstrapCake"
@@ -32,7 +36,8 @@
         "webtechnick/configuration": "dev-bootstrap_theme",
         "hugodias/cakegallery": "dev-limit_styles",
         "cakephp/debug_kit": "~2.2",
-        "querypath/querypath": "~3.04"
+        "querypath/querypath": "~3.04",
+	"plyst/cakephp-minifyhtml-plugin": "dev-master"
     },
     "config": {
         "vendor-dir": "Vendor/"
