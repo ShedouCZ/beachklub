@@ -8,7 +8,7 @@ class DocumentsController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// allow admin_edit with correct token
-		if ($this->request->query['token']) {
+		if (@$this->request->query['token']) {
 			$token = $this->request->query['token'];
 			$id    = $this->request->pass[0];
 			
