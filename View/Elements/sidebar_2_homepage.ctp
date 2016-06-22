@@ -7,6 +7,6 @@
     }
 
     echo $document['Document']['perex'];
-    $this->assign('perex', $document['Document']['description']);
+    $this->assign('perex', @$document['Document']['description']);
     $this->assign('title', $document['Document']['title']);
 ?>
