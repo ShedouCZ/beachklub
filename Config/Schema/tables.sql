@@ -36,6 +36,7 @@ CREATE TABLE `documents` (
   `is_page` tinyint(1) NOT NULL DEFAULT '1',
   `ord` int(11) NOT NULL DEFAULT '0',
   `slug` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `token` varchar(25) NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
@@ -611,6 +612,7 @@ DROP TABLE IF EXISTS `sliders`;
 CREATE TABLE `sliders` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `dest_url` varchar(255) NULL,
   `ord` int(11) NOT NULL DEFAULT '9999999',
   `gallery_picture_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
