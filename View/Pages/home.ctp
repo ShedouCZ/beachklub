@@ -16,7 +16,7 @@
 	/*2 tiles per row*/
 	.tiles {
 		zoom: 0.95;
-		width: 900px;
+		width: 640px;
 		position: absolute;
 	}
 	.down {
