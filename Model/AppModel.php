@@ -78,6 +78,7 @@ class AppModel extends Model {
 		// TODO remove &,|
 		$slug = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove; Lower();", $slug);
 		$slug = preg_replace('/ +/', '-', $slug);
+		$slug = preg_replace('/│/', '', $slug);
 		return $slug;
 	}
 
